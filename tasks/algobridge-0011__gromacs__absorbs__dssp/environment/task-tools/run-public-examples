@@ -1,0 +1,15 @@
+#!/bin/sh
+set -eu
+
+build=/testbed/build-public
+if [ ! -x "$build/bin/gmx" ]; then
+    cmake -S /testbed -B "$build" -G Ninja \
+      -DGMX_FFT_LIBRARY=fftpack -DGMX_SIMD=SSE2 \
+      -DGMX_MPI=OFF -DGMX_THREAD_MPI=OFF -DGMX_OPENMP=OFF -DGMX_GPU=OFF \
+      -DBUILD_TESTING=OFF -DGMX_BUILD_UNITTESTS=OFF -DGMXAPI=OFF \
+      -DGMX_INSTALL_NBLIB_API=OFF -DGMX_BUILD_MANUAL=OFF \
+      -DGMX_EXTERNAL_BLAS=OFF -DGMX_EXTERNAL_LAPACK=OFF \
+      -DCMAKE_BUILD_TYPE=Release
+    cmake --build "$build" --target gmx -j8
+fi
+exec python3 /opt/public-examples/verify_examples.py

@@ -1,0 +1,68 @@
+{
+  "schema_version": 2,
+  "archive_policy": "Complete ordinary tracked files from exact official Git commits; Git metadata is excluded.",
+  "host": {
+    "name": "GROMACS",
+    "repository": "https://gitlab.com/gromacs/gromacs.git",
+    "tag": "v2024.6",
+    "commit": "a7455395479a6eeebb8f5676ea580898c7662d21",
+    "tree": "70ba984658c7f05809193f56e62f0b291b562920",
+    "license": "LGPL-2.1-or-later",
+    "archive": "environment/host-source.tar.gz",
+    "archive_file_count": 8124,
+    "archive_bytes": 41752779,
+    "sha256": "30bbdf6a344cf1958964bbdf9deb9844f64354c7853eb6e03acc1e0f41ceaec1"
+  },
+  "donor": {
+    "name": "DSSP",
+    "repository": "https://github.com/PDB-REDO/dssp.git",
+    "version": "4.4.11",
+    "commit": "3cbec3abea5169ea8fac030d0e43d28102b128aa",
+    "tree": "7993e3627f7946c6428fd5c2ae8968832bd5ef26",
+    "license": "BSD-2-Clause",
+    "archive": "environment/donor-source.tar.gz",
+    "archive_file_count": 32,
+    "archive_bytes": 163835,
+    "sha256": "cc632a1a67545061a44a5cc0caca995b625b34190623844ba72548eddb67c461"
+  },
+  "runtime": {
+    "base_image": "docker.io/library/python@sha256:69719dbce933473eb3632ee1c3b25788e71752d615ddee02536475be4d9e310b",
+    "python_version": "3.13",
+    "cmake_wheel_sha256": "1c8b05df0602365da91ee6a3336fe57525b137706c4ab5675498f662ae1dbcec",
+    "ninja_wheel_sha256": "a27e78ca71316c8654965ee94b286a98c83877bfebe2607db96897bbfe458af0",
+    "candidate_build": {
+      "generator": "Ninja",
+      "fft": "internal fftpack",
+      "mpi": false,
+      "openmp": false,
+      "gpu": false
+    }
+  },
+  "reference_runtime": {
+    "version": "4.4.11",
+    "conda_build": "h629725b_0",
+    "conda_package": "tests/dssp-4.4.11-h629725b_0.conda",
+    "conda_package_sha256": "5580f0cce0c4a1cee944f25272ba5f729eff4dc88721ebf2196c646891e2190c",
+    "relocated_archive": "tests/dssp-runtime.tar.gz",
+    "relocated_archive_file_count": 6,
+    "relocated_archive_sha256": "174a3c2259313b2d9472b8b33df02d94c9611f0e61ed28b5d9b5ef03e1a95e28",
+    "ccd_sha256": "043040d5f59b9aee505ca32ab5b818a06b43c07ff491a8e505e6b84981e2569f"
+  },
+  "fixtures": [
+    {
+      "id": "1CRN",
+      "sha256": "42199a30a0701864a2a5cc76cd7f35cc544cd0e65fbcf63e03c166543249b811",
+      "url": "https://files.rcsb.org/download/1CRN.pdb"
+    },
+    {
+      "id": "1ZDD",
+      "sha256": "d9f66e70872ddfc941f11845da945561264cfe7044c7991c701638096acbd539",
+      "url": "https://files.rcsb.org/download/1ZDD.pdb"
+    },
+    {
+      "id": "1TEN",
+      "sha256": "5b2165e4e495d05e230c6438a8585966578fc70006ec228ac0a0d8b65d06c73c",
+      "url": "https://files.rcsb.org/download/1TEN.pdb"
+    }
+  ]
+}

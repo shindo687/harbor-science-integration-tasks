@@ -1,0 +1,33 @@
+{
+    "schema_version": 1,
+    "task": {
+        "name": "algobridge-0011__gromacs__absorbs__dssp",
+        "type": "local",
+        "digest": "sha256:74aba385e6628b3737b78929ad6ef664faedf0562c0bee62b0f81df788ba1ef3",
+        "path": "/home/xjtan/new_bench_minimal/algobridge-0011__gromacs__absorbs__dssp"
+    },
+    "install_only": false,
+    "timeout_multiplier": 1.0,
+    "agent": {
+        "name": "nop",
+        "skills": [],
+        "resume_trajectory": false,
+        "extra_allowed_hosts": [],
+        "kwargs": {},
+        "mcp_servers": []
+    },
+    "skills": [],
+    "environment": {
+        "type": "docker",
+        "force_build": true,
+        "delete": true,
+        "cpu_enforcement_policy": "ignore",
+        "memory_enforcement_policy": "ignore",
+        "extra_docker_compose": [],
+        "kwargs": {},
+        "extra_allowed_hosts": []
+    },
+    "verifier": {
+        "disable": false
+    }
+}

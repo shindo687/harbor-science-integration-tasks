@@ -1,0 +1,9 @@
+{
+  "algorithm": "DSSP hydrogen-bond energy and eight-state secondary-structure assignment",
+  "donor": "DSSP 4.4.11",
+  "host": "GROMACS 2024.6",
+  "id": "ALGOBRIDGE-0011",
+  "oracle_reference": "locked native mkdssp 4.4.11",
+  "scope": "standard protein backbones; multiple frames and orthorhombic-PBC unwrapping",
+  "status": "accepted"
+}

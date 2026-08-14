@@ -50,6 +50,12 @@
       "commit": "91e3cca4a1f7e1fb0610dbd0ee0efe96e9721c52"
     },
     {
+      "name": "algobridge-0011__gromacs__absorbs__dssp",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0011__gromacs__absorbs__dssp.git",
+      "commit": "d9b606b6ab01025f247b720b7dd71344459463e2"
+    },
+    {
       "name": "algobridge-0012__gromacs__absorbs__prody",
       "suite": "AlgoBridge",
       "origin": "https://github.com/shindo687/algobridge-0012__gromacs__absorbs__prody.git",

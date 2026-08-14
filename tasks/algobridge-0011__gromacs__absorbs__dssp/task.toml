@@ -1,0 +1,45 @@
+schema_version = "1.3"
+
+artifacts = [
+  { source = "/testbed" },
+]
+
+[task]
+name = "workflow-algorithm-bench/algobridge-0011__gromacs__absorbs__dssp"
+description = "Implement native bounded multi-frame DSSP assignment in GROMACS"
+keywords = ["gromacs", "dssp", "secondary-structure", "hydrogen-bond", "differential"]
+
+[metadata]
+difficulty = "hard"
+category = "workflow-algorithm-bench"
+authoring_state = "accepted"
+tags = ["structural-biology", "single-step", "separate-verifier", "no-network"]
+execution_target = "cpu"
+
+[verifier]
+timeout_sec = 2400.0
+user = "root"
+environment_mode = "separate"
+network_mode = "no-network"
+
+[verifier.environment]
+build_timeout_sec = 2400.0
+cpus = 8
+memory_mb = 16384
+storage_mb = 20480
+gpus = 0
+network_mode = "no-network"
+mcp_servers = []
+
+[agent]
+timeout_sec = 7200.0
+network_mode = "no-network"
+
+[environment]
+build_timeout_sec = 2400.0
+cpus = 8
+memory_mb = 16384
+storage_mb = 20480
+gpus = 0
+network_mode = "no-network"
+mcp_servers = []
