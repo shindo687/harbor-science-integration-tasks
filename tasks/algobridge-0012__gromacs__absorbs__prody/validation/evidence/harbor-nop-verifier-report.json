@@ -1,0 +1,11 @@
+{
+  "hard_gates": {
+    "locked_reference": "pass"
+  },
+  "reason": "source policy failed: unexpected added files: []",
+  "reference": "locked GROMACS coordinate contract to ProDy 7969f497 ANM.buildHessian/calcModes",
+  "reward": 0.0,
+  "status": "hard_gate_failed",
+  "task": "ALGOBRIDGE-0012",
+  "total": 15
+}

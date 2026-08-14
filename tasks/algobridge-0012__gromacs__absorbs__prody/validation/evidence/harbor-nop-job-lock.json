@@ -1,0 +1,61 @@
+{
+    "schema_version": 2,
+    "created_at": "2026-08-14T05:03:33.485812Z",
+    "harbor": {
+        "version": "0.20.0",
+        "is_editable": false
+    },
+    "n_concurrent_trials": 1,
+    "retry": {
+        "max_retries": 0,
+        "exclude_exceptions": [
+            "ModelNotFoundError",
+            "RewardFileNotFoundError",
+            "VerifierOutputParseError",
+            "AgentAuthenticationError",
+            "AgentSafetyRefusalError",
+            "RewardFileEmptyError",
+            "VerifierTimeoutError",
+            "ApiUsageLimitError",
+            "AgentTimeoutError"
+        ],
+        "wait_multiplier": 1.0,
+        "min_wait_sec": 1.0,
+        "max_wait_sec": 60.0
+    },
+    "trials": [
+        {
+            "schema_version": 1,
+            "task": {
+                "name": "algobridge-0012__gromacs__absorbs__prody",
+                "type": "local",
+                "digest": "sha256:76fdf3305101bd3a0fbd75570824c3362150978c004b59e1a028c95e1718dfff",
+                "path": "."
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "nop",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "mcp_servers": []
+            },
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": true,
+                "delete": true,
+                "cpu_enforcement_policy": "ignore",
+                "memory_enforcement_policy": "ignore",
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false
+            }
+        }
+    ]
+}

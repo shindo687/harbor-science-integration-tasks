@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "complete": false,
-  "task_count": 13,
+  "task_count": 14,
   "tasks": [
     {
       "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
@@ -20,6 +20,15 @@
       "source_tree": "a2312d1f60c0ff7d37f32dcf72c6e19bfaee50b7",
       "file_count": 94,
       "bytes": 1415372
+    },
+    {
+      "name": "algobridge-0012__gromacs__absorbs__prody",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0012__gromacs__absorbs__prody.git",
+      "commit": "bee40efe51380ae64b5c66ac51f855be47f6bd05",
+      "source_tree": "9fc82534bcc971107a9ac9704025dd48103f4d87",
+      "file_count": 70,
+      "bytes": 292774909
     },
     {
       "name": "algobridge-0015__openmm__absorbs__pymbar",

@@ -1,0 +1,6 @@
+{
+  "host_commit": "6507818c312391b763d56bc43e03e00fc1ed8bd0",
+  "donor_commit": "7969f497a8961253e2b4ac70255f3843e1ac0980",
+  "reference": "ProDy 2.6.1 ANM.buildHessian and ANM.calcModes",
+  "candidate_forbidden_runtimes": ["prody", "scipy", "biopython"]
+}

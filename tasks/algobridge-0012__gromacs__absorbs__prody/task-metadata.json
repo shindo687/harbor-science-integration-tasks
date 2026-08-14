@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "task_id": "algobridge-0012__gromacs__absorbs__prody",
+  "algorithm_question_id": "ALGOBRIDGE-0012",
+  "candidate_id": "WFBRIDGE-0129",
+  "authoring_state": "accepted",
+  "execution_target": "portable-cpu-docker",
+  "title": "GROMACS 原生 anisotropic network model",
+  "domain": "molecular-simulation",
+  "algorithm_family": "linear algebra / structural dynamics",
+  "algorithm": "ProDy anisotropic network model (ANM)",
+  "bounded_subset": "4--64 个已选 C-alpha 节点、uniform gamma、inclusive distance cutoff、零模剔除、指定 mode 数；不含分层/自定义 Hessian。",
+  "host_software": "GROMACS",
+  "donor_software": "ProDy",
+  "workflow_source": "GROMACS",
+  "workflow_target": "ProDy",
+  "host_side": "source",
+  "unique_paper_count": 13,
+  "paper_ids": [
+    "811060822179577856",
+    "812433017808093185",
+    "812469590566109185",
+    "812590693213011969",
+    "812599886942830593",
+    "812668858782449666",
+    "812730096992387073",
+    "812751619098673157",
+    "812775849655795713",
+    "813050144336379905",
+    "814533451158913028",
+    "968331135236964363",
+    "7463152220980981812"
+  ],
+  "input_contract": "GROMACS nm 坐标数组、ordered atom selection、cutoff_nm、gamma、n_modes。",
+  "output_contract": "3N Hessian、非零 eigenvalues/eigenvectors、MSF 和 cross-correlation。",
+  "reference_pipeline": "GROMACS 选取结构后由锁定 ProDy ANM 计算。",
+  "candidate_interface": "gmxapi analysis 新增 analyze_anm，不得调用 ProDy。",
+  "verification": {
+    "model": "original_A_plus_B_vs_merged_host",
+    "numeric_comparison": "Hessian 2e-9、eigenvalues 2e-8；mode 子空间 projector 3e-7；covariance/MSF 2e-7；cross-correlation 8e-7。",
+    "scientific_invariants": [
+      "Hessian 对称且每个 3x3 row-block 和为 0",
+      "连通刚体至少有 6 个零模",
+      "刚体变换不改变 eigenvalues/MSF"
+    ],
+    "fixtures": "线性/平面/三维点集、断开 component、inclusive cutoff 边界、简并模、ordered selection、刚体变换、gamma scaling 和 atom reorder。"
+  },
+  "non_glue_reason": "核心是 3N Hessian 构造、特征分解和统计力学 mode 聚合。",
+  "implementation_scope": "medium",
+  "estimated_changed_loc": "350-700",
+  "difficulty": "hard",
+  "license": {
+    "status": "low_risk_direction_available",
+    "host_license": "LGPL-2.1",
+    "donor_license": "MIT",
+    "clean_room_required": true
+  },
+  "source_locks": {
+    "host": {
+      "software": "GROMACS",
+      "repo": "https://gitlab.com/gromacs/gromacs",
+      "url": "https://gitlab.com/gromacs/gromacs",
+      "status": "locked",
+      "head_commit": "6507818c312391b763d56bc43e03e00fc1ed8bd0",
+      "resolved_at": "2026-08-12T03:22:25.974709+00:00",
+      "stderr": "warning: redirecting to https://gitlab.com/gromacs/gromacs.git/"
+    },
+    "donor": {
+      "software": "ProDy",
+      "repo": "https://github.com/prody/ProDy",
+      "url": "https://github.com/prody/ProDy",
+      "status": "locked",
+      "head_commit": "7969f497a8961253e2b4ac70255f3843e1ac0980",
+      "resolved_at": "2026-08-12T03:22:22.556237+00:00",
+      "stderr": ""
+    },
+    "workflow_source": {
+      "software": "GROMACS",
+      "repo": "https://gitlab.com/gromacs/gromacs",
+      "url": "https://gitlab.com/gromacs/gromacs",
+      "status": "locked",
+      "head_commit": "6507818c312391b763d56bc43e03e00fc1ed8bd0",
+      "resolved_at": "2026-08-12T03:22:25.974709+00:00",
+      "stderr": "warning: redirecting to https://gitlab.com/gromacs/gromacs.git/"
+    },
+    "workflow_target": {
+      "software": "ProDy",
+      "repo": "https://github.com/prody/ProDy",
+      "url": "https://github.com/prody/ProDy",
+      "status": "locked",
+      "head_commit": "7969f497a8961253e2b4ac70255f3843e1ac0980",
+      "resolved_at": "2026-08-12T03:22:22.556237+00:00",
+      "stderr": ""
+    }
+  }
+}

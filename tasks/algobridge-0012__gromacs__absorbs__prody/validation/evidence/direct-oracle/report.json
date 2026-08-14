@@ -1,0 +1,357 @@
+{
+  "cases": [
+    {
+      "metrics": {
+        "block_row_sum_max_abs": 1.1102230246251565e-16,
+        "correlation_max_abs": 3.3306690738754696e-16,
+        "covariance_max_abs": 8.049116928532385e-16,
+        "covariance_reconstruction_max_abs": 0.0,
+        "covariance_symmetry_max_abs": 5.551115123125783e-17,
+        "eigen_residual_max_abs": 2.4424906541753444e-15,
+        "eigenvalue_max_abs": 1.7763568394002505e-15,
+        "hessian_max_abs": 2.220446049250313e-16,
+        "hessian_symmetry_max_abs": 0.0,
+        "minimum_covariance_eigenvalue": -1.627430243760204e-16,
+        "minimum_hessian_eigenvalue": -2.697896090860538e-16,
+        "mode_orthogonality_max_abs": 1.7763568394002505e-15,
+        "mode_projector_max_abs": 8.881784197001252e-16,
+        "msf_max_abs": 1.3322676295501878e-15,
+        "statistics_consistency_max_abs": 0.0
+      },
+      "name": "tetrahedron_all_modes",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "block_row_sum_max_abs": 2.498001805406602e-16,
+        "correlation_max_abs": 1.27675647831893e-15,
+        "covariance_max_abs": 1.887379141862766e-15,
+        "covariance_reconstruction_max_abs": 0.0,
+        "covariance_symmetry_max_abs": 8.326672684688674e-17,
+        "eigen_residual_max_abs": 1.27675647831893e-15,
+        "eigenvalue_max_abs": 1.3322676295501878e-15,
+        "hessian_max_abs": 4.440892098500626e-16,
+        "hessian_symmetry_max_abs": 0.0,
+        "minimum_covariance_eigenvalue": -1.1980499419445935e-16,
+        "minimum_hessian_eigenvalue": -9.414562970383754e-16,
+        "mode_orthogonality_max_abs": 1.7763568394002505e-15,
+        "mode_projector_max_abs": 1.4432899320127035e-15,
+        "msf_max_abs": 2.55351295663786e-15,
+        "statistics_consistency_max_abs": 0.0
+      },
+      "name": "irregular_six_subset",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "block_row_sum_max_abs": 1.1102230246251565e-16,
+        "correlation_max_abs": 6.38378239159465e-16,
+        "covariance_max_abs": 4.440892098500626e-16,
+        "covariance_reconstruction_max_abs": 0.0,
+        "covariance_symmetry_max_abs": 5.551115123125783e-17,
+        "eigen_residual_max_abs": 9.992007221626409e-16,
+        "eigenvalue_max_abs": 8.881784197001252e-16,
+        "hessian_max_abs": 4.440892098500626e-16,
+        "hessian_symmetry_max_abs": 0.0,
+        "minimum_covariance_eigenvalue": -1.8961286065705932e-16,
+        "minimum_hessian_eigenvalue": -7.748462178863849e-16,
+        "mode_orthogonality_max_abs": 1.3322676295501878e-15,
+        "mode_projector_max_abs": 9.992007221626409e-16,
+        "msf_max_abs": 5.551115123125783e-16,
+        "statistics_consistency_max_abs": 0.0
+      },
+      "name": "helical_chain",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "block_row_sum_max_abs": 0.0,
+        "correlation_max_abs": 1.7277845820728999e-15,
+        "covariance_max_abs": 4.440892098500626e-15,
+        "covariance_reconstruction_max_abs": 0.0,
+        "covariance_symmetry_max_abs": 2.220446049250313e-16,
+        "eigen_residual_max_abs": 7.771561172376096e-16,
+        "eigenvalue_max_abs": 6.661338147750939e-16,
+        "hessian_max_abs": 2.220446049250313e-16,
+        "hessian_symmetry_max_abs": 0.0,
+        "minimum_covariance_eigenvalue": -1.301506714849226e-16,
+        "minimum_hessian_eigenvalue": 0.0,
+        "mode_orthogonality_max_abs": 6.661338147750939e-16,
+        "mode_projector_max_abs": 1.3322676295501878e-15,
+        "msf_max_abs": 4.440892098500626e-15,
+        "statistics_consistency_max_abs": 0.0
+      },
+      "name": "linear_extra_zero_modes",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "block_row_sum_max_abs": 1.942890293094024e-16,
+        "correlation_max_abs": 4.996003610813204e-16,
+        "covariance_max_abs": 9.992007221626409e-16,
+        "covariance_reconstruction_max_abs": 0.0,
+        "covariance_symmetry_max_abs": 5.551115123125783e-17,
+        "eigen_residual_max_abs": 2.4424906541753444e-15,
+        "eigenvalue_max_abs": 2.220446049250313e-15,
+        "hessian_max_abs": 1.0547118733938987e-15,
+        "hessian_symmetry_max_abs": 0.0,
+        "minimum_covariance_eigenvalue": -1.627430243760204e-16,
+        "minimum_hessian_eigenvalue": -3.484044937682017e-16,
+        "mode_orthogonality_max_abs": 1.7763568394002505e-15,
+        "mode_projector_max_abs": 9.992007221626409e-16,
+        "msf_max_abs": 1.7763568394002505e-15,
+        "statistics_consistency_max_abs": 0.0
+      },
+      "name": "two_disconnected_tetrahedra",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "block_row_sum_max_abs": 4.163336342344337e-16,
+        "correlation_max_abs": 1.0911410663894117e-15,
+        "covariance_max_abs": 1.8318679906315083e-15,
+        "covariance_reconstruction_max_abs": 0.0,
+        "covariance_symmetry_max_abs": 6.245004513516506e-17,
+        "eigen_residual_max_abs": 9.71445146547012e-16,
+        "eigenvalue_max_abs": 1.5543122344752192e-15,
+        "hessian_max_abs": 4.440892098500626e-16,
+        "hessian_symmetry_max_abs": 0.0,
+        "minimum_covariance_eigenvalue": -3.550383428760605e-16,
+        "minimum_hessian_eigenvalue": -4.2667447559564345e-16,
+        "mode_orthogonality_max_abs": 8.881784197001252e-16,
+        "mode_projector_max_abs": 9.992007221626409e-16,
+        "msf_max_abs": 1.7763568394002505e-15,
+        "statistics_consistency_max_abs": 0.0
+      },
+      "name": "inclusive_cutoff_boundary",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "block_row_sum_max_abs": 0.0,
+        "correlation_max_abs": 7.91033905045424e-16,
+        "covariance_max_abs": 6.106226635438361e-16,
+        "covariance_reconstruction_max_abs": 0.0,
+        "covariance_symmetry_max_abs": 5.551115123125783e-17,
+        "eigen_residual_max_abs": 1.5543122344752192e-15,
+        "eigenvalue_max_abs": 1.3322676295501878e-15,
+        "hessian_max_abs": 0.0,
+        "hessian_symmetry_max_abs": 0.0,
+        "minimum_covariance_eigenvalue": -2.11118164413259e-16,
+        "minimum_hessian_eigenvalue": -5.670840746200171e-16,
+        "mode_orthogonality_max_abs": 2.220446049250313e-15,
+        "mode_projector_max_abs": 8.881784197001252e-16,
+        "msf_max_abs": 6.661338147750939e-16,
+        "statistics_consistency_max_abs": 0.0
+      },
+      "name": "octahedral_degeneracy",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "block_row_sum_max_abs": 0.0,
+        "correlation_max_abs": 9.020562075079397e-16,
+        "covariance_max_abs": 7.771561172376096e-16,
+        "covariance_reconstruction_max_abs": 0.0,
+        "covariance_symmetry_max_abs": 5.551115123125783e-17,
+        "eigen_residual_max_abs": 2.220446049250313e-15,
+        "eigenvalue_max_abs": 3.1086244689504383e-15,
+        "hessian_max_abs": 0.0,
+        "hessian_symmetry_max_abs": 0.0,
+        "minimum_covariance_eigenvalue": -1.9978575071866662e-16,
+        "minimum_hessian_eigenvalue": -3.811044521427437e-16,
+        "mode_orthogonality_max_abs": 1.5543122344752192e-15,
+        "mode_projector_max_abs": 1.2212453270876722e-15,
+        "msf_max_abs": 1.3322676295501878e-15,
+        "statistics_consistency_max_abs": 0.0
+      },
+      "name": "planar_grid",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "block_row_sum_max_abs": 3.0531133177191805e-16,
+        "correlation_max_abs": 8.881784197001252e-16,
+        "covariance_max_abs": 2.1094237467877974e-15,
+        "covariance_reconstruction_max_abs": 0.0,
+        "covariance_symmetry_max_abs": 1.1102230246251565e-16,
+        "eigen_residual_max_abs": 7.771561172376096e-16,
+        "eigenvalue_max_abs": 1.5543122344752192e-15,
+        "hessian_max_abs": 4.440892098500626e-16,
+        "hessian_symmetry_max_abs": 0.0,
+        "minimum_covariance_eigenvalue": -3.586644083379616e-16,
+        "minimum_hessian_eigenvalue": -3.420619750454961e-16,
+        "mode_orthogonality_max_abs": 1.1102230246251565e-15,
+        "mode_projector_max_abs": 8.881784197001252e-16,
+        "msf_max_abs": 3.3306690738754696e-15,
+        "statistics_consistency_max_abs": 0.0
+      },
+      "name": "gamma_scaling_base",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "block_row_sum_max_abs": 6.661338147750939e-16,
+        "correlation_max_abs": 8.326672684688674e-16,
+        "covariance_max_abs": 4.996003610813204e-16,
+        "covariance_reconstruction_max_abs": 0.0,
+        "covariance_symmetry_max_abs": 2.7755575615628914e-17,
+        "eigen_residual_max_abs": 2.6645352591003757e-15,
+        "eigenvalue_max_abs": 4.440892098500626e-15,
+        "hessian_max_abs": 8.881784197001252e-16,
+        "hessian_symmetry_max_abs": 0.0,
+        "minimum_covariance_eigenvalue": -8.60938119045987e-17,
+        "minimum_hessian_eigenvalue": -1.4197569052709118e-15,
+        "mode_orthogonality_max_abs": 1.7763568394002505e-15,
+        "mode_projector_max_abs": 7.216449660063518e-16,
+        "msf_max_abs": 7.771561172376096e-16,
+        "statistics_consistency_max_abs": 0.0
+      },
+      "name": "gamma_scaling_tripled",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "block_row_sum_max_abs": 3.7816971776294395e-16,
+        "correlation_max_abs": 1.4988010832439613e-15,
+        "covariance_max_abs": 1.942890293094024e-15,
+        "covariance_reconstruction_max_abs": 0.0,
+        "covariance_symmetry_max_abs": 5.551115123125783e-17,
+        "eigen_residual_max_abs": 1.6653345369377348e-15,
+        "eigenvalue_max_abs": 4.107825191113079e-15,
+        "hessian_max_abs": 8.881784197001252e-16,
+        "hessian_symmetry_max_abs": 0.0,
+        "minimum_covariance_eigenvalue": -1.8166943920187812e-16,
+        "minimum_hessian_eigenvalue": -1.607086761782666e-15,
+        "mode_orthogonality_max_abs": 1.3322676295501878e-15,
+        "mode_projector_max_abs": 7.355227538141662e-16,
+        "msf_max_abs": 3.1086244689504383e-15,
+        "statistics_consistency_max_abs": 0.0
+      },
+      "name": "rigid_transform_base",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "block_row_sum_max_abs": 4.996003610813204e-16,
+        "correlation_max_abs": 1.609823385706477e-15,
+        "covariance_max_abs": 1.7763568394002505e-15,
+        "covariance_reconstruction_max_abs": 0.0,
+        "covariance_symmetry_max_abs": 5.551115123125783e-17,
+        "eigen_residual_max_abs": 2.9004576518332215e-15,
+        "eigenvalue_max_abs": 2.7755575615628914e-15,
+        "hessian_max_abs": 1.7763568394002505e-15,
+        "hessian_symmetry_max_abs": 0.0,
+        "minimum_covariance_eigenvalue": -5.786151034921067e-16,
+        "minimum_hessian_eigenvalue": -1.2984387818503433e-15,
+        "mode_orthogonality_max_abs": 2.4424906541753444e-15,
+        "mode_projector_max_abs": 1.6653345369377348e-15,
+        "msf_max_abs": 1.7763568394002505e-15,
+        "statistics_consistency_max_abs": 0.0
+      },
+      "name": "rigid_transform_moved",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "block_row_sum_max_abs": 2.498001805406602e-16,
+        "correlation_max_abs": 1.5959455978986625e-15,
+        "covariance_max_abs": 1.8318679906315083e-15,
+        "covariance_reconstruction_max_abs": 0.0,
+        "covariance_symmetry_max_abs": 5.551115123125783e-17,
+        "eigen_residual_max_abs": 1.2281842209915794e-15,
+        "eigenvalue_max_abs": 2.55351295663786e-15,
+        "hessian_max_abs": 8.881784197001252e-16,
+        "hessian_symmetry_max_abs": 0.0,
+        "minimum_covariance_eigenvalue": -2.415989739492769e-16,
+        "minimum_hessian_eigenvalue": -3.9974763331801195e-16,
+        "mode_orthogonality_max_abs": 2.4424906541753444e-15,
+        "mode_projector_max_abs": 8.049116928532385e-16,
+        "msf_max_abs": 2.886579864025407e-15,
+        "statistics_consistency_max_abs": 0.0
+      },
+      "name": "atom_permutation_base",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "block_row_sum_max_abs": 2.220446049250313e-16,
+        "correlation_max_abs": 1.0408340855860843e-15,
+        "covariance_max_abs": 1.7763568394002505e-15,
+        "covariance_reconstruction_max_abs": 0.0,
+        "covariance_symmetry_max_abs": 1.1102230246251565e-16,
+        "eigen_residual_max_abs": 1.2212453270876722e-15,
+        "eigenvalue_max_abs": 1.7763568394002505e-15,
+        "hessian_max_abs": 8.881784197001252e-16,
+        "hessian_symmetry_max_abs": 0.0,
+        "minimum_covariance_eigenvalue": -3.962482250717535e-16,
+        "minimum_hessian_eigenvalue": -3.3630681465933645e-16,
+        "mode_orthogonality_max_abs": 1.1102230246251565e-15,
+        "mode_projector_max_abs": 1.3426759704060487e-15,
+        "msf_max_abs": 2.4424906541753444e-15,
+        "statistics_consistency_max_abs": 0.0
+      },
+      "name": "atom_permutation_swapped",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "block_row_sum_max_abs": 3.3306690738754696e-16,
+        "correlation_max_abs": 2.3378521341044234e-12,
+        "covariance_max_abs": 4.40809344581794e-09,
+        "covariance_reconstruction_max_abs": 0.0,
+        "covariance_symmetry_max_abs": 2.2737367544323206e-13,
+        "eigen_residual_max_abs": 1.6237011735142914e-15,
+        "eigenvalue_max_abs": 1.2212453270876722e-15,
+        "hessian_max_abs": 4.440892098500626e-16,
+        "hessian_symmetry_max_abs": 0.0,
+        "minimum_covariance_eigenvalue": -2.0527202445557324e-13,
+        "minimum_hessian_eigenvalue": -4.487350804356513e-16,
+        "mode_orthogonality_max_abs": 6.661338147750939e-16,
+        "mode_projector_max_abs": 4.937439346264227e-13,
+        "msf_max_abs": 6.751633918611333e-09,
+        "statistics_consistency_max_abs": 0.0
+      },
+      "name": "ordered_selection",
+      "passed": true,
+      "reasons": []
+    }
+  ],
+  "failed": 0,
+  "hard_gates": {
+    "candidate_protocol": "pass",
+    "invalid_input_rejection": "pass",
+    "locked_reference": "pass",
+    "reference_removed_before_candidate": "pass",
+    "source_policy": {
+      "added": [
+        "python_packaging/gmxapi/src/gmxapi/analysis/__init__.py",
+        "python_packaging/gmxapi/src/gmxapi/analysis/anm.py"
+      ],
+      "donor_fragment_scan": "pass",
+      "module_bytes": 5705,
+      "module_sha256": "283859fce2b4e37574b7f2501053c078fb1e6d41fc58a0ff8d72135190532790"
+    },
+    "transform_scaling_reordering_invariance": "pass"
+  },
+  "passed": 15,
+  "reference": "locked GROMACS coordinate contract to ProDy 7969f497 ANM.buildHessian/calcModes",
+  "reward": 1.0,
+  "status": "completed",
+  "task": "ALGOBRIDGE-0012",
+  "total": 15
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "reference_model": "locked GROMACS-coordinate contract through locked ProDy ANM versus merged gmxapi analysis",
+  "host": {
+    "name": "GROMACS",
+    "repository": "https://gitlab.com/gromacs/gromacs.git",
+    "commit": "6507818c312391b763d56bc43e03e00fc1ed8bd0",
+    "tree": "e3403b3d1bc300f18dd588515443a9ab7044646c",
+    "describe": "v2026.3-279-g6507818c3",
+    "license": "LGPL-2.1-or-later",
+    "snapshot_file_count": 9100,
+    "snapshot_sha256": "d9c09e9f2338d87e8bd7d6546d819194a305880a909479552398bf55c42f56bb"
+  },
+  "donor": {
+    "name": "ProDy",
+    "repository": "https://github.com/prody/ProDy",
+    "commit": "7969f497a8961253e2b4ac70255f3843e1ac0980",
+    "tree": "d5b704ee562f54678cc83860da4dd81ab8979cc1",
+    "describe": "v2.6.1-510-g7969f497",
+    "package_version": "2.6.1",
+    "license": "MIT with documented bundled third-party components",
+    "snapshot_file_count": 760,
+    "snapshot_sha256": "07ba18e9fbddba5ab43e450c7182809c0a222e3b4bc15048c32d6e38435bf01f",
+    "wheel_sha256": "5e3168f5d61d8ab6795ba03d0a34b661d592cc54407eb6a197e9717e483b89fe"
+  },
+  "numeric_contract": {
+    "reference_entrypoint": "ProDy ANM.buildHessian followed by ANM.calcModes",
+    "coordinate_units": "GROMACS nanometers converted to angstroms for the reference; ANM tensor is scale-invariant apart from cutoff",
+    "zero_eigenvalue_threshold": 1e-6,
+    "network_convention": "constant-gamma ProDy ANM with inclusive cutoff",
+    "mode_statistics": "inverse-eigenvalue covariance through ProDy calcSqFlucts and calcCrossCorr"
+  },
+  "runtime": {
+    "python_base": "python:3.10.18-bookworm",
+    "python_base_digest": "sha256:ee0c7d26e2dba416773cb51c042496e9cffacc872459f57726935dd6833f2d96",
+    "agent_wheel_manifest_sha256": "2e73eab6cf3c7c2f42dfa0ddea05879d3e5c8ed4ed0601517ed2a2b0b012b1fc",
+    "reference_wheel_manifest_sha256": "e55d904ff3df22023bddbe0c4d0fb8a83bc24803f2fb124125a306f625f7370f"
+  }
+}
