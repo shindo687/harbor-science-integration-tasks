@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "task_id": "algobridge-0018__alphafold-2__absorbs__prody",
+  "algorithm_question_id": "ALGOBRIDGE-0018",
+  "authoring_state": "accepted",
+  "title": "AlphaFold 2 native Gaussian and anisotropic network modes",
+  "domain": "structural-biology",
+  "algorithm": "ProDy GNM/ANM normal-mode analysis",
+  "host_software": "AlphaFold 2",
+  "donor_software": "ProDy",
+  "input_contract": "AlphaFold Protein parsed from PDB/mmCIF plus selection, cutoff, gamma, model, and mode count",
+  "output_contract": "mapping, network matrix, zero count, eigenpairs, MSF, and cross-correlation",
+  "verification_model": "original AlphaFold parser to locked ProDy versus merged AlphaFold in a separate no-network verifier",
+  "clean_room_required": true,
+  "requires_model_parameters": false,
+  "requires_gpu": false
+}

@@ -1,6 +1,6 @@
 # Task index
 
-This index contains **11** byte-exact standalone-repository snapshots.
+This index contains **12** byte-exact standalone-repository snapshots.
 
 | Suite | Task snapshot | Standalone repository | Commit | Files | Size |
 |---|---|---|---|---:|---:|
@@ -8,6 +8,7 @@ This index contains **11** byte-exact standalone-repository snapshots.
 | AlgoBridge | [algobridge-0007__fasttree__absorbs__mafft](tasks/algobridge-0007__fasttree__absorbs__mafft/) | [source](https://github.com/shindo687/algobridge-0007__fasttree__absorbs__mafft) | `b3fd38093c9b` | 94 | 1.3 MiB |
 | AlgoBridge | [algobridge-0015__openmm__absorbs__pymbar](tasks/algobridge-0015__openmm__absorbs__pymbar/) | [source](https://github.com/shindo687/algobridge-0015__openmm__absorbs__pymbar) | `a408abe0605d` | 63 | 200.5 MiB |
 | AlgoBridge | [algobridge-0017__gromacs__absorbs__pymbar](tasks/algobridge-0017__gromacs__absorbs__pymbar/) | [source](https://github.com/shindo687/algobridge-0017__gromacs__absorbs__pymbar) | `9c8bb798f0d4` | 70 | 216.1 MiB |
+| AlgoBridge | [algobridge-0018__alphafold-2__absorbs__prody](tasks/algobridge-0018__alphafold-2__absorbs__prody/) | [source](https://github.com/shindo687/algobridge-0018__alphafold-2__absorbs__prody) | `0f1c0253c994` | 71 | 262.5 MiB |
 | AlgoBridge | [algobridge-0019__phonopy__absorbs__phono3py](tasks/algobridge-0019__phonopy__absorbs__phono3py/) | [source](https://github.com/shindo687/algobridge-0019__phonopy__absorbs__phono3py) | `6a098b5bf4c6` | 80 | 157.6 MiB |
 | AlgoBridge | [algobridge-0024__lammps__absorbs__phonopy](tasks/algobridge-0024__lammps__absorbs__phonopy/) | [source](https://github.com/shindo687/algobridge-0024__lammps__absorbs__phonopy) | `f29ef0d04a1f` | 73 | 182.6 MiB |
 | AlgoBridge | [algobridge-0025__scikit-learn__absorbs__xgboost](tasks/algobridge-0025__scikit-learn__absorbs__xgboost/) | [source](https://github.com/shindo687/algobridge-0025__scikit-learn__absorbs__xgboost) | `e82e185b5942` | 79 | 142.0 MiB |

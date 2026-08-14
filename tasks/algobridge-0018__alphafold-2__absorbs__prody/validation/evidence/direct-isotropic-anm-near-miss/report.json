@@ -1,0 +1,255 @@
+{
+  "cases": [
+    {
+      "metrics": {
+        "correlation_max_abs": 1.8318679906315083e-15,
+        "eigenvalue_max_abs": 1.3322676295501878e-15,
+        "msf_max_abs": 1.554312234475219e-14,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 9.020562075079397e-16
+      },
+      "name": "gnm_curved_chain",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 1.1628990789568614,
+        "eigenvalue_max_abs": 6.695215426048561,
+        "msf_max_abs": 0.7464723918874919,
+        "network_max_abs": 7.149036432702597,
+        "projector_max_abs": 0.4969194537078597
+      },
+      "name": "anm_helix",
+      "passed": false,
+      "reasons": [
+        "cross_correlation",
+        "eigenvalues",
+        "mode_subspace",
+        "msf",
+        "network_matrix",
+        "zero_mode_count"
+      ]
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 1.7139067942650854e-15,
+        "eigenvalue_max_abs": 4.440892098500626e-16,
+        "msf_max_abs": 2.4424906541753444e-15,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 6.661338147750939e-16
+      },
+      "name": "gnm_plddt_selection",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 0.9162652353926308,
+        "eigenvalue_max_abs": 4.886895735957438,
+        "msf_max_abs": 4.138638025307684,
+        "network_max_abs": 3.378661491615213,
+        "projector_max_abs": 0.4905319783736272
+      },
+      "name": "anm_second_chain",
+      "passed": false,
+      "reasons": [
+        "cross_correlation",
+        "eigenvalues",
+        "mode_subspace",
+        "msf",
+        "network_matrix",
+        "zero_mode_count"
+      ]
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 2.5673907444456745e-15,
+        "eigenvalue_max_abs": 8.881784197001252e-16,
+        "msf_max_abs": 4.218847493575595e-15,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 9.992007221626409e-16
+      },
+      "name": "gnm_missing_calpha",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 7.216449660063518e-16,
+        "eigenvalue_max_abs": 5.551115123125783e-17,
+        "msf_max_abs": 5.551115123125783e-16,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 4.440892098500626e-16
+      },
+      "name": "gnm_disconnected_domains",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 1.2306635075419412,
+        "eigenvalue_max_abs": 2.9999275796155866,
+        "msf_max_abs": 0.8242193914111746,
+        "network_max_abs": 3.398971621780589,
+        "projector_max_abs": 0.582903910719887
+      },
+      "name": "anm_disconnected_domains",
+      "passed": false,
+      "reasons": [
+        "cross_correlation",
+        "eigenvalues",
+        "mode_subspace",
+        "msf",
+        "network_matrix",
+        "zero_mode_count"
+      ]
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 1.9845236565174673e-15,
+        "eigenvalue_max_abs": 8.881784197001252e-16,
+        "msf_max_abs": 3.4416913763379853e-15,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 1.4432899320127035e-15
+      },
+      "name": "gnm_gamma_scaled",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 1.532220093270361,
+        "eigenvalue_max_abs": 3.326816813060509,
+        "msf_max_abs": 1.4592792166093416,
+        "network_max_abs": 2.785450191058775,
+        "projector_max_abs": 0.7304020140935678
+      },
+      "name": "anm_gamma_scaled",
+      "passed": false,
+      "reasons": [
+        "cross_correlation",
+        "eigenvalues",
+        "mode_subspace",
+        "msf",
+        "network_matrix",
+        "zero_mode_count"
+      ]
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 4.440892098500626e-16,
+        "eigenvalue_max_abs": 2.6645352591003757e-15,
+        "msf_max_abs": 1.1102230246251565e-16,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 5.551115123125783e-16
+      },
+      "name": "gnm_degenerate_tetrahedron",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 0.8568071879754637,
+        "eigenvalue_max_abs": 3.000000000000001,
+        "msf_max_abs": 0.8806062077528491,
+        "network_max_abs": 3.0,
+        "projector_max_abs": 0.5833333333333328
+      },
+      "name": "anm_degenerate_octahedron",
+      "passed": false,
+      "reasons": [
+        "cross_correlation",
+        "eigenvalues",
+        "mode_subspace",
+        "msf",
+        "network_matrix",
+        "zero_mode_count"
+      ]
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 1.8318679906315083e-15,
+        "eigenvalue_max_abs": 1.3322676295501878e-15,
+        "msf_max_abs": 1.554312234475219e-14,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 9.020562075079397e-16
+      },
+      "name": "gnm_translated",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 1.162916434422092,
+        "eigenvalue_max_abs": 6.69522363549832,
+        "msf_max_abs": 0.746366160378071,
+        "network_max_abs": 6.817150502107909,
+        "projector_max_abs": 0.5906381325783824
+      },
+      "name": "anm_rotated",
+      "passed": false,
+      "reasons": [
+        "cross_correlation",
+        "eigenvalues",
+        "mode_subspace",
+        "msf",
+        "network_matrix",
+        "zero_mode_count"
+      ]
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 3.9968028886505635e-15,
+        "eigenvalue_max_abs": 1.1102230246251565e-15,
+        "msf_max_abs": 9.547918011776346e-15,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 4.440892098500626e-16
+      },
+      "name": "gnm_mmcif_multichain",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 1.5548909473116914,
+        "eigenvalue_max_abs": 7.997830033167954,
+        "msf_max_abs": 0.6953624904655371,
+        "network_max_abs": 6.919207505916923,
+        "projector_max_abs": 0.6905060668768663
+      },
+      "name": "anm_residue_gaps",
+      "passed": false,
+      "reasons": [
+        "cross_correlation",
+        "eigenvalues",
+        "mode_subspace",
+        "msf",
+        "network_matrix",
+        "zero_mode_count"
+      ]
+    }
+  ],
+  "failed": 7,
+  "hard_gates": {
+    "candidate_protocol": "pass",
+    "invalid_input_rejection": "pass",
+    "locked_reference": "pass",
+    "reference_removed_before_candidate": "pass",
+    "rigid_transform_invariance": "pass",
+    "source_policy": {
+      "added": [
+        "alphafold/common/normal_modes.py"
+      ],
+      "donor_fragment_scan": "pass",
+      "module_bytes": 6289,
+      "module_sha256": "b2d0adaa6f6fed50d972988013b08ec6d5c7d67e7f5940e8a3150487b1946adf"
+    }
+  },
+  "passed": 8,
+  "reference": "locked AlphaFold parser to ProDy 2.6.1 commit 7969f497",
+  "reward": 0.5333333333333333,
+  "status": "completed",
+  "task": "ALGOBRIDGE-0018",
+  "total": 15
+}

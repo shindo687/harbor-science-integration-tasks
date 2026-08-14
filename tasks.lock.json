@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "complete": false,
-  "task_count": 11,
+  "task_count": 12,
   "tasks": [
     {
       "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
@@ -38,6 +38,15 @@
       "source_tree": "daa603988b639475d11f45486d3658f6377671c8",
       "file_count": 70,
       "bytes": 226629126
+    },
+    {
+      "name": "algobridge-0018__alphafold-2__absorbs__prody",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0018__alphafold-2__absorbs__prody.git",
+      "commit": "0f1c0253c99411bed8f111aeba755eb72e9ab009",
+      "source_tree": "7071a52134ca42b8e66d869b96a8ca0448c13ba4",
+      "file_count": 71,
+      "bytes": 275249015
     },
     {
       "name": "algobridge-0019__phonopy__absorbs__phono3py",

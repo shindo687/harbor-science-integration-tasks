@@ -1,0 +1,11 @@
+{
+  "hard_gates": {
+    "locked_reference": "pass"
+  },
+  "reason": "source policy failed: unexpected added files: []",
+  "reference": "locked AlphaFold parser to ProDy 2.6.1 commit 7969f497",
+  "reward": 0.0,
+  "status": "hard_gate_failed",
+  "task": "ALGOBRIDGE-0018",
+  "total": 15
+}

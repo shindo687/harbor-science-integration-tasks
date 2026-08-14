@@ -1,0 +1,206 @@
+{
+  "cases": [
+    {
+      "metrics": {
+        "correlation_max_abs": 1.8318679906315083e-15,
+        "eigenvalue_max_abs": 1.3322676295501878e-15,
+        "msf_max_abs": 1.554312234475219e-14,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 9.020562075079397e-16
+      },
+      "name": "gnm_curved_chain",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 1.049160758270773e-14,
+        "eigenvalue_max_abs": 1.3322676295501878e-15,
+        "msf_max_abs": 5.6066262743570405e-15,
+        "network_max_abs": 4.440892098500626e-16,
+        "projector_max_abs": 7.771561172376096e-15
+      },
+      "name": "anm_helix",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 1.7139067942650854e-15,
+        "eigenvalue_max_abs": 4.440892098500626e-16,
+        "msf_max_abs": 2.4424906541753444e-15,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 6.661338147750939e-16
+      },
+      "name": "gnm_plddt_selection",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 3.552713678800501e-15,
+        "eigenvalue_max_abs": 1.3461454173580023e-15,
+        "msf_max_abs": 7.460698725481052e-14,
+        "network_max_abs": 4.440892098500626e-16,
+        "projector_max_abs": 1.7208456881689926e-15
+      },
+      "name": "anm_second_chain",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 2.5673907444456745e-15,
+        "eigenvalue_max_abs": 8.881784197001252e-16,
+        "msf_max_abs": 4.218847493575595e-15,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 9.992007221626409e-16
+      },
+      "name": "gnm_missing_calpha",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 7.216449660063518e-16,
+        "eigenvalue_max_abs": 5.551115123125783e-17,
+        "msf_max_abs": 5.551115123125783e-16,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 4.440892098500626e-16
+      },
+      "name": "gnm_disconnected_domains",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 1.2906342661267445e-15,
+        "eigenvalue_max_abs": 1.1102230246251565e-15,
+        "msf_max_abs": 1.3322676295501878e-15,
+        "network_max_abs": 1.1102230246251565e-16,
+        "projector_max_abs": 1.0547118733938987e-15
+      },
+      "name": "anm_disconnected_domains",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 1.9845236565174673e-15,
+        "eigenvalue_max_abs": 8.881784197001252e-16,
+        "msf_max_abs": 3.4416913763379853e-15,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 1.4432899320127035e-15
+      },
+      "name": "gnm_gamma_scaled",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 7.438494264988549e-15,
+        "eigenvalue_max_abs": 9.992007221626409e-16,
+        "msf_max_abs": 5.995204332975845e-15,
+        "network_max_abs": 4.440892098500626e-16,
+        "projector_max_abs": 2.3869795029440866e-15
+      },
+      "name": "anm_gamma_scaled",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 4.440892098500626e-16,
+        "eigenvalue_max_abs": 2.6645352591003757e-15,
+        "msf_max_abs": 1.1102230246251565e-16,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 5.551115123125783e-16
+      },
+      "name": "gnm_degenerate_tetrahedron",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 8.81239525796218e-16,
+        "eigenvalue_max_abs": 5.329070518200751e-15,
+        "msf_max_abs": 1.3322676295501878e-15,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 1.4432899320127035e-15
+      },
+      "name": "anm_degenerate_octahedron",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 1.8318679906315083e-15,
+        "eigenvalue_max_abs": 1.3322676295501878e-15,
+        "msf_max_abs": 1.554312234475219e-14,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 9.020562075079397e-16
+      },
+      "name": "gnm_translated",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 1.0047518372857667e-14,
+        "eigenvalue_max_abs": 1.3322676295501878e-15,
+        "msf_max_abs": 9.992007221626409e-15,
+        "network_max_abs": 4.440892098500626e-16,
+        "projector_max_abs": 1.5709655798445965e-14
+      },
+      "name": "anm_rotated",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 3.9968028886505635e-15,
+        "eigenvalue_max_abs": 1.1102230246251565e-15,
+        "msf_max_abs": 9.547918011776346e-15,
+        "network_max_abs": 0.0,
+        "projector_max_abs": 4.440892098500626e-16
+      },
+      "name": "gnm_mmcif_multichain",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "correlation_max_abs": 2.1094237467877974e-15,
+        "eigenvalue_max_abs": 1.9984014443252818e-15,
+        "msf_max_abs": 2.9976021664879227e-15,
+        "network_max_abs": 4.440892098500626e-16,
+        "projector_max_abs": 1.4988010832439613e-15
+      },
+      "name": "anm_residue_gaps",
+      "passed": true,
+      "reasons": []
+    }
+  ],
+  "failed": 0,
+  "hard_gates": {
+    "candidate_protocol": "pass",
+    "invalid_input_rejection": "pass",
+    "locked_reference": "pass",
+    "reference_removed_before_candidate": "pass",
+    "rigid_transform_invariance": "pass",
+    "source_policy": {
+      "added": [
+        "alphafold/common/normal_modes.py"
+      ],
+      "donor_fragment_scan": "pass",
+      "module_bytes": 7084,
+      "module_sha256": "21ae198648ed4763087eaf72f59f5b2e3207d7ce98da8267032140fd5b89dab0"
+    }
+  },
+  "passed": 15,
+  "reference": "locked AlphaFold parser to ProDy 2.6.1 commit 7969f497",
+  "reward": 1.0,
+  "status": "completed",
+  "task": "ALGOBRIDGE-0018",
+  "total": 15
+}
