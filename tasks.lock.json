@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "complete": false,
-  "task_count": 3,
+  "task_count": 4,
   "tasks": [
     {
       "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
@@ -20,6 +20,15 @@
       "source_tree": "a2312d1f60c0ff7d37f32dcf72c6e19bfaee50b7",
       "file_count": 94,
       "bytes": 1415372
+    },
+    {
+      "name": "algobridge-0027__scikit-learn__absorbs__imbalanced-learn",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0027__scikit-learn__absorbs__imbalanced-learn.git",
+      "commit": "a488dcdd1e96fc428a8853b1a3b6c14e91c43cbd",
+      "source_tree": "4a7d28d6692a60f82baec92d4e7ce074fc82b4bf",
+      "file_count": 3744,
+      "bytes": 178904167
     },
     {
       "name": "structharbor-0002__colabfold__absorbs__dockq-and-ipsae",

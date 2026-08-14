@@ -1,0 +1,16 @@
+{
+  "date": "2026-08-13",
+  "passed": 5,
+  "total": 5,
+  "reference": {
+    "sklearn_version": "1.10.dev0",
+    "imbalanced_learn_version": "0.15.dev0"
+  },
+  "cases": [
+    "public_binary_auto",
+    "public_multiclass",
+    "public_target_dict",
+    "public_float32",
+    "public_weight_lineage"
+  ]
+}

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+python /opt/task-tools/materialize_candidate.py --output /tmp/agent-candidate-runtime
+PYTHONPATH=/tmp/agent-candidate-runtime PYTHONNOUSERSITE=1 \
+  python /examples/verify_examples.py

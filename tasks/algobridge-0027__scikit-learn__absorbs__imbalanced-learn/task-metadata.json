@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "task_id": "algobridge-0027__scikit-learn__absorbs__imbalanced-learn",
+  "algorithm_question_id": "ALGOBRIDGE-0027",
+  "candidate_id": "WFBRIDGE-0181",
+  "authoring_state": "accepted",
+  "execution_target": "cpu",
+  "title": "scikit-learn 原生 deterministic SMOTE",
+  "domain": "machine-learning",
+  "algorithm_family": "nearest neighbors / resampling",
+  "algorithm": "imbalanced-learn classic SMOTE",
+  "bounded_subset": "连续特征、binary/multiclass sampling_strategy、Euclidean kNN、固定 RNG、sample_weight lineage；不含 categorical/borderline/SVM variants。",
+  "host_software": "scikit-learn",
+  "donor_software": "imbalanced-learn",
+  "workflow_source": "imbalanced-learn",
+  "workflow_target": "scikit-learn",
+  "host_side": "target",
+  "unique_paper_count": 10,
+  "paper_ids": [
+    "811862992932044802",
+    "812318792083308545",
+    "812641208416337921",
+    "813266173385768960",
+    "835829125741543424",
+    "878526713481396394",
+    "1061128183409016840",
+    "1250887669425111100",
+    "1251122687170838549",
+    "7463152019209793611"
+  ],
+  "input_contract": "X/y、sampling_strategy、k_neighbors、random_state、可选 sample_weight。",
+  "output_contract": "resampled X/y、synthetic parent/neighbor/lambda provenance 和 propagated weights。",
+  "reference_pipeline": "锁定 scikit-learn preprocessing 后由锁定 imbalanced-learn SMOTE.fit_resample。",
+  "candidate_interface": "scikit-learn 新增 SMOTE transformer，不得 import imbalanced-learn。",
+  "verification": {
+    "model": "original_A_plus_B_vs_merged_host",
+    "numeric_comparison": "固定 RNG 下 synthetic samples 1e-12 且 label/provenance 精确；不同等距 neighbor 用固定索引规则。",
+    "scientific_invariants": [
+      "synthetic 点位于同类 parent-neighbor 线段上",
+      "各目标类别计数满足 strategy",
+      "多数类原样保留"
+    ],
+    "fixtures": "binary/multiclass、极少样本、重复点、等距邻居、float32/64、invalid k。"
+  },
+  "non_glue_reason": "需要近邻搜索、随机插值和类别目标求解；输出是新样本数值而非过滤。",
+  "implementation_scope": "small",
+  "estimated_changed_loc": "250-500",
+  "difficulty": "medium",
+  "license": {
+    "status": "reviewed_for_materialization",
+    "host_license": "3-clause BSD License",
+    "donor_license": "MIT License",
+    "clean_room_required": true,
+    "review": "Compatible direction: BSD-3-Clause host and MIT donor. Donor source is retained only for study/reference; Candidate receives an independently authored BSD-3-Clause implementation and cannot access donor materials at runtime."
+  },
+  "source_locks": {
+    "host": {
+      "software": "scikit-learn",
+      "repo": "https://github.com/scikit-learn/scikit-learn",
+      "url": "https://github.com/scikit-learn/scikit-learn",
+      "status": "locked",
+      "head_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+      "resolved_at": "2026-08-12T03:22:23.597342+00:00",
+      "stderr": ""
+    },
+    "donor": {
+      "software": "imbalanced-learn",
+      "repo": "https://github.com/scikit-learn-contrib/imbalanced-learn",
+      "url": "https://github.com/scikit-learn-contrib/imbalanced-learn",
+      "status": "locked",
+      "head_commit": "8504e95f0160f61d1b617ca66f779646d2ee609e",
+      "resolved_at": "2026-08-12T03:22:23.221939+00:00",
+      "stderr": ""
+    },
+    "workflow_source": {
+      "software": "imbalanced-learn",
+      "repo": "https://github.com/scikit-learn-contrib/imbalanced-learn",
+      "url": "https://github.com/scikit-learn-contrib/imbalanced-learn",
+      "status": "locked",
+      "head_commit": "8504e95f0160f61d1b617ca66f779646d2ee609e",
+      "resolved_at": "2026-08-12T03:22:23.221939+00:00",
+      "stderr": ""
+    },
+    "workflow_target": {
+      "software": "scikit-learn",
+      "repo": "https://github.com/scikit-learn/scikit-learn",
+      "url": "https://github.com/scikit-learn/scikit-learn",
+      "status": "locked",
+      "head_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+      "resolved_at": "2026-08-12T03:22:23.597342+00:00",
+      "stderr": ""
+    }
+  }
+}

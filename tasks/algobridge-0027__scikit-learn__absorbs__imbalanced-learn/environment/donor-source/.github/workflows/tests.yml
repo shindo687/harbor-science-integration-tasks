@@ -1,0 +1,56 @@
+name: 'tests'
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+        environment: [
+            ci-py310-min-dependencies,
+            ci-py310-min-optional-dependencies,
+            ci-py310-min-keras,
+            ci-py310-min-tensorflow,
+            ci-py311-sklearn-1-4,
+            ci-py311-sklearn-1-5,
+            ci-py312-sklearn-1-6,
+            ci-py311-latest-keras,
+            ci-py311-latest-tensorflow,
+            ci-py314-latest-dependencies,
+            ci-py314-latest-optional-dependencies,
+        ]
+        exclude:
+            - os: windows-latest
+              environment: ci-py310-min-keras
+            - os: windows-latest
+              environment: ci-py310-min-tensorflow
+            - os: windows-latest
+              environment: ci-py311-latest-keras
+            - os: windows-latest
+              environment: ci-py311-latest-tensorflow
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+      - uses: prefix-dev/setup-pixi@5185adfbffb4bd703da3010310260805d89ebb11 # v0.9.6
+        with:
+          pixi-version: v0.70.1
+          environments: ${{ matrix.environment }}
+          # we can freeze the environment and manually bump the dependencies to the
+          # latest version time to time.
+          frozen: true
+
+      - name: Run tests
+        run: pixi run -e ${{ matrix.environment }} tests -n 3
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@fb8b3582c8e4def4969c97caa2f19720cb33a72f # v7.0.0
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: scikit-learn-contrib/imbalanced-learn

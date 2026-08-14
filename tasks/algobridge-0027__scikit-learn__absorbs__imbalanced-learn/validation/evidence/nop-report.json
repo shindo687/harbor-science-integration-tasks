@@ -1,0 +1,57 @@
+{
+  "candidate": {
+    "fatal": "ImportError: cannot import name 'SMOTE' from 'sklearn.preprocessing' (/opt/candidate-runtime/sklearn/preprocessing/__init__.py)",
+    "isolation_checks": {},
+    "sklearn_file": null,
+    "sklearn_version": null,
+    "smote_module": null,
+    "stderr_tail": ""
+  },
+  "candidate_isolation_probe": {
+    "candidate_tools_removed": true,
+    "pristine_host_removed": true,
+    "reference_donor_removed": true,
+    "reference_host_removed": true,
+    "reference_runner_unreadable": true,
+    "reference_venv_removed": true,
+    "tests_unreadable": true,
+    "wheelhouse_removed": true
+  },
+  "candidate_overlay": {
+    "manifest": [],
+    "materializer_output": "materialized 0 changed Python files in /opt/candidate-runtime"
+  },
+  "elapsed_seconds": 4.245308876037598,
+  "fatal_error": "RuntimeError: candidate runner failed: ImportError: cannot import name 'SMOTE' from 'sklearn.preprocessing' (/opt/candidate-runtime/sklearn/preprocessing/__init__.py)",
+  "hard_gates": {
+    "candidate_clean_runtime": false,
+    "candidate_private_paths_inaccessible": true,
+    "candidate_trees_locked": true,
+    "forbidden_dependency_scan": true,
+    "locked_reference_pipeline": true,
+    "reference_removed_before_candidate": true,
+    "trusted_host_overlay": true
+  },
+  "hard_gates_passed": false,
+  "passed": 0,
+  "points": [],
+  "reference": {
+    "locked_donor_commit": "8504e95f0160f61d1b617ca66f779646d2ee609e",
+    "locked_host_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+    "provenance": {
+      "imblearn_file": "/opt/reference-donor/imblearn/__init__.py",
+      "imblearn_version": "0.15.dev0",
+      "numpy_version": "2.3.2",
+      "sklearn_file": "/opt/reference-venv/lib/python3.12/site-packages/sklearn/__init__.py",
+      "sklearn_version": "1.10.dev0"
+    },
+    "stderr_tail": ""
+  },
+  "reward": 0.0,
+  "source_scan": {
+    "changed_files": [],
+    "findings": []
+  },
+  "task": "algobridge-0027__scikit-learn__absorbs__imbalanced-learn",
+  "total": 15
+}

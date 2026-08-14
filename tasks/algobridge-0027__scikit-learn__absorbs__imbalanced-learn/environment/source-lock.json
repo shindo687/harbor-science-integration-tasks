@@ -1,0 +1,38 @@
+{
+  "host": {
+    "software": "scikit-learn",
+    "repo": "https://github.com/scikit-learn/scikit-learn",
+    "url": "https://github.com/scikit-learn/scikit-learn",
+    "status": "locked",
+    "head_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+    "resolved_at": "2026-08-12T03:22:23.597342+00:00",
+    "stderr": ""
+  },
+  "donor": {
+    "software": "imbalanced-learn",
+    "repo": "https://github.com/scikit-learn-contrib/imbalanced-learn",
+    "url": "https://github.com/scikit-learn-contrib/imbalanced-learn",
+    "status": "locked",
+    "head_commit": "8504e95f0160f61d1b617ca66f779646d2ee609e",
+    "resolved_at": "2026-08-12T03:22:23.221939+00:00",
+    "stderr": ""
+  },
+  "workflow_source": {
+    "software": "imbalanced-learn",
+    "repo": "https://github.com/scikit-learn-contrib/imbalanced-learn",
+    "url": "https://github.com/scikit-learn-contrib/imbalanced-learn",
+    "status": "locked",
+    "head_commit": "8504e95f0160f61d1b617ca66f779646d2ee609e",
+    "resolved_at": "2026-08-12T03:22:23.221939+00:00",
+    "stderr": ""
+  },
+  "workflow_target": {
+    "software": "scikit-learn",
+    "repo": "https://github.com/scikit-learn/scikit-learn",
+    "url": "https://github.com/scikit-learn/scikit-learn",
+    "status": "locked",
+    "head_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+    "resolved_at": "2026-08-12T03:22:23.597342+00:00",
+    "stderr": ""
+  }
+}
