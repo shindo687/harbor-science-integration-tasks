@@ -1,0 +1,6 @@
+normal_1d: PASS logZ=-1.95749 mean=[-0.05883282582419882]
+shifted_1d: PASS logZ=-1.74242 mean=[1.2973357298872283]
+correlated_2d: PASS logZ=-3.19533 mean=[0.42176639370743274, -0.6436994397990727]
+flat_1d: PASS logZ=-0.75000 mean=[-0.017686920876512677]
+hard_boundary: PASS logZ=-0.80000 mean=[0.21722862393820147]
+public examples: 5/5

@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "task_id": "algobridge-0030__bilby__absorbs__dynesty",
+  "algorithm_question_id": "ALGOBRIDGE-0030",
+  "candidate_id": "WFBRIDGE-0230",
+  "authoring_state": "accepted",
+  "title": "Bilby native bounded static nested sampler",
+  "domain": "statistical-inference",
+  "algorithm_family": "Bayesian computation / Monte Carlo",
+  "host": "bilby",
+  "donor": "dynesty",
+  "bounded_subset": "One to three continuous dimensions, fixed live points, a unit-cube prior transform, constrained random-walk proposals, deterministic RNG, and a standard remaining-evidence stopping bound; no dynamic batches or parallel pool.",
+  "reference_pipeline": "The same locked Bilby likelihood and prior are evaluated by the locked dynesty NestedSampler in the bounded static configuration.",
+  "candidate_interface": "bilby.core.sampler.internal_nested plus bilby.run_sampler(..., sampler='internal_nested')",
+  "execution_target": "cpu"
+}

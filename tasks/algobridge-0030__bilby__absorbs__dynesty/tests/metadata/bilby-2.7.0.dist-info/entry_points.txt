@@ -1,0 +1,8 @@
+[bilby.samplers]
+bilby.bilby_mcmc = bilby.bilby_mcmc.sampler:Bilby_MCMC
+bilby.dynamic_dynesty = bilby.core.sampler.dynamic_dynesty:DynamicDynesty
+bilby.dynesty = bilby.core.sampler.dynesty:Dynesty
+bilby.emcee = bilby.core.sampler.emcee:Emcee
+bilby.fake_sampler = bilby.core.sampler.fake_sampler:FakeSampler
+bilby.internal_nested = bilby.core.sampler.internal_nested:InternalNested
+

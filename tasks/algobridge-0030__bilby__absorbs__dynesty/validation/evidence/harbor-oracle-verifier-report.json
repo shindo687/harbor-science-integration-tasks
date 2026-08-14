@@ -1,0 +1,266 @@
+{
+  "candidate_contract": {
+    "class_name": true,
+    "core_signature": true,
+    "invalid_count": 6,
+    "invalid_inputs_rejected": true,
+    "registry": true
+  },
+  "candidate_isolation": {
+    "dynesty_distribution_absent": true,
+    "dynesty_not_importable": true,
+    "no_reference_path": true
+  },
+  "candidate_stderr_tail": "23:38 bilby INFO    : Running for label 'hidden', output will be saved to '/tmp/candidate-home/output'\n23:38 bilby INFO    : Analysis priors:\n23:38 bilby INFO    : x0=Uniform(minimum=-4.5, maximum=5.5, name='x0', latex_label='x0', unit=None, boundary=None)\n23:38 bilby INFO    : x1=Uniform(minimum=-5.0, maximum=5.0, name='x1', latex_label='x1', unit=None, boundary=None)\n23:38 bilby INFO    : Analysis likelihood class: <class '__main__.run_workflow.<locals>.HiddenLikelihood'>\n23:38 bilby INFO    : Analysis likelihood noise evidence: 0.0\n23:38 bilby INFO    : Single likelihood evaluation took 3.312e-05 s\n23:38 bilby WARNING : Supplied argument 'resume' not an argument of 'InternalNested', removing.\n23:38 bilby INFO    : Using sampler InternalNested with kwargs {'nlive': 150, 'dlogz': 0.1, 'seed': 1321, 'maxiter': 5000, 'maxcall': 300000, 'walks': 40}\n23:38 bilby INFO    : Sampling time: 0:00:00.916382\n23:38 bilby INFO    : Summary of results:\nnsamples: 1027\nln_noise_evidence:  0.000\nln_evidence: -3.496 +/-  0.128\nln_bayes_factor: -3.496 +/-  0.128\n\n",
+  "elapsed_seconds": 33.24739670753479,
+  "hard_gates": {
+    "api_contract": true,
+    "candidate_isolation": true,
+    "candidate_regression": true,
+    "clean_room_source_scan": true,
+    "locked_reference_pipeline": true,
+    "locked_source_integrity": true
+  },
+  "integrity_failures": [],
+  "points": [
+    {
+      "details": {
+        "covariance_max_error": 0.002246147675674881,
+        "covariance_tolerance": 0.32,
+        "logz_error": 0.12328139483965117,
+        "logz_tolerance": 0.42,
+        "mean_max_error": 0.020853486848662763,
+        "mean_tolerance": 0.28,
+        "scientific_contract": true
+      },
+      "name": "gaussian_centered_1d",
+      "passed": true
+    },
+    {
+      "details": {
+        "covariance_max_error": 0.06210655866540371,
+        "covariance_tolerance": 0.32,
+        "logz_error": 0.2465198046518533,
+        "logz_tolerance": 0.42,
+        "mean_max_error": 0.033920381427057666,
+        "mean_tolerance": 0.28,
+        "scientific_contract": true
+      },
+      "name": "gaussian_shifted_1d",
+      "passed": true
+    },
+    {
+      "details": {
+        "covariance_max_error": 0.009573091772742626,
+        "covariance_tolerance": 0.32,
+        "logz_error": 0.051932966905928524,
+        "logz_tolerance": 0.42,
+        "mean_max_error": 0.0022324069684815373,
+        "mean_tolerance": 0.28,
+        "scientific_contract": true
+      },
+      "name": "gaussian_narrow_1d",
+      "passed": true
+    },
+    {
+      "details": {
+        "covariance_max_error": 0.05962305551084168,
+        "covariance_tolerance": 0.45,
+        "logz_error": 0.2474859980065518,
+        "logz_tolerance": 0.42,
+        "mean_max_error": 0.045898879013300475,
+        "mean_tolerance": 0.38,
+        "scientific_contract": true
+      },
+      "name": "gaussian_correlated_2d",
+      "passed": true
+    },
+    {
+      "details": {
+        "covariance_max_error": 0.0357558315665325,
+        "covariance_tolerance": 0.45,
+        "logz_error": 0.06414654916302265,
+        "logz_tolerance": 0.4407412794713149,
+        "mean_max_error": 0.018649053534200988,
+        "mean_tolerance": 0.38,
+        "scientific_contract": true
+      },
+      "name": "gaussian_anisotropic_2d",
+      "passed": true
+    },
+    {
+      "details": {
+        "covariance_max_error": 0.07650109159982066,
+        "covariance_tolerance": 0.55,
+        "logz_error": 0.1556001070238322,
+        "logz_tolerance": 0.4618218634870622,
+        "mean_max_error": 0.10402382380198853,
+        "mean_tolerance": 0.46,
+        "scientific_contract": true
+      },
+      "name": "gaussian_correlated_3d",
+      "passed": true
+    },
+    {
+      "details": {
+        "covariance_max_error": 0.06384204213574707,
+        "covariance_tolerance": 0.32,
+        "logz_error": 0.06765487072272025,
+        "logz_tolerance": 0.42,
+        "mean_max_error": 0.08951467399872204,
+        "mean_tolerance": 0.28,
+        "scientific_contract": true
+      },
+      "name": "mixture_bimodal_1d",
+      "passed": true
+    },
+    {
+      "details": {
+        "covariance_max_error": 0.08948163664342479,
+        "covariance_tolerance": 0.45,
+        "logz_error": 0.1264045150009605,
+        "logz_tolerance": 0.42,
+        "mean_max_error": 0.06386817157023611,
+        "mean_tolerance": 0.38,
+        "scientific_contract": true
+      },
+      "name": "mixture_separated_2d",
+      "passed": true
+    },
+    {
+      "details": {
+        "covariance_max_error": 0.030464845022212694,
+        "covariance_tolerance": 0.32,
+        "logz_error": 0.016620881236039775,
+        "logz_tolerance": 0.42,
+        "mean_max_error": 0.015143585994017217,
+        "mean_tolerance": 0.28,
+        "scientific_contract": true
+      },
+      "name": "flat_likelihood",
+      "passed": true
+    },
+    {
+      "details": {
+        "covariance_max_error": 0.009025341716496105,
+        "covariance_tolerance": 0.32,
+        "logz_error": 0.4849918023158788,
+        "logz_tolerance": 0.5036873654112584,
+        "mean_max_error": 0.006006621374114618,
+        "mean_tolerance": 0.28,
+        "scientific_contract": true
+      },
+      "name": "hard_prior_boundary",
+      "passed": true
+    },
+    {
+      "details": {
+        "log_evidence_difference": 0.0,
+        "tolerance": 0.38
+      },
+      "name": "prior_reparameterization",
+      "passed": true
+    },
+    {
+      "details": {
+        "bitwise_json_deterministic": true,
+        "ncall": 11620,
+        "niter": 360,
+        "stopped_before_maxiter": true
+      },
+      "name": "determinism_and_stopping",
+      "passed": true
+    },
+    {
+      "details": {
+        "required": 10,
+        "successful_core_runs": 10
+      },
+      "name": "scientific_invariants",
+      "passed": true
+    },
+    {
+      "details": {
+        "logz_error": 0.24429925482138604,
+        "mean_error": 0.06205918727146276,
+        "value": {
+          "information": 2.470707582935372,
+          "integration_ncall": 35230,
+          "integration_niter": 877,
+          "log_evidence": -3.4962805799103243,
+          "log_evidence_err": 0.12834088937760957,
+          "nested_columns": [
+            "x0",
+            "x1",
+            "weights",
+            "log_likelihood"
+          ],
+          "num_likelihood_evaluations": 35230,
+          "posterior_columns": [
+            "x0",
+            "x1",
+            "log_likelihood",
+            "log_prior"
+          ],
+          "posterior_cov": [
+            [
+              0.6364777020297769,
+              0.20068542014933247
+            ],
+            [
+              0.2006854201493325,
+              0.4469597499321164
+            ]
+          ],
+          "posterior_mean": [
+            0.8386518484293473,
+            -0.42813350706624853
+          ],
+          "sampler": "internalnested",
+          "trace_first_log_prior_volume": -0.006666666666666667,
+          "trace_present": true,
+          "weights_min": 5.939426106908913e-34,
+          "weights_sum": 1.0
+        }
+      },
+      "name": "bilby_string_selected_workflow",
+      "passed": true
+    },
+    {
+      "details": {
+        "returncode": 0,
+        "stderr_tail": "",
+        "stdout_tail": "..                                                                       [100%]\n2 passed in 1.37s\n",
+        "targets": [
+          "/tmp/candidate-runtime/bilby/core/sampler/tests/test_internal_nested.py"
+        ]
+      },
+      "name": "api_and_host_regression",
+      "passed": true
+    }
+  ],
+  "reference_provenance": {
+    "bilby_file": "/opt/reference-host/bilby/__init__.py",
+    "bilby_version": "unknown",
+    "dynesty_file": "/opt/reference-donor/py/dynesty/__init__.py",
+    "dynesty_version": "3.0.0+locked.d8affbc"
+  },
+  "reference_stderr_tail": "/opt/reference-donor/py/dynesty/sampler.py:255: RuntimeWarning: All the initial likelihood values are the same. You likely have a plateau in the likelihood. Nested sampling may not be the best sampler in this case.\n  warnings.warn(\n/opt/reference-donor/py/dynesty/sampler.py:1098: UserWarning: We have reached the plateau in the likelihood we are stopping sampling\n  warnings.warn(\n/opt/reference-donor/py/dynesty/sampler.py:1098: UserWarning: We have reached the plateau in the likelihood we are stopping sampling\n  warnings.warn(\n",
+  "source_scan": {
+    "changed_files": [
+      "bilby/_version.py",
+      "bilby/core/sampler/internal_nested.py",
+      "bilby/core/sampler/tests/test_internal_nested.py",
+      "pyproject.toml"
+    ],
+    "donor_fragments": 183421,
+    "findings": []
+  },
+  "summary": {
+    "hard_gates_ok": true,
+    "passed": 15,
+    "reward": 1.0,
+    "total": 15
+  },
+  "task": "algobridge-0030__bilby__absorbs__dynesty"
+}

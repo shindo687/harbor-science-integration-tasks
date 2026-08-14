@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "reference_model": "locked Bilby likelihood/prior workflow through locked dynesty versus merged Bilby",
+  "host": {
+    "name": "bilby",
+    "repository": "https://github.com/bilby-dev/bilby",
+    "commit": "a139afa5e0bb1879f18aed28344adec8ca6cab9b",
+    "tree": "758065ac767be42b55d281eb37719e08dffb0b6b",
+    "license": "MIT",
+    "curated_snapshot_file_count": 291,
+    "snapshot_manifest_sha256": "b7f7afee00478d2a8cabb829f02952559dc2078817bedff4a557e21ead4e7c81"
+  },
+  "donor": {
+    "name": "dynesty",
+    "repository": "https://github.com/joshspeagle/dynesty",
+    "commit": "d8affbcd18d1cb894e0c7102ba31c65794461b55",
+    "tree": "dbcfbfd8b9bd24bcc11dd3375b01832478030641",
+    "license": "MIT",
+    "curated_snapshot_file_count": 43,
+    "snapshot_manifest_sha256": "1b3675bcbfb8b78bb4144eaea1495c26e089f51f5c8ce0cd6728fc42e1c0a6a4"
+  }
+}
