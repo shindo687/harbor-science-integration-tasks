@@ -1,0 +1,312 @@
+{
+  "hidden": {
+    "cases": [
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 6.453171330633722e-16,
+        "integration_emin_error_ev": 4.440892098500626e-16,
+        "moment_max_abs_error": 0.0,
+        "name": "hidden_reference_variant",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 1.2628786905111156e-15
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 3.469446951953614e-18,
+        "integration_emin_error_ev": 2.220446049250313e-16,
+        "moment_max_abs_error": 4.440892098500626e-16,
+        "name": "hidden_antiferromagnetic",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 6.505213034913027e-19
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 1.3877787807814457e-16,
+        "integration_emin_error_ev": 0.0,
+        "moment_max_abs_error": 3.3306690738754696e-16,
+        "name": "hidden_weak_intercell",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 6.505213034913027e-19
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 4.163336342344337e-17,
+        "integration_emin_error_ev": 0.0,
+        "moment_max_abs_error": 4.440892098500626e-16,
+        "name": "hidden_asymmetric_sites",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 1.474514954580286e-17
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 1.249000902703301e-16,
+        "integration_emin_error_ev": 4.440892098500626e-16,
+        "moment_max_abs_error": 2.220446049250313e-16,
+        "name": "hidden_complex_nonsymmetric_h1",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 2.220446049250313e-16
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 1.734723475976807e-17,
+        "integration_emin_error_ev": 0.0,
+        "moment_max_abs_error": 4.440892098500626e-16,
+        "name": "hidden_kmesh_5",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 3.469446951953614e-18
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 2.7755575615628914e-16,
+        "integration_emin_error_ev": 0.0,
+        "moment_max_abs_error": 5.551115123125783e-16,
+        "name": "hidden_kmesh_7",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 1.4224732503009818e-16
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 3.0531133177191805e-16,
+        "integration_emin_error_ev": 0.0,
+        "moment_max_abs_error": 1.1102230246251565e-16,
+        "name": "hidden_kmesh_11",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 1.0408340855860843e-16
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 1.1102230246251565e-16,
+        "integration_emin_error_ev": 0.0,
+        "moment_max_abs_error": 3.3306690738754696e-16,
+        "name": "hidden_kmesh_13",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 5.551115123125783e-17
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 8.326672684688674e-17,
+        "integration_emin_error_ev": 0.0,
+        "moment_max_abs_error": 3.3306690738754696e-16,
+        "name": "hidden_contour_64",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 3.9898639947466563e-17
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 6.938893903907228e-18,
+        "integration_emin_error_ev": 2.220446049250313e-16,
+        "moment_max_abs_error": 1.1102230246251565e-16,
+        "name": "hidden_contour_104",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 1.3877787807814457e-17
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 6.938893903907228e-17,
+        "integration_emin_error_ev": 4.440892098500626e-16,
+        "moment_max_abs_error": 4.440892098500626e-16,
+        "name": "hidden_fermi_offset",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 3.122502256758253e-17
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 6.938893903907228e-18,
+        "integration_emin_error_ev": 4.440892098500626e-16,
+        "moment_max_abs_error": 4.440892098500626e-16,
+        "name": "hidden_small_smearing",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 3.469446951953614e-18
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 4.0549161250957866e-17,
+        "integration_emin_error_ev": 0.0,
+        "moment_max_abs_error": 0.0,
+        "name": "hidden_random_gauge",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 2.42861286636753e-17
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 1.4192206437835253e-16,
+        "integration_emin_error_ev": 4.440892098500626e-16,
+        "moment_max_abs_error": 0.0,
+        "name": "hidden_energy_shift",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 9.194034422677078e-17
+      }
+    ],
+    "passed": 15,
+    "total": 15
+  },
+  "invalid": {
+    "cases": [
+      {
+        "candidate_status": "invalid_input",
+        "name": "wrong_schema",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "unsupported_sites",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "even_kmesh",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "small_kmesh",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "small_contour",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "negative_smearing",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "non_hermitian_h0",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "wrong_shape",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "non_finite",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "spin_degenerate",
+        "name": "spin_degenerate",
+        "passed": true,
+        "reference_status": "spin_degenerate"
+      }
+    ],
+    "passed": 10,
+    "total": 10
+  },
+  "metamorphic": {
+    "cases": [
+      {
+        "emin_invariance_error_ev": 0.0,
+        "exchange_invariance_error_ev": 2.7755575615628914e-17,
+        "moment_invariance_error": 0.0,
+        "name": "local_orbital_phase_gauge",
+        "passed": true
+      },
+      {
+        "emin_invariance_error_ev": 0.0,
+        "exchange_invariance_error_ev": 1.3877787807814457e-16,
+        "moment_invariance_error": 1.1102230246251565e-16,
+        "name": "common_energy_origin_shift",
+        "passed": true
+      }
+    ],
+    "passed": 2,
+    "total": 2
+  },
+  "public": {
+    "cases": [
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 5.551115123125783e-17,
+        "integration_emin_error_ev": 0.0,
+        "moment_max_abs_error": 4.440892098500626e-16,
+        "name": "public_ferromagnetic_chain",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 5.551115123125783e-17
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 1.734723475976807e-17,
+        "integration_emin_error_ev": 2.220446049250313e-16,
+        "moment_max_abs_error": 0.0,
+        "name": "public_antiferromagnetic_chain",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 0.0
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 2.862293735361732e-17,
+        "integration_emin_error_ev": 0.0,
+        "moment_max_abs_error": 1.1102230246251565e-16,
+        "name": "public_complex_hopping",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 0.0
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 5.551115123125783e-17,
+        "integration_emin_error_ev": 4.440892098500626e-16,
+        "moment_max_abs_error": 1.1102230246251565e-16,
+        "name": "public_coarse_kmesh",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 4.163336342344337e-17
+      },
+      {
+        "candidate_status": "ok",
+        "exchange_max_abs_error_ev": 8.326672684688674e-17,
+        "integration_emin_error_ev": 0.0,
+        "moment_max_abs_error": 2.220446049250313e-16,
+        "name": "public_shifted_gauge",
+        "passed": true,
+        "reference_status": "ok",
+        "reversal_diagnostic_error_ev": 1.249000902703301e-16
+      }
+    ],
+    "passed": 5,
+    "total": 5
+  },
+  "reference": "locked real TB2J 0.9.19 ExchangeCL2/TBGreen/Contour",
+  "reward": 1.0,
+  "source_audit": {
+    "findings": [],
+    "passed": true
+  },
+  "task": "algobridge-0021__wannier90__absorbs__tb2j",
+  "tolerances": {
+    "exchange_ev": 2e-07,
+    "integration_emin_ev": 2e-10,
+    "moments": 2e-08
+  }
+}

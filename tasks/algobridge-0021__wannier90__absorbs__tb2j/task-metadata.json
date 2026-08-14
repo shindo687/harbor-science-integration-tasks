@@ -1,0 +1,15 @@
+{
+  "algorithm": "collinear Liechtenstein magnetic-force-theorem exchange from spin-resolved Wannier Hamiltonians",
+  "donor": "TB2J 0.9.19",
+  "host": "Wannier90 e9f448e1ff4199ab5f983ec7265adca06b6363e8",
+  "id": "ALGOBRIDGE-0021",
+  "oracle_reference": "real locked TB2J ExchangeCL2 Green-function integration",
+  "scope": "two magnetic sites with one Wannier orbital per site and bounded one-dimensional H(R)",
+  "verifier_cases": {
+    "hidden": 15,
+    "invalid": 10,
+    "metamorphic": 2,
+    "public": 5
+  }
+}
+

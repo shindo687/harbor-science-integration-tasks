@@ -1,0 +1,33 @@
+{
+  "archive_policy": "Tracked source and text documentation needed for the bounded task; large binary fixtures, compiled documentation, pseudopotentials, and historical download bundles are excluded from the host archive. The donor archive is a Git archive of all ordinary tracked files; its test-data submodule is recorded by the Git tree but intentionally not materialized.",
+  "donor": {
+    "archive": "environment/donor-source.tar.gz",
+    "archive_file_count": 241,
+    "archive_scope": [
+      "TB2J package",
+      "tests and scientific documentation",
+      "root build, license, and contributor files"
+    ],
+    "commit": "4a0e33af8f73876fa895dd5bd83488aaef14b3f8",
+    "name": "TB2J",
+    "repository": "https://github.com/mailhexu/TB2J.git",
+    "sha256": "805132ddb7daf6178c817c41a78dc295f884d0258da603c3f21b99219e85f751",
+    "version": "0.9.19",
+    "tree": "0c05d1c8542da3c6badcd1e3ab27ef8a1700e38b"
+  },
+  "host": {
+    "archive": "environment/host-source.tar.gz",
+    "archive_file_count": 102,
+    "archive_scope": [
+      "src",
+      "cmake/config/wrap build sources",
+      "root build, license, and contributor files"
+    ],
+    "commit": "e9f448e1ff4199ab5f983ec7265adca06b6363e8",
+    "name": "Wannier90",
+    "repository": "https://github.com/wannier-developers/wannier90.git",
+    "sha256": "bf67074beb05da75a8b13ecf6f66d7a349a7c779ca25a9adfe834f04dfad0d0d",
+    "tree": "2003a99b6bbb73ab3971654a81a43b283f52d873"
+  }
+}
+

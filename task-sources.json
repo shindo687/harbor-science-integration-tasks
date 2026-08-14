@@ -86,6 +86,12 @@
       "commit": "fa04078e443535eeed883eee78b6fce77e30b52b"
     },
     {
+      "name": "algobridge-0021__wannier90__absorbs__tb2j",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0021__wannier90__absorbs__tb2j.git",
+      "commit": "0cffe8af8dc41796e7e10121a73827b0537dcf79"
+    },
+    {
       "name": "algobridge-0022__wannier90__absorbs__z2pack",
       "suite": "AlgoBridge",
       "origin": "https://github.com/shindo687/algobridge-0022__wannier90__absorbs__z2pack.git",
