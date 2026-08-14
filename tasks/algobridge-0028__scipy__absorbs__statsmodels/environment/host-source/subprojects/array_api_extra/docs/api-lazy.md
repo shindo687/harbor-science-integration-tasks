@@ -1,0 +1,26 @@
+# Tools for lazy backends
+
+Additional functions with special behaviour for lazy backends,
+e.g. Dask or JAX:
+
+```{eval-rst}
+.. currentmodule:: array_api_extra
+.. autosummary::
+    :nosignatures:
+    :toctree: generated
+
+    lazy_apply
+```
+
+Testing utilities:
+
+```{eval-rst}
+.. currentmodule:: array_api_extra
+.. autosummary::
+    :nosignatures:
+    :template: testing-function.rst
+    :toctree: generated
+
+    testing.lazy_xp_function
+    testing.patch_lazy_xp_functions
+```

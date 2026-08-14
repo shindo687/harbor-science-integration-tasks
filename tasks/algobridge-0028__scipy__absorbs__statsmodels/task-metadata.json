@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "task_id": "algobridge-0028__scipy__absorbs__statsmodels",
+  "algorithm_question_id": "ALGOBRIDGE-0028",
+  "candidate_id": "WFBRIDGE-0341",
+  "authoring_state": "accepted",
+  "execution_target": "cpu",
+  "title": "SciPy native Huber robust linear regression",
+  "domain": "statistics",
+  "algorithm_family": "robust statistics / optimization",
+  "algorithm": "statsmodels RLM HuberT IRLS",
+  "host_software": "SciPy",
+  "donor_software": "statsmodels",
+  "difficulty": "hard",
+  "source_locks": {
+    "host": "9506e3b773ccd043ae89be8f36154e9c0ce194d4",
+    "donor": "9062763c827da686a9b3117cffd2418d016a11e9"
+  }
+}

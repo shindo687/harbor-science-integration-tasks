@@ -1,0 +1,594 @@
+{
+  "changed_files": [
+    "scipy/__config__.py",
+    "scipy/_external/array_api_compat/__init__.py",
+    "scipy/_external/array_api_compat/_internal.py",
+    "scipy/_external/array_api_compat/common/__init__.py",
+    "scipy/_external/array_api_compat/common/_aliases.py",
+    "scipy/_external/array_api_compat/common/_fft.py",
+    "scipy/_external/array_api_compat/common/_helpers.py",
+    "scipy/_external/array_api_compat/common/_linalg.py",
+    "scipy/_external/array_api_compat/common/_typing.py",
+    "scipy/_external/array_api_compat/cupy/__init__.py",
+    "scipy/_external/array_api_compat/cupy/_aliases.py",
+    "scipy/_external/array_api_compat/cupy/_info.py",
+    "scipy/_external/array_api_compat/cupy/_typing.py",
+    "scipy/_external/array_api_compat/cupy/fft.py",
+    "scipy/_external/array_api_compat/cupy/linalg.py",
+    "scipy/_external/array_api_compat/dask/__init__.py",
+    "scipy/_external/array_api_compat/dask/array/__init__.py",
+    "scipy/_external/array_api_compat/dask/array/_aliases.py",
+    "scipy/_external/array_api_compat/dask/array/_info.py",
+    "scipy/_external/array_api_compat/dask/array/fft.py",
+    "scipy/_external/array_api_compat/dask/array/linalg.py",
+    "scipy/_external/array_api_compat/numpy/__init__.py",
+    "scipy/_external/array_api_compat/numpy/_aliases.py",
+    "scipy/_external/array_api_compat/numpy/_info.py",
+    "scipy/_external/array_api_compat/numpy/_typing.py",
+    "scipy/_external/array_api_compat/numpy/fft.py",
+    "scipy/_external/array_api_compat/numpy/linalg.py",
+    "scipy/_external/array_api_compat/torch/__init__.py",
+    "scipy/_external/array_api_compat/torch/_aliases.py",
+    "scipy/_external/array_api_compat/torch/_info.py",
+    "scipy/_external/array_api_compat/torch/_typing.py",
+    "scipy/_external/array_api_compat/torch/fft.py",
+    "scipy/_external/array_api_compat/torch/linalg.py",
+    "scipy/_external/array_api_extra/__init__.py",
+    "scipy/_external/array_api_extra/_delegation.py",
+    "scipy/_external/array_api_extra/_lib/__init__.py",
+    "scipy/_external/array_api_extra/_lib/_at.py",
+    "scipy/_external/array_api_extra/_lib/_backends.py",
+    "scipy/_external/array_api_extra/_lib/_funcs.py",
+    "scipy/_external/array_api_extra/_lib/_lazy.py",
+    "scipy/_external/array_api_extra/_lib/_testing.py",
+    "scipy/_external/array_api_extra/_lib/_utils/__init__.py",
+    "scipy/_external/array_api_extra/_lib/_utils/_compat.py",
+    "scipy/_external/array_api_extra/_lib/_utils/_helpers.py",
+    "scipy/_external/array_api_extra/_lib/_utils/_typing.py",
+    "scipy/_external/array_api_extra/testing.py",
+    "scipy/_external/cobyqa/__init__.py",
+    "scipy/_external/cobyqa/framework.py",
+    "scipy/_external/cobyqa/main.py",
+    "scipy/_external/cobyqa/models.py",
+    "scipy/_external/cobyqa/problem.py",
+    "scipy/_external/cobyqa/settings.py",
+    "scipy/_external/cobyqa/subsolvers/__init__.py",
+    "scipy/_external/cobyqa/subsolvers/geometry.py",
+    "scipy/_external/cobyqa/subsolvers/optim.py",
+    "scipy/_external/cobyqa/utils/__init__.py",
+    "scipy/_external/cobyqa/utils/exceptions.py",
+    "scipy/_external/cobyqa/utils/math.py",
+    "scipy/_external/cobyqa/utils/versions.py",
+    "scipy/_external/packaging_version/_structures.py",
+    "scipy/_external/packaging_version/version.py",
+    "scipy/_external/pyprima/__init__.py",
+    "scipy/_external/pyprima/cobyla/__init__.py",
+    "scipy/_external/pyprima/cobyla/cobyla.py",
+    "scipy/_external/pyprima/cobyla/cobylb.py",
+    "scipy/_external/pyprima/cobyla/geometry.py",
+    "scipy/_external/pyprima/cobyla/initialize.py",
+    "scipy/_external/pyprima/cobyla/trustregion.py",
+    "scipy/_external/pyprima/cobyla/update.py",
+    "scipy/_external/pyprima/common/__init__.py",
+    "scipy/_external/pyprima/common/_bounds.py",
+    "scipy/_external/pyprima/common/_linear_constraints.py",
+    "scipy/_external/pyprima/common/_nonlinear_constraints.py",
+    "scipy/_external/pyprima/common/_project.py",
+    "scipy/_external/pyprima/common/checkbreak.py",
+    "scipy/_external/pyprima/common/consts.py",
+    "scipy/_external/pyprima/common/evaluate.py",
+    "scipy/_external/pyprima/common/history.py",
+    "scipy/_external/pyprima/common/infos.py",
+    "scipy/_external/pyprima/common/linalg.py",
+    "scipy/_external/pyprima/common/message.py",
+    "scipy/_external/pyprima/common/powalg.py",
+    "scipy/_external/pyprima/common/preproc.py",
+    "scipy/_external/pyprima/common/present.py",
+    "scipy/_external/pyprima/common/ratio.py",
+    "scipy/_external/pyprima/common/redrho.py",
+    "scipy/_external/pyprima/common/selectx.py",
+    "scipy/stats/__init__.py",
+    "scipy/stats/_robust_linear_model.py",
+    "scipy/version.py"
+  ],
+  "elapsed_seconds": 41.965,
+  "materialization": "materialized 90 changed Python files in /opt/candidate-runtime",
+  "overlay_manifest": [
+    "scipy/__config__.py",
+    "scipy/_external/array_api_compat/__init__.py",
+    "scipy/_external/array_api_compat/_internal.py",
+    "scipy/_external/array_api_compat/common/__init__.py",
+    "scipy/_external/array_api_compat/common/_aliases.py",
+    "scipy/_external/array_api_compat/common/_fft.py",
+    "scipy/_external/array_api_compat/common/_helpers.py",
+    "scipy/_external/array_api_compat/common/_linalg.py",
+    "scipy/_external/array_api_compat/common/_typing.py",
+    "scipy/_external/array_api_compat/cupy/__init__.py",
+    "scipy/_external/array_api_compat/cupy/_aliases.py",
+    "scipy/_external/array_api_compat/cupy/_info.py",
+    "scipy/_external/array_api_compat/cupy/_typing.py",
+    "scipy/_external/array_api_compat/cupy/fft.py",
+    "scipy/_external/array_api_compat/cupy/linalg.py",
+    "scipy/_external/array_api_compat/dask/__init__.py",
+    "scipy/_external/array_api_compat/dask/array/__init__.py",
+    "scipy/_external/array_api_compat/dask/array/_aliases.py",
+    "scipy/_external/array_api_compat/dask/array/_info.py",
+    "scipy/_external/array_api_compat/dask/array/fft.py",
+    "scipy/_external/array_api_compat/dask/array/linalg.py",
+    "scipy/_external/array_api_compat/numpy/__init__.py",
+    "scipy/_external/array_api_compat/numpy/_aliases.py",
+    "scipy/_external/array_api_compat/numpy/_info.py",
+    "scipy/_external/array_api_compat/numpy/_typing.py",
+    "scipy/_external/array_api_compat/numpy/fft.py",
+    "scipy/_external/array_api_compat/numpy/linalg.py",
+    "scipy/_external/array_api_compat/torch/__init__.py",
+    "scipy/_external/array_api_compat/torch/_aliases.py",
+    "scipy/_external/array_api_compat/torch/_info.py",
+    "scipy/_external/array_api_compat/torch/_typing.py",
+    "scipy/_external/array_api_compat/torch/fft.py",
+    "scipy/_external/array_api_compat/torch/linalg.py",
+    "scipy/_external/array_api_extra/__init__.py",
+    "scipy/_external/array_api_extra/_delegation.py",
+    "scipy/_external/array_api_extra/_lib/__init__.py",
+    "scipy/_external/array_api_extra/_lib/_at.py",
+    "scipy/_external/array_api_extra/_lib/_backends.py",
+    "scipy/_external/array_api_extra/_lib/_funcs.py",
+    "scipy/_external/array_api_extra/_lib/_lazy.py",
+    "scipy/_external/array_api_extra/_lib/_testing.py",
+    "scipy/_external/array_api_extra/_lib/_utils/__init__.py",
+    "scipy/_external/array_api_extra/_lib/_utils/_compat.py",
+    "scipy/_external/array_api_extra/_lib/_utils/_helpers.py",
+    "scipy/_external/array_api_extra/_lib/_utils/_typing.py",
+    "scipy/_external/array_api_extra/testing.py",
+    "scipy/_external/cobyqa/__init__.py",
+    "scipy/_external/cobyqa/framework.py",
+    "scipy/_external/cobyqa/main.py",
+    "scipy/_external/cobyqa/models.py",
+    "scipy/_external/cobyqa/problem.py",
+    "scipy/_external/cobyqa/settings.py",
+    "scipy/_external/cobyqa/subsolvers/__init__.py",
+    "scipy/_external/cobyqa/subsolvers/geometry.py",
+    "scipy/_external/cobyqa/subsolvers/optim.py",
+    "scipy/_external/cobyqa/utils/__init__.py",
+    "scipy/_external/cobyqa/utils/exceptions.py",
+    "scipy/_external/cobyqa/utils/math.py",
+    "scipy/_external/cobyqa/utils/versions.py",
+    "scipy/_external/packaging_version/_structures.py",
+    "scipy/_external/packaging_version/version.py",
+    "scipy/_external/pyprima/__init__.py",
+    "scipy/_external/pyprima/cobyla/__init__.py",
+    "scipy/_external/pyprima/cobyla/cobyla.py",
+    "scipy/_external/pyprima/cobyla/cobylb.py",
+    "scipy/_external/pyprima/cobyla/geometry.py",
+    "scipy/_external/pyprima/cobyla/initialize.py",
+    "scipy/_external/pyprima/cobyla/trustregion.py",
+    "scipy/_external/pyprima/cobyla/update.py",
+    "scipy/_external/pyprima/common/__init__.py",
+    "scipy/_external/pyprima/common/_bounds.py",
+    "scipy/_external/pyprima/common/_linear_constraints.py",
+    "scipy/_external/pyprima/common/_nonlinear_constraints.py",
+    "scipy/_external/pyprima/common/_project.py",
+    "scipy/_external/pyprima/common/checkbreak.py",
+    "scipy/_external/pyprima/common/consts.py",
+    "scipy/_external/pyprima/common/evaluate.py",
+    "scipy/_external/pyprima/common/history.py",
+    "scipy/_external/pyprima/common/infos.py",
+    "scipy/_external/pyprima/common/linalg.py",
+    "scipy/_external/pyprima/common/message.py",
+    "scipy/_external/pyprima/common/powalg.py",
+    "scipy/_external/pyprima/common/preproc.py",
+    "scipy/_external/pyprima/common/present.py",
+    "scipy/_external/pyprima/common/ratio.py",
+    "scipy/_external/pyprima/common/redrho.py",
+    "scipy/_external/pyprima/common/selectx.py",
+    "scipy/stats/__init__.py",
+    "scipy/stats/_robust_linear_model.py",
+    "scipy/version.py"
+  ],
+  "passed": 15,
+  "points": {
+    "api_isolation_and_host_regression": {
+      "details": {
+        "api": {
+          "public_export": true,
+          "result_contract": true,
+          "validation": true
+        },
+        "isolation": {
+          "candidate_tools_removed": true,
+          "pristine_host_removed": true,
+          "reference_runner_unreadable": true,
+          "reference_venv_removed": true,
+          "statsmodels_unavailable": true,
+          "tests_unreadable": true,
+          "wheelhouse_removed": true
+        },
+        "regression_output": "........................................................................ [ 32%]\n........................................................................ [ 64%]\n........................................................................ [ 97%]\n......                                                                   [100%]\n222 passed in 4.34s\n",
+        "regression_returncode": 0
+      },
+      "passed": true
+    },
+    "bounded_iterations_h3": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": true,
+          "history_objective": true,
+          "history_params": true,
+          "history_scale": true,
+          "n_iter": true,
+          "params": true,
+          "residuals": true,
+          "scale": true,
+          "weights": true
+        },
+        "max_abs_errors": {
+          "covariance": 2.6020852139652106e-18,
+          "history_objective": 4.263256414560601e-14,
+          "history_params": 0.0,
+          "history_scale": 0.0,
+          "params": 0.0,
+          "residuals": 0.0,
+          "scale": 0.0,
+          "weights": 0.0
+        }
+      },
+      "passed": true
+    },
+    "clean_intercept_mad_h1": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": true,
+          "history_objective": true,
+          "history_params": true,
+          "history_scale": true,
+          "n_iter": true,
+          "params": true,
+          "residuals": true,
+          "scale": true,
+          "weights": true
+        },
+        "max_abs_errors": {
+          "covariance": 2.3852447794681098e-18,
+          "history_objective": 7.958078640513122e-13,
+          "history_params": 9.992007221626409e-16,
+          "history_scale": 6.522560269672795e-16,
+          "params": 9.992007221626409e-16,
+          "residuals": 2.6645352591003757e-15,
+          "scale": 6.522560269672795e-16,
+          "weights": 6.106226635438361e-15
+        }
+      },
+      "passed": true
+    },
+    "clean_no_intercept_mad_h1": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": true,
+          "history_objective": true,
+          "history_params": true,
+          "history_scale": true,
+          "n_iter": true,
+          "params": true,
+          "residuals": true,
+          "scale": true,
+          "weights": true
+        },
+        "max_abs_errors": {
+          "covariance": 0.0,
+          "history_objective": 5.684341886080802e-14,
+          "history_params": 0.0,
+          "history_scale": 0.0,
+          "params": 0.0,
+          "residuals": 0.0,
+          "scale": 0.0,
+          "weights": 0.0
+        }
+      },
+      "passed": true
+    },
+    "frequency_weights_intercept": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": true,
+          "history_objective": true,
+          "history_params": true,
+          "history_scale": true,
+          "n_iter": true,
+          "params": true,
+          "residuals": true,
+          "scale": true,
+          "weights": true
+        },
+        "max_abs_errors": {
+          "covariance": 0.0,
+          "history_objective": 8.526512829121202e-14,
+          "history_params": 0.0,
+          "history_scale": 0.0,
+          "params": 0.0,
+          "residuals": 0.0,
+          "scale": 0.0,
+          "weights": 0.0
+        }
+      },
+      "passed": true
+    },
+    "frequency_weights_no_intercept": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": true,
+          "history_objective": true,
+          "history_params": true,
+          "history_scale": true,
+          "n_iter": true,
+          "params": true,
+          "residuals": true,
+          "scale": true,
+          "weights": true
+        },
+        "max_abs_errors": {
+          "covariance": 2.168404344971009e-19,
+          "history_objective": 5.684341886080802e-14,
+          "history_params": 0.0,
+          "history_scale": 0.0,
+          "params": 0.0,
+          "residuals": 0.0,
+          "scale": 0.0,
+          "weights": 0.0
+        }
+      },
+      "passed": true
+    },
+    "high_leverage_mad_h3": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": true,
+          "history_objective": true,
+          "history_params": true,
+          "history_scale": true,
+          "n_iter": true,
+          "params": true,
+          "residuals": true,
+          "scale": true,
+          "weights": true
+        },
+        "max_abs_errors": {
+          "covariance": 2.7755575615628914e-17,
+          "history_objective": 3.552713678800501e-14,
+          "history_params": 1.7763568394002505e-15,
+          "history_scale": 2.4424906541753444e-15,
+          "params": 1.1102230246251565e-15,
+          "residuals": 3.552713678800501e-15,
+          "scale": 1.1102230246251565e-16,
+          "weights": 2.55351295663786e-15
+        }
+      },
+      "passed": true
+    },
+    "huber_estimating_equation": {
+      "details": {
+        "bounded_iterations_h3": {
+          "skipped": "fit reached maxiter"
+        },
+        "clean_intercept_mad_h1": {
+          "normalized_score": 8.129295906752666e-12
+        },
+        "clean_no_intercept_mad_h1": {
+          "normalized_score": 1.3142870273653865e-11
+        },
+        "frequency_weights_intercept": {
+          "normalized_score": 7.533806046505655e-12
+        },
+        "frequency_weights_no_intercept": {
+          "normalized_score": 2.2610963814846952e-11
+        },
+        "high_leverage_mad_h3": {
+          "normalized_score": 2.964886257411515e-12
+        },
+        "huber_scale_h1": {
+          "normalized_score": 2.8102691520026578e-12
+        },
+        "huber_scale_h2_alternate_t": {
+          "normalized_score": 1.3902857718762316e-10
+        },
+        "near_zero_scale": {
+          "skipped": "fit reached maxiter"
+        },
+        "negative_outliers_mad_h2": {
+          "normalized_score": 2.798895411626231e-11
+        },
+        "positive_outlier_mad_h1": {
+          "normalized_score": 5.627716624587855e-11
+        },
+        "rank_deficient_mad_h1": {
+          "normalized_score": 3.46014038152399e-11
+        }
+      },
+      "passed": true
+    },
+    "huber_scale_h1": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": true,
+          "history_objective": true,
+          "history_params": true,
+          "history_scale": true,
+          "n_iter": true,
+          "params": true,
+          "residuals": true,
+          "scale": true,
+          "weights": true
+        },
+        "max_abs_errors": {
+          "covariance": 0.0,
+          "history_objective": 5.684341886080802e-14,
+          "history_params": 2.886579864025407e-15,
+          "history_scale": 4.996003610813204e-16,
+          "params": 1.1102230246251565e-16,
+          "residuals": 4.440892098500626e-16,
+          "scale": 0.0,
+          "weights": 2.7755575615628914e-17
+        }
+      },
+      "passed": true
+    },
+    "huber_scale_h2_alternate_t": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": true,
+          "history_objective": true,
+          "history_params": true,
+          "history_scale": true,
+          "n_iter": true,
+          "params": true,
+          "residuals": true,
+          "scale": true,
+          "weights": true
+        },
+        "max_abs_errors": {
+          "covariance": 8.673617379884035e-19,
+          "history_objective": 8.526512829121202e-14,
+          "history_params": 1.6653345369377348e-15,
+          "history_scale": 2.220446049250313e-16,
+          "params": 8.881784197001252e-16,
+          "residuals": 2.220446049250313e-15,
+          "scale": 0.0,
+          "weights": 7.216449660063518e-15
+        }
+      },
+      "passed": true
+    },
+    "near_zero_scale": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": true,
+          "history_objective": true,
+          "history_params": true,
+          "history_scale": true,
+          "n_iter": true,
+          "params": true,
+          "residuals": true,
+          "scale": true,
+          "weights": true
+        },
+        "max_abs_errors": {
+          "covariance": 1.2371544648956463e-23,
+          "history_objective": 0.8820182830095291,
+          "history_params": 2.6645352591003757e-15,
+          "history_scale": 2.8805334252105506e-15,
+          "params": 1.3322676295501878e-15,
+          "residuals": 3.3306690738754696e-15,
+          "scale": 7.407086336243919e-16,
+          "weights": 7.93715149161045e-09
+        }
+      },
+      "passed": true
+    },
+    "negative_outliers_mad_h2": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": true,
+          "history_objective": true,
+          "history_params": true,
+          "history_scale": true,
+          "n_iter": true,
+          "params": true,
+          "residuals": true,
+          "scale": true,
+          "weights": true
+        },
+        "max_abs_errors": {
+          "covariance": 1.3010426069826053e-18,
+          "history_objective": 1.2505552149377763e-12,
+          "history_params": 2.220446049250313e-15,
+          "history_scale": 2.8033131371785203e-15,
+          "params": 6.661338147750939e-16,
+          "residuals": 1.2212453270876722e-15,
+          "scale": 3.885780586188048e-16,
+          "weights": 6.217248937900877e-15
+        }
+      },
+      "passed": true
+    },
+    "positive_outlier_mad_h1": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": true,
+          "history_objective": true,
+          "history_params": true,
+          "history_scale": true,
+          "n_iter": true,
+          "params": true,
+          "residuals": true,
+          "scale": true,
+          "weights": true
+        },
+        "max_abs_errors": {
+          "covariance": 5.637851296924623e-18,
+          "history_objective": 2.1316282072803006e-12,
+          "history_params": 2.1094237467877974e-15,
+          "history_scale": 3.4416913763379853e-15,
+          "params": 1.5543122344752192e-15,
+          "residuals": 5.773159728050814e-15,
+          "scale": 1.4988010832439613e-15,
+          "weights": 2.1538326677728037e-14
+        }
+      },
+      "passed": true
+    },
+    "rank_deficient_mad_h1": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": true,
+          "history_objective": true,
+          "history_params": true,
+          "history_scale": true,
+          "n_iter": true,
+          "params": true,
+          "residuals": true,
+          "scale": true,
+          "weights": true
+        },
+        "max_abs_errors": {
+          "covariance": 4.336808689942018e-19,
+          "history_objective": 8.526512829121202e-14,
+          "history_params": 0.0,
+          "history_scale": 0.0,
+          "params": 0.0,
+          "residuals": 0.0,
+          "scale": 0.0,
+          "weights": 0.0
+        }
+      },
+      "passed": true
+    },
+    "unit_equivariance_and_clean_ols": {
+      "details": {
+        "clean_ols_max_abs_distance": 0.00549110635708705,
+        "unit_checks": {
+          "covariance": true,
+          "params": true,
+          "residuals": true,
+          "scale": true,
+          "weights": true
+        }
+      },
+      "passed": true
+    }
+  },
+  "reward": 1.0,
+  "source_scan_findings": [],
+  "task": "ALGOBRIDGE-0028",
+  "total": 15
+}

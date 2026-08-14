@@ -1,0 +1,104 @@
+{
+  "changed_files": [],
+  "elapsed_seconds": 1.651,
+  "fatal_error": "RuntimeError: candidate has no changed SciPy Python files",
+  "materialization": "materialized 0 changed Python files in /opt/candidate-runtime",
+  "overlay_manifest": [],
+  "passed": 0,
+  "points": {
+    "api_isolation_and_host_regression": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "bounded_iterations_h3": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "clean_intercept_mad_h1": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "clean_no_intercept_mad_h1": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "frequency_weights_intercept": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "frequency_weights_no_intercept": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "high_leverage_mad_h3": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "huber_estimating_equation": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "huber_scale_h1": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "huber_scale_h2_alternate_t": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "near_zero_scale": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "negative_outliers_mad_h2": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "positive_outlier_mad_h1": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "rank_deficient_mad_h1": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "unit_equivariance_and_clean_ols": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    }
+  },
+  "reward": 0.0,
+  "source_scan_findings": [],
+  "task": "ALGOBRIDGE-0028",
+  "total": 15
+}

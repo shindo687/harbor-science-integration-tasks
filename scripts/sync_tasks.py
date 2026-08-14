@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Import exact standalone-repository commits into tasks/.
 
-The imported directory is produced by `git archive`, so it contains every
-tracked file and preserves Git file modes while excluding standalone `.git`
-metadata and untracked local artifacts.
+The imported directory is produced by a detached checkout, so it contains
+every tracked file and preserves Git file modes while excluding standalone
+`.git` metadata and untracked local artifacts. A checkout is intentionally
+used instead of `git archive`: archive attributes such as `export-ignore`
+would otherwise make some snapshots incomplete.
 """
 
 from __future__ import annotations
@@ -103,26 +105,35 @@ def tree_stats(source: Path, commit: str) -> tuple[str, int, int]:
     return tree, count, total_bytes
 
 
-def safe_replace_from_archive(source: Path, commit: str, name: str) -> None:
+def safe_replace_from_checkout(source: Path, commit: str, name: str) -> None:
     if not NAME_RE.fullmatch(name):
         raise RuntimeError(f"unsafe task name: {name!r}")
     TASKS_DIR.mkdir(parents=True, exist_ok=True)
     destination = TASKS_DIR / name
     with tempfile.TemporaryDirectory(prefix=f".{name}.", dir=TASKS_DIR) as raw_temp:
         temp = Path(raw_temp)
-        archive = subprocess.Popen(
-            ["git", "-C", str(source), "archive", "--format=tar", commit],
-            stdout=subprocess.PIPE,
+        run(
+            "git",
+            "clone",
+            "--quiet",
+            "--shared",
+            "--no-checkout",
+            str(source),
+            str(temp),
+            capture=False,
         )
-        assert archive.stdout is not None
-        extract = subprocess.run(
-            ["tar", "-xf", "-", "-C", str(temp)],
-            stdin=archive.stdout,
+        run(
+            "git",
+            "-C",
+            str(temp),
+            "checkout",
+            "--quiet",
+            "--detach",
+            "--force",
+            commit,
+            capture=False,
         )
-        archive.stdout.close()
-        archive_status = archive.wait()
-        if archive_status != 0 or extract.returncode != 0:
-            raise RuntimeError(f"archive extraction failed for {name}")
+        shutil.rmtree(temp / ".git")
         if destination.exists():
             shutil.rmtree(destination)
         os.replace(temp, destination)
@@ -170,7 +181,7 @@ def main() -> int:
         if not git_object_exists(source, entry["commit"]):
             raise RuntimeError(f"{source} does not contain locked commit {entry['commit']}")
         tree, file_count, total_bytes = tree_stats(source, entry["commit"])
-        safe_replace_from_archive(source, entry["commit"], name)
+        safe_replace_from_checkout(source, entry["commit"], name)
         locked[name] = {
             **entry,
             "source_tree": tree,

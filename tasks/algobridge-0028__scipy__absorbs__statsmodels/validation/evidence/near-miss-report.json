@@ -1,0 +1,418 @@
+{
+  "changed_files": [
+    "scipy/stats/__init__.py",
+    "scipy/stats/_robust_linear_model.py"
+  ],
+  "elapsed_seconds": 40.278,
+  "materialization": "materialized 2 changed Python files in /opt/candidate-runtime",
+  "overlay_manifest": [
+    "scipy/stats/__init__.py",
+    "scipy/stats/_robust_linear_model.py"
+  ],
+  "passed": 0,
+  "points": {
+    "api_isolation_and_host_regression": {
+      "details": {
+        "api": {
+          "public_export": true,
+          "result_contract": true,
+          "validation": false
+        },
+        "isolation": {
+          "candidate_tools_removed": true,
+          "pristine_host_removed": true,
+          "reference_runner_unreadable": true,
+          "reference_venv_removed": true,
+          "statsmodels_unavailable": true,
+          "tests_unreadable": true,
+          "wheelhouse_removed": true
+        },
+        "regression_output": "........................................................................ [ 32%]\n........................................................................ [ 64%]\n........................................................................ [ 97%]\n......                                                                   [100%]\n222 passed in 4.51s\n",
+        "regression_returncode": 0
+      },
+      "passed": false
+    },
+    "bounded_iterations_h3": {
+      "details": {
+        "checks": {
+          "converged": false,
+          "covariance": false,
+          "history_objective": false,
+          "history_params": false,
+          "history_scale": false,
+          "n_iter": false,
+          "params": false,
+          "residuals": false,
+          "scale": false,
+          "weights": false
+        },
+        "max_abs_errors": {
+          "covariance": 0.05059302174446571,
+          "history_objective": Infinity,
+          "history_params": Infinity,
+          "history_scale": Infinity,
+          "params": 0.6398497108440717,
+          "residuals": 1.527064981029194,
+          "scale": 3.09781344000224,
+          "weights": 0.9811544793329884
+        }
+      },
+      "passed": false
+    },
+    "clean_intercept_mad_h1": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": false,
+          "history_objective": false,
+          "history_params": false,
+          "history_scale": false,
+          "n_iter": false,
+          "params": false,
+          "residuals": false,
+          "scale": false,
+          "weights": false
+        },
+        "max_abs_errors": {
+          "covariance": 0.05250875563646609,
+          "history_objective": Infinity,
+          "history_params": Infinity,
+          "history_scale": Infinity,
+          "params": 0.008047899118584279,
+          "residuals": 0.020043917121874477,
+          "scale": 0.020402671866894623,
+          "weights": 0.512172648220405
+        }
+      },
+      "passed": false
+    },
+    "clean_no_intercept_mad_h1": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": false,
+          "history_objective": false,
+          "history_params": false,
+          "history_scale": false,
+          "n_iter": false,
+          "params": false,
+          "residuals": false,
+          "scale": false,
+          "weights": false
+        },
+        "max_abs_errors": {
+          "covariance": 0.05349048927595864,
+          "history_objective": Infinity,
+          "history_params": Infinity,
+          "history_scale": Infinity,
+          "params": 0.012351666196213307,
+          "residuals": 0.03295662603841798,
+          "scale": 0.031773522330451776,
+          "weights": 0.4786485922118757
+        }
+      },
+      "passed": false
+    },
+    "frequency_weights_intercept": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": false,
+          "history_objective": false,
+          "history_params": false,
+          "history_scale": false,
+          "n_iter": false,
+          "params": false,
+          "residuals": false,
+          "scale": false,
+          "weights": false
+        },
+        "max_abs_errors": {
+          "covariance": 0.11077511236824875,
+          "history_objective": Infinity,
+          "history_params": Infinity,
+          "history_scale": Infinity,
+          "params": 0.9397608323737273,
+          "residuals": 2.0323246042615937,
+          "scale": 1.956603542771213,
+          "weights": 0.9726351722634641
+        }
+      },
+      "passed": false
+    },
+    "frequency_weights_no_intercept": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": false,
+          "history_objective": false,
+          "history_params": false,
+          "history_scale": false,
+          "n_iter": false,
+          "params": false,
+          "residuals": false,
+          "scale": false,
+          "weights": false
+        },
+        "max_abs_errors": {
+          "covariance": 0.0764206529740668,
+          "history_objective": Infinity,
+          "history_params": Infinity,
+          "history_scale": Infinity,
+          "params": 0.4950736911014507,
+          "residuals": 1.0434301231834961,
+          "scale": 1.497325458457805,
+          "weights": 0.9677932056306076
+        }
+      },
+      "passed": false
+    },
+    "high_leverage_mad_h3": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": false,
+          "history_objective": false,
+          "history_params": false,
+          "history_scale": false,
+          "n_iter": false,
+          "params": false,
+          "residuals": false,
+          "scale": false,
+          "weights": false
+        },
+        "max_abs_errors": {
+          "covariance": 0.03020847123426129,
+          "history_objective": Infinity,
+          "history_params": Infinity,
+          "history_scale": Infinity,
+          "params": 0.010988375264959105,
+          "residuals": 0.03156433521057522,
+          "scale": 0.09191560669192844,
+          "weights": 0.2484957816395451
+        }
+      },
+      "passed": false
+    },
+    "huber_estimating_equation": {
+      "details": {
+        "bounded_iterations_h3": {
+          "normalized_score": 0.3678328229012929
+        },
+        "clean_intercept_mad_h1": {
+          "normalized_score": 0.14299239038881179
+        },
+        "clean_no_intercept_mad_h1": {
+          "normalized_score": 0.16505926986937025
+        },
+        "frequency_weights_intercept": {
+          "normalized_score": 1.2350596392587412
+        },
+        "frequency_weights_no_intercept": {
+          "normalized_score": 0.6840829689933446
+        },
+        "high_leverage_mad_h3": {
+          "normalized_score": 0.09038912899650291
+        },
+        "huber_scale_h1": {
+          "normalized_score": 0.39331695763642127
+        },
+        "huber_scale_h2_alternate_t": {
+          "normalized_score": 0.6606094874073629
+        },
+        "near_zero_scale": {
+          "normalized_score": 0.42993878647563755
+        },
+        "negative_outliers_mad_h2": {
+          "normalized_score": 0.6757683838623301
+        },
+        "positive_outlier_mad_h1": {
+          "normalized_score": 0.7343426885083532
+        },
+        "rank_deficient_mad_h1": {
+          "normalized_score": 0.2728342523335923
+        }
+      },
+      "passed": false
+    },
+    "huber_scale_h1": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": false,
+          "history_objective": false,
+          "history_params": false,
+          "history_scale": false,
+          "n_iter": false,
+          "params": false,
+          "residuals": false,
+          "scale": false,
+          "weights": false
+        },
+        "max_abs_errors": {
+          "covariance": 0.042368191837685795,
+          "history_objective": Infinity,
+          "history_params": Infinity,
+          "history_scale": Infinity,
+          "params": 0.5468636238789868,
+          "residuals": 1.8060396046248695,
+          "scale": 2.726911180314518,
+          "weights": 0.9507044617310225
+        }
+      },
+      "passed": false
+    },
+    "huber_scale_h2_alternate_t": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": false,
+          "history_objective": false,
+          "history_params": false,
+          "history_scale": false,
+          "n_iter": false,
+          "params": false,
+          "residuals": false,
+          "scale": false,
+          "weights": false
+        },
+        "max_abs_errors": {
+          "covariance": 0.03576335843718447,
+          "history_objective": Infinity,
+          "history_params": Infinity,
+          "history_scale": Infinity,
+          "params": 0.5851583011291088,
+          "residuals": 1.4112842106657804,
+          "scale": 2.1295352015981854,
+          "weights": 0.9790000859449254
+        }
+      },
+      "passed": false
+    },
+    "near_zero_scale": {
+      "details": {
+        "checks": {
+          "converged": false,
+          "covariance": false,
+          "history_objective": false,
+          "history_params": false,
+          "history_scale": false,
+          "n_iter": false,
+          "params": false,
+          "residuals": false,
+          "scale": false,
+          "weights": false
+        },
+        "max_abs_errors": {
+          "covariance": 0.05018035004779105,
+          "history_objective": Infinity,
+          "history_params": Infinity,
+          "history_scale": Infinity,
+          "params": 5.688138093873363e-08,
+          "residuals": 1.3468296211627262e-07,
+          "scale": 1.495958974760953e-07,
+          "weights": 0.8602054314426995
+        }
+      },
+      "passed": false
+    },
+    "negative_outliers_mad_h2": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": false,
+          "history_objective": false,
+          "history_params": false,
+          "history_scale": false,
+          "n_iter": false,
+          "params": false,
+          "residuals": false,
+          "scale": false,
+          "weights": false
+        },
+        "max_abs_errors": {
+          "covariance": 0.04361893143799947,
+          "history_objective": Infinity,
+          "history_params": Infinity,
+          "history_scale": Infinity,
+          "params": 0.8659902273346798,
+          "residuals": 3.0400201411034264,
+          "scale": 2.608908522358683,
+          "weights": 0.9776139173062804
+        }
+      },
+      "passed": false
+    },
+    "positive_outlier_mad_h1": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": false,
+          "history_objective": false,
+          "history_params": false,
+          "history_scale": false,
+          "n_iter": false,
+          "params": false,
+          "residuals": false,
+          "scale": false,
+          "weights": false
+        },
+        "max_abs_errors": {
+          "covariance": 0.05611416611931208,
+          "history_objective": Infinity,
+          "history_params": Infinity,
+          "history_scale": Infinity,
+          "params": 1.1590296828782503,
+          "residuals": 3.3476498900431944,
+          "scale": 3.0411587718822313,
+          "weights": 0.9871616839578817
+        }
+      },
+      "passed": false
+    },
+    "rank_deficient_mad_h1": {
+      "details": {
+        "checks": {
+          "converged": true,
+          "covariance": false,
+          "history_objective": false,
+          "history_params": false,
+          "history_scale": false,
+          "n_iter": false,
+          "params": false,
+          "residuals": false,
+          "scale": false,
+          "weights": false
+        },
+        "max_abs_errors": {
+          "covariance": 0.03872027078784574,
+          "history_objective": Infinity,
+          "history_params": Infinity,
+          "history_scale": Infinity,
+          "params": 0.23964456771342224,
+          "residuals": 0.4932365811030788,
+          "scale": 1.0077226480767452,
+          "weights": 0.9613435818210517
+        }
+      },
+      "passed": false
+    },
+    "unit_equivariance_and_clean_ols": {
+      "details": {
+        "clean_ols_max_abs_distance": 0.0,
+        "unit_checks": {
+          "covariance": false,
+          "params": true,
+          "residuals": true,
+          "scale": true,
+          "weights": true
+        }
+      },
+      "passed": false
+    }
+  },
+  "reward": 0.0,
+  "source_scan_findings": [],
+  "task": "ALGOBRIDGE-0028",
+  "total": 15
+}

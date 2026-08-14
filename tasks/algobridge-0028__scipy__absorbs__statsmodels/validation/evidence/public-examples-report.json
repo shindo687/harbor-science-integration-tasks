@@ -1,0 +1,71 @@
+{
+  "details": [
+    {
+      "checks": {
+        "covariance": true,
+        "n_iter": true,
+        "objective": true,
+        "params": true,
+        "residuals": true,
+        "scale": true,
+        "weights": true
+      },
+      "name": "public_clean_h1",
+      "passed": true
+    },
+    {
+      "checks": {
+        "covariance": true,
+        "n_iter": true,
+        "objective": true,
+        "params": true,
+        "residuals": true,
+        "scale": true,
+        "weights": true
+      },
+      "name": "public_outlier_h2",
+      "passed": true
+    },
+    {
+      "checks": {
+        "covariance": true,
+        "n_iter": true,
+        "objective": true,
+        "params": true,
+        "residuals": true,
+        "scale": true,
+        "weights": true
+      },
+      "name": "public_no_intercept_h3",
+      "passed": true
+    },
+    {
+      "checks": {
+        "covariance": true,
+        "n_iter": true,
+        "objective": true,
+        "params": true,
+        "residuals": true,
+        "scale": true,
+        "weights": true
+      },
+      "name": "public_frequency_weights",
+      "passed": true
+    },
+    {
+      "checks": {
+        "covariance": true,
+        "n_iter": true,
+        "objective": true,
+        "params": true,
+        "residuals": true,
+        "scale": true,
+        "weights": true
+      },
+      "name": "public_huber_scale",
+      "passed": true
+    }
+  ],
+  "passed": 5,
+  "total": 5
+}

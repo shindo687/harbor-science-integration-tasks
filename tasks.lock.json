@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "complete": false,
-  "task_count": 16,
+  "task_count": 17,
   "tasks": [
     {
       "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
@@ -110,6 +110,15 @@
       "source_tree": "4a7d28d6692a60f82baec92d4e7ce074fc82b4bf",
       "file_count": 3744,
       "bytes": 178904167
+    },
+    {
+      "name": "algobridge-0028__scipy__absorbs__statsmodels",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0028__scipy__absorbs__statsmodels.git",
+      "commit": "ed2c0d76edadb065be357dff328f28e03eaa7f98",
+      "source_tree": "4ba89863307fd7323336a0191adad9a54348426b",
+      "file_count": 14243,
+      "bytes": 426827449
     },
     {
       "name": "algobridge-0029__networkx__absorbs__scikit-learn",

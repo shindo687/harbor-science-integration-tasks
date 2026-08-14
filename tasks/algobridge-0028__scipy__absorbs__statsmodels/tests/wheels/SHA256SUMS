@@ -1,0 +1,14 @@
+397685c7e74e6c489bab521bf437c7aba366e275e54f8bb03a6f4571df71faa8  hypothesis-6.165.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+f631c04d2c48c52b84d0d0549c99ff3859c98df65b3101406327ecc7d53fbf12  iniconfig-2.3.0-py3-none-any.whl
+3cdec01fa790a186d430433fdd4d4ffb70eed6f0eeb4bf05c8dbe2dce0a9bcb8  numpy-2.5.2-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c  packaging-26.3-py3-none-any.whl
+d373ce03ffd84010ed9839fa73672a9c8256990532e158440c0085db7d914b34  pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
+37bfddbc58fcf0362febb5f54f10743f8b21dd2aa73dec7e7ef59d1b02ae668a  patsy-1.0.2-py2.py3-none-any.whl
+e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746  pluggy-1.6.0-py3-none-any.whl
+81a9e26dd42fd28a23a2d169d86d7ac03b46e2f8b59ed4698fb4785f946d0176  pygments-2.20.0-py3-none-any.whl
+539c70ba6fcead8e78eebbf1115e8b589e7565830d7d006a8723f19ac8a0afb7  pytest-8.4.1-py3-none-any.whl
+a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427  python_dateutil-2.9.0.post0-py2.py3-none-any.whl
+669eac7a6b24b5a825d2e9a19b40d750f740e45f4ae186bc8e4ff9304e56b2d0  scipy-2.0.0.dev0-cp312-cp312-linux_x86_64.whl
+4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274  six-1.17.0-py2.py3-none-any.whl
+a163dcaede0f1c021485e957a39245190e74249897e2ae4b2aa38595db237ee0  sortedcontainers-2.4.0-py2.py3-none-any.whl
+8bf1e5fee15b7bd26b34db7513786e734c9f680f7edf65437ab65c50d61b3dc9  statsmodels-0.15.0.dev1982+g9062763c8-cp312-cp312-linux_x86_64.whl

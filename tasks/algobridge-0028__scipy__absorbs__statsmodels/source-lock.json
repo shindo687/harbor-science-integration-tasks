@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "host": {
+    "software": "SciPy",
+    "repo": "https://github.com/scipy/scipy",
+    "commit": "9506e3b773ccd043ae89be8f36154e9c0ce194d4",
+    "version": "2.0.0.dev0",
+    "wheel": "scipy-2.0.0.dev0-cp312-cp312-linux_x86_64.whl",
+    "wheel_sha256": "669eac7a6b24b5a825d2e9a19b40d750f740e45f4ae186bc8e4ff9304e56b2d0",
+    "submodules": {
+      "doc/source/_static/scipy-mathjax": "3d21c58225c09243d5a088b1557654d280925e02",
+      "subprojects/array_api_compat": "e1d4eed1389f1d93318ec855730488db48475320",
+      "subprojects/array_api_extra": "842457a8e22f9bad8b11ef547073d1bed2a2a8a5",
+      "subprojects/boost_math/math": "c114cf4a6ae958ce87ed6db4d55c1db4ec0a9c74",
+      "subprojects/cobyqa": "69b7177b9febb9178a5f7a9d61200407f1f77d25",
+      "subprojects/highs": "4f96ee8f40b2d3a46e00d6137d5eb31044680776",
+      "subprojects/unuran": "7e2344e93eb688acc430393c12228419fa130b9b",
+      "subprojects/xsf": "ceb9ab6e12e00c94fee4904dda38d800cf4775e4"
+    }
+  },
+  "donor": {
+    "software": "statsmodels",
+    "repo": "https://github.com/statsmodels/statsmodels",
+    "commit": "9062763c827da686a9b3117cffd2418d016a11e9",
+    "version": "0.15.0.dev1982+g9062763c8",
+    "wheel": "statsmodels-0.15.0.dev1982+g9062763c8-cp312-cp312-linux_x86_64.whl",
+    "wheel_sha256": "8bf1e5fee15b7bd26b34db7513786e734c9f680f7edf65437ab65c50d61b3dc9"
+  },
+  "runtime": {
+    "python": "3.12.11",
+    "base_image": "python:3.12.11-slim-bookworm",
+    "base_image_id": "sha256:688a685f6a1fa9250d7c6cee916889cbca364e4b027520110e0fce80c64a13e0",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "patsy": "1.0.2",
+    "pytest": "8.4.1"
+  },
+  "fixtures": {
+    "public_expected_sha256": "4de91787018c553120e46dff8457e4fe08463cf4ff6ce286b2606eeab97e2edb",
+    "pristine_source_hash_manifest_sha256": "a579ab860379c8a102f9067e5c0f7e5730e3c8cf2552412b75e68a4755d96dab"
+  },
+  "reference": "exact locked SciPy wheel plus exact locked statsmodels wheel"
+}
