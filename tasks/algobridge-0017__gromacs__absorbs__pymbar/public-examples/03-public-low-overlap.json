@@ -1,0 +1,5 @@
+{
+  "name": "public_low_overlap",
+  "input": {"forward": [6.1, 7.2, 8.4, 7.7, 9.0], "reverse": [5.8, 6.9, 8.1, 8.8], "initial_delta_f": 2.0, "relative_tolerance": 1e-12, "maximum_iterations": 2000},
+  "expected": {"delta_f": 0.30755758336982986, "uncertainty": 0.6838792636800023, "overlap": 0.003698754558082773}
+}

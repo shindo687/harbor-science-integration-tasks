@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "benchmark_family": "WorkflowFeatureBench",
+  "algorithm_question_id": "ALGOBRIDGE-0017",
+  "host": "GROMACS",
+  "donor": "pymbar",
+  "domain": "molecular-simulation",
+  "algorithm_family": "statistical mechanics / root finding",
+  "difficulty": "medium",
+  "status": "accepted",
+  "reference": "locked pristine GROMACS -> locked pristine pymbar",
+  "candidate": "modified GROMACS only",
+  "license_review": "low_risk_direction_available"
+}

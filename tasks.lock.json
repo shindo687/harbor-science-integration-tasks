@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "complete": false,
-  "task_count": 10,
+  "task_count": 11,
   "tasks": [
     {
       "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
@@ -29,6 +29,15 @@
       "source_tree": "4977d7dd54babb58bc95abb715d0c1fc07f0e249",
       "file_count": 63,
       "bytes": 210199446
+    },
+    {
+      "name": "algobridge-0017__gromacs__absorbs__pymbar",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0017__gromacs__absorbs__pymbar.git",
+      "commit": "9c8bb798f0d4dd1986ea917ed9b382fbeb32c957",
+      "source_tree": "daa603988b639475d11f45486d3658f6377671c8",
+      "file_count": 70,
+      "bytes": 226629126
     },
     {
       "name": "algobridge-0019__phonopy__absorbs__phono3py",

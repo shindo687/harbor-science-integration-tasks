@@ -1,0 +1,5 @@
+{
+  "name": "public_unequal",
+  "input": {"forward": [1.2, 0.8, 1.5, 0.6, 1.1, 1.7], "reverse": [-0.4, -0.9, -1.3], "initial_delta_f": -1.0, "relative_tolerance": 1e-12, "maximum_iterations": 2000},
+  "expected": {"delta_f": 1.029696266410475, "uncertainty": 0.13029486028815404, "overlap": 0.9663097438007684}
+}

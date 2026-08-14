@@ -1,0 +1,5 @@
+{
+  "name": "public_single_pair",
+  "input": {"forward": [2.8], "reverse": [0.4], "initial_delta_f": -10.0, "relative_tolerance": 1e-12, "maximum_iterations": 2000},
+  "expected": {"delta_f": 1.1999999999999997, "uncertainty": 0.0, "overlap": 0.559055167732244}
+}

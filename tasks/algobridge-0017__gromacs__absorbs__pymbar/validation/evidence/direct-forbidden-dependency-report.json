@@ -1,0 +1,11 @@
+{
+  "hard_gates": {
+    "reference_integrity": "pass"
+  },
+  "reason": "source policy: forbidden dependency/execution token in src/gromacs/gmxana/gmx_bar_internal.cpp: 'pymbar'",
+  "reference": "locked pristine GROMACS 2024.6 analyze -> locked pymbar BAR",
+  "reward": 0.0,
+  "status": "hard_gate_failed",
+  "task": "ALGOBRIDGE-0017",
+  "total": 15
+}

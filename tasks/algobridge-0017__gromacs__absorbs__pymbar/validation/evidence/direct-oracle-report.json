@@ -1,0 +1,246 @@
+{
+  "build_log_tail": "133/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/evaluate.cpp.o\n[1134/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/position.cpp.o\n[1135/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/poscalc.cpp.o\n[1136/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/nbsearch.cpp.o\n[1137/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/compiler.cpp.o\n[1138/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/indexutil.cpp.o\n[1139/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/scanner_internal.cpp.o\n[1140/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/params.cpp.o\n[1141/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/parsetree.cpp.o\n[1142/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selection.cpp.o\n[1143/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/fileio/tpxio.cpp.o\n[1144/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selectionoptionmanager.cpp.o\n[1145/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selectionoptionbehavior.cpp.o\n[1146/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selmethod.cpp.o\n[1147/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selectionoption.cpp.o\n[1148/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selvalue.cpp.o\n[1149/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selhelp.cpp.o\n[1150/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_compare.cpp.o\n[1151/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selelem.cpp.o\n[1152/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_distance.cpp.o\n[1153/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_permute.cpp.o\n[1154/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_insolidangle.cpp.o\n[1155/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selectioncollection.cpp.o\n[1156/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_merge.cpp.o\n[1157/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_position.cpp.o\n[1158/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_same.cpp.o\n[1159/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_simple.cpp.o\n[1160/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/symrec.cpp.o\n[1161/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_keywords.cpp.o\n[1162/1164] Linking CXX shared library lib/libgromacs.so.9.0.0\n[1163/1164] Creating library symlink lib/libgromacs.so.9 lib/libgromacs.so\n[1164/1164] Linking CXX executable bin/gmx\n",
+  "candidate_stderr_tail": "",
+  "cases": [
+    {
+      "metrics": {
+        "delta_f_abs": 2.952638133990604e-13,
+        "overlap_abs": 1.6986412276764895e-14,
+        "recomputed_residual": 2.937650123158164e-13,
+        "reported_residual_abs_error": 0.0,
+        "uncertainty_abs": 4.926614671774132e-16
+      },
+      "name": "balanced_irregular_overlap",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "delta_f_abs": 4.847233725513433e-13,
+        "overlap_abs": 1.268984917146554e-13,
+        "recomputed_residual": 4.976019596369952e-13,
+        "reported_residual_abs_error": 0.0,
+        "uncertainty_abs": 1.3877787807814457e-15
+      },
+      "name": "unequal_population_shifted",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "delta_f_abs": 3.667066650336892e-13,
+        "overlap_abs": 3.0617869350990645e-16,
+        "recomputed_residual": 7.309708394132031e-13,
+        "reported_residual_abs_error": 0.0,
+        "uncertainty_abs": 1.2212453270876722e-15
+      },
+      "name": "low_overlap_same_sign",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "delta_f_abs": 1.8207657603852567e-13,
+        "overlap_abs": 0.0,
+        "recomputed_residual": 3.352873534367973e-13,
+        "reported_residual_abs_error": 0.0,
+        "uncertainty_abs": 0.0
+      },
+      "name": "one_sample_each",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "delta_f_abs": 6.666056595605596e-13,
+        "overlap_abs": 2.220446049250313e-16,
+        "recomputed_residual": 6.519229600598919e-13,
+        "reported_residual_abs_error": 0.0,
+        "uncertainty_abs": 7.077671781985373e-16
+      },
+      "name": "near_zero_antisymmetric",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "delta_f_abs": 0.0,
+        "overlap_abs": 7.993605777301127e-15,
+        "recomputed_residual": 0.0,
+        "reported_residual_abs_error": 0.0,
+        "uncertainty_abs": 5.551115123125783e-16
+      },
+      "name": "extreme_positive_free_energy",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "delta_f_abs": 2.708333557421838e-12,
+        "overlap_abs": 3.3306690738754696e-16,
+        "recomputed_residual": 8.517631044924201e-13,
+        "reported_residual_abs_error": 2.220446049250313e-16,
+        "uncertainty_abs": 3.608224830031759e-15
+      },
+      "name": "extreme_mixed_tails",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "delta_f_abs": 2.0661250488274163e-13,
+        "overlap_abs": 8.881784197001252e-15,
+        "recomputed_residual": 1.5876189252139739e-13,
+        "reported_residual_abs_error": 2.220446049250313e-16,
+        "uncertainty_abs": 1.2212453270876722e-15
+      },
+      "name": "far_warm_start",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "delta_f_abs": 5.615508058554042e-13,
+        "overlap_abs": 1.4765966227514582e-13,
+        "recomputed_residual": 5.613287612504791e-13,
+        "reported_residual_abs_error": 0.0,
+        "uncertainty_abs": 1.318389977267645e-13
+      },
+      "name": "repeated_plateaus_unequal",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "delta_f_abs": 2.927658115936538e-13,
+        "overlap_abs": 2.653433028854124e-14,
+        "recomputed_residual": 2.793321129956894e-13,
+        "reported_residual_abs_error": 2.220446049250313e-16,
+        "uncertainty_abs": 3.969047313034935e-15
+      },
+      "name": "swap_sign_base",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "delta_f_abs": 2.927658115936538e-13,
+        "overlap_abs": 2.6645352591003757e-14,
+        "recomputed_residual": 2.793321129956894e-13,
+        "reported_residual_abs_error": 2.220446049250313e-16,
+        "uncertainty_abs": 4.274358644806853e-15
+      },
+      "name": "swap_sign_transformed",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "delta_f_abs": 5.245803791353865e-15,
+        "overlap_abs": 2.220446049250313e-16,
+        "recomputed_residual": 4.440892098500626e-15,
+        "reported_residual_abs_error": 0.0,
+        "uncertainty_abs": 0.0
+      },
+      "name": "energy_zero_base",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "delta_f_abs": 3.6335379149932123e-12,
+        "overlap_abs": 1.857403120197887e-13,
+        "recomputed_residual": 3.248290525448283e-12,
+        "reported_residual_abs_error": 2.220446049250313e-16,
+        "uncertainty_abs": 3.6637359812630166e-15
+      },
+      "name": "energy_zero_shifted",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "delta_f_abs": 3.5560443478743764e-13,
+        "overlap_abs": 3.3861802251067274e-14,
+        "recomputed_residual": 3.4638958368304884e-13,
+        "reported_residual_abs_error": 2.220446049250313e-16,
+        "uncertainty_abs": 2.4147350785597155e-15
+      },
+      "name": "replication_base",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "delta_f_abs": 3.559375016948252e-13,
+        "overlap_abs": 3.352873534367973e-14,
+        "recomputed_residual": 3.4638958368304884e-13,
+        "reported_residual_abs_error": 0.0,
+        "uncertainty_abs": 1.915134717478395e-15
+      },
+      "name": "replication_tripled",
+      "passed": true,
+      "reasons": []
+    }
+  ],
+  "failed": 0,
+  "hard_gates": {
+    "bar_equation_residual": "pass",
+    "candidate_protocol": "pass",
+    "invalid_input_rejection": {
+      "passed": 12,
+      "total": 12
+    },
+    "native_gromacs_build": {
+      "binary_sha256": "f8685a6d0a21f8c17d2e2dd3183996374e0229432f7dc9f1dbe5918e1c23b36d",
+      "ldd": "\tlinux-vdso.so.1 (0x00007ffc2075e000)\n\tlibgromacs.so.9 => /opt/candidate-build/bin/../lib/libgromacs.so.9 (0x00007f00e72d2000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f00e70b2000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f00e7092000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f00e6eb0000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f00e6dd0000)\n\tlibmuparser.so.2 => /opt/candidate-build/bin/../lib/../lib/libmuparser.so.2 (0x00007f00e6d53000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f00e88b8000)\n"
+    },
+    "original_gromacs_regression": "pass",
+    "real_gromacs_pymbar_reference": "pass",
+    "reference_integrity": "pass",
+    "reference_removed_before_candidate_build": "pass",
+    "scientific_transform_invariants": "pass",
+    "source_policy": {
+      "added": [
+        "src/gromacs/gmxana/gmx_bar_internal.cpp"
+      ],
+      "changed": [
+        "src/programs/legacymodules.cpp"
+      ],
+      "donor_fragment_scan": "pass (64/96 lexical tokens)",
+      "module_bytes": 14264,
+      "module_sha256": "249022ced507ec2101da96b8e26b03c9223c2416d179cf1a8077c0a68b806b9f",
+      "registration": "declaration and registration only"
+    }
+  },
+  "passed": 15,
+  "reference": "locked pristine GROMACS 2024.6 analyze -> locked pymbar BAR",
+  "reference_gromacs_version": "GROMACS version:     2024.6-dev",
+  "reference_stderr_tail": "Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.\nFailed to reach a solution to within tolerance with hybr: trying next method\nFailed to reach a solution to within tolerance with hybr: trying next method\n",
+  "regression": {
+    "analyze_help": {
+      "returncode": 0,
+      "tail": " <enum>             (none)\n           Fit function: none, exp, aexp, exp_exp, exp5, exp7, exp9\n -beginfit <real>           (0)\n           Time where to begin the exponential fit of the correlation function\n -endfit <real>             (-1)\n           Time where to end the exponential fit of the correlation function,\n           -1 is until the end\n                   :-) GROMACS - gmx analyze, 2024.6-dev (-:\n\nExecutable:   /opt/candidate-build/bin/gmx\nData prefix:  /testbed (source tree)\nWorking dir:  /tmp/candidate-home\nCommand line:\n  gmx analyze -h\n\n\nThanx for Using GROMACS - Have a Nice Day\n\n"
+    },
+    "analyze_roundtrip": {
+      "returncode": 0,
+      "tail": "      ---------   cumulants from those of\nset      average       deviation      sqrt(n-1)   a Gaussian distribition\n                                                      cum. 3   cum. 4\nSS1   2.916667e-01   9.260879e-01   6.548431e-01       0.166   -0.500\n\n                   :-) GROMACS - gmx analyze, 2024.6-dev (-:\n\nExecutable:   /opt/candidate-build/bin/gmx\nData prefix:  /testbed (source tree)\nWorking dir:  /tmp/candidate-home\nCommand line:\n  gmx analyze -f /tmp/candidate-home/regression.xvg -av /tmp/candidate-home/regression-output.xvg -xvg none\n\n\nThanx for Using GROMACS - Have a Nice Day\n\n"
+    },
+    "commands": {
+      "returncode": 0,
+      "tail": " function of PME ranks to optimize\n                         settings\n    vanhove              Compute Van Hove displacement and correlation\n                         functions\n    velacc               Calculate velocity autocorrelation functions\n    wham                 Perform weighted histogram analysis after umbrella\n                         sampling\n    wheel                Plot helical wheels\n    x2top                Generate a primitive topology from coordinates\n    xpm2ps               Convert XPM (XPixelMap) matrices to postscript or XPM\nFor help on a command, use 'gmx help <command>'.\n"
+    },
+    "native_help": {
+      "returncode": 0,
+      "tail": "Usage: gmx bar-internal -f INPUT.bar -o OUTPUT.json\nSolve a bounded two-state Bennett acceptance-ratio problem.\n                 :-) GROMACS - gmx bar-internal, 2024.6-dev (-:\n\nExecutable:   /opt/candidate-build/bin/gmx\nData prefix:  /testbed (source tree)\nWorking dir:  /tmp/candidate-home\nCommand line:\n  gmx bar-internal -h\n\n\nThanx for Using GROMACS - Have a Nice Day\n\n"
+    },
+    "version": {
+      "returncode": 0,
+      "tail": "st -funroll-all-loops -msse2 -Wno-unknown-pragmas -Wall -Wno-unused -Wunused-value -Wunused-parameter -Wextra -Wno-sign-compare -Wpointer-arith -Wundef -Werror=stringop-truncation -Wno-missing-field-initializers -O3 -DNDEBUG\nC++ compiler:        /usr/bin/c++ GNU 12.2.0\nC++ compiler flags:  -Wno-array-bounds -fexcess-precision=fast -funroll-all-loops -msse2 -Wno-unknown-pragmas -Wall -Wextra -Wpointer-arith -Wmissing-declarations -Wundef -Wstringop-truncation -Wno-missing-field-initializers -Wno-cast-function-type-strict -O3 -DNDEBUG\nBLAS library:        Internal\nLAPACK library:      Internal\n\n"
+    }
+  },
+  "reward": 1.0,
+  "status": "completed",
+  "task": "ALGOBRIDGE-0017",
+  "total": 15
+}

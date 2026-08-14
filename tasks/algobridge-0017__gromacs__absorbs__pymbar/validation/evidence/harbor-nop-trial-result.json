@@ -1,0 +1,110 @@
+{
+    "id": "f9b9b1a1-161d-4cff-83f8-c34edf475240",
+    "task_name": "workflow-algorithm-bench/algobridge-0017__gromacs__absorbs__pymbar",
+    "trial_name": "algobridge-0017__gromacs__absorb__KtXW7n3",
+    "trial_uri": "file:///home/xjtan/new_bench_minimal/algobridge-0017__gromacs__absorbs__pymbar/jobs/harbor-nop/algobridge-0017__gromacs__absorb__KtXW7n3",
+    "task_id": {
+        "path": "."
+    },
+    "source": null,
+    "task_checksum": "29ba82b8b3fa5e387bc6db42bbe16e3ef55ae364b295592c82b0f16e47f17535",
+    "config": {
+        "task": {
+            "path": ".",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "algobridge-0017__gromacs__absorb__KtXW7n3",
+        "trials_dir": "jobs/harbor-nop",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "nop",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": true,
+            "delete": true,
+            "cpu_enforcement_policy": "ignore",
+            "memory_enforcement_policy": "ignore",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "85f6d9c3-df32-4dd2-b72e-9a5b1921685d"
+    },
+    "agent_info": {
+        "name": "nop",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-08-14T09:47:51.432500Z",
+    "finished_at": "2026-08-14T09:48:35.350527Z",
+    "environment_setup": {
+        "started_at": "2026-08-14T09:47:52.552388Z",
+        "finished_at": "2026-08-14T09:47:57.479946Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-08-14T09:47:57.480140Z",
+        "finished_at": "2026-08-14T09:47:57.480270Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-08-14T09:47:57.480463Z",
+        "finished_at": "2026-08-14T09:47:57.480831Z"
+    },
+    "verifier": {
+        "started_at": "2026-08-14T09:48:12.243385Z",
+        "finished_at": "2026-08-14T09:48:35.350490Z"
+    },
+    "step_results": null
+}
