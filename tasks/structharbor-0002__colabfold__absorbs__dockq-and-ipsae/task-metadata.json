@@ -1,0 +1,11 @@
+{
+  "id": "structharbor-0002__colabfold__absorbs__dockq-and-ipsae",
+  "title": "ColabFold 原生集成 DockQ 与 ipSAE",
+  "host": "colabfold",
+  "donors": ["dockq", "ipsae"],
+  "target": "colabfold/alphafold/complex_metrics.py + colabfold/batch.py",
+  "difficulty": "hard",
+  "integration_form": "native module and prediction post-processing",
+  "authoring_state": "accepted",
+  "formal_question_id": "STRUCTALG-0002"
+}

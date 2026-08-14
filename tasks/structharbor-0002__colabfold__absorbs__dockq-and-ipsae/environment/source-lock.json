@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "reference_model": "locked original host plus two donors versus merged host",
+  "host": {
+    "repository": "https://github.com/sokrypton/ColabFold",
+    "version": "1.6.1",
+    "commit": "277662d7f4b0e4356c8d3fc4aec7c5a074cc65ad",
+    "tree": "3c473f8ce514a9d6836ae9381df26f1d6d3907d1",
+    "snapshot": "installed ColabFold 1.6.1 Python package snapshot from the locked commit",
+    "snapshot_file_count": 23,
+    "snapshot_manifest_sha256": "3a9eee87b25fc8d0a0a89455141417e2729324641e6cd99d27875e9a71912e14"
+  },
+  "donors": [
+    {
+      "name": "DockQ",
+      "repository": "https://github.com/wallnerlab/DockQ",
+      "commit": "75db7ab4f6b824c70d120c5f620582e164ed5479",
+      "tree": "1d067a65cc2ce796a355fb8982ac5885ef996dab",
+      "snapshot_file_count": 7,
+      "snapshot_manifest_sha256": "2d8f1c162ba092d0cefb54e10723dff0938a3a6cf5b629186b66d0b6b598ac7e",
+      "available_to_agent_at": "/opt/dockq",
+      "license": "MIT"
+    },
+    {
+      "name": "IPSAE",
+      "repository": "https://github.com/DunbrackLab/IPSAE",
+      "commit": "6174cf9e71cb1bd660cc805856a18c4871a6dec3",
+      "tree": "6c7e6e1c69d0150d7fd02d94593bd23387e9ebaa",
+      "snapshot_file_count": 2,
+      "snapshot_manifest_sha256": "da113b9b241941ba45a69a5452fd9cb7414ea5814059961d5e09a84e7c0a8a08",
+      "available_to_agent_at": "/opt/ipsae",
+      "license": "MIT"
+    }
+  ],
+  "scientific_contracts": ["dockq_pair", "ipsae_v4_af2_pdb"],
+  "runtime": {
+    "base_image": "python:3.12.11-slim-bookworm@sha256:519591d6871b7bc437060736b9f7456b8731f1499a57e22e6c285135ae657bf7",
+    "python": "3.12.11",
+    "numpy": "2.2.6",
+    "biopython": "1.85",
+    "wheel_manifest_sha256": "83db03ae67ae038c39bd0072d036128ee9e724f0f73c5fb86aade89bdf403f6a"
+  }
+}

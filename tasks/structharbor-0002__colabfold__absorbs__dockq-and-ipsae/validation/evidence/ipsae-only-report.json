@@ -1,0 +1,222 @@
+{
+  "cases": [
+    {
+      "detail": "AssertionError: root.CAPRI: 'incorrect' != 'high'",
+      "elapsed_seconds": 0.150994,
+      "name": "dockq_identity",
+      "passed": false
+    },
+    {
+      "detail": "AssertionError: root.CAPRI: 'incorrect' != 'high'",
+      "elapsed_seconds": 0.12913,
+      "name": "dockq_ligand_shift",
+      "passed": false
+    },
+    {
+      "detail": "AssertionError: root.CAPRI: 'incorrect' != 'medium'",
+      "elapsed_seconds": 0.157247,
+      "name": "dockq_rigid_distortion",
+      "passed": false
+    },
+    {
+      "detail": "AssertionError: root.CAPRI: 'incorrect' != 'high'",
+      "elapsed_seconds": 0.152093,
+      "name": "dockq_sequence_chain_swap",
+      "passed": false
+    },
+    {
+      "detail": "AssertionError: root.CAPRI: 'incorrect' != 'medium'",
+      "elapsed_seconds": 0.15809,
+      "name": "dockq_explicit_mapping",
+      "passed": false
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.160315,
+      "name": "ipsae_default_dimer",
+      "passed": true
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.164264,
+      "name": "ipsae_asymmetric_pae",
+      "passed": true
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.157193,
+      "name": "ipsae_nondefault_cutoffs",
+      "passed": true
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.158555,
+      "name": "ipsae_trimer_all_pairs",
+      "passed": true
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.157633,
+      "name": "ipsae_no_pae_below_cutoff",
+      "passed": true
+    },
+    {
+      "detail": "AssertionError: root.dockq.CAPRI: 'incorrect' != 'medium'",
+      "elapsed_seconds": 0.295479,
+      "name": "combined_cli",
+      "passed": false
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.177328,
+      "name": "public_contract_and_flags",
+      "passed": true
+    },
+    {
+      "detail": "AssertionError: summary.rank_001_alphafold2_multimer_v3_alpha_seed_007.dockq.dockq: 0.0 != 1.0",
+      "elapsed_seconds": 0.201833,
+      "name": "workflow_computed_multimodel",
+      "passed": false
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.333535,
+      "name": "workflow_missing_and_disabled",
+      "passed": true
+    },
+    {
+      "detail": "AssertionError: root.dockq.dockq: 0.0 != 1.0",
+      "elapsed_seconds": 0.198872,
+      "name": "workflow_directory_errors_and_applicability",
+      "passed": false
+    }
+  ],
+  "donor_commits": {
+    "dockq": "75db7ab4f6b824c70d120c5f620582e164ed5479",
+    "ipsae": "6174cf9e71cb1bd660cc805856a18c4871a6dec3"
+  },
+  "elapsed_seconds": 10.911285,
+  "hard_gate_passed": true,
+  "hard_gates": [
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.235197,
+      "name": "compile",
+      "passed": true
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.186687,
+      "name": "unprivileged_import_and_signatures",
+      "passed": true
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 3.479651,
+      "name": "forbidden_dependency_or_vendored_donor",
+      "passed": true
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.002472,
+      "name": "locked_host_integrity",
+      "passed": true
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.039385,
+      "name": "preserved_batch_structure",
+      "passed": true
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.186711,
+      "name": "colabfold_standard_artifact_regression",
+      "passed": true
+    }
+  ],
+  "locked_identity": {
+    "dockq_commit": "75db7ab4f6b824c70d120c5f620582e164ed5479",
+    "dockq_tree": "1d067a65cc2ce796a355fb8982ac5885ef996dab",
+    "host_commit": "277662d7f4b0e4356c8d3fc4aec7c5a074cc65ad",
+    "host_manifest_sha256": "3a9eee87b25fc8d0a0a89455141417e2729324641e6cd99d27875e9a71912e14",
+    "host_tree": "3c473f8ce514a9d6836ae9381df26f1d6d3907d1",
+    "ipsae_commit": "6174cf9e71cb1bd660cc805856a18c4871a6dec3",
+    "ipsae_tree": "6c7e6e1c69d0150d7fd02d94593bd23387e9ebaa",
+    "reference_manifest_sha256": "a9ea4ea255cef9fc1716135f8ddd52525a83dc25063bdd8ca0c699cbc661e84f"
+  },
+  "max_numeric_abs_error": 1.0,
+  "passed_cases": 7,
+  "reference_evidence": [
+    {
+      "case": "dockq_identity",
+      "donor": "DockQ"
+    },
+    {
+      "case": "dockq_ligand_shift",
+      "donor": "DockQ"
+    },
+    {
+      "case": "dockq_rigid_distortion",
+      "donor": "DockQ"
+    },
+    {
+      "case": "dockq_sequence_chain_swap",
+      "donor": "DockQ"
+    },
+    {
+      "case": "dockq_explicit_mapping",
+      "donor": "DockQ"
+    },
+    {
+      "case": "ipsae_default_dimer",
+      "donor": "IPSAE"
+    },
+    {
+      "case": "ipsae_asymmetric_pae",
+      "donor": "IPSAE"
+    },
+    {
+      "case": "ipsae_nondefault_cutoffs",
+      "donor": "IPSAE"
+    },
+    {
+      "case": "ipsae_trimer_all_pairs",
+      "donor": "IPSAE"
+    },
+    {
+      "case": "ipsae_no_pae_below_cutoff",
+      "donor": "IPSAE"
+    },
+    {
+      "case": "combined_cli",
+      "donor": "DockQ"
+    },
+    {
+      "case": "combined_cli",
+      "donor": "IPSAE"
+    },
+    {
+      "case": "workflow_computed_multimodel",
+      "donor": "both",
+      "runs": 2
+    },
+    {
+      "case": "workflow_directory_errors_and_applicability",
+      "donor": "both"
+    }
+  ],
+  "reference_policy": "locked originals run before physical donor deletion; candidate runs as uid 10001",
+  "reward": 0.4666666666666667,
+  "runtime": {
+    "biopython": "1.85",
+    "numpy": "2.2.6",
+    "python": "3.12.11"
+  },
+  "schema_version": 1,
+  "tolerance": {
+    "absolute": 0.0005,
+    "relative": 0.0005
+  },
+  "total_cases": 15
+}

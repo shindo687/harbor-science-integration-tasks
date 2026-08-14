@@ -1,0 +1,11 @@
+{
+  "passed": 5,
+  "results": [
+    {"name": "01_identity", "passed": true},
+    {"name": "02_ligand_shift", "passed": true},
+    {"name": "03_rigid_and_interface_shift", "passed": true},
+    {"name": "04_sequence_mapped_swap", "passed": true},
+    {"name": "05_near_cutoff", "passed": true}
+  ],
+  "total": 5
+}

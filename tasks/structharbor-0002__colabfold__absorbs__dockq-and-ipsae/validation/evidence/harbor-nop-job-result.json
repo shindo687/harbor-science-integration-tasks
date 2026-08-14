@@ -1,0 +1,39 @@
+{
+    "id": "4b45a81d-1f79-4dbc-b870-04432bfec9ee",
+    "started_at": "2026-08-14T06:36:06.526795",
+    "updated_at": "2026-08-14T06:36:47.851645",
+    "finished_at": "2026-08-14T06:36:47.851645",
+    "n_total_trials": 1,
+    "stats": {
+        "n_completed_trials": 1,
+        "n_errored_trials": 0,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "nop__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "structharbor-0002__colabfold__ab__vqh2mbS"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        },
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null
+    }
+}

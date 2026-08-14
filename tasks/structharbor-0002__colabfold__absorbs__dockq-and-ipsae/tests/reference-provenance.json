@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "host": {
+    "repository": "https://github.com/sokrypton/ColabFold",
+    "version": "1.6.1",
+    "commit": "277662d7f4b0e4356c8d3fc4aec7c5a074cc65ad",
+    "tree": "3c473f8ce514a9d6836ae9381df26f1d6d3907d1",
+    "snapshot_file_count": 23,
+    "snapshot_manifest_sha256": "3a9eee87b25fc8d0a0a89455141417e2729324641e6cd99d27875e9a71912e14"
+  },
+  "dockq": {
+    "repository": "https://github.com/wallnerlab/DockQ",
+    "commit": "75db7ab4f6b824c70d120c5f620582e164ed5479",
+    "tree": "1d067a65cc2ce796a355fb8982ac5885ef996dab",
+    "snapshot_file_count": 7,
+    "snapshot_manifest_sha256": "2d8f1c162ba092d0cefb54e10723dff0938a3a6cf5b629186b66d0b6b598ac7e",
+    "entrypoint_sha256": "7b9d112c9abd18711de43f1f56145301944460dc59b8bc52853b464cf6d7a887",
+    "license": "MIT"
+  },
+  "ipsae": {
+    "repository": "https://github.com/DunbrackLab/IPSAE",
+    "commit": "6174cf9e71cb1bd660cc805856a18c4871a6dec3",
+    "tree": "6c7e6e1c69d0150d7fd02d94593bd23387e9ebaa",
+    "snapshot_file_count": 2,
+    "snapshot_manifest_sha256": "da113b9b241941ba45a69a5452fd9cb7414ea5814059961d5e09a84e7c0a8a08",
+    "entrypoint_sha256": "10cf9b08c68c91e06cb28526cf2026f47a3980c9048fd3226d13e3304eaf1c27",
+    "license": "MIT"
+  },
+  "reference_snapshot_manifest_sha256": "a9ea4ea255cef9fc1716135f8ddd52525a83dc25063bdd8ca0c699cbc661e84f",
+  "reference_policy": "run both locked originals as root, retain answers only in verifier memory, delete both donor trees, then run candidate as uid 10001"
+}

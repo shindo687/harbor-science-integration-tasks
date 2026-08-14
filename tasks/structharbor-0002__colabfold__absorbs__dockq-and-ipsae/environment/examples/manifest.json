@@ -1,0 +1,27 @@
+[
+  {
+    "distance_cutoff": 15.0,
+    "name": "01_identity",
+    "pae_cutoff": 15.0
+  },
+  {
+    "distance_cutoff": 15.0,
+    "name": "02_ligand_shift",
+    "pae_cutoff": 12.0
+  },
+  {
+    "distance_cutoff": 12.0,
+    "name": "03_rigid_and_interface_shift",
+    "pae_cutoff": 15.0
+  },
+  {
+    "distance_cutoff": 14.0,
+    "name": "04_sequence_mapped_swap",
+    "pae_cutoff": 10.0
+  },
+  {
+    "distance_cutoff": 10.0,
+    "name": "05_near_cutoff",
+    "pae_cutoff": 8.0
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "dockq": {
+    "CAPRI": "medium",
+    "DockQ": 0.7184727633501197,
+    "LRMSD": 1.3829309475888103,
+    "fnat": 0.34146341463414637,
+    "iRMSD": 0.6552799291102566,
+    "mapping": {
+      "A": "A",
+      "B": "B"
+    },
+    "native_contacts": 41,
+    "preserved_contacts": 14
+  },
+  "ipsae": {
+    "chain_pairs": [
+      {
+        "chain1": "A",
+        "chain2": "B",
+        "d0chn": 1.3883891724162114,
+        "d0dom": 1.3883891724162114,
+        "d0res": 1.0,
+        "dist1": 17,
+        "dist2": 14,
+        "ipsae": 0.040645,
+        "ipsae_d0chn": 0.074105,
+        "ipsae_d0dom": 0.074105,
+        "iptm_af": 0.622,
+        "iptm_d0chn": 0.074105,
+        "lis": 0.4721,
+        "n0chn": 32,
+        "n0dom": 32,
+        "n0res": 14,
+        "nres1": 18,
+        "nres2": 14,
+        "pdockq": 0.223,
+        "pdockq2": 0.1735,
+        "type": "asym"
+      },
+      {
+        "chain1": "B",
+        "chain2": "A",
+        "d0chn": 1.3883891724162114,
+        "d0dom": 1.3883891724162114,
+        "d0res": 1.0,
+        "dist1": 14,
+        "dist2": 17,
+        "ipsae": 0.021079,
+        "ipsae_d0chn": 0.039593,
+        "ipsae_d0dom": 0.039593,
+        "iptm_af": 0.622,
+        "iptm_d0chn": 0.039593,
+        "lis": 0.3409,
+        "n0chn": 32,
+        "n0dom": 32,
+        "n0res": 18,
+        "nres1": 14,
+        "nres2": 18,
+        "pdockq": 0.223,
+        "pdockq2": 0.1155,
+        "type": "asym"
+      },
+      {
+        "chain1": "A",
+        "chain2": "B",
+        "d0chn": 1.3883891724162114,
+        "d0dom": 1.3883891724162114,
+        "d0res": 1.0,
+        "dist1": 17,
+        "dist2": 14,
+        "ipsae": 0.040645,
+        "ipsae_d0chn": 0.074105,
+        "ipsae_d0dom": 0.074105,
+        "iptm_af": 0.622,
+        "iptm_d0chn": 0.074105,
+        "lis": 0.4065,
+        "n0chn": 32,
+        "n0dom": 32,
+        "n0res": 14,
+        "nres1": 18,
+        "nres2": 14,
+        "pdockq": 0.223,
+        "pdockq2": 0.1735,
+        "type": "max"
+      }
+    ],
+    "distance_cutoff": 15.0,
+    "pae_cutoff": 12.0
+  }
+}

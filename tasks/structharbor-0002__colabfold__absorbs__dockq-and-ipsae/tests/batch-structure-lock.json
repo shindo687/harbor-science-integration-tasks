@@ -1,0 +1,26 @@
+{
+  "preserved_top_level_ast_sha256": {
+    "ClassDef:ReplaceOrRemoveHetatmSelect": "cdf170b27b9fe489bba6c9cbcdb50b2be73069d403f29bc9c7ea7e32018560df",
+    "ClassDef:file_manager": "c119d09d80540e5b252fe125b341260429c4e0488198e2dceddc1d5056d696c7",
+    "FunctionDef:build_monomer_feature": "0c5ca8da580e871882b157891f47dc2e98cabdd5f512e7a592dd973e8b53abf0",
+    "FunctionDef:build_multimer_feature": "e91cc8e8539e0810dc55ab875a7e4c0a4e25f970d73961075e6a6866a7f09326",
+    "FunctionDef:convert_pdb_to_mmcif": "b68d3a61998caf0d205e4cc9c2d1cd7e60e6dc40d87a23d2598d9d248cb945af",
+    "FunctionDef:generate_af3_input": "dc44fc63fc61b36e502596d1b75f56e294234ae348d17c05f4b22b2145326e98",
+    "FunctionDef:generate_input_feature": "ea9d34296d20be45a7c207fccd1b7d3106761968d4ef22376d66f7c42ecd72b5",
+    "FunctionDef:get_msa_and_templates": "ed4ad2016bbd0b900da17cc1545a3bccb31a56e8d805172909e4a506a6cf774f",
+    "FunctionDef:mk_hhsearch_db": "70b40e1f3eccecb2872c353eaca038a881233bbc16223b39c40950b1d392dc08",
+    "FunctionDef:mk_hhsearch_single_entry_db": "a0adaa59b63c46d113e9266d1d56b65a6c4f174cb1a9d8871d43e26be60469e5",
+    "FunctionDef:mk_mock_template": "c34408e5fad6844aafcb81f0b0914663a7be58bb57427753911908449a629814",
+    "FunctionDef:mk_template": "9148b540d18cff8a1e7af63b375a9c044df32a1c0b44776c16ba7c65c785d8d9",
+    "FunctionDef:normalize_a3m": "8fec0d4a34ccf455ef169221a7c3510f817014c452530262f6060dfe1388b4ad",
+    "FunctionDef:pad_input": "27c75aa9766243b55712c1efdeeea4e5c40183cd3b2188caa557848c24715ae9",
+    "FunctionDef:process_multimer_features": "c95fa8b9c61d87e5121b83b57d8eea8fa7f64cb0ab79efb8ee7a654366810488",
+    "FunctionDef:put_mmciffiles_into_resultdir": "79c3c829aab23da788b4d02196404772f024e4334d7698e0b94529bb2fb7e597",
+    "FunctionDef:set_model_type": "36ee94bacc49f9d5c18cf0a8a07a9c80cfd62a2e21f0a5a897f692a0e9d81cae",
+    "FunctionDef:unserialize_msa": "6de43971bb1ab921297cf8b142a97057dfca53fad5ae8df3136e222edb3b9160",
+    "FunctionDef:validate_and_fix_mmcif": "6dd177578ce9632fa020ff5c035d523c620e7bf691389acb839428ccc5a6e231"
+  },
+  "schema_version": 1,
+  "source_sha256": "bf44270382d51080e4c38f05eac3681609242ebbc5f6a52a05b039db3e5402b8",
+  "preserved_module_ast_sha256": "e341a4466f0d5a2ae2f47069c4efec33b292abeab007bbc9b28e070e01a11326"
+}

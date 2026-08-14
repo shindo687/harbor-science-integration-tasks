@@ -1,0 +1,90 @@
+{
+  "dockq": {
+    "CAPRI": "high",
+    "DockQ": 0.9999999999999779,
+    "LRMSD": 2.1857810050868225e-06,
+    "fnat": 1.0,
+    "iRMSD": 0.0,
+    "mapping": {
+      "X": "B",
+      "Y": "A"
+    },
+    "native_contacts": 41,
+    "preserved_contacts": 41
+  },
+  "ipsae": {
+    "chain_pairs": [
+      {
+        "chain1": "X",
+        "chain2": "Y",
+        "d0chn": 1.3883891724162114,
+        "d0dom": 1.3883891724162114,
+        "d0res": 1.0,
+        "dist1": 14,
+        "dist2": 17,
+        "ipsae": 0.048818,
+        "ipsae_d0chn": 0.086297,
+        "ipsae_d0dom": 0.086297,
+        "iptm_af": 0.646,
+        "iptm_d0chn": 0.082525,
+        "lis": 0.4727,
+        "n0chn": 32,
+        "n0dom": 32,
+        "n0res": 17,
+        "nres1": 14,
+        "nres2": 18,
+        "pdockq": 0.2252,
+        "pdockq2": 0.1819,
+        "type": "asym"
+      },
+      {
+        "chain1": "Y",
+        "chain2": "X",
+        "d0chn": 1.3883891724162114,
+        "d0dom": 1.3883891724162114,
+        "d0res": 1.0,
+        "dist1": 17,
+        "dist2": 14,
+        "ipsae": 0.028215,
+        "ipsae_d0chn": 0.0523,
+        "ipsae_d0dom": 0.0523,
+        "iptm_af": 0.646,
+        "iptm_d0chn": 0.043966,
+        "lis": 0.3513,
+        "n0chn": 32,
+        "n0dom": 32,
+        "n0res": 10,
+        "nres1": 18,
+        "nres2": 14,
+        "pdockq": 0.2252,
+        "pdockq2": 0.118,
+        "type": "asym"
+      },
+      {
+        "chain1": "X",
+        "chain2": "Y",
+        "d0chn": 1.3883891724162114,
+        "d0dom": 1.3883891724162114,
+        "d0res": 1.0,
+        "dist1": 14,
+        "dist2": 17,
+        "ipsae": 0.048818,
+        "ipsae_d0chn": 0.086297,
+        "ipsae_d0dom": 0.086297,
+        "iptm_af": 0.646,
+        "iptm_d0chn": 0.082525,
+        "lis": 0.412,
+        "n0chn": 32,
+        "n0dom": 32,
+        "n0res": 17,
+        "nres1": 14,
+        "nres2": 18,
+        "pdockq": 0.2252,
+        "pdockq2": 0.1819,
+        "type": "max"
+      }
+    ],
+    "distance_cutoff": 14.0,
+    "pae_cutoff": 10.0
+  }
+}
