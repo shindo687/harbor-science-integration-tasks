@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "name": "algobridge-0001__scanpy__absorbs__bbknn",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0001__scanpy__absorbs__bbknn.git",
+      "commit": "5fa798c1ee99d3102d85255b7271723992911cee"
+    },
+    {
+      "name": "algobridge-0002__scanpy__absorbs__scvelo",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0002__scanpy__absorbs__scvelo.git",
+      "commit": "e6deab9534749c394ee7c30bd4ab87a4f3f04c4d"
+    },
+    {
+      "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0004__seurat__absorbs__clusterprofiler.git",
+      "commit": "5853c392754fa468250bfdb07a053f4a62f5620c"
+    },
+    {
+      "name": "algobridge-0006__scanpy__absorbs__scib",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0006__scanpy__absorbs__scib.git",
+      "commit": "76b059e5e533005e910ae16216664aa2de1c5eb5"
+    },
+    {
+      "name": "algobridge-0007__fasttree__absorbs__mafft",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0007__fasttree__absorbs__mafft.git",
+      "commit": "b3fd38093c9b3e1a08d5f82a906ddd3f2a61ee3d"
+    },
+    {
+      "name": "algobridge-0012__gromacs__absorbs__prody",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0012__gromacs__absorbs__prody.git",
+      "commit": "bee40efe51380ae64b5c66ac51f855be47f6bd05"
+    },
+    {
+      "name": "algobridge-0015__openmm__absorbs__pymbar",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0015__openmm__absorbs__pymbar.git",
+      "commit": "a408abe0605dec12b80ec4b9a9f58280c5808583"
+    },
+    {
+      "name": "algobridge-0016__openmm__absorbs__pyemma",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0016__openmm__absorbs__pyemma.git",
+      "commit": "56cf9f890839a130028f5db89060361fc2d826da"
+    },
+    {
+      "name": "algobridge-0017__gromacs__absorbs__pymbar",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0017__gromacs__absorbs__pymbar.git",
+      "commit": "9c8bb798f0d4dd1986ea917ed9b382fbeb32c957"
+    },
+    {
+      "name": "algobridge-0018__alphafold-2__absorbs__prody",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0018__alphafold-2__absorbs__prody.git",
+      "commit": "0f1c0253c99411bed8f111aeba755eb72e9ab009"
+    },
+    {
+      "name": "algobridge-0019__phonopy__absorbs__phono3py",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0019__phonopy__absorbs__phono3py.git",
+      "commit": "6a098b5bf4c686925568b9867f21d3fe5b5fb0b4"
+    },
+    {
+      "name": "algobridge-0024__lammps__absorbs__phonopy",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0024__lammps__absorbs__phonopy.git",
+      "commit": "f29ef0d04a1f88bc2ae75184ef198dfc1a9cdc4d"
+    },
+    {
+      "name": "algobridge-0025__scikit-learn__absorbs__xgboost",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0025__scikit-learn__absorbs__xgboost.git",
+      "commit": "e82e185b5942f1906f081c1f707840872adbf7f0"
+    },
+    {
+      "name": "algobridge-0026__scikit-learn__absorbs__shap",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0026__scikit-learn__absorbs__shap.git",
+      "commit": "3488fa6768bdc65520ea9ac519064d9e2238d443"
+    },
+    {
+      "name": "algobridge-0027__scikit-learn__absorbs__imbalanced-learn",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0027__scikit-learn__absorbs__imbalanced-learn.git",
+      "commit": "a488dcdd1e96fc428a8853b1a3b6c14e91c43cbd"
+    },
+    {
+      "name": "algobridge-0028__scipy__absorbs__statsmodels",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0028__scipy__absorbs__statsmodels.git",
+      "commit": "ed2c0d76edadb065be357dff328f28e03eaa7f98"
+    },
+    {
+      "name": "algobridge-0029__networkx__absorbs__scikit-learn",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0029__networkx__absorbs__scikit-learn.git",
+      "commit": "a1f4fd37242fd656af49642b3b0c829e714a08e5"
+    },
+    {
+      "name": "algobridge-0030__bilby__absorbs__dynesty",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0030__bilby__absorbs__dynesty.git",
+      "commit": "71a7775a8169d15383817978c9d915e0b9be682d"
+    },
+    {
+      "name": "structharbor-0001__alphafold-2__absorbs__dockq",
+      "suite": "StructHarbor",
+      "origin": "https://github.com/shindo687/structharbor-0001__alphafold-2__absorbs__dockq.git",
+      "commit": "a20792be30ca991121d991bd5418df23e79df3a2"
+    },
+    {
+      "name": "structharbor-0002__colabfold__absorbs__dockq-and-ipsae",
+      "suite": "StructHarbor",
+      "origin": "https://github.com/shindo687/structharbor-0002__colabfold__absorbs__dockq-and-ipsae.git",
+      "commit": "a68522ded505ec873d416c88ea22083ebe8c0404"
+    }
+  ]
+}
