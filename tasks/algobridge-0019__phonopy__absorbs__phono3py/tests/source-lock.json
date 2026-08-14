@@ -1,0 +1,6 @@
+{
+  "host_commit": "4bac506220d426784020ea24812c93e2a016be18",
+  "donor_commit": "2dc8200a65dc3a4dd3824d248af50545f03f8ea2",
+  "reference": "Phono3py.produce_fc3 with symfc 1.7.3",
+  "candidate_forbidden_runtimes": ["phono3py", "symfc"]
+}

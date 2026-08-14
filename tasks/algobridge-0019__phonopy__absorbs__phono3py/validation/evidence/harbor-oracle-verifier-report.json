@@ -1,0 +1,236 @@
+{
+  "cases": [
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 0.0,
+        "fc2_max_abs": 2.285671651947041e-14,
+        "fc3_max_abs": 1.3500311979441904e-13,
+        "predicted_force_max_abs": 2.1094237467877974e-15,
+        "predicted_net_force_max_abs": 0.0,
+        "prediction_consistency_max_abs": 1.1102230246251565e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_two_exact",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 7.105427357601002e-15,
+        "fc2_max_abs": 3.624878175401136e-14,
+        "fc3_max_abs": 2.984279490192421e-13,
+        "predicted_force_max_abs": 6.439293542825908e-15,
+        "predicted_net_force_max_abs": 8.881784197001252e-16,
+        "prediction_consistency_max_abs": 6.661338147750939e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_three_exact",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 2.1316282072803006e-14,
+        "fc2_max_abs": 2.984279490192421e-13,
+        "fc3_max_abs": 9.308109838457312e-12,
+        "predicted_force_max_abs": 1.2545520178264269e-14,
+        "predicted_net_force_max_abs": 8.881784197001252e-16,
+        "prediction_consistency_max_abs": 8.881784197001252e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_four_exact",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 1.4210854715202004e-14,
+        "fc2_max_abs": 4.574118861455645e-14,
+        "fc3_max_abs": 5.968558980384842e-13,
+        "predicted_force_max_abs": 1.3877787807814457e-14,
+        "predicted_net_force_max_abs": 1.7763568394002505e-15,
+        "prediction_consistency_max_abs": 1.1102230246251565e-15,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_three_noisy",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 0.0,
+        "fc2_max_abs": 3.552713678800501e-14,
+        "fc3_max_abs": 5.186961971048731e-13,
+        "predicted_force_max_abs": 3.552713678800501e-15,
+        "predicted_net_force_max_abs": 0.0,
+        "prediction_consistency_max_abs": 5.551115123125783e-17,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_two_redundant",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 0.0,
+        "fc2_max_abs": 1.4033219031261979e-13,
+        "fc3_max_abs": 1.1311905746049284e-14,
+        "predicted_force_max_abs": 1.3100631690576847e-14,
+        "predicted_net_force_max_abs": 0.0,
+        "prediction_consistency_max_abs": 1.1102230246251565e-16,
+        "symmetry_equivariance_max_abs": 1.1324274851176597e-14
+      },
+      "name": "zincblende_projected",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 0.0,
+        "fc2_max_abs": 5.1514348342607263e-14,
+        "fc3_max_abs": 7.105427357601002e-15,
+        "predicted_force_max_abs": 5.329070518200751e-15,
+        "predicted_net_force_max_abs": 0.0,
+        "prediction_consistency_max_abs": 2.7755575615628914e-17,
+        "symmetry_equivariance_max_abs": 4.218847493575595e-15
+      },
+      "name": "zincblende_noisy",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 0.0,
+        "fc2_max_abs": 7.882583474838611e-15,
+        "fc3_max_abs": 2.913133664469354e-14,
+        "predicted_force_max_abs": 3.0531133177191805e-16,
+        "predicted_net_force_max_abs": 0.0,
+        "prediction_consistency_max_abs": 6.938893903907228e-18,
+        "symmetry_equivariance_max_abs": 3.5041414214731503e-16
+      },
+      "name": "zincblende_scaled",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 1.4210854715202004e-14,
+        "fc2_max_abs": 4.663325561501653e-14,
+        "fc3_max_abs": 9.805489753489383e-13,
+        "predicted_force_max_abs": 1.1601830607332886e-14,
+        "predicted_net_force_max_abs": 9.992007221626409e-16,
+        "prediction_consistency_max_abs": 8.881784197001252e-16,
+        "symmetry_equivariance_max_abs": 1.0505485370515544e-14
+      },
+      "name": "wurtzite_projected",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 7.105427357601002e-15,
+        "fc2_max_abs": 9.85878045867139e-14,
+        "fc3_max_abs": 1.2363443602225743e-12,
+        "predicted_force_max_abs": 7.230327447871332e-15,
+        "predicted_net_force_max_abs": 6.661338147750939e-16,
+        "prediction_consistency_max_abs": 6.661338147750939e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_transform_base",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 1.4210854715202004e-14,
+        "fc2_max_abs": 6.750155989720952e-14,
+        "fc3_max_abs": 6.536993168992922e-13,
+        "predicted_force_max_abs": 7.66053886991358e-15,
+        "predicted_net_force_max_abs": 5.134781488891349e-16,
+        "prediction_consistency_max_abs": 4.440892098500626e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_transform_rotated",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 2.842170943040401e-14,
+        "fc2_max_abs": 3.375077994860476e-14,
+        "fc3_max_abs": 5.440092820663267e-13,
+        "predicted_force_max_abs": 5.329070518200751e-15,
+        "predicted_net_force_max_abs": 8.881784197001252e-16,
+        "prediction_consistency_max_abs": 4.440892098500626e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_permutation_base",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 7.105427357601002e-15,
+        "fc2_max_abs": 6.039613253960852e-14,
+        "fc3_max_abs": 9.50350909079134e-13,
+        "predicted_force_max_abs": 7.820133429703446e-15,
+        "predicted_net_force_max_abs": 1.7763568394002505e-15,
+        "prediction_consistency_max_abs": 1.3322676295501878e-15,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_permutation_swapped",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 0.0,
+        "fc2_max_abs": 2.6922908347160046e-15,
+        "fc3_max_abs": 4.440892098500626e-15,
+        "predicted_force_max_abs": 2.3592239273284576e-16,
+        "predicted_net_force_max_abs": 0.0,
+        "prediction_consistency_max_abs": 0.0,
+        "symmetry_equivariance_max_abs": 3.608224830031759e-16
+      },
+      "name": "symmetry_rescued_underdetermined",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 7.105427357601002e-15,
+        "fc2_max_abs": 5.684341886080802e-14,
+        "fc3_max_abs": 4.973799150320701e-13,
+        "predicted_force_max_abs": 9.2148511043888e-15,
+        "predicted_net_force_max_abs": 9.992007221626409e-16,
+        "prediction_consistency_max_abs": 6.661338147750939e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_uniform_force_drift",
+      "passed": true,
+      "reasons": []
+    }
+  ],
+  "failed": 0,
+  "hard_gates": {
+    "candidate_protocol": "pass",
+    "invalid_input_rejection": "pass",
+    "locked_reference": "pass",
+    "reference_removed_before_candidate": "pass",
+    "rotation_and_reordering_invariance": "pass",
+    "source_policy": {
+      "added": [
+        "phonopy/harmonic/third_order.py"
+      ],
+      "donor_fragment_scan": "pass",
+      "module_bytes": 7850,
+      "module_sha256": "4c53bbad09417e08ba648042dea66a61558c2605ccd2d52ae4338f6b88a4b710"
+    }
+  },
+  "passed": 15,
+  "reference": "locked phonopy 4bac506 to phono3py 2dc8200 produce_fc3(symfc 1.7.3)",
+  "reward": 1.0,
+  "status": "completed",
+  "task": "ALGOBRIDGE-0019",
+  "total": 15
+}

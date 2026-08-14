@@ -1,0 +1,11 @@
+{
+  "hard_gates": {
+    "locked_reference": "pass"
+  },
+  "reason": "source policy failed: candidate contains a forbidden dependency or execution primitive",
+  "reference": "locked phonopy 4bac506 to phono3py 2dc8200 produce_fc3(symfc 1.7.3)",
+  "reward": 0.0,
+  "status": "hard_gate_failed",
+  "task": "ALGOBRIDGE-0019",
+  "total": 15
+}

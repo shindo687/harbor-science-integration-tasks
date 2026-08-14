@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "reference_model": "locked phonopy structure and symmetry objects through locked phono3py produce_fc3 versus merged phonopy",
+  "host": {
+    "name": "phonopy",
+    "repository": "https://github.com/phonopy/phonopy",
+    "commit": "4bac506220d426784020ea24812c93e2a016be18",
+    "tree": "ac52f35d5efc79f29edb82719cd54d9e0f521d46",
+    "describe": "v4.4.0-85-g4bac5062",
+    "package_version": "4.4.1.dev85+g4bac50622",
+    "license": "BSD-3-Clause",
+    "snapshot_file_count": 959,
+    "snapshot_sha256": "932dfdebe9dedee2f6687f86dce8029c4cf6bfd257e2e564ae07417720a6b216",
+    "wheel_sha256": "3e26ddd3d72f43d586f09508d61592f72fe6ebe17648817e3cb17bc72d9d0e6d"
+  },
+  "donor": {
+    "name": "phono3py",
+    "repository": "https://github.com/phonopy/phono3py",
+    "commit": "2dc8200a65dc3a4dd3824d248af50545f03f8ea2",
+    "tree": "892f406cb06d90f1368290df53cda0387cc93b84",
+    "describe": "v4.4.0-7-g2dc8200",
+    "package_version": "4.4.1.dev7+g2dc8200a6",
+    "license": "BSD-3-Clause",
+    "snapshot_file_count": 506,
+    "snapshot_sha256": "7180cf6db46a17051d3da0a33acacf182c7a7412c7e8365fca574c99292cead3",
+    "wheel_sha256": "c8cec00303f8d452c3fea48256e9e891ae826b14e96248615f3470c02f91e3d4"
+  },
+  "numeric_contract": {
+    "reference_entrypoint": "Phono3py.produce_fc3(fc_calculator='symfc', is_compact_fc=False)",
+    "reference_backend": "symfc 1.7.3, invoked only by the locked phono3py reference",
+    "force_expansion": "F_i = -sum_j Phi2_ij u_j - 1/2 sum_jk Phi3_ijk u_j u_k",
+    "constraints": "full derivative-index permutation symmetry, translational acoustic sum rules, and supplied crystallographic space-group operations"
+  },
+  "runtime": {
+    "python_base": "python:3.12.11-slim-bookworm",
+    "python_base_digest": "sha256:519591d6871b7bc437060736b9f7456b8731f1499a57e22e6c285135ae657bf7",
+    "agent_wheel_manifest_sha256": "6d99f21c786e63e729938c80cf15c6d88cb6401afac9c29ebfc30c1db887a1d5",
+    "reference_wheel_manifest_sha256": "a0241cb3a19b2a20b4dfab7c94f0c1193f4e17bdc556a37e6aa8ae5b69b0feb5",
+    "openmp": "exact host and donor wheels are built with OpenMP disabled for portable CPU execution"
+  }
+}

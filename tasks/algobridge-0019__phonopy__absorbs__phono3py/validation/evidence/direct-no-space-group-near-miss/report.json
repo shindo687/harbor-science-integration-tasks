@@ -1,0 +1,275 @@
+{
+  "cases": [
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 0.0,
+        "fc2_max_abs": 2.749189764728044e-14,
+        "fc3_max_abs": 1.9895196601282805e-13,
+        "predicted_force_max_abs": 2.275957200481571e-15,
+        "predicted_net_force_max_abs": 0.0,
+        "prediction_consistency_max_abs": 1.6653345369377348e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_two_exact",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 1.4210854715202004e-14,
+        "fc2_max_abs": 5.734301922188934e-14,
+        "fc3_max_abs": 3.979039320256561e-13,
+        "predicted_force_max_abs": 8.215650382226158e-15,
+        "predicted_net_force_max_abs": 7.771561172376096e-16,
+        "prediction_consistency_max_abs": 4.440892098500626e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_three_exact",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 2.842170943040401e-14,
+        "fc2_max_abs": 3.552713678800501e-13,
+        "fc3_max_abs": 9.79127889877418e-12,
+        "predicted_force_max_abs": 1.3322676295501878e-14,
+        "predicted_net_force_max_abs": 8.881784197001252e-16,
+        "prediction_consistency_max_abs": 6.661338147750939e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_four_exact",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 1.4210854715202004e-14,
+        "fc2_max_abs": 6.039613253960852e-14,
+        "fc3_max_abs": 1.1226575225009583e-12,
+        "predicted_force_max_abs": 1.2878587085651816e-14,
+        "predicted_net_force_max_abs": 1.7763568394002505e-15,
+        "prediction_consistency_max_abs": 1.3322676295501878e-15,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_three_noisy",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 0.0,
+        "fc2_max_abs": 2.842170943040401e-14,
+        "fc3_max_abs": 4.085620730620576e-13,
+        "predicted_force_max_abs": 3.1086244689504383e-15,
+        "predicted_net_force_max_abs": 0.0,
+        "prediction_consistency_max_abs": 2.220446049250313e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_two_redundant",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 0.0,
+        "fc2_max_abs": 7.011564647401485,
+        "fc3_max_abs": 94.43517607955204,
+        "predicted_force_max_abs": 0.9488455998035586,
+        "predicted_net_force_max_abs": 0.0,
+        "prediction_consistency_max_abs": 2.220446049250313e-16,
+        "symmetry_equivariance_max_abs": 1.1685438844785339
+      },
+      "name": "zincblende_projected",
+      "passed": false,
+      "reasons": [
+        "condition_number",
+        "fc2",
+        "fc3",
+        "predicted_forces",
+        "residual_norm",
+        "singular_values",
+        "space_group_equivariance_invariant",
+        "symmetry_operation_count"
+      ]
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 0.0,
+        "fc2_max_abs": 4.136075380342396,
+        "fc3_max_abs": 49.705863775887295,
+        "predicted_force_max_abs": 0.6496580870536492,
+        "predicted_net_force_max_abs": 0.0,
+        "prediction_consistency_max_abs": 1.1102230246251565e-16,
+        "symmetry_equivariance_max_abs": 1.271490145994214
+      },
+      "name": "zincblende_noisy",
+      "passed": false,
+      "reasons": [
+        "condition_number",
+        "fc2",
+        "fc3",
+        "predicted_forces",
+        "residual_norm",
+        "singular_values",
+        "space_group_equivariance_invariant",
+        "symmetry_operation_count"
+      ]
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 0.0,
+        "fc2_max_abs": 7.795051753502025,
+        "fc3_max_abs": 203.03862876340435,
+        "predicted_force_max_abs": 0.2710971746778938,
+        "predicted_net_force_max_abs": 0.0,
+        "prediction_consistency_max_abs": 5.551115123125783e-17,
+        "symmetry_equivariance_max_abs": 0.3793377577602448
+      },
+      "name": "zincblende_scaled",
+      "passed": false,
+      "reasons": [
+        "condition_number",
+        "fc2",
+        "fc3",
+        "predicted_forces",
+        "residual_norm",
+        "singular_values",
+        "space_group_equivariance_invariant",
+        "symmetry_operation_count"
+      ]
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 2.1316282072803006e-14,
+        "fc2_max_abs": 10.071108453267524,
+        "fc3_max_abs": 232.5090233615059,
+        "predicted_force_max_abs": 4.337978822645077,
+        "predicted_net_force_max_abs": 1.5543122344752192e-15,
+        "prediction_consistency_max_abs": 8.881784197001252e-16,
+        "symmetry_equivariance_max_abs": 3.7557364035316345
+      },
+      "name": "wurtzite_projected",
+      "passed": false,
+      "reasons": [
+        "condition_number",
+        "fc2",
+        "fc3",
+        "predicted_forces",
+        "residual_norm",
+        "singular_values",
+        "space_group_equivariance_invariant",
+        "symmetry_operation_count"
+      ]
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 1.4210854715202004e-14,
+        "fc2_max_abs": 6.750155989720952e-14,
+        "fc3_max_abs": 1.8047785488306545e-12,
+        "predicted_force_max_abs": 8.271161533457416e-15,
+        "predicted_net_force_max_abs": 6.661338147750939e-16,
+        "prediction_consistency_max_abs": 4.440892098500626e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_transform_base",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 1.4210854715202004e-14,
+        "fc2_max_abs": 9.059419880941277e-14,
+        "fc3_max_abs": 1.0373923942097463e-12,
+        "predicted_force_max_abs": 9.325873406851315e-15,
+        "predicted_net_force_max_abs": 6.661338147750939e-16,
+        "prediction_consistency_max_abs": 4.440892098500626e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_transform_rotated",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 7.105427357601002e-15,
+        "fc2_max_abs": 4.085620730620576e-14,
+        "fc3_max_abs": 4.902744876744691e-13,
+        "predicted_force_max_abs": 5.995204332975845e-15,
+        "predicted_net_force_max_abs": 6.106226635438361e-16,
+        "prediction_consistency_max_abs": 4.440892098500626e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_permutation_base",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 1.0658141036401503e-14,
+        "fc2_max_abs": 6.661338147750939e-14,
+        "fc3_max_abs": 7.815970093361102e-13,
+        "predicted_force_max_abs": 9.325873406851315e-15,
+        "predicted_net_force_max_abs": 1.1102230246251565e-15,
+        "prediction_consistency_max_abs": 8.881784197001252e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_permutation_swapped",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "fc2_max_abs": 3.541369111080585,
+        "fc3_max_abs": 8.576747303445552,
+        "predicted_force_max_abs": 0.360774199800486
+      },
+      "name": "symmetry_rescued_underdetermined",
+      "passed": false,
+      "reasons": [
+        "fc2",
+        "fc3",
+        "predicted_forces",
+        "protocol:ValueError",
+        "rank",
+        "symmetry_operation_count"
+      ]
+    },
+    {
+      "metrics": {
+        "acoustic_sum_rule_max_abs": 1.2434497875801753e-14,
+        "fc2_max_abs": 3.8191672047105385e-14,
+        "fc3_max_abs": 5.542233338928781e-13,
+        "predicted_force_max_abs": 7.382983113757291e-15,
+        "predicted_net_force_max_abs": 1.3322676295501878e-15,
+        "prediction_consistency_max_abs": 8.881784197001252e-16,
+        "symmetry_equivariance_max_abs": 0.0
+      },
+      "name": "p1_uniform_force_drift",
+      "passed": true,
+      "reasons": []
+    }
+  ],
+  "failed": 5,
+  "hard_gates": {
+    "candidate_protocol": "pass",
+    "invalid_input_rejection": "pass",
+    "locked_reference": "pass",
+    "reference_removed_before_candidate": "pass",
+    "rotation_and_reordering_invariance": "pass",
+    "source_policy": {
+      "added": [
+        "phonopy/harmonic/third_order.py"
+      ],
+      "donor_fragment_scan": "pass",
+      "module_bytes": 7922,
+      "module_sha256": "cec1d4aefdc8458930b133d5647d71d4ed4609db98f43c4c1c4e3a611fca4488"
+    }
+  },
+  "passed": 10,
+  "reference": "locked phonopy 4bac506 to phono3py 2dc8200 produce_fc3(symfc 1.7.3)",
+  "reward": 0.6666666666666666,
+  "status": "completed",
+  "task": "ALGOBRIDGE-0019",
+  "total": 15
+}
