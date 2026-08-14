@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "reference_model": "locked OpenMM reduced-potential workflow through locked pymbar versus merged OpenMM",
+  "host": {
+    "name": "OpenMM",
+    "repository": "https://github.com/openmm/openmm",
+    "commit": "c6173db6e8edd705eb59172bd21e9ce69c572405",
+    "tree": "71424061bd461f029827cf2d1b54c966ac6dfbe1",
+    "license": "MIT and LGPL-2.1-or-later",
+    "snapshot_file_count": 2263,
+    "snapshot_sha256": "dfbb5c7b115dc5f5c96358561773a5ed6595f3fc5ff9aed16e06a7682a1b111d"
+  },
+  "donor": {
+    "name": "pymbar",
+    "repository": "https://github.com/choderalab/pymbar",
+    "commit": "ed40ec3bbef03bb08938ad1a74d459b0d1ab81f7",
+    "tree": "da705aa87dd014f58741d74ceb08a19504cd1cb7",
+    "license": "MIT",
+    "snapshot_file_count": 424,
+    "snapshot_sha256": "d0e815a1bc88912cb0cb9c64bdb2ffc75eaec6f5225e79bd016acd5cbcf60a17"
+  },
+  "reference_runtime": {
+    "openmm_wheel_version": "8.5.2",
+    "openmm_wheel_sha256": "3ecb1458bd88af00df143800c5a3941363e0b9cf0d3c175af21c025742587d3f",
+    "purpose": "CPU Reference-platform evaluation of bounded reduced-potential fixtures; the candidate integration surface is the locked 8.6-development source above"
+  }
+}

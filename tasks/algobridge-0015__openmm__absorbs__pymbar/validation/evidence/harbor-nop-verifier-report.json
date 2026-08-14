@@ -1,0 +1,14 @@
+{
+  "changed_files": [],
+  "hard_gates": {
+    "reference_integrity": true,
+    "source_policy": false
+  },
+  "points": [],
+  "reference_integrity_findings": [],
+  "source_findings": [
+    "missing native OpenMM MBAR module",
+    "missing OpenMM public API export"
+  ],
+  "task": "ALGOBRIDGE-0015"
+}

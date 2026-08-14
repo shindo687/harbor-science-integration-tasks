@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "task_id": "algobridge-0015__openmm__absorbs__pymbar",
+  "algorithm_question_id": "ALGOBRIDGE-0015",
+  "candidate_id": "WFBRIDGE-0503",
+  "authoring_state": "accepted",
+  "title": "OpenMM native bounded MBAR free-energy estimator",
+  "domain": "molecular-simulation",
+  "algorithm_family": "statistical mechanics / optimization",
+  "host": "OpenMM",
+  "donor": "pymbar",
+  "bounded_subset": "K-by-N reduced potentials and per-state counts; stable self-consistent/Newton solution, covariance, overlap, and effective sample numbers; no timeseries subsampling or bootstrap.",
+  "reference_pipeline": "Locked OpenMM evaluates reduced potentials for bounded oscillator systems, then locked pymbar.MBAR solves the estimator.",
+  "candidate_interface": "openmm.app.mbar.estimate_mbar",
+  "execution_target": "cpu"
+}
