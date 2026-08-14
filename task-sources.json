@@ -156,6 +156,12 @@
       "suite": "StructHarbor",
       "origin": "https://github.com/shindo687/structharbor-0002__colabfold__absorbs__dockq-and-ipsae.git",
       "commit": "a68522ded505ec873d416c88ea22083ebe8c0404"
+    },
+    {
+      "name": "structharbor-0003__alphafold-2__absorbs__dssp",
+      "suite": "StructHarbor",
+      "origin": "https://github.com/shindo687/structharbor-0003__alphafold-2__absorbs__dssp.git",
+      "commit": "66b4c4e3b8b82b0d9a266229f9d8b1408438c3ad"
     }
   ]
 }

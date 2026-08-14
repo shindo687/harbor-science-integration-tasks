@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+
+exec python /examples/verify_examples.py
+

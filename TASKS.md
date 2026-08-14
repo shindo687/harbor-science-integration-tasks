@@ -1,6 +1,6 @@
 # Task index
 
-This index contains **26** byte-exact standalone-repository snapshots.
+This index contains **27** byte-exact standalone-repository snapshots.
 
 | Suite | Task snapshot | Standalone repository | Commit | Files | Materialized size | LFS |
 |---|---|---|---|---:|---:|---:|
@@ -30,5 +30,6 @@ This index contains **26** byte-exact standalone-repository snapshots.
 | AlgoBridge | [algobridge-0030__bilby__absorbs__dynesty](tasks/algobridge-0030__bilby__absorbs__dynesty/) | [source](https://github.com/shindo687/algobridge-0030__bilby__absorbs__dynesty) | `71a7775a8169` | 777 | 205.2 MiB | — |
 | StructHarbor | [structharbor-0001__alphafold-2__absorbs__dockq](tasks/structharbor-0001__alphafold-2__absorbs__dockq/) | [source](https://github.com/shindo687/structharbor-0001__alphafold-2__absorbs__dockq) | `a20792be30ca` | 383 | 942.9 MiB | 74 |
 | StructHarbor | [structharbor-0002__colabfold__absorbs__dockq-and-ipsae](tasks/structharbor-0002__colabfold__absorbs__dockq-and-ipsae/) | [source](https://github.com/shindo687/structharbor-0002__colabfold__absorbs__dockq-and-ipsae) | `a68522ded505` | 112 | 38.6 MiB | — |
+| StructHarbor | [structharbor-0003__alphafold-2__absorbs__dssp](tasks/structharbor-0003__alphafold-2__absorbs__dssp/) | [source](https://github.com/shindo687/structharbor-0003__alphafold-2__absorbs__dssp) | `66b4c4e3b8b8` | 60 | 67.3 MiB | — |
 
 The full source commit and Git tree for every row are recorded in [`tasks.lock.json`](tasks.lock.json).

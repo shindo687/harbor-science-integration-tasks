@@ -1,0 +1,16 @@
+{
+  "algorithm": "DSSP backbone hydrogen-bond energy and secondary-structure assignment",
+  "donor": "DSSP 4.4.11",
+  "host": "AlphaFold2 c77e5d2",
+  "id": "STRUCTHARBOR-0003",
+  "oracle_reference": "real locked mkdssp 4.4.11 executable",
+  "scope": "bounded standard-protein backbone coordinates after AlphaFold prediction",
+  "status": "accepted",
+  "verification": {
+    "harbor_nop_reward": 0.0,
+    "harbor_oracle_reward": 1.0,
+    "hidden": "15/15",
+    "invalid": "10/10",
+    "public": "5/5"
+  }
+}

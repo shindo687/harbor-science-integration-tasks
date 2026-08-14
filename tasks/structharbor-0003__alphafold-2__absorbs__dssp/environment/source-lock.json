@@ -1,0 +1,65 @@
+{
+  "archive_policy": "Complete ordinary tracked files from exact official Git commits; Git metadata is excluded.",
+  "donor": {
+    "archive": "environment/donor-source.tar.gz",
+    "archive_file_count": 32,
+    "commit": "3cbec3abea5169ea8fac030d0e43d28102b128aa",
+    "license": "BSD-2-Clause",
+    "name": "DSSP",
+    "repository": "https://github.com/PDB-REDO/dssp.git",
+    "sha256": "cc632a1a67545061a44a5cc0caca995b625b34190623844ba72548eddb67c461",
+    "tree": "7993e3627f7946c6428fd5c2ae8968832bd5ef26",
+    "version": "4.4.11"
+  },
+  "host": {
+    "archive": "environment/host-source.tar.gz",
+    "archive_file_count": 121,
+    "commit": "c77e5d2a8961d1a353632c462914ff0a32a950f6",
+    "license": "Apache-2.0",
+    "name": "AlphaFold2",
+    "repository": "https://github.com/google-deepmind/alphafold.git",
+    "sha256": "7b6900aa9cafb0bc14e0e6bf25b74faa67fa3133f3e3474f511279f6cf3fab59",
+    "tree": "4e9ce86c133f2f06d69c33a83b52a9742b7685e0"
+  },
+  "fixtures": [
+    {
+      "id": "1CRN",
+      "sha256": "42199a30a0701864a2a5cc76cd7f35cc544cd0e65fbcf63e03c166543249b811",
+      "url": "https://files.rcsb.org/download/1CRN.pdb"
+    },
+    {
+      "id": "1ZDD",
+      "sha256": "d9f66e70872ddfc941f11845da945561264cfe7044c7991c701638096acbd539",
+      "url": "https://files.rcsb.org/download/1ZDD.pdb"
+    },
+    {
+      "id": "1TEN",
+      "sha256": "5b2165e4e495d05e230c6438a8585966578fc70006ec228ac0a0d8b65d06c73c",
+      "url": "https://files.rcsb.org/download/1TEN.pdb"
+    }
+  ],
+  "python_runtime": {
+    "base_image": "docker.io/library/python@sha256:ffb752e139c0a19692a43af8d8523b274222dd68eebad5d583b45c2201c6e30a",
+    "numpy": {
+      "filename": "numpy-2.3.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "sha256": "5b83648633d46f77039c29078751f80da65aa64d5622a3cd62aaef9d835b6c93",
+      "url": "https://files.pythonhosted.org/packages/9a/a5/bf3db6e66c4b160d6ea10b534c381a1955dfab34cb1017ea93aa33c70ed3/numpy-2.3.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "version": "2.3.3"
+    },
+    "python_version": "3.13"
+  },
+  "reference_runtime": {
+    "base_image": "docker.io/library/python@sha256:ffb752e139c0a19692a43af8d8523b274222dd68eebad5d583b45c2201c6e30a",
+    "conda_build": "h629725b_0",
+    "conda_package": "tests/dssp-4.4.11-h629725b_0.conda",
+    "conda_package_sha256": "5580f0cce0c4a1cee944f25272ba5f729eff4dc88721ebf2196c646891e2190c",
+    "conda_package_url": "https://api.anaconda.org/download/conda-forge/dssp/4.4.11/linux-64/dssp-4.4.11-h629725b_0.conda",
+    "ccd_policy": "Offline minimal components.cif assembled from the 20 standard amino-acid CCD records served by files.rcsb.org",
+    "ccd_sha256": "043040d5f59b9aee505ca32ab5b818a06b43c07ff491a8e505e6b84981e2569f",
+    "prefix_relocation": "Each full conda prefix C-string was replaced by /opt/dssp while preserving its /share/libcifpp or /var/cache/libcifpp suffix and NUL-padding the original field",
+    "relocated_archive": "tests/dssp-runtime.tar.gz",
+    "relocated_archive_file_count": 6,
+    "relocated_archive_sha256": "174a3c2259313b2d9472b8b33df02d94c9611f0e61ed28b5d9b5ef03e1a95e28",
+    "version": "4.4.11"
+  }
+}

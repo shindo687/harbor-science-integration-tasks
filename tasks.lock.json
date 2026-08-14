@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "complete": true,
-  "task_count": 26,
+  "task_count": 27,
   "tasks": [
     {
       "name": "algobridge-0001__scanpy__absorbs__bbknn",
@@ -340,6 +340,19 @@
       "lfs_object_count": 0,
       "lfs_bytes": 0,
       "materialized_bytes": 40481038
+    },
+    {
+      "name": "structharbor-0003__alphafold-2__absorbs__dssp",
+      "suite": "StructHarbor",
+      "origin": "https://github.com/shindo687/structharbor-0003__alphafold-2__absorbs__dssp.git",
+      "commit": "66b4c4e3b8b82b0d9a266229f9d8b1408438c3ad",
+      "source_tree": "64955fbee658bfc258c326263a5f1d77d0fceae6",
+      "file_count": 60,
+      "git_blob_bytes": 70621102,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 70621102
     }
   ]
 }
