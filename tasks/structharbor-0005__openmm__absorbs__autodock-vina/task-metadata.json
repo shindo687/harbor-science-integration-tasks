@@ -1,0 +1,16 @@
+{
+  "algorithm": "AutoDock Vina fixed-pose empirical intermolecular scoring and coordinate forces",
+  "donor": "AutoDock Vina 1.2.7",
+  "host": "OpenMM 8.4.0",
+  "id": "STRUCTHARBOR-0005",
+  "oracle_reference": "locked native AutoDock Vina potential classes",
+  "scope": "bounded pretyped fixed receptor/ligand poses; no docking search",
+  "status": "accepted",
+  "verification": {
+    "harbor_nop_reward": 0.0,
+    "harbor_oracle_reward": 1.0,
+    "hidden": "15/15",
+    "invalid": "10/10",
+    "public": "5/5"
+  }
+}

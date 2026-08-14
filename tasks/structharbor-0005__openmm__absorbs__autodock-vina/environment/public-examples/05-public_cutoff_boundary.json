@@ -1,0 +1,98 @@
+{
+  "expected": {
+    "affinity": -0.003599377216489117,
+    "ligand_forces": [
+      [
+        -0.0021578266416792946,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "pairs": [
+      {
+        "distance": 7.999,
+        "ligand_index": 0,
+        "ligand_type": "C_H",
+        "raw_total": -0.003599377216489117,
+        "receptor_index": 0,
+        "receptor_type": "C_H",
+        "terms": {
+          "gauss1": -8.355369332076463e-33,
+          "gauss2": -0.003599377216489117,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.0,
+          "repulsion": 0.0
+        }
+      }
+    ],
+    "raw_interaction": -0.003599377216489117,
+    "receptor_forces": [
+      [
+        0.0021578266416792946,
+        0.0,
+        0.0
+      ]
+    ],
+    "terms": {
+      "gauss1": -8.355369332076463e-33,
+      "gauss2": -0.003599377216489117,
+      "hydrogen": 0.0,
+      "hydrophobic": 0.0,
+      "repulsion": 0.0
+    },
+    "torsional_divisor": 1.0,
+    "torsional_penalty": 0.0
+  },
+  "input": {
+    "cutoff": 8.0,
+    "ligand": {
+      "positions": [
+        [
+          7.999,
+          0,
+          0
+        ],
+        [
+          8.0,
+          0,
+          0
+        ],
+        [
+          8.001,
+          0,
+          0
+        ]
+      ],
+      "types": [
+        "C_H",
+        "C_H",
+        "N_P"
+      ]
+    },
+    "name": "public_cutoff_boundary",
+    "num_rotatable_bonds": 0,
+    "receptor": {
+      "positions": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "types": [
+        "C_H"
+      ]
+    },
+    "schema": "structharbor-openmm-vina-score-v1"
+  }
+}

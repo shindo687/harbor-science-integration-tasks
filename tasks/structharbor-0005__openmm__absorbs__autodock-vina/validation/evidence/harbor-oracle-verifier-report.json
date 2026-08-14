@@ -1,0 +1,351 @@
+{
+  "candidate_identity": {
+    "reference_paths_readable": false,
+    "uid": 10001
+  },
+  "candidate_isolation": {
+    "protected_paths_unreadable": [
+      "/tests",
+      "/opt/reference-vina",
+      "/opt/reference-vina-source",
+      "/opt/pristine-host",
+      "/opt/reference-runner",
+      "/opt/source-archives"
+    ],
+    "uid": 10001
+  },
+  "hidden": {
+    "cases": [
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 1.45594140819853e-28,
+          "pair_term_max_abs": 1.771855548836257e-31,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 1.45594140819853e-28,
+          "term_max_abs": 1.771855548836257e-31,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "hidden_gauss2_polar",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 6.721290191080698e-13,
+          "pair_term_max_abs": 4.336808689942018e-19,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 6.721290191080698e-13,
+          "term_max_abs": 4.336808689942018e-19,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "hidden_fluorine_hydrophobic",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 9.399009348598497e-13,
+          "pair_term_max_abs": 0.0,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 9.399009348598497e-13,
+          "term_max_abs": 0.0,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "hidden_chlorine_hydrophobic",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 1.5232037853252223e-11,
+          "pair_term_max_abs": 0.0,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 1.5232037853252223e-11,
+          "term_max_abs": 0.0,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "hidden_hbond_good_boundary",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 3.730349362740526e-14,
+          "pair_term_max_abs": 0.0,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 3.730349362740526e-14,
+          "term_max_abs": 0.0,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "hidden_hbond_bad_boundary",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 7.3542283374195e-12,
+          "pair_term_max_abs": 2.710505431213761e-19,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 7.3542283374195e-12,
+          "term_max_abs": 2.710505431213761e-19,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "hidden_metal_donor",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 1.9343016077755237e-10,
+          "pair_term_max_abs": 1.6653345369377348e-16,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 2.1161206120723364e-10,
+          "term_max_abs": 0.0,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "hidden_mixed_zero_torsion",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 1.890101408719147e-10,
+          "pair_term_max_abs": 1.6653345369377348e-16,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 2.067763738011763e-10,
+          "term_max_abs": 0.0,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "hidden_mixed_torsion_two",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 1.3031353773840237e-10,
+          "pair_term_max_abs": 1.942890293094024e-16,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 1.3223644401705315e-10,
+          "term_max_abs": 1.3877787807814457e-17,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "hidden_mixed_rigid_transform",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 1.149830231028659e-12,
+          "pair_term_max_abs": 0.0,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 1.149830231028659e-12,
+          "term_max_abs": 0.0,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "hidden_custom_cutoff",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 0.0,
+          "pair_term_max_abs": 0.0,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 0.0,
+          "term_max_abs": 0.0,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "hidden_no_interaction",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 2.220446049250313e-16,
+          "ligand_forces_max_abs": 1.4400369785505518e-11,
+          "pair_term_max_abs": 1.1102230246251565e-16,
+          "raw_interaction_abs": 2.498001805406602e-16,
+          "receptor_forces_max_abs": 6.371014826811461e-12,
+          "term_max_abs": 2.220446049250313e-16,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 2.7755575615628914e-17
+        },
+        "name": "hidden_dense_pose",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 2.0698731617585509e-10,
+          "pair_term_max_abs": 1.6653345369377348e-16,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 1.8875701002230016e-10,
+          "term_max_abs": 0.0,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "hidden_group_swap",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 1.8734347406734742e-10,
+          "pair_term_max_abs": 4.440892098500626e-16,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 2.1359136681553537e-10,
+          "term_max_abs": 2.0816681711721685e-17,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "hidden_high_torsion",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 1.734723475976807e-18,
+          "ligand_forces_max_abs": 2.1621593404574924e-13,
+          "pair_term_max_abs": 1.734723475976807e-18,
+          "raw_interaction_abs": 1.734723475976807e-18,
+          "receptor_forces_max_abs": 2.1621593404574924e-13,
+          "term_max_abs": 1.734723475976807e-18,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "hidden_near_native_cutoff",
+        "passed": true,
+        "reasons": []
+      }
+    ],
+    "passed": 15,
+    "total": 15
+  },
+  "invalid_contract": {
+    "passed": 10,
+    "total": 10
+  },
+  "provenance": {
+    "archive_and_runtime_checks": 3,
+    "native_reference_smoke": "pass"
+  },
+  "public": {
+    "cases": [
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 4.036018481229364e-14,
+          "pair_term_max_abs": 0.0,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 4.036018481229364e-14,
+          "term_max_abs": 0.0,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "public_hydrophobic_contact",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 7.469025398165741e-13,
+          "pair_term_max_abs": 0.0,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 7.469025398165741e-13,
+          "term_max_abs": 0.0,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "public_hydrogen_bond",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 3.4874325649525417e-12,
+          "pair_term_max_abs": 0.0,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 3.4874325649525417e-12,
+          "term_max_abs": 0.0,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "public_steric_clash",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 1.8274626256697957e-10,
+          "pair_term_max_abs": 1.6653345369377348e-16,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 1.9992407729318984e-10,
+          "term_max_abs": 0.0,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "public_mixed_pose",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "affinity_abs": 0.0,
+          "ligand_forces_max_abs": 8.185119249048967e-14,
+          "pair_term_max_abs": 0.0,
+          "raw_interaction_abs": 0.0,
+          "receptor_forces_max_abs": 8.185119249048967e-14,
+          "term_max_abs": 0.0,
+          "torsional_divisor_abs": 0.0,
+          "torsional_penalty_abs": 0.0
+        },
+        "name": "public_cutoff_boundary",
+        "passed": true,
+        "reasons": []
+      }
+    ],
+    "passed": 5,
+    "total": 5
+  },
+  "reference": "native AutoDock Vina 1.2.7 potential classes (root-only)",
+  "reward": 1.0,
+  "source_policy": {
+    "added": [
+      "wrappers/python/openmm/app/vina_score.py"
+    ],
+    "allowed_import_scan": "pass",
+    "donor_file_hash_scan": "pass",
+    "forbidden_dependency_scan": "pass",
+    "module_bytes": 7268,
+    "module_sha256": "54510533ab01343f80a6a5ff41afe6410a55f014d91300953d47494dbf3574bb"
+  },
+  "status": "graded",
+  "task": "STRUCTHARBOR-0005"
+}

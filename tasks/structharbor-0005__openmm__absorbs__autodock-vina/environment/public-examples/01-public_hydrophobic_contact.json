@@ -1,0 +1,76 @@
+{
+  "expected": {
+    "affinity": -0.07119143840184097,
+    "ligand_forces": [
+      [
+        0.0008155777253626938,
+        0.0,
+        0.0
+      ]
+    ],
+    "pairs": [
+      {
+        "distance": 3.8,
+        "ligand_index": 0,
+        "ligand_type": "C_H",
+        "raw_total": -0.07119143840184097,
+        "receptor_index": 0,
+        "receptor_type": "C_H",
+        "terms": {
+          "gauss1": -0.035579,
+          "gauss2": -0.0005434384018409725,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.035069,
+          "repulsion": 0.0
+        }
+      }
+    ],
+    "raw_interaction": -0.07119143840184097,
+    "receptor_forces": [
+      [
+        -0.0008155777253626938,
+        0.0,
+        0.0
+      ]
+    ],
+    "terms": {
+      "gauss1": -0.035579,
+      "gauss2": -0.0005434384018409725,
+      "hydrogen": 0.0,
+      "hydrophobic": -0.035069,
+      "repulsion": 0.0
+    },
+    "torsional_divisor": 1.0,
+    "torsional_penalty": 0.0
+  },
+  "input": {
+    "cutoff": 8.0,
+    "ligand": {
+      "positions": [
+        [
+          3.8,
+          0,
+          0
+        ]
+      ],
+      "types": [
+        "C_H"
+      ]
+    },
+    "name": "public_hydrophobic_contact",
+    "num_rotatable_bonds": 0,
+    "receptor": {
+      "positions": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "types": [
+        "C_H"
+      ]
+    },
+    "schema": "structharbor-openmm-vina-score-v1"
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "expected": {
+    "affinity": 8.161102136888642,
+    "ligand_forces": [
+      [
+        -4.235570149193281,
+        -0.5098684553437037,
+        -7.827567952093155e-05
+      ],
+      [
+        -0.4364141222790055,
+        -2.8768983899061684,
+        -0.15172831973650683
+      ],
+      [
+        0.021888243087008215,
+        0.18176760162389038,
+        0.3497353323948982
+      ],
+      [
+        -0.4854554097492121,
+        -0.10894392799172323,
+        0.6207627976944271
+      ]
+    ],
+    "pairs": [
+      {
+        "distance": 3.7513330963805385,
+        "ligand_index": 0,
+        "ligand_type": "C_H",
+        "raw_total": -0.06882730942164825,
+        "receptor_index": 0,
+        "receptor_type": "C_H",
+        "terms": {
+          "gauss1": -0.03524352083038912,
+          "gauss2": -0.0005048815724395587,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.035069,
+          "repulsion": 0.0019900929811804274
+        }
+      },
+      {
+        "distance": 5.6109268396584895,
+        "ligand_index": 1,
+        "ligand_type": "N_D",
+        "raw_total": -0.003832990110217607,
+        "receptor_index": 0,
+        "receptor_type": "C_H",
+        "terms": {
+          "gauss1": -1.6130317697734365e-08,
+          "gauss2": -0.003832973979899909,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.0,
+          "repulsion": 0.0
+        }
+      },
+      {
+        "distance": 3.3826764551165693,
+        "ligand_index": 2,
+        "ligand_type": "O_A",
+        "raw_total": 0.009842484085877783,
+        "receptor_index": 0,
+        "receptor_type": "C_H",
+        "terms": {
+          "gauss1": -0.029454228540911245,
+          "gauss2": -0.0003876580613736417,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.0,
+          "repulsion": 0.03968437068816267
+        }
+      },
+      {
+        "distance": 6.287288763847259,
+        "ligand_index": 3,
+        "ligand_type": "F_H",
+        "raw_total": -0.005139650748460527,
+        "receptor_index": 0,
+        "receptor_type": "C_H",
+        "terms": {
+          "gauss1": -1.1730605190499577e-16,
+          "gauss2": -0.00513965074846041,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.0,
+          "repulsion": 0.0
+        }
+      },
+      {
+        "distance": 0.8558621384311841,
+        "ligand_index": 0,
+        "ligand_type": "C_H",
+        "raw_total": 6.327289359762401,
+        "receptor_index": 1,
+        "receptor_type": "O_A",
+        "terms": {
+          "gauss1": -2.9494133285967795e-15,
+          "gauss2": -1.3486936008940085e-06,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.0,
+          "repulsion": 6.327290708456005
+        }
+      },
+      {
+        "distance": 3.1531730050855122,
+        "ligand_index": 1,
+        "ligand_type": "N_D",
+        "raw_total": -0.21228821840671494,
+        "receptor_index": 1,
+        "receptor_type": "O_A",
+        "terms": {
+          "gauss1": -0.021990261990267712,
+          "gauss2": -0.00031343864481085014,
+          "hydrogen": -0.2910567186651026,
+          "hydrophobic": -0.0,
+          "repulsion": 0.1010722008934662
+        }
+      },
+      {
+        "distance": 5.493860209360991,
+        "ligand_index": 2,
+        "ligand_type": "O_A",
+        "raw_total": -0.004199178706334145,
+        "receptor_index": 1,
+        "receptor_type": "O_A",
+        "terms": {
+          "gauss1": -8.609350858910954e-10,
+          "gauss2": -0.004199177845399059,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.0,
+          "repulsion": 0.0
+        }
+      },
+      {
+        "distance": 5.419409561935691,
+        "ligand_index": 3,
+        "ligand_type": "F_H",
+        "raw_total": -0.004427480778897606,
+        "receptor_index": 1,
+        "receptor_type": "O_A",
+        "terms": {
+          "gauss1": -9.86823591713875e-11,
+          "gauss2": -0.004427480680215247,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.0,
+          "repulsion": 0.0
+        }
+      },
+      {
+        "distance": 5.992703897240378,
+        "ligand_index": 0,
+        "ligand_type": "C_H",
+        "raw_total": -0.0045498494595833505,
+        "receptor_index": 2,
+        "receptor_type": "N_D",
+        "terms": {
+          "gauss1": -2.6286533436860273e-11,
+          "gauss2": -0.004549849433296817,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.0,
+          "repulsion": 0.0
+        }
+      },
+      {
+        "distance": 4.513590588434003,
+        "ligand_index": 1,
+        "ligand_type": "N_D",
+        "raw_total": -0.002999112515072036,
+        "receptor_index": 2,
+        "receptor_type": "N_D",
+        "terms": {
+          "gauss1": -0.001262589187282869,
+          "gauss2": -0.001736523327789167,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.0,
+          "repulsion": 0.0
+        }
+      },
+      {
+        "distance": 4.57301869665979,
+        "ligand_index": 2,
+        "ligand_type": "O_A",
+        "raw_total": -0.002393432240307195,
+        "receptor_index": 2,
+        "receptor_type": "N_D",
+        "terms": {
+          "gauss1": -0.000355681035530296,
+          "gauss2": -0.002037751204776899,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.0,
+          "repulsion": 0.0
+        }
+      },
+      {
+        "distance": 3.834057902536163,
+        "ligand_index": 3,
+        "ligand_type": "F_H",
+        "raw_total": -0.012496363205636704,
+        "receptor_index": 2,
+        "receptor_type": "N_D",
+        "terms": {
+          "gauss1": -0.011368930080559133,
+          "gauss2": -0.001127433125077571,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.0,
+          "repulsion": 0.0
+        }
+      },
+      {
+        "distance": 5.210806079677117,
+        "ligand_index": 0,
+        "ligand_type": "C_H",
+        "raw_total": -0.0029654751060934825,
+        "receptor_index": 3,
+        "receptor_type": "Cl_H",
+        "terms": {
+          "gauss1": -3.8549992543461455e-06,
+          "gauss2": -0.0029616201068391364,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.0,
+          "repulsion": 0.0
+        }
+      },
+      {
+        "distance": 1.876832437912346,
+        "ligand_index": 1,
+        "ligand_type": "N_D",
+        "raw_total": 2.4949251401559027,
+        "receptor_index": 3,
+        "receptor_type": "Cl_H",
+        "terms": {
+          "gauss1": -2.471610988294427e-07,
+          "gauss2": -1.9508268652799704e-05,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.0,
+          "repulsion": 2.4949448955856544
+        }
+      },
+      {
+        "distance": 6.505574532660432,
+        "ligand_index": 2,
+        "ligand_type": "O_A",
+        "raw_total": -0.005155959943946463,
+        "receptor_index": 3,
+        "receptor_type": "Cl_H",
+        "terms": {
+          "gauss1": -7.218295794991335e-18,
+          "gauss2": -0.0051559599439464565,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.0,
+          "repulsion": 0.0
+        }
+      },
+      {
+        "distance": 2.830194339616981,
+        "ligand_index": 3,
+        "ligand_type": "F_H",
+        "raw_total": 0.13541820444988306,
+        "receptor_index": 3,
+        "receptor_type": "Cl_H",
+        "terms": {
+          "gauss1": -0.01471527606140809,
+          "gauss2": -0.00025417640500483045,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.035069,
+          "repulsion": 0.18545665691629598
+        }
+      }
+    ],
+    "raw_interaction": 8.638200167811153,
+    "receptor_forces": [
+      [
+        -0.11594192715094752,
+        -0.1843522885105045,
+        -0.3495791019653118
+      ],
+      [
+        4.322984035444426,
+        0.691101565097336,
+        0.004102667642575564
+      ],
+      [
+        0.039339554137468355,
+        -0.004420558364167517,
+        0.029897352924669468
+      ],
+      [
+        0.8891697757035448,
+        2.8116144533950407,
+        -0.5031124532752308
+      ]
+    ],
+    "terms": {
+      "gauss1": -0.11439460700292638,
+      "gauss2": -0.03664943204158324,
+      "hydrogen": -0.2910567186651026,
+      "hydrophobic": -0.070138,
+      "repulsion": 9.150438925520765
+    },
+    "torsional_divisor": 1.05846,
+    "torsional_penalty": -0.4770980309225106
+  },
+  "input": {
+    "cutoff": 8.0,
+    "ligand": {
+      "positions": [
+        [
+          3.75,
+          0.1,
+          0
+        ],
+        [
+          4.5,
+          3.35,
+          0.1
+        ],
+        [
+          0.2,
+          1.55,
+          3.0
+        ],
+        [
+          3.2,
+          4.8,
+          2.5
+        ]
+      ],
+      "types": [
+        "C_H",
+        "N_D",
+        "O_A",
+        "F_H"
+      ]
+    },
+    "name": "public_mixed_pose",
+    "num_rotatable_bonds": 5,
+    "receptor": {
+      "positions": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          4.6,
+          0.2,
+          0
+        ],
+        [
+          0.3,
+          5.0,
+          0
+        ],
+        [
+          4.8,
+          5.2,
+          0.2
+        ]
+      ],
+      "types": [
+        "C_H",
+        "O_A",
+        "N_D",
+        "Cl_H"
+      ]
+    },
+    "schema": "structharbor-openmm-vina-score-v1"
+  }
+}

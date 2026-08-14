@@ -1,0 +1,76 @@
+{
+  "expected": {
+    "affinity": 1.74615465212242,
+    "ligand_forces": [
+      [
+        2.408720830337616,
+        0.0,
+        0.0
+      ]
+    ],
+    "pairs": [
+      {
+        "distance": 2.35,
+        "ligand_index": 0,
+        "ligand_type": "C_P",
+        "raw_total": 1.7665706923150355,
+        "receptor_index": 0,
+        "receptor_type": "C_H",
+        "terms": {
+          "gauss1": -7.920947679317179e-06,
+          "gauss2": -3.64992372846472e-05,
+          "hydrogen": -0.0,
+          "hydrophobic": -0.0,
+          "repulsion": 1.7666151124999994
+        }
+      }
+    ],
+    "raw_interaction": 1.7665706923150355,
+    "receptor_forces": [
+      [
+        -2.408720830337616,
+        0.0,
+        0.0
+      ]
+    ],
+    "terms": {
+      "gauss1": -7.920947679317179e-06,
+      "gauss2": -3.64992372846472e-05,
+      "hydrogen": 0.0,
+      "hydrophobic": 0.0,
+      "repulsion": 1.7666151124999994
+    },
+    "torsional_divisor": 1.011692,
+    "torsional_penalty": -0.020416040192615448
+  },
+  "input": {
+    "cutoff": 8.0,
+    "ligand": {
+      "positions": [
+        [
+          2.35,
+          0,
+          0
+        ]
+      ],
+      "types": [
+        "C_P"
+      ]
+    },
+    "name": "public_steric_clash",
+    "num_rotatable_bonds": 1,
+    "receptor": {
+      "positions": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "types": [
+        "C_H"
+      ]
+    },
+    "schema": "structharbor-openmm-vina-score-v1"
+  }
+}

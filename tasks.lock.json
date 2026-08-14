@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "complete": true,
-  "task_count": 27,
+  "task_count": 28,
   "tasks": [
     {
       "name": "algobridge-0001__scanpy__absorbs__bbknn",
@@ -353,6 +353,19 @@
       "lfs_object_count": 0,
       "lfs_bytes": 0,
       "materialized_bytes": 70621102
+    },
+    {
+      "name": "structharbor-0005__openmm__absorbs__autodock-vina",
+      "suite": "StructHarbor",
+      "origin": "https://github.com/shindo687/structharbor-0005__openmm__absorbs__autodock-vina.git",
+      "commit": "9b6f612740d19eb6782ebde271c41babe2a5107b",
+      "source_tree": "124c947dc5fcd4507104a80cb5f62799b8534250",
+      "file_count": 53,
+      "git_blob_bytes": 133115870,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 133115870
     }
   ]
 }

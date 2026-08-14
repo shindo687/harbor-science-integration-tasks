@@ -1,0 +1,35 @@
+{
+  "archive_policy": "Complete ordinary tracked files from exact official Git commits; Git metadata is excluded.",
+  "donor": {
+    "archive": "environment/donor-source.tar.gz",
+    "archive_file_count": 308,
+    "commit": "8eb40404f4f45608acb3b01427587ac049f27c1f",
+    "license": "Apache-2.0",
+    "name": "AutoDock Vina",
+    "repository": "https://github.com/ccsb-scripps/AutoDock-Vina.git",
+    "sha256": "afd33fc6d6df356a2a8adf3041619abb8c39f0dd1d989e6c0122fcf2c2e4634e",
+    "tree": "0652dd53597524a3f114d7b41d4356685bdd1203",
+    "version": "1.2.7"
+  },
+  "host": {
+    "archive": "environment/host-source.tar.gz",
+    "archive_file_count": 2214,
+    "commit": "47684368dbbe4185d068be77d32a962059cfc37c",
+    "license": "MIT and LGPL components",
+    "name": "OpenMM",
+    "repository": "https://github.com/openmm/openmm.git",
+    "sha256": "83fd59a19a1062c4b11f2a8ec38caecdc10ddeffd6c2577fe520f33bae65627d",
+    "tree": "59bb81a19e01f1dc45e2e4992b10a883747e6778",
+    "version": "8.4.0"
+  },
+  "reference_runtime": {
+    "adapter": "tests/vina-potential-reference",
+    "adapter_bytes": 32904,
+    "adapter_policy": "The root-only executable directly instantiates Vina 1.2.7 vina_gaussian, vina_repulsion, vina_hydrophobic, and vina_non_dir_h_bond classes. Local compatibility headers only replace unused Boost declarations.",
+    "adapter_sha256": "4e369cfee5681168ba8db223d4cd46199187878470c87e19ae5d19ccd9248dd2",
+    "base_image": "docker.io/library/python@sha256:ffb752e139c0a19692a43af8d8523b274222dd68eebad5d583b45c2201c6e30a",
+    "build_command": "validation/build_reference_adapter.sh /path/to/AutoDock-Vina tests/vina-potential-reference",
+    "compiler": "g++ 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2), -std=c++17 -O2 -DNDEBUG",
+    "protocol": "Batch XS type-index and distance input; weighted gauss1/gauss2/repulsion/hydrophobic/hydrogen values and central radial derivatives output"
+  }
+}

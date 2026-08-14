@@ -1,6 +1,6 @@
 # Task index
 
-This index contains **27** byte-exact standalone-repository snapshots.
+This index contains **28** byte-exact standalone-repository snapshots.
 
 | Suite | Task snapshot | Standalone repository | Commit | Files | Materialized size | LFS |
 |---|---|---|---|---:|---:|---:|
@@ -31,5 +31,6 @@ This index contains **27** byte-exact standalone-repository snapshots.
 | StructHarbor | [structharbor-0001__alphafold-2__absorbs__dockq](tasks/structharbor-0001__alphafold-2__absorbs__dockq/) | [source](https://github.com/shindo687/structharbor-0001__alphafold-2__absorbs__dockq) | `a20792be30ca` | 383 | 942.9 MiB | 74 |
 | StructHarbor | [structharbor-0002__colabfold__absorbs__dockq-and-ipsae](tasks/structharbor-0002__colabfold__absorbs__dockq-and-ipsae/) | [source](https://github.com/shindo687/structharbor-0002__colabfold__absorbs__dockq-and-ipsae) | `a68522ded505` | 112 | 38.6 MiB | — |
 | StructHarbor | [structharbor-0003__alphafold-2__absorbs__dssp](tasks/structharbor-0003__alphafold-2__absorbs__dssp/) | [source](https://github.com/shindo687/structharbor-0003__alphafold-2__absorbs__dssp) | `66b4c4e3b8b8` | 60 | 67.3 MiB | — |
+| StructHarbor | [structharbor-0005__openmm__absorbs__autodock-vina](tasks/structharbor-0005__openmm__absorbs__autodock-vina/) | [source](https://github.com/shindo687/structharbor-0005__openmm__absorbs__autodock-vina) | `9b6f612740d1` | 53 | 126.9 MiB | — |
 
 The full source commit and Git tree for every row are recorded in [`tasks.lock.json`](tasks.lock.json).

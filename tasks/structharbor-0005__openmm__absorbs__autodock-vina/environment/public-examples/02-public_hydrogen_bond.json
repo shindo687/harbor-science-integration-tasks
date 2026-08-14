@@ -1,0 +1,76 @@
+{
+  "expected": {
+    "affinity": -0.2128223595935767,
+    "ligand_forces": [
+      [
+        -0.10287333097151959,
+        0.0,
+        0.0
+      ]
+    ],
+    "pairs": [
+      {
+        "distance": 3.1,
+        "ligand_index": 0,
+        "ligand_type": "N_D",
+        "raw_total": -0.220287316678681,
+        "receptor_index": 0,
+        "receptor_type": "O_A",
+        "terms": {
+          "gauss1": -0.01876053715502763,
+          "gauss2": -0.0002865509522248068,
+          "hydrogen": -0.3356794285714285,
+          "hydrophobic": -0.0,
+          "repulsion": 0.13443919999999993
+        }
+      }
+    ],
+    "raw_interaction": -0.220287316678681,
+    "receptor_forces": [
+      [
+        0.10287333097151959,
+        0.0,
+        0.0
+      ]
+    ],
+    "terms": {
+      "gauss1": -0.01876053715502763,
+      "gauss2": -0.0002865509522248068,
+      "hydrogen": -0.3356794285714285,
+      "hydrophobic": 0.0,
+      "repulsion": 0.13443919999999993
+    },
+    "torsional_divisor": 1.035076,
+    "torsional_penalty": 0.007464957085104307
+  },
+  "input": {
+    "cutoff": 8.0,
+    "ligand": {
+      "positions": [
+        [
+          3.1,
+          0,
+          0
+        ]
+      ],
+      "types": [
+        "N_D"
+      ]
+    },
+    "name": "public_hydrogen_bond",
+    "num_rotatable_bonds": 3,
+    "receptor": {
+      "positions": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "types": [
+        "O_A"
+      ]
+    },
+    "schema": "structharbor-openmm-vina-score-v1"
+  }
+}
