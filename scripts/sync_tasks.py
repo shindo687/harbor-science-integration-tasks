@@ -91,18 +91,64 @@ def resolve_source(entry: dict, source_root: Path | None, fetch_missing: bool) -
     return cache
 
 
-def tree_stats(source: Path, commit: str) -> tuple[str, int, int]:
+def tree_stats(source: Path, commit: str) -> dict:
     tree = run("git", "-C", str(source), "rev-parse", f"{commit}^{{tree}}")
     listing = run("git", "-C", str(source), "ls-tree", "-rl", commit)
-    count = 0
-    total_bytes = 0
+    blob_sizes: dict[str, int] = {}
     for line in listing.splitlines():
-        metadata, _path = line.split("\t", 1)
+        metadata, path = line.split("\t", 1)
         fields = metadata.split()
         if fields[1] == "blob":
-            count += 1
-            total_bytes += int(fields[3])
-    return tree, count, total_bytes
+            blob_sizes[path] = int(fields[3])
+
+    grep = subprocess.run(
+        [
+            "git",
+            "-C",
+            str(source),
+            "grep",
+            "-Il",
+            "^version https://git-lfs.github.com/spec/v1$",
+            commit,
+            "--",
+            ".",
+        ],
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+    )
+    if grep.returncode not in (0, 1):
+        raise RuntimeError(f"cannot inspect LFS pointers: {grep.stderr.strip()}")
+
+    lfs_objects: dict[str, int] = {}
+    pointer_blob_bytes = 0
+    lfs_file_count = 0
+    for raw_match in grep.stdout.splitlines():
+        _revision, path = raw_match.split(":", 1)
+        pointer = run("git", "-C", str(source), "show", f"{commit}:{path}")
+        oid_match = re.search(r"^oid sha256:([0-9a-f]{64})$", pointer, re.MULTILINE)
+        size_match = re.search(r"^size ([0-9]+)$", pointer, re.MULTILINE)
+        if oid_match is None or size_match is None:
+            raise RuntimeError(f"malformed LFS pointer at {commit}:{path}")
+        oid = oid_match.group(1)
+        size = int(size_match.group(1))
+        if oid in lfs_objects and lfs_objects[oid] != size:
+            raise RuntimeError(f"conflicting sizes for LFS object {oid}")
+        lfs_objects[oid] = size
+        pointer_blob_bytes += blob_sizes[path]
+        lfs_file_count += 1
+
+    git_blob_bytes = sum(blob_sizes.values())
+    lfs_bytes = sum(lfs_objects.values())
+    return {
+        "source_tree": tree,
+        "file_count": len(blob_sizes),
+        "git_blob_bytes": git_blob_bytes,
+        "lfs_file_count": lfs_file_count,
+        "lfs_object_count": len(lfs_objects),
+        "lfs_bytes": lfs_bytes,
+        "materialized_bytes": git_blob_bytes - pointer_blob_bytes + lfs_bytes,
+    }
 
 
 def safe_replace_from_checkout(source: Path, commit: str, name: str) -> None:
@@ -142,7 +188,7 @@ def safe_replace_from_checkout(source: Path, commit: str, name: str) -> None:
 def write_lock(entries: list[dict], expected_count: int) -> None:
     entries.sort(key=lambda item: item["name"])
     payload = {
-        "schema_version": 1,
+        "schema_version": 2,
         "complete": len(entries) == expected_count,
         "task_count": len(entries),
         "tasks": entries,
@@ -158,6 +204,11 @@ def main() -> int:
     parser.add_argument("--task", action="append", default=[])
     parser.add_argument("--all", action="store_true")
     parser.add_argument("--fetch-missing", action="store_true")
+    parser.add_argument(
+        "--metadata-only",
+        action="store_true",
+        help="refresh lock metadata without replacing an already committed task subtree",
+    )
     args = parser.parse_args()
 
     sources = load_json(SOURCES_PATH)["tasks"]
@@ -180,15 +231,27 @@ def main() -> int:
         source = resolve_source(entry, source_root, args.fetch_missing)
         if not git_object_exists(source, entry["commit"]):
             raise RuntimeError(f"{source} does not contain locked commit {entry['commit']}")
-        tree, file_count, total_bytes = tree_stats(source, entry["commit"])
-        safe_replace_from_checkout(source, entry["commit"], name)
+        stats = tree_stats(source, entry["commit"])
+        if args.metadata_only:
+            actual_tree = run(
+                "git", "-C", str(ROOT), "rev-parse", f"HEAD:tasks/{name}"
+            )
+            if actual_tree != stats["source_tree"]:
+                raise RuntimeError(
+                    f"{name} aggregate tree {actual_tree} differs from source "
+                    f"{stats['source_tree']}"
+                )
+        else:
+            safe_replace_from_checkout(source, entry["commit"], name)
         locked[name] = {
             **entry,
-            "source_tree": tree,
-            "file_count": file_count,
-            "bytes": total_bytes,
+            **stats,
         }
-        print(f"synced {name} {entry['commit'][:12]} tree={tree} files={file_count}")
+        action = "refreshed" if args.metadata_only else "synced"
+        print(
+            f"{action} {name} {entry['commit'][:12]} "
+            f"tree={stats['source_tree']} files={stats['file_count']}"
+        )
 
     write_lock(list(locked.values()), len(sources))
     return 0

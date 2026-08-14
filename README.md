@@ -12,8 +12,9 @@ GitHub 仓库；本仓库在 `tasks/` 下保存各独立仓库指定 commit 的�
 - 独立仓库不会被本仓库替代或删除
 
 完整目录见 [TASKS.md](TASKS.md)。每个快照的来源 URL、commit、Git tree、
-文件数和字节数记录在 `tasks.lock.json`；`scripts/verify_snapshots.py` 会校验
-聚合后的子目录 Git tree 与独立仓库锁定 commit 完全一致。
+文件数、Git blob/LFS/展开字节数记录在 `tasks.lock.json`；
+`scripts/verify_snapshots.py` 会校验聚合后的子目录 Git tree 与独立仓库锁定
+commit 完全一致。
 
 ## 克隆
 
@@ -25,13 +26,16 @@ git clone --filter=blob:none --sparse \
   https://github.com/shindo687/harbor-science-integration-tasks.git
 cd harbor-science-integration-tasks
 git sparse-checkout set \
-  tasks/structharbor-0001__alphafold-2__absorbs__dockq \
+  tasks/algobridge-0004__seurat__absorbs__clusterprofiler \
   scripts README.md TASKS.md task-sources.json tasks.lock.json
 ```
 
-需要全部题目时正常克隆即可：
+`structharbor-0001__alphafold-2__absorbs__dockq` 的模型参数和离线 wheels
+使用 74 个 Git LFS 对象（约 946 MB）。这些对象已经上传到本总仓库，不依赖
+H200 本地目录；克隆全部题目或该题前需安装 Git LFS：
 
 ```bash
+git lfs install
 git clone https://github.com/shindo687/harbor-science-integration-tasks.git
 ```
 
@@ -53,7 +57,7 @@ python3 scripts/verify_snapshots.py
 ```
 
 验证器要求 20 个目录全部存在，并检查：来源记录、锁定 commit、子目录 Git
-tree、文件数量、总字节数，以及 GitHub 100 MB 单文件限制。
+tree、文件数量、Git/LFS/展开字节数，以及 GitHub 100 MB 普通 Git 单文件限制。
 
 ## 更新快照
 
@@ -63,12 +67,13 @@ tree、文件数量、总字节数，以及 GitHub 100 MB 单文件限制。
 python3 scripts/sync_tasks.py \
   --source-root /path/to/local/repos \
   --task <task-name>
-git add tasks/<task-name> tasks.lock.json
 python3 scripts/generate_index.py
+git add tasks/<task-name> tasks.lock.json TASKS.md
 ```
 
 同步脚本只读取 `task-sources.json` 中固定的来源与 commit；若本地没有独立仓库，
 可增加 `--fetch-missing`，脚本会克隆到被 Git 忽略的 `.sync-cache/`。
+若只需重新计算来源树和 LFS 统计、不替换任务目录，可增加 `--metadata-only`。
 
 ## 许可证
 

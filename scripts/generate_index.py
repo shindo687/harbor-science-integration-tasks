@@ -20,17 +20,18 @@ def main() -> None:
         "",
         f"This index contains **{len(entries)}** byte-exact standalone-repository snapshots.",
         "",
-        "| Suite | Task snapshot | Standalone repository | Commit | Files | Size |",
-        "|---|---|---|---|---:|---:|",
+        "| Suite | Task snapshot | Standalone repository | Commit | Files | Materialized size | LFS |",
+        "|---|---|---|---|---:|---:|---:|",
     ]
     for entry in entries:
         name = entry["name"]
         origin = entry["origin"].removesuffix(".git")
-        size_mib = entry["bytes"] / 1024 / 1024
+        size_mib = entry["materialized_bytes"] / 1024 / 1024
+        lfs = entry["lfs_object_count"] or "—"
         lines.append(
             f"| {entry['suite']} | [{name}](tasks/{name}/) | "
             f"[source]({origin}) | `{entry['commit'][:12]}` | "
-            f"{entry['file_count']} | {size_mib:.1f} MiB |"
+            f"{entry['file_count']} | {size_mib:.1f} MiB | {lfs} |"
         )
     lines.extend(
         [

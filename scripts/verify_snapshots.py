@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+import re
 import subprocess
 import sys
 
@@ -28,21 +29,73 @@ def git(*args: str) -> str:
     ).stdout.strip()
 
 
-def subtree_stats(revision: str) -> tuple[int, int, int]:
+def subtree_stats(revision: str) -> tuple[dict[str, int], int]:
     listing = git("ls-tree", "-rl", revision)
-    count = 0
-    total = 0
+    blob_sizes: dict[str, int] = {}
     over_limit = 0
     for line in listing.splitlines():
-        metadata, _path = line.split("\t", 1)
+        metadata, path = line.split("\t", 1)
         fields = metadata.split()
         if fields[1] != "blob":
             continue
         size = int(fields[3])
-        count += 1
-        total += size
+        blob_sizes[path] = size
         over_limit += size >= 100_000_000
-    return count, total, over_limit
+    return blob_sizes, over_limit
+
+
+def lfs_stats(name: str, blob_sizes: dict[str, int]) -> dict[str, int]:
+    prefix = f"tasks/{name}/"
+    grep = subprocess.run(
+        [
+            "git",
+            "-C",
+            str(ROOT),
+            "grep",
+            "-Il",
+            "^version https://git-lfs.github.com/spec/v1$",
+            "HEAD",
+            "--",
+            f"tasks/{name}",
+        ],
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+    )
+    if grep.returncode not in (0, 1):
+        raise RuntimeError(grep.stderr.strip())
+
+    objects: dict[str, int] = {}
+    pointer_blob_bytes = 0
+    file_count = 0
+    for raw_match in grep.stdout.splitlines():
+        _revision, full_path = raw_match.split(":", 1)
+        if not full_path.startswith(prefix):
+            raise RuntimeError(f"unexpected LFS path: {full_path}")
+        path = full_path.removeprefix(prefix)
+        pointer = git("show", f"HEAD:{full_path}")
+        oid_match = re.search(r"^oid sha256:([0-9a-f]{64})$", pointer, re.MULTILINE)
+        size_match = re.search(r"^size ([0-9]+)$", pointer, re.MULTILINE)
+        if oid_match is None or size_match is None:
+            raise RuntimeError(f"malformed LFS pointer: {full_path}")
+        oid = oid_match.group(1)
+        size = int(size_match.group(1))
+        if oid in objects and objects[oid] != size:
+            raise RuntimeError(f"conflicting LFS sizes for {oid}")
+        objects[oid] = size
+        pointer_blob_bytes += blob_sizes[path]
+        file_count += 1
+
+    git_blob_bytes = sum(blob_sizes.values())
+    lfs_bytes = sum(objects.values())
+    return {
+        "file_count": len(blob_sizes),
+        "git_blob_bytes": git_blob_bytes,
+        "lfs_file_count": file_count,
+        "lfs_object_count": len(objects),
+        "lfs_bytes": lfs_bytes,
+        "materialized_bytes": git_blob_bytes - pointer_blob_bytes + lfs_bytes,
+    }
 
 
 def main() -> int:
@@ -57,6 +110,8 @@ def main() -> int:
     locked = {entry["name"]: entry for entry in locked_entries}
     errors: list[str] = []
 
+    if lock.get("schema_version") != 2:
+        errors.append("tasks.lock.json must use schema_version 2")
     if len(sources) != len(source_entries):
         errors.append("task-sources.json contains duplicate names")
     if len(locked) != len(locked_entries):
@@ -91,22 +146,28 @@ def main() -> int:
                 errors.append(f"{name}: {field} differs from task-sources.json")
         try:
             actual_tree = git("rev-parse", f"HEAD:tasks/{name}")
-            file_count, total_bytes, over_limit = subtree_stats(f"HEAD:tasks/{name}")
-        except subprocess.CalledProcessError as exc:
-            errors.append(f"{name}: cannot inspect committed subtree: {exc.stderr.strip()}")
+            blob_sizes, over_limit = subtree_stats(f"HEAD:tasks/{name}")
+            stats = lfs_stats(name, blob_sizes)
+        except (RuntimeError, subprocess.CalledProcessError) as exc:
+            detail = str(exc)
+            if isinstance(exc, subprocess.CalledProcessError) and exc.stderr:
+                detail = exc.stderr.strip()
+            errors.append(f"{name}: cannot inspect committed subtree: {detail}")
             continue
         if actual_tree != entry["source_tree"]:
             errors.append(
                 f"{name}: tree mismatch {actual_tree} != {entry['source_tree']}"
             )
-        if file_count != entry["file_count"]:
-            errors.append(f"{name}: file count mismatch {file_count} != {entry['file_count']}")
-        if total_bytes != entry["bytes"]:
-            errors.append(f"{name}: byte count mismatch {total_bytes} != {entry['bytes']}")
+        for field, actual in stats.items():
+            if actual != entry.get(field):
+                errors.append(
+                    f"{name}: {field} mismatch {actual} != {entry.get(field)}"
+                )
         if over_limit:
             errors.append(f"{name}: {over_limit} files violate GitHub's 100 MB limit")
         print(
-            f"OK {name}: tree={actual_tree} files={file_count} bytes={total_bytes}"
+            f"OK {name}: tree={actual_tree} files={stats['file_count']} "
+            f"materialized_bytes={stats['materialized_bytes']}"
         )
 
     if errors:

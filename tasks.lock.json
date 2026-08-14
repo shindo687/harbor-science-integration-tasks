@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "complete": true,
   "task_count": 20,
   "tasks": [
@@ -10,7 +10,11 @@
       "commit": "5fa798c1ee99d3102d85255b7271723992911cee",
       "source_tree": "513f6f92e7a4ddbcd25c6e3d97326c3906990c1d",
       "file_count": 2189,
-      "bytes": 552653488
+      "git_blob_bytes": 552653488,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 552653488
     },
     {
       "name": "algobridge-0002__scanpy__absorbs__scvelo",
@@ -19,7 +23,11 @@
       "commit": "e6deab9534749c394ee7c30bd4ab87a4f3f04c4d",
       "source_tree": "1d9bc7c780759225e505eca82aa2562938ac4b66",
       "file_count": 2097,
-      "bytes": 457936909
+      "git_blob_bytes": 457936909,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 457936909
     },
     {
       "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
@@ -28,7 +36,11 @@
       "commit": "5853c392754fa468250bfdb07a053f4a62f5620c",
       "source_tree": "24c3215e087bda897ad832d763955b9995f8754b",
       "file_count": 62,
-      "bytes": 31192944
+      "git_blob_bytes": 31192944,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 31192944
     },
     {
       "name": "algobridge-0006__scanpy__absorbs__scib",
@@ -37,7 +49,11 @@
       "commit": "76b059e5e533005e910ae16216664aa2de1c5eb5",
       "source_tree": "002a7f6f427d4907ec40fba844464b682d04731a",
       "file_count": 2290,
-      "bytes": 530364805
+      "git_blob_bytes": 530364805,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 530364805
     },
     {
       "name": "algobridge-0007__fasttree__absorbs__mafft",
@@ -46,7 +62,11 @@
       "commit": "b3fd38093c9b3e1a08d5f82a906ddd3f2a61ee3d",
       "source_tree": "a2312d1f60c0ff7d37f32dcf72c6e19bfaee50b7",
       "file_count": 94,
-      "bytes": 1415372
+      "git_blob_bytes": 1415372,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 1415372
     },
     {
       "name": "algobridge-0012__gromacs__absorbs__prody",
@@ -55,7 +75,11 @@
       "commit": "bee40efe51380ae64b5c66ac51f855be47f6bd05",
       "source_tree": "9fc82534bcc971107a9ac9704025dd48103f4d87",
       "file_count": 70,
-      "bytes": 292774909
+      "git_blob_bytes": 292774909,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 292774909
     },
     {
       "name": "algobridge-0015__openmm__absorbs__pymbar",
@@ -64,7 +88,11 @@
       "commit": "a408abe0605dec12b80ec4b9a9f58280c5808583",
       "source_tree": "4977d7dd54babb58bc95abb715d0c1fc07f0e249",
       "file_count": 63,
-      "bytes": 210199446
+      "git_blob_bytes": 210199446,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 210199446
     },
     {
       "name": "algobridge-0016__openmm__absorbs__pyemma",
@@ -73,7 +101,11 @@
       "commit": "56cf9f890839a130028f5db89060361fc2d826da",
       "source_tree": "844f8ee621de9fc6fd414d478e3d632fe61d3edf",
       "file_count": 97,
-      "bytes": 246834301
+      "git_blob_bytes": 246834301,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 246834301
     },
     {
       "name": "algobridge-0017__gromacs__absorbs__pymbar",
@@ -82,7 +114,11 @@
       "commit": "9c8bb798f0d4dd1986ea917ed9b382fbeb32c957",
       "source_tree": "daa603988b639475d11f45486d3658f6377671c8",
       "file_count": 70,
-      "bytes": 226629126
+      "git_blob_bytes": 226629126,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 226629126
     },
     {
       "name": "algobridge-0018__alphafold-2__absorbs__prody",
@@ -91,7 +127,11 @@
       "commit": "0f1c0253c99411bed8f111aeba755eb72e9ab009",
       "source_tree": "7071a52134ca42b8e66d869b96a8ca0448c13ba4",
       "file_count": 71,
-      "bytes": 275249015
+      "git_blob_bytes": 275249015,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 275249015
     },
     {
       "name": "algobridge-0019__phonopy__absorbs__phono3py",
@@ -100,7 +140,11 @@
       "commit": "6a098b5bf4c686925568b9867f21d3fe5b5fb0b4",
       "source_tree": "d855851c1058c4eb274ed144e8b6ae6b48a016a0",
       "file_count": 80,
-      "bytes": 165282044
+      "git_blob_bytes": 165282044,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 165282044
     },
     {
       "name": "algobridge-0024__lammps__absorbs__phonopy",
@@ -109,7 +153,11 @@
       "commit": "f29ef0d04a1f88bc2ae75184ef198dfc1a9cdc4d",
       "source_tree": "cd143a7c0b241af6bf5b957349ede033732017c3",
       "file_count": 73,
-      "bytes": 191474278
+      "git_blob_bytes": 191474278,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 191474278
     },
     {
       "name": "algobridge-0025__scikit-learn__absorbs__xgboost",
@@ -118,7 +166,11 @@
       "commit": "e82e185b5942f1906f081c1f707840872adbf7f0",
       "source_tree": "89f1579d4dce7f60923b0542d5939c989f97a247",
       "file_count": 79,
-      "bytes": 148888408
+      "git_blob_bytes": 148888408,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 148888408
     },
     {
       "name": "algobridge-0026__scikit-learn__absorbs__shap",
@@ -127,7 +179,11 @@
       "commit": "3488fa6768bdc65520ea9ac519064d9e2238d443",
       "source_tree": "203b4c28f5ab2ae0e90578067433c05d492fe143",
       "file_count": 3514,
-      "bytes": 358369503
+      "git_blob_bytes": 358369503,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 358369503
     },
     {
       "name": "algobridge-0027__scikit-learn__absorbs__imbalanced-learn",
@@ -136,7 +192,11 @@
       "commit": "a488dcdd1e96fc428a8853b1a3b6c14e91c43cbd",
       "source_tree": "4a7d28d6692a60f82baec92d4e7ce074fc82b4bf",
       "file_count": 3744,
-      "bytes": 178904167
+      "git_blob_bytes": 178904167,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 178904167
     },
     {
       "name": "algobridge-0028__scipy__absorbs__statsmodels",
@@ -145,7 +205,11 @@
       "commit": "ed2c0d76edadb065be357dff328f28e03eaa7f98",
       "source_tree": "4ba89863307fd7323336a0191adad9a54348426b",
       "file_count": 14243,
-      "bytes": 426827449
+      "git_blob_bytes": 426827449,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 426827449
     },
     {
       "name": "algobridge-0029__networkx__absorbs__scikit-learn",
@@ -154,7 +218,11 @@
       "commit": "a1f4fd37242fd656af49642b3b0c829e714a08e5",
       "source_tree": "57afb1dea8f0a07f4a729e3cb9600e99f0388ad3",
       "file_count": 3592,
-      "bytes": 161916051
+      "git_blob_bytes": 161916051,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 161916051
     },
     {
       "name": "algobridge-0030__bilby__absorbs__dynesty",
@@ -163,7 +231,11 @@
       "commit": "71a7775a8169d15383817978c9d915e0b9be682d",
       "source_tree": "681f9b07e998ee6df434b7ef96759b9378c3ae23",
       "file_count": 777,
-      "bytes": 215147335
+      "git_blob_bytes": 215147335,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 215147335
     },
     {
       "name": "structharbor-0001__alphafold-2__absorbs__dockq",
@@ -172,7 +244,11 @@
       "commit": "a20792be30ca991121d991bd5418df23e79df3a2",
       "source_tree": "8b62d21001b0875f802274a0932d06c0a549dcb0",
       "file_count": 383,
-      "bytes": 42819232
+      "git_blob_bytes": 42819232,
+      "lfs_file_count": 74,
+      "lfs_object_count": 74,
+      "lfs_bytes": 945897011,
+      "materialized_bytes": 988706541
     },
     {
       "name": "structharbor-0002__colabfold__absorbs__dockq-and-ipsae",
@@ -181,7 +257,11 @@
       "commit": "a68522ded505ec873d416c88ea22083ebe8c0404",
       "source_tree": "8cc74ec68be232f4e3ffe3f65d9bb79fe3800f06",
       "file_count": 112,
-      "bytes": 40481038
+      "git_blob_bytes": 40481038,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 40481038
     }
   ]
 }
