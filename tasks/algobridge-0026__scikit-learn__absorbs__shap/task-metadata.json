@@ -1,0 +1,15 @@
+{
+  "schema_version": 2,
+  "task_id": "algobridge-0026__scikit-learn__absorbs__shap",
+  "algorithm_question_id": "ALGOBRIDGE-0026",
+  "candidate_id": "WFBRIDGE-0112",
+  "title": "scikit-learn native exact TreeSHAP",
+  "domain": "machine-learning",
+  "algorithm_family": "explainability / dynamic programming",
+  "algorithm": "SHAP TreeExplainer tree_path_dependent exact TreeSHAP",
+  "host_software": "scikit-learn",
+  "donor_software": "SHAP",
+  "unique_paper_count": 16,
+  "authoring_state": "accepted",
+  "execution_target": "cpu"
+}

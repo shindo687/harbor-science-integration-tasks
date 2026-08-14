@@ -1,0 +1,11 @@
+{
+  "passed": 5,
+  "results": [
+    {"name": "public_tree_regression", "passed": true},
+    {"name": "public_multioutput_tree", "passed": true},
+    {"name": "public_forest_regression", "passed": true},
+    {"name": "public_multiclass_tree", "passed": true},
+    {"name": "public_boosting_regression", "passed": true}
+  ],
+  "total": 5
+}

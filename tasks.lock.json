@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "complete": false,
-  "task_count": 14,
+  "task_count": 15,
   "tasks": [
     {
       "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
@@ -83,6 +83,15 @@
       "source_tree": "89f1579d4dce7f60923b0542d5939c989f97a247",
       "file_count": 79,
       "bytes": 148888408
+    },
+    {
+      "name": "algobridge-0026__scikit-learn__absorbs__shap",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0026__scikit-learn__absorbs__shap.git",
+      "commit": "3488fa6768bdc65520ea9ac519064d9e2238d443",
+      "source_tree": "203b4c28f5ab2ae0e90578067433c05d492fe143",
+      "file_count": 3514,
+      "bytes": 358369503
     },
     {
       "name": "algobridge-0027__scikit-learn__absorbs__imbalanced-learn",

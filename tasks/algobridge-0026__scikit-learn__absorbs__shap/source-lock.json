@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "host": {
+    "software": "scikit-learn",
+    "repository": "https://github.com/scikit-learn/scikit-learn",
+    "commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+    "tree": "87223e64df8880951bc88ee6049a8bf453dccf88",
+    "snapshot": "complete git archive"
+  },
+  "donor": {
+    "software": "SHAP",
+    "repository": "https://github.com/shap/shap",
+    "commit": "df974a1966294b9c7acebb1373fd6dc5445d1d3d",
+    "tree": "4ec180cdefa828142ec4e6da5c2b0c80697bf8e8",
+    "snapshot": "algorithm-relevant source archive",
+    "included": [
+      "LICENSE",
+      "README.md",
+      "pyproject.toml",
+      "CMakeLists.txt",
+      "shap/",
+      "tests/explainers/test_tree.py",
+      "docs/references/tree_explainer.bib",
+      "docs/references/treeshap_arxiv.bib"
+    ]
+  },
+  "reference_wheel": {
+    "filename": "shap-0.52.1.dev42-cp312-abi3-linux_x86_64.whl",
+    "sha256": "0321cb5f92a235af58982a9d36c58634125764cc10d0298fff6742c8c4465165",
+    "built_from_donor_commit": "df974a1966294b9c7acebb1373fd6dc5445d1d3d"
+  }
+}
+

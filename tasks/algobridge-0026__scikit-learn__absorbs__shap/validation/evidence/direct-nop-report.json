@@ -1,0 +1,46 @@
+{
+  "elapsed_seconds": 4.35760235786438,
+  "fatal_error": "RuntimeError: source isolation scan failed",
+  "hard_gates": {
+    "clean_room_source_scan": false,
+    "locked_reference_pipeline": true,
+    "source_integrity": true
+  },
+  "locked_identity": {
+    "donor_commit": "df974a1966294b9c7acebb1373fd6dc5445d1d3d",
+    "donor_tree": "4ec180cdefa828142ec4e6da5c2b0c80697bf8e8",
+    "host_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+    "host_tree": "87223e64df8880951bc88ee6049a8bf453dccf88",
+    "reference_wheel": "shap-0.52.1.dev42-cp312-abi3-linux_x86_64.whl",
+    "reference_wheel_sha256": "0321cb5f92a235af58982a9d36c58634125764cc10d0298fff6742c8c4465165"
+  },
+  "points": [],
+  "reference_provenance": {
+    "numpy_version": "2.3.2",
+    "shap_file": "/opt/reference-venv/lib/python3.12/site-packages/shap/__init__.py",
+    "shap_version": "0.52.1.dev42",
+    "sklearn_file": "/opt/reference-venv/lib/python3.12/site-packages/sklearn/__init__.py",
+    "sklearn_version": "1.10.dev0"
+  },
+  "reference_stderr": "",
+  "source_integrity_failures": [],
+  "source_scan": {
+    "changed_files": [],
+    "findings": [
+      "required source integration is missing: sklearn/inspection/_tree_shap.py",
+      "required source integration is missing: sklearn/inspection/__init__.py",
+      "required source integration is missing: sklearn/inspection/tests/test_tree_shap.py"
+    ],
+    "passed": false
+  },
+  "summary": {
+    "passed": 0,
+    "reward": 0.0,
+    "total": 15
+  },
+  "task": "algobridge-0026__scikit-learn__absorbs__shap",
+  "tolerances": {
+    "atol": 1e-09,
+    "rtol": 1e-09
+  }
+}

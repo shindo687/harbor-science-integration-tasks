@@ -1,0 +1,39 @@
+{
+    "id": "5727d22f-86c8-4b4f-ad0c-572e38c971b9",
+    "started_at": "2026-08-14T05:50:47.392987",
+    "updated_at": "2026-08-14T05:51:35.042570",
+    "finished_at": "2026-08-14T05:51:35.042570",
+    "n_total_trials": 1,
+    "stats": {
+        "n_completed_trials": 1,
+        "n_errored_trials": 0,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "nop__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "algobridge-0026__scikit-learn__a__n4NxfUC"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        },
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null
+    }
+}

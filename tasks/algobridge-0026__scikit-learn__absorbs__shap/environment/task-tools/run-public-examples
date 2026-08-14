@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+RUNTIME=$(mktemp -d /tmp/tree-shap-public-XXXXXX)
+python /opt/task-tools/materialize_candidate.py --output "$RUNTIME"
+PYTHONPATH="$RUNTIME" python /examples/verify_examples.py
