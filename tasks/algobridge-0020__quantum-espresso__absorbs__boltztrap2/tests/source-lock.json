@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "resolved_at": "2026-08-15T00:00:00+08:00",
+  "base_image": {
+    "reference": "gcc@sha256:1dc2dc4d3fe9e181b0472342a7af1885f3d0f757fb241f815b617f470770f660",
+    "image_id": "sha256:0c19515b3bcfc587558ff0ed4128b613f4fc398a183fa1f7a418e7dd9e7616ca"
+  },
+  "host": {
+    "software": "Quantum ESPRESSO",
+    "version": "7.5",
+    "repo": "https://github.com/QEF/q-e.git",
+    "tag": "qe-7.5",
+    "tag_object": "17975e6f2ba19aec6f50d99c1fc677361d7c8b3a",
+    "commit": "770a0b2d12928a67048e2f3da8d10d057e52179e",
+    "tree": "e2c55ea04948ceb057b2eb6b040c35d083727c02",
+    "tracked_files": 7229,
+    "materialized_files": 7221,
+    "archive": "host-source.tar.gz",
+    "archive_sha256": "ece7507b819fcf69d46caf31e430565066804e805e8446a0cd37fe83dd7b4c38",
+    "archive_bytes": 72468360,
+    "archive_layout": "git archive at repository root"
+  },
+  "donor": {
+    "software": "BoltzTraP2",
+    "version": "25.3.1",
+    "repo": "https://gitlab.com/sousaw/BoltzTraP2.git",
+    "tag": "v25.3.1",
+    "tag_object": "a61e12363da1c995a2da1184c7208130deec8ed1",
+    "commit": "8d9fc2534642718c26ee35a03f9eac39d8431eb2",
+    "tree": "e70dae97e65dd66eb33e7a4f4aa3a0892b9d41bc",
+    "tracked_files": 2646,
+    "archive": "donor-source.tar.gz",
+    "archive_sha256": "0578bc1c58380ad9ad7d8d47bef7616bbd6c5146ad14ad1af836a4122ac0988b",
+    "archive_bytes": 52229067,
+    "archive_layout": "git archive with BoltzTraP2-25.3.1/ prefix",
+    "reference_entry_points": [
+      "BoltzTraP2.bandlib.BTPDOS",
+      "BoltzTraP2.bandlib.fermiintegrals",
+      "BoltzTraP2.bandlib.calc_Onsager_coefficients"
+    ],
+    "entry_file_sha256": {
+      "BoltzTraP2/bandlib.py": "9cb1a30a1fb572188bbcaa9b0f16e48dcd6d0e75e79bf56f04b24ca35d2a362f",
+      "BoltzTraP2/fd.py": "bf553bb3493ea9e2eb73373d5a9bb7ae87b7e93ce51128320c48e1649bba7e24",
+      "BoltzTraP2/units.py": "32acfad6e996c0419209493ed9fe85bcc8a6701d7d73d636fe7252f1f670351b"
+    }
+  },
+  "verifier_dependencies": {
+    "numpy": {
+      "version": "1.26.4",
+      "wheel_sha256": "666dbfb6ec68962c033a450943ded891bed2d54e6755e35e5835d63f4f6931d5"
+    },
+    "scipy": {
+      "version": "1.15.3",
+      "wheel_sha256": "39cb9c62e471b1bb3750066ecc3a3f3052b37751c7c3dfd0fd7e48900ed52982"
+    },
+    "wheel_manifest_sha256": "27b8c2874346f3a8f45d21ffae3236f685c2723aae57852f6854d8c659ce735d"
+  },
+  "reference_matrix": {
+    "public_cases": 5,
+    "hidden_cases": 15,
+    "invalid_cases": 10,
+    "public_manifest_sha256": "43b7d08c29ab66f2447aeadb4ff886319ee12803217ffd3b1e8738fc8fe3303c",
+    "reference_runner_sha256": "f8573ced0c3c1f8d83fefddd6f10ce892b48b3ddd7177cb5bac702f363055aaf",
+    "cases_sha256": "34cccac39a462577d443069b390869f51ef76e80f971ec240b8e76a4bbca80ea"
+  }
+}

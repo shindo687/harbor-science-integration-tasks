@@ -1,6 +1,6 @@
 # Task index
 
-This index contains **22** byte-exact standalone-repository snapshots.
+This index contains **23** byte-exact standalone-repository snapshots.
 
 | Suite | Task snapshot | Standalone repository | Commit | Files | Materialized size | LFS |
 |---|---|---|---|---:|---:|---:|
@@ -17,6 +17,7 @@ This index contains **22** byte-exact standalone-repository snapshots.
 | AlgoBridge | [algobridge-0017__gromacs__absorbs__pymbar](tasks/algobridge-0017__gromacs__absorbs__pymbar/) | [source](https://github.com/shindo687/algobridge-0017__gromacs__absorbs__pymbar) | `9c8bb798f0d4` | 70 | 216.1 MiB | — |
 | AlgoBridge | [algobridge-0018__alphafold-2__absorbs__prody](tasks/algobridge-0018__alphafold-2__absorbs__prody/) | [source](https://github.com/shindo687/algobridge-0018__alphafold-2__absorbs__prody) | `0f1c0253c994` | 71 | 262.5 MiB | — |
 | AlgoBridge | [algobridge-0019__phonopy__absorbs__phono3py](tasks/algobridge-0019__phonopy__absorbs__phono3py/) | [source](https://github.com/shindo687/algobridge-0019__phonopy__absorbs__phono3py) | `6a098b5bf4c6` | 80 | 157.6 MiB | — |
+| AlgoBridge | [algobridge-0020__quantum-espresso__absorbs__boltztrap2](tasks/algobridge-0020__quantum-espresso__absorbs__boltztrap2/) | [source](https://github.com/shindo687/algobridge-0020__quantum-espresso__absorbs__boltztrap2) | `fa04078e4435` | 83 | 291.6 MiB | — |
 | AlgoBridge | [algobridge-0024__lammps__absorbs__phonopy](tasks/algobridge-0024__lammps__absorbs__phonopy/) | [source](https://github.com/shindo687/algobridge-0024__lammps__absorbs__phonopy) | `f29ef0d04a1f` | 73 | 182.6 MiB | — |
 | AlgoBridge | [algobridge-0025__scikit-learn__absorbs__xgboost](tasks/algobridge-0025__scikit-learn__absorbs__xgboost/) | [source](https://github.com/shindo687/algobridge-0025__scikit-learn__absorbs__xgboost) | `e82e185b5942` | 79 | 142.0 MiB | — |
 | AlgoBridge | [algobridge-0026__scikit-learn__absorbs__shap](tasks/algobridge-0026__scikit-learn__absorbs__shap/) | [source](https://github.com/shindo687/algobridge-0026__scikit-learn__absorbs__shap) | `3488fa6768bd` | 3514 | 341.8 MiB | — |

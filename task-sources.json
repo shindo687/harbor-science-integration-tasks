@@ -80,6 +80,12 @@
       "commit": "6a098b5bf4c686925568b9867f21d3fe5b5fb0b4"
     },
     {
+      "name": "algobridge-0020__quantum-espresso__absorbs__boltztrap2",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0020__quantum-espresso__absorbs__boltztrap2.git",
+      "commit": "fa04078e443535eeed883eee78b6fce77e30b52b"
+    },
+    {
       "name": "algobridge-0024__lammps__absorbs__phonopy",
       "suite": "AlgoBridge",
       "origin": "https://github.com/shindo687/algobridge-0024__lammps__absorbs__phonopy.git",

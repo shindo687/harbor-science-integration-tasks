@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+
+cd /public-cases
+sha256sum --check --strict SHA256SUMS
+exec python3 /opt/task-tools/public_check.py
+

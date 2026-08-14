@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "task_id": "algobridge-0020__quantum-espresso__absorbs__boltztrap2",
+  "algorithm_question_id": "ALGOBRIDGE-0020",
+  "authoring_state": "accepted",
+  "execution_target": "portable-cpu-docker",
+  "title": "Quantum ESPRESSO native constant-tau transport moments",
+  "domain": "materials-science",
+  "algorithm_family": "numerical integration / electronic transport",
+  "algorithm": "BoltzTraP2 semiclassical transport integration",
+  "host_software": "Quantum ESPRESSO 7.5",
+  "donor_software": "BoltzTraP2 25.3.1",
+  "workflow": "Quantum ESPRESSO -> BoltzTraP2",
+  "unique_paper_count": 17,
+  "bounded_subset": "Fixed uniform k meshes; supplied band energies, Cartesian velocities, normalized k weights, cell volume, chemical-potential grid, temperature grid, and spin degeneracy; constant relaxation time; no Fourier interpolation, Hall tensor, or adaptive meshes.",
+  "input_contract": "QE-style band energies and velocities, k weights, volume, chemical potentials, temperatures, spin degeneracy, and a fixed transport-DOS energy grid.",
+  "output_contract": "Carrier count and density, L0/L1/L2, conductivity/tau, Seebeck, and electronic kappa/tau tensors.",
+  "candidate_interface": "A new QE PP/src transport_moments implementation and command-line driver; candidate execution must not import, link, or execute BoltzTraP2.",
+  "reference_pipeline": "Locked QE-style band data are evaluated by the unchanged locked BoltzTraP2 BTPDOS -> fermiintegrals -> calc_Onsager_coefficients pipeline.",
+  "verification": {
+    "model": "original_A_plus_B_vs_merged_host",
+    "numeric_comparison": "L0/L1/L2 and transport tensors relative 1e-6, with an absolute floor for empty-carrier windows.",
+    "scientific_invariants": [
+      "conductivity is symmetric positive semidefinite",
+      "Seebeck is invariant under a common constant-tau scaling",
+      "particle-hole symmetric bands have vanishing L1 at mu=0",
+      "permuting k points or bands does not change any aggregate"
+    ],
+    "fixtures": "Parabolic bands, particle-hole symmetry, anisotropic and off-diagonal velocities, nonuniform integer k multiplicities, low/high temperature, spin factors, empty windows, and rank-deficient conductivity."
+  },
+  "non_glue_reason": "The implementation must build a transport DOS, integrate finite-temperature Fermi windows, form tensor moments, and derive coupled Onsager coefficients.",
+  "estimated_changed_loc": "350-750",
+  "difficulty": "hard",
+  "license": {
+    "host": "GPL-2.0-or-later",
+    "donor": "GPL-3.0-or-later",
+    "clean_room_required": true
+  }
+}
