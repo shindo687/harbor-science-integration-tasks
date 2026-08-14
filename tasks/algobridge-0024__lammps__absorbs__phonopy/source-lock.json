@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "task": "algobridge-0024__lammps__absorbs__phonopy",
+  "host": {
+    "name": "LAMMPS",
+    "repository": "https://github.com/lammps/lammps",
+    "tag": "stable_22Jul2025_update5",
+    "commit": "9e42b6f0f2c68a092d5847d4127a053dc50e126a",
+    "tree": "cba1b7100d890cbabeba23fd85bc11e5b886ed66",
+    "commit_date": "2026-08-08T00:25:46-04:00",
+    "license": "GPL-2.0-only",
+    "license_sha256": "be38e38d9482c2beae35408e413045b4363e0e067b0d9f31549047948637a7ed",
+    "archive": "host-source.tar.gz",
+    "archive_sha256": "a73a74ab6a5c266c13da160ccb7affa809e8d3daa109c597c655a0d4ba88084a",
+    "archive_size": 57228899,
+    "archive_files": 9677,
+    "snapshot_policy": "Exact git objects for all core source, build files, documentation, language interfaces, tools, third-party code, and unit tests. Data-heavy bench, examples, and potentials directories are intentionally omitted; no source needed by the bounded build is omitted."
+  },
+  "donor": {
+    "name": "phonopy",
+    "repository": "https://github.com/phonopy/phonopy",
+    "commit": "4bac506220d426784020ea24812c93e2a016be18",
+    "tree": "ac52f35d5efc79f29edb82719cd54d9e0f521d46",
+    "describe": "v4.4.0-85-g4bac5062",
+    "license": "BSD-3-Clause",
+    "license_sha256": "2ce26839c8b70d28765d73e934cc1a979d896d8d228d30694fdd9a92e94d43a9",
+    "archive": "donor-source.tar.gz",
+    "archive_sha256": "8fe780494cb229be25f7ca59a4bdfb3a6daefc3ec2041717d818f6ac764a6860",
+    "archive_size": 8506208,
+    "archive_files": 959
+  },
+  "images": {
+    "agent": "python:3.12.11-bookworm@sha256:13c9584604a99ca134c4f41800f74ffc64ee6ac8cf555cf1e704a6087fc84f12",
+    "verifier": "python:3.12.11-bookworm@sha256:13c9584604a99ca134c4f41800f74ffc64ee6ac8cf555cf1e704a6087fc84f12"
+  },
+  "verifier_wheel_manifest_sha256": "c223b7052c5b97f8ec1200a91a510a0907c5a69509b367f9c80e81c083533ef7"
+}

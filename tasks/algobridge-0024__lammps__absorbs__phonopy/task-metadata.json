@@ -1,0 +1,13 @@
+{
+  "id": "algobridge-0024",
+  "host": "LAMMPS",
+  "donor": "phonopy",
+  "capability": "finite-displacement harmonic FC2 reconstruction and q-point phonons",
+  "domain": "materials-science",
+  "algorithm_family": "linear algebra / lattice dynamics",
+  "difficulty": "hard",
+  "status": "accepted",
+  "reference": "locked pristine LAMMPS -> locked pristine phonopy",
+  "candidate": "modified LAMMPS only",
+  "license_review": "low_risk_direction_available"
+}

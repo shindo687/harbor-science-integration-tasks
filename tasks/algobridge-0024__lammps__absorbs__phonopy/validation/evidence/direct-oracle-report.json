@@ -1,0 +1,402 @@
+{
+  "cases": [
+    {
+      "errors": [],
+      "metrics": {
+        "asr_max_abs": 0.0,
+        "dm_max_abs": 2.220446049250313e-16,
+        "eigenvalue_max_abs": 2.220446049250313e-16,
+        "fc_max_abs": 7.105427357601002e-15,
+        "fit_residual_rms_abs": 1.0842021724855044e-19,
+        "frequency_max_abs": 2.220446049250313e-16,
+        "permutation_max_abs": 0.0,
+        "projector_fro": 6.538206780272243e-16
+      },
+      "name": "mono_chain_four",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "metrics": {
+        "asr_max_abs": 2.71052158495877e-16,
+        "dm_max_abs": 1.1102230246251565e-16,
+        "eigenvalue_max_abs": 1.1102230246251565e-16,
+        "fc_max_abs": 2.6645352591003757e-15,
+        "fit_residual_rms_abs": 8.131516293641283e-20,
+        "frequency_max_abs": 2.059045074290041e-08,
+        "permutation_max_abs": 0.0,
+        "projector_fro": 5.84490645409728e-16
+      },
+      "name": "mono_chain_five",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "metrics": {
+        "asr_max_abs": 6.14742631799281e-17,
+        "dm_max_abs": 2.220446049250313e-16,
+        "eigenvalue_max_abs": 2.220446049250313e-16,
+        "fc_max_abs": 1.7763568394002505e-15,
+        "fit_residual_rms_abs": 0.0,
+        "frequency_max_abs": 7.887068033107127e-11,
+        "permutation_max_abs": 0.0,
+        "projector_fro": 5.776380742663598e-13
+      },
+      "name": "mono_chain_redundant",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "metrics": {
+        "asr_max_abs": 7.949840431949445e-16,
+        "dm_max_abs": 5.551115123125783e-17,
+        "eigenvalue_max_abs": 5.551115123125783e-17,
+        "fc_max_abs": 3.552713678800501e-15,
+        "fit_residual_rms_abs": 2.710505431213761e-20,
+        "frequency_max_abs": 4.924133817384019e-08,
+        "permutation_max_abs": 2.220446049250313e-16,
+        "projector_fro": 7.959433491567928e-13
+      },
+      "name": "mono_chain_noisy",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "metrics": {
+        "asr_max_abs": 2.0886070650760757e-15,
+        "dm_max_abs": 6.661338147750939e-16,
+        "eigenvalue_max_abs": 2.220446049250313e-16,
+        "fc_max_abs": 7.105427357601002e-15,
+        "fit_residual_rms_abs": 1.1384122811097797e-18,
+        "frequency_max_abs": 1.2804697300318544e-07,
+        "permutation_max_abs": 4.440892098500626e-16,
+        "projector_fro": 1.473923023864646e-15
+      },
+      "name": "square_nine",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "metrics": {
+        "asr_max_abs": 3.885780586188048e-16,
+        "dm_max_abs": 1.3877787807814457e-17,
+        "eigenvalue_max_abs": 1.0408340855860843e-17,
+        "fc_max_abs": 1.7763568394002505e-15,
+        "fit_residual_rms_abs": 1.3552527156068805e-19,
+        "frequency_max_abs": 2.587610503275508e-08,
+        "permutation_max_abs": 5.551115123125783e-17,
+        "projector_fro": 8.379090233312085e-16
+      },
+      "name": "square_soft",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "metrics": {
+        "asr_max_abs": 6.661338147750939e-16,
+        "dm_max_abs": 6.661338147750939e-16,
+        "eigenvalue_max_abs": 8.881784197001252e-16,
+        "fc_max_abs": 1.0658141036401503e-14,
+        "fit_residual_rms_abs": 7.226713052406279e-19,
+        "frequency_max_abs": 2.322633609869034e-07,
+        "permutation_max_abs": 4.996003610813204e-16,
+        "projector_fro": 1.2758554946553861e-15
+      },
+      "name": "simple_cubic_eight",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "metrics": {
+        "asr_max_abs": 1.1102230246251565e-16,
+        "dm_max_abs": 6.938893903907228e-18,
+        "eigenvalue_max_abs": 8.673617379884035e-18,
+        "fc_max_abs": 4.440892098500626e-16,
+        "fit_residual_rms_abs": 1.7311235859509763e-20,
+        "frequency_max_abs": 1.0525761403265934e-08,
+        "permutation_max_abs": 4.069823904967462e-17,
+        "projector_fro": 1.4413762824374645e-11
+      },
+      "name": "simple_cubic_expanded",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "metrics": {
+        "asr_max_abs": 3.7623251370790396e-18,
+        "dm_max_abs": 4.440892098500626e-16,
+        "eigenvalue_max_abs": 6.661338147750939e-16,
+        "fc_max_abs": 7.105427357601002e-15,
+        "fit_residual_rms_abs": 2.168404344971009e-19,
+        "frequency_max_abs": 1.632461064304641e-07,
+        "permutation_max_abs": 2.312962428820776e-18,
+        "projector_fro": 1.69779343015496e-14
+      },
+      "name": "diatomic_chain",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "metrics": {
+        "asr_max_abs": 2.582092324734253e-16,
+        "dm_max_abs": 6.661338147750939e-16,
+        "eigenvalue_max_abs": 8.881784197001252e-16,
+        "fc_max_abs": 5.329070518200751e-15,
+        "fit_residual_rms_abs": 0.0,
+        "frequency_max_abs": 2.0635552437699263e-09,
+        "permutation_max_abs": 4.076621344369178e-17,
+        "projector_fro": 1.3850931811147324e-11
+      },
+      "name": "diatomic_mass_contrast",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "metrics": {
+        "asr_max_abs": 9.129014056063469e-17,
+        "dm_max_abs": 4.163336342344337e-17,
+        "eigenvalue_max_abs": 4.163336342344337e-17,
+        "fc_max_abs": 6.661338147750939e-16,
+        "fit_residual_rms_abs": 1.2705494208814505e-21,
+        "frequency_max_abs": 3.942339881981521e-08,
+        "permutation_max_abs": 1.3877787807814457e-17,
+        "projector_fro": 3.7932603288713304e-14
+      },
+      "name": "diatomic_plane",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "metrics": {
+        "asr_max_abs": 2.692468711634928e-15,
+        "dm_max_abs": 1.3322676295501878e-15,
+        "eigenvalue_max_abs": 2.220446049250313e-15,
+        "fc_max_abs": 1.0658141036401503e-14,
+        "fit_residual_rms_abs": 6.505213034913027e-19,
+        "frequency_max_abs": 8.056119899047749e-08,
+        "permutation_max_abs": 1.7763568394002505e-15,
+        "projector_fro": 4.7205994971776796e-12
+      },
+      "name": "triatomic_chain",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "metrics": {
+        "asr_max_abs": 2.4401745272843722e-14,
+        "dm_max_abs": 1.7763568394002505e-15,
+        "eigenvalue_max_abs": 1.7763568394002505e-15,
+        "fc_max_abs": 8.526512829121202e-14,
+        "fit_residual_rms_abs": 2.168404344971009e-19,
+        "frequency_max_abs": 7.105427357601002e-15,
+        "permutation_max_abs": 5.684336465069939e-15,
+        "projector_fro": 3.946759366345819e-16
+      },
+      "name": "compressed_imaginary",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "metrics": {
+        "asr_max_abs": 3.073713158996405e-17,
+        "dm_max_abs": 3.3306690738754696e-16,
+        "eigenvalue_max_abs": 2.220446049250313e-16,
+        "fc_max_abs": 4.440892098500626e-15,
+        "fit_residual_rms_abs": 0.0,
+        "frequency_max_abs": 8.236180297162038e-08,
+        "permutation_max_abs": 0.0,
+        "projector_fro": 1.0124584218187595e-11
+      },
+      "name": "tiny_displacement",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "metrics": {
+        "asr_max_abs": 1.7047786745753088e-15,
+        "dm_max_abs": 2.220446049250313e-16,
+        "eigenvalue_max_abs": 3.3306690738754696e-16,
+        "fc_max_abs": 5.329070518200751e-15,
+        "fit_residual_rms_abs": 5.149960319306146e-19,
+        "frequency_max_abs": 2.4794536513046675e-07,
+        "permutation_max_abs": 2.960594732333751e-16,
+        "projector_fro": 1.6686385867134425e-11
+      },
+      "name": "shuffled_records",
+      "passed": true
+    }
+  ],
+  "hard_gates": {
+    "clean_rebuild": {
+      "build_tail": "et.o fix_setforce.o fix_spring.o fix_spring_chunk.o fix_spring_self.o fix_store_atom.o fix_store_force.o fix_store_global.o fix_store_local.o fix_store_state.o fix_temp_berendsen.o fix_temp_rescale.o fix_thermal_conductivity.o fix_vector.o fix_viscous.o fix_wall.o fix_wall_harmonic.o fix_wall_lj1043.o fix_wall_lj126.o fix_wall_lj93.o fix_wall_morse.o fix_wall_reflect.o fix_wall_region.o fix_wall_table.o fmtlib_format.o fmtlib_os.o force.o grid2d.o grid3d.o group.o hashlittle.o image.o imbalance.o imbalance_group.o imbalance_neigh.o imbalance_store.o imbalance_time.o imbalance_var.o improper.o improper_deprecated.o improper_hybrid.o improper_zero.o info.o input.o integrate.o irregular.o kspace.o kspace_deprecated.o kspace_zero.o label_map.o lammps.o lattice.o library.o lmppython.o math_eigen.o math_extra.o math_special.o memory.o min.o min_cg.o min_deprecated.o min_fire.o min_hftn.o min_linesearch.o min_quickmin.o min_sd.o minimize.o modify.o molecule.o my_page.o my_pool_chunk.o nbin.o nbin_multi.o nbin_standard.o neigh_list.o neigh_request.o neighbor.o npair.o npair_bin.o npair_bin_ghost.o npair_copy.o npair_halffull.o npair_multi.o npair_multi_old.o npair_nsq.o npair_nsq_ghost.o npair_respa_bin.o npair_respa_nsq.o npair_skip.o npair_skip_respa.o npair_skip_size_off2on.o npair_skip_size_off2on_oneside.o npair_trim.o nstencil.o nstencil_bin.o nstencil_ghost_bin.o nstencil_multi.o nstencil_multi_old.o ntopo.o ntopo_angle_all.o ntopo_angle_partial.o ntopo_angle_template.o ntopo_bond_all.o ntopo_bond_partial.o ntopo_bond_template.o ntopo_dihedral_all.o ntopo_dihedral_partial.o ntopo_dihedral_template.o ntopo_improper_all.o ntopo_improper_partial.o ntopo_improper_template.o output.o pair.o pair_born.o pair_buck.o pair_buck_coul_cut.o pair_coul_cut.o pair_coul_debye.o pair_coul_dsf.o pair_coul_wolf.o pair_deprecated.o pair_hybrid.o pair_hybrid_molecular.o pair_hybrid_overlay.o pair_hybrid_scaled.o pair_lj_cut.o pair_lj_cut_coul_cut.o pair_lj_expand.o pair_morse.o pair_soft.o pair_table.o pair_yukawa.o pair_zbl.o pair_zero.o platform.o potential_file_reader.o procmap.o random_mars.o random_park.o rcb.o read_data.o read_dump.o read_restart.o reader.o reader_native.o reader_xyz.o region.o region_block.o region_cone.o region_cylinder.o region_deprecated.o region_ellipsoid.o region_intersect.o region_plane.o region_prism.o region_sphere.o region_union.o replicate.o rerun.o reset_atoms_id.o reset_atoms_image.o reset_atoms_mol.o respa.o run.o set.o special.o table_file_reader.o tabular_function.o text_file_reader.o thermo.o timer.o tokenizer.o universe.o update.o utils.o variable.o velocity.o verlet.o write_coeff.o write_data.o write_dump.o write_restart.o\ng++ -g -O  main.o  -L../STUBS     -L. -llammps_serial  -lmpi_stubs     -ldl  -o ../lmp_serial\nsize ../lmp_serial\n   text\t   data\t    bss\t    dec\t    hex\tfilename\n7936170\t 157560\t   2192\t8095922\t 7b88b2\t../lmp_serial\nmake[1]: Leaving directory '/testbed/src/Obj_serial'\nmake: Leaving directory '/testbed/src'\n",
+      "ldd": "\tlinux-vdso.so.1 (0x00007ffdaa7f3000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f37e495a000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f37e487a000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f37e485a000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f37e4678000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f37e5337000)\n",
+      "passed": true
+    },
+    "cross_invariants": {
+      "checks": [
+        {
+          "errors": [],
+          "metrics": {
+            "asr_max_abs": 0.0,
+            "dm_max_abs": 2.220446049250313e-16,
+            "eigenvalue_max_abs": 2.220446049250313e-16,
+            "fc_max_abs": 7.105427357601002e-15,
+            "fit_residual_rms_abs": 1.0842021724855044e-19,
+            "frequency_max_abs": 2.220446049250313e-16,
+            "permutation_max_abs": 0.0,
+            "projector_fro": 6.538206780272243e-16
+          },
+          "name": "record_order",
+          "passed": true
+        },
+        {
+          "errors": [],
+          "metrics": {
+            "asr_max_abs": 0.0,
+            "dm_max_abs": 2.220446049250313e-16,
+            "eigenvalue_max_abs": 2.220446049250313e-16,
+            "fc_max_abs": 7.105427357601002e-15,
+            "fit_residual_rms_abs": 1.0842021724855044e-19,
+            "frequency_max_abs": 2.220446049250313e-16,
+            "permutation_max_abs": 0.0,
+            "projector_fro": 6.538206780272243e-16
+          },
+          "name": "atom_reorder",
+          "passed": true
+        },
+        {
+          "errors": [],
+          "metrics": {
+            "asr_max_abs": 3.7623251370790396e-18,
+            "dm_max_abs": 4.440892098500626e-16,
+            "eigenvalue_max_abs": 6.661338147750939e-16,
+            "fc_max_abs": 7.105427357601002e-15,
+            "fit_residual_rms_abs": 2.168404344971009e-19,
+            "frequency_max_abs": 1.632461064304641e-07,
+            "permutation_max_abs": 2.312962428820776e-18,
+            "projector_fro": 1.69779343015496e-14
+          },
+          "name": "coordinate_rotation",
+          "passed": true
+        },
+        {
+          "errors": [],
+          "metrics": {
+            "asr_max_abs": 1.5049300548316158e-17,
+            "dm_max_abs": 1.7763568394002505e-15,
+            "eigenvalue_max_abs": 2.6645352591003757e-15,
+            "fc_max_abs": 2.842170943040401e-14,
+            "fit_residual_rms_abs": 8.673617379884035e-19,
+            "frequency_max_abs": 3.264922128609282e-07,
+            "permutation_max_abs": 9.251849715283104e-18,
+            "projector_fro": 1.69779343015496e-14
+          },
+          "name": "force_scaling",
+          "passed": true
+        },
+        {
+          "errors": [],
+          "metrics": {
+            "asr_max_abs": 0.0,
+            "dm_max_abs": 2.220446049250313e-16,
+            "eigenvalue_max_abs": 2.220446049250313e-16,
+            "fc_max_abs": 7.105427357601002e-15,
+            "fit_residual_rms_abs": 1.0842021724855044e-19,
+            "frequency_max_abs": 1.7763568394002505e-15,
+            "permutation_max_abs": 0.0,
+            "projector_fro": 6.538206780272243e-16
+          },
+          "name": "q_periodicity",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    "donor_absence": {
+      "passed": true
+    },
+    "host_regression": {
+      "passed": true
+    },
+    "invalid_inputs": {
+      "checks": [
+        {
+          "name": "format",
+          "passed": true,
+          "tail": ""
+        },
+        {
+          "name": "frequency",
+          "passed": true,
+          "tail": ""
+        },
+        {
+          "name": "iterations",
+          "passed": true,
+          "tail": ""
+        },
+        {
+          "name": "mass",
+          "passed": true,
+          "tail": ""
+        },
+        {
+          "name": "qpoints",
+          "passed": true,
+          "tail": ""
+        },
+        {
+          "name": "force_shape",
+          "passed": true,
+          "tail": ""
+        },
+        {
+          "name": "displacement",
+          "passed": true,
+          "tail": ""
+        },
+        {
+          "name": "missing_atom",
+          "passed": true,
+          "tail": ""
+        },
+        {
+          "name": "rank_deficient",
+          "passed": true,
+          "tail": ""
+        },
+        {
+          "name": "non_numeric",
+          "passed": true,
+          "tail": ""
+        },
+        {
+          "name": "duplicate_phase_atom",
+          "passed": true,
+          "tail": ""
+        }
+      ],
+      "passed": true
+    },
+    "real_reference": {
+      "cases": 15,
+      "lammps_executable_sha256": "1298aa65b7189d4d39bbe095763a1f5582bdc89df724fb05d00ac6d661b10556",
+      "passed": true,
+      "pipeline": "pristine LAMMPS finite-displacement forces -> pristine phonopy traditional FC2"
+    },
+    "source_integrity": {
+      "candidate_cpp_sha256": "a02dedd1a31ffcd208a63ce70baeabaa3437792b9146b5c95ce07dd9cefb32b2",
+      "candidate_header_sha256": "d9e07a994250607ee454534cb99aa42906b0e8cfc66cb32a7efe304be8c2d05c",
+      "donor_fragment_window": 64,
+      "passed": true,
+      "pristine_files_checked": 9677
+    }
+  },
+  "summary": {
+    "elapsed_sec": 101.82417726516724,
+    "passed": 15,
+    "reward": 1.0,
+    "total": 15
+  },
+  "task": "algobridge-0024__lammps__absorbs__phonopy"
+}

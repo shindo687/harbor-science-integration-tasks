@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "complete": false,
-  "task_count": 9,
+  "task_count": 10,
   "tasks": [
     {
       "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
@@ -38,6 +38,15 @@
       "source_tree": "d855851c1058c4eb274ed144e8b6ae6b48a016a0",
       "file_count": 80,
       "bytes": 165282044
+    },
+    {
+      "name": "algobridge-0024__lammps__absorbs__phonopy",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0024__lammps__absorbs__phonopy.git",
+      "commit": "f29ef0d04a1f88bc2ae75184ef198dfc1a9cdc4d",
+      "source_tree": "cd143a7c0b241af6bf5b957349ede033732017c3",
+      "file_count": 73,
+      "bytes": 191474278
     },
     {
       "name": "algobridge-0025__scikit-learn__absorbs__xgboost",
