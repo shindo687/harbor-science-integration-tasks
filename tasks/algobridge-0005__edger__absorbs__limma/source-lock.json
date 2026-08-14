@@ -1,0 +1,48 @@
+{
+  "base_image": {
+    "reference": "docker.io/library/r-base@sha256:a5845a19dbe67a49284a328ad2505cf8688aecaf22e4bbbac581044bbbd11c94",
+    "platform": "linux/amd64",
+    "r_version": "4.5.1",
+    "config_digest": "sha256:00ae9d30c37e27b1356e9c214136e538d5a350216a05898eb91b651d8877cf78"
+  },
+  "public_examples": {
+    "count": 5,
+    "input_rds_sha256": "4ffaa1bf169fc7712601e619395d6a8016936a84d66a7297660f7f2d572dcd1c",
+    "expected_rds_sha256": "704c6757b4af716b279e590c240829b9b9799e05e76c37ff61cc7581559249f9"
+  },
+  "host": {
+    "name": "edgeR",
+    "version": "4.6.3",
+    "repository": "https://git.bioconductor.org/packages/edgeR.git",
+    "commit": "0dc836a7c8e53633bb7817d55b27128ceb898ac9",
+    "tree": "f6e9ee741ee44627c846c2cc15ea67b95d087496",
+    "file_count": 252,
+    "archive_sha256": "744ed24f9a1c4ef6d77bd173511285cca04c58e7b7be4504ed8572e86e403f3a",
+    "description_sha256": "0d87aefc2227f2a5392068c73eb4786ef59c2f4cb0c4333b117885010478121b",
+    "license": "GPL (>= 2)"
+  },
+  "donor": {
+    "name": "limma",
+    "version": "3.64.3",
+    "repository": "https://git.bioconductor.org/packages/limma.git",
+    "commit": "0f42428e09766efb49ab672419cdbe745872b22e",
+    "tree": "7eb7b151db95a164d3d5276e5543a9ef2318719a",
+    "file_count": 291,
+    "archive_sha256": "f1a83f45a5bb68873385e0e415a15131ad1f65c78fa6fd53911c812bf41e76ff",
+    "description_sha256": "be480c3c3ce8920d3e73fdaa9d0801e0cbd28a223685421adc75e0241f2cb61b",
+    "license": "GPL (>= 2)"
+  },
+  "reference_dependencies": [
+    {
+      "name": "statmod",
+      "version": "1.5.0",
+      "repository": "https://github.com/cran/statmod.git",
+      "commit": "f85e32011346fb75d2b967cf2aff1f2e01a10ba8",
+      "tree": "706818ad4420470728daa8a337308f224d3a0901",
+      "file_count": 63,
+      "archive_sha256": "37bf14b86a068336e28970c5ce5282b2573a7ce4bdf4b8d8f6d3d5a492c7fe55",
+      "description_sha256": "f9eddd09330ff5e484a04060571ccfc90fed45e71bb3001c4d846ef8ef8600d3",
+      "license": "GPL-2 | GPL-3"
+    }
+  ]
+}

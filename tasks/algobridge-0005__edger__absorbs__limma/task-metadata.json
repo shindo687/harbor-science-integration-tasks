@@ -1,0 +1,13 @@
+{
+  "id": "algobridge-0005",
+  "title": "edgeR absorbs limma voom precision-weighted linear modelling",
+  "host": "edgeR",
+  "donor": "limma",
+  "domain": "transcriptomics",
+  "algorithm_family": "statistics/regression",
+  "difficulty": "hard",
+  "authoring_state": "accepted",
+  "execution_target": "cpu",
+  "license_direction": "clean-room required",
+  "reference_workflow": "locked edgeR TMM normalization -> locked limma voom -> lmFit -> contrasts.fit -> eBayes"
+}

@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+
+workdir="$(mktemp -d /tmp/algobridge-0005-public.XXXXXX)"
+Rscript /opt/task-tools/candidate_runner.R \
+  /public-cases/public-cases.rds "$workdir/actual.rds"
+Rscript /public-cases/verify_examples.R \
+  "$workdir/actual.rds" /public-cases/expected.rds

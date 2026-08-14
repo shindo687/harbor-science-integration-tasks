@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "complete": true,
-  "task_count": 21,
+  "task_count": 22,
   "tasks": [
     {
       "name": "algobridge-0001__scanpy__absorbs__bbknn",
@@ -41,6 +41,19 @@
       "lfs_object_count": 0,
       "lfs_bytes": 0,
       "materialized_bytes": 31192944
+    },
+    {
+      "name": "algobridge-0005__edger__absorbs__limma",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0005__edger__absorbs__limma.git",
+      "commit": "62fb7e7bfc2f7bffec47dbb2ddc408452450963d",
+      "source_tree": "a0ef564250d9e87287e2122ae3efc67fed0d17a8",
+      "file_count": 37,
+      "git_blob_bytes": 6908988,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 6908988
     },
     {
       "name": "algobridge-0006__scanpy__absorbs__scib",
