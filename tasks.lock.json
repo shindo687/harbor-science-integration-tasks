@@ -1,8 +1,17 @@
 {
   "schema_version": 1,
   "complete": false,
-  "task_count": 17,
+  "task_count": 18,
   "tasks": [
+    {
+      "name": "algobridge-0001__scanpy__absorbs__bbknn",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0001__scanpy__absorbs__bbknn.git",
+      "commit": "5fa798c1ee99d3102d85255b7271723992911cee",
+      "source_tree": "513f6f92e7a4ddbcd25c6e3d97326c3906990c1d",
+      "file_count": 2189,
+      "bytes": 552653488
+    },
     {
       "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
       "suite": "AlgoBridge",

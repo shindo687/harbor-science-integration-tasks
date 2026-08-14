@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "task_id": "algobridge-0001__scanpy__absorbs__bbknn",
+  "algorithm_question_id": "ALGOBRIDGE-0001",
+  "candidate_id": "WFBRIDGE-0156",
+  "authoring_state": "accepted",
+  "execution_target": "cpu",
+  "title": "Scanpy 原生 batch-balanced kNN 图",
+  "domain": "single-cell",
+  "algorithm_family": "graph / nearest neighbors",
+  "algorithm": "BBKNN batch-balanced nearest-neighbor graph construction",
+  "bounded_subset": "Exact Euclidean/cosine search over a supplied embedding, per-batch quota, deterministic cell-ID tie-break, no approximate index.",
+  "host_software": "Scanpy",
+  "donor_software": "BBKNN",
+  "unique_paper_count": 12,
+  "input_contract": "AnnData embedding, unique cell IDs, string batch labels, metric and neighbors_within_batch.",
+  "output_contract": "CSR distance/connectivity matrices and batch-aligned neighbor index/distance tensors.",
+  "reference_pipeline": "Locked Scanpy representation plus locked BBKNN exact neighbor and UMAP graph routines.",
+  "candidate_interface": "scanpy.pp.batch_balanced_neighbors; no runtime BBKNN dependency.",
+  "verification": {
+    "model": "original_A_plus_B_vs_merged_host",
+    "numeric_comparison": "Exact cell-ID neighbor alignment; distance atol 1e-8; connectivity atol 1e-6.",
+    "scientific_invariants": [
+      "exactly k selected neighbors from every batch",
+      "nonnegative distances and symmetric fuzzy connectivity",
+      "row-permutation invariance after alignment by cell ID",
+      "deterministic cell-ID tie breaking"
+    ],
+    "fixtures": "imbalanced batches, duplicate coordinates, rare batches, zero-vector rejection, dense/sparse embeddings"
+  },
+  "non_glue_reason": "The implementation must perform constrained exact neighbor selection, quota enforcement, and fuzzy graph construction.",
+  "estimated_changed_loc": "300-650",
+  "difficulty": "hard",
+  "license": {
+    "host_license": "BSD-3-Clause",
+    "donor_license": "MIT",
+    "clean_room_required": true
+  }
+}

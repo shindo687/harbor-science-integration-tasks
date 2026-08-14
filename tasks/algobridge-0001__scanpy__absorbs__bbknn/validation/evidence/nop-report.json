@@ -1,0 +1,19 @@
+{
+  "fatal": "RuntimeError: candidate fatal: ImportError: cannot import name 'batch_balanced_neighbors' from 'scanpy.preprocessing' (/opt/candidate-runtime/scanpy/preprocessing/__init__.py)",
+  "materialization": "materialized 0 changed Python files in /opt/candidate-runtime",
+  "overlay_manifest": [],
+  "reference_provenance": {
+    "bbknn_matrix_sha256": "eebcc5ec28f172db5ca84f1888a8ffe9da0eaf97a57077e6aa0ed229b21fb19f",
+    "bbknn_source": "/opt/reference-donor/bbknn/matrix.py",
+    "numpy_version": "2.5.2",
+    "scanpy_version": "1.14.0.dev21+gfabadb941"
+  },
+  "reference_stderr": "",
+  "reward": 0.0,
+  "source_scan": {
+    "changed_files": [],
+    "findings": [],
+    "passed": true
+  },
+  "task": "ALGOBRIDGE-0001"
+}

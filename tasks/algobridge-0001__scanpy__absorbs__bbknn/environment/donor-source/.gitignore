@@ -1,0 +1,7 @@
+.DS_Store
+docs/_build
+bbknn/__pycache__
+examples/objects-pancreas
+examples/rawdata-pancreas
+examples/.ipynb_checkpoints
+examples/oldbad

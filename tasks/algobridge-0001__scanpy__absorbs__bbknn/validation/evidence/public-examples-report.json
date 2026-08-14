@@ -1,0 +1,86 @@
+{
+  "cases": [
+    {
+      "checks": {
+        "batch_order": true,
+        "connectivities": true,
+        "distance_graph": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 0.0,
+        "neighbor_distances": 0.0
+      },
+      "name": "public_balanced_euclidean",
+      "passed": true
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "connectivities": true,
+        "distance_graph": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 0.0,
+        "neighbor_distances": 0.0
+      },
+      "name": "public_imbalanced_euclidean",
+      "passed": true
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "connectivities": true,
+        "distance_graph": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 0.0,
+        "neighbor_distances": 0.0
+      },
+      "name": "public_sparse_euclidean",
+      "passed": true
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "connectivities": true,
+        "distance_graph": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 2.220446049250313e-16,
+        "neighbor_distances": 0.0
+      },
+      "name": "public_cosine",
+      "passed": true
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "connectivities": true,
+        "distance_graph": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 0.0,
+        "neighbor_distances": 0.0
+      },
+      "name": "public_cell_id_ties",
+      "passed": true
+    }
+  ],
+  "passed": 5,
+  "total": 5
+}

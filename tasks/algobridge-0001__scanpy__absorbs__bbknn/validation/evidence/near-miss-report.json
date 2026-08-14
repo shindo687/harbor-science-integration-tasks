@@ -1,0 +1,176 @@
+{
+  "candidate_stderr": "",
+  "cases": [
+    {
+      "candidate_error": "ValueError: neighbor tensor violates the quota for batch 'batch-00'",
+      "name": "two_batches_k1",
+      "passed": false
+    },
+    {
+      "candidate_error": "ValueError: neighbor tensor violates the quota for batch 'batch-00'",
+      "name": "three_imbalanced_batches",
+      "passed": false
+    },
+    {
+      "candidate_error": "ValueError: neighbor tensor violates the quota for batch 'batch-00'",
+      "name": "rare_batch_exact_quota",
+      "passed": false
+    },
+    {
+      "candidate_error": "ValueError: neighbor tensor violates the quota for batch 'batch-00'",
+      "name": "high_dimensional",
+      "passed": false
+    },
+    {
+      "candidate_error": "ValueError: neighbor tensor violates the quota for batch 'batch-00'",
+      "name": "csr_embedding",
+      "passed": false
+    },
+    {
+      "candidate_error": "ValueError: neighbor tensor violates the quota for batch 'batch-00'",
+      "name": "four_batches",
+      "passed": false
+    },
+    {
+      "candidate_error": "ValueError: neighbor tensor violates the quota for batch 'batch-00'",
+      "name": "minimum_batch_equals_k",
+      "passed": false
+    },
+    {
+      "candidate_error": "ValueError: neighbor tensor violates the quota for batch 'batch-00'",
+      "name": "cosine_two_batches",
+      "passed": false
+    },
+    {
+      "candidate_error": "ValueError: neighbor tensor violates the quota for batch 'batch-00'",
+      "name": "cosine_three_batches",
+      "passed": false
+    },
+    {
+      "candidate_error": "ValueError: neighbor tensor violates the quota for batch 'batch-00'",
+      "name": "cosine_csr",
+      "passed": false
+    },
+    {
+      "candidate_error": "ValueError: neighbor tensor violates the quota for batch 'a'",
+      "name": "duplicate_coordinates",
+      "passed": false
+    },
+    {
+      "candidate_error": "ValueError: neighbor tensor violates the quota for batch 'left'",
+      "name": "boundary_tie_uses_cell_id",
+      "passed": false
+    },
+    {
+      "candidate_error": "ValueError: neighbor tensor violates the quota for batch 'batch-00'",
+      "name": "copy_and_custom_key",
+      "passed": false
+    },
+    {
+      "candidate_error": "ValueError: neighbor tensor violates the quota for batch 'batch-00'",
+      "name": "prepermuted_rows__permuted_input",
+      "passed": false
+    },
+    {
+      "candidate_error": "ValueError: neighbor tensor violates the quota for batch 'batch-00'",
+      "name": "larger_quota",
+      "passed": false
+    }
+  ],
+  "dense_sparse_invariant": {
+    "checks": {
+      "candidate_error": {
+        "error": "ValueError: neighbor tensor violates the quota for batch 'batch-00'",
+        "name": "csr_embedding__dense",
+        "ok": false
+      }
+    },
+    "passed": false
+  },
+  "fatal": null,
+  "hard_gates": {
+    "api_checks": {
+      "namespace_export": true,
+      "preprocessing_export": true,
+      "scanpy_module": true
+    },
+    "contract_checks": [
+      {
+        "name": "metric",
+        "rejected": true
+      },
+      {
+        "name": "quota_zero",
+        "rejected": true
+      },
+      {
+        "name": "quota_too_large",
+        "rejected": true
+      },
+      {
+        "name": "nonfinite",
+        "rejected": true
+      },
+      {
+        "name": "zero_cosine",
+        "rejected": true
+      },
+      {
+        "name": "nonstring_batch",
+        "rejected": true
+      },
+      {
+        "name": "duplicate_cell_id",
+        "rejected": true
+      }
+    ],
+    "isolation_checks": {
+      "bbknn_unavailable": true,
+      "candidate_tools_removed": true,
+      "pristine_host_removed": true,
+      "reference_donor_removed": true,
+      "reference_runner_removed": true,
+      "tests_unreadable": true,
+      "wheelhouse_removed": true
+    },
+    "passed": true,
+    "regression_returncode": 0,
+    "regression_stderr": "",
+    "regression_stdout": "...............ssss                                                      [100%]\n15 passed, 4 skipped, 3 deselected, 1 warning in 59.13s\n"
+  },
+  "hard_gates_passed": false,
+  "materialization": "materialized 2 changed Python files in /opt/candidate-runtime",
+  "overlay_manifest": [
+    "src/scanpy/preprocessing/__init__.py",
+    "src/scanpy/preprocessing/_batch_balanced.py"
+  ],
+  "passed_cases": 0,
+  "permutation_invariant": {
+    "checks": {
+      "candidate_error": {
+        "error": "ValueError: neighbor tensor violates the quota for batch 'batch-00'",
+        "name": "three_imbalanced_batches__permuted_input",
+        "ok": false
+      }
+    },
+    "passed": false
+  },
+  "reference_provenance": {
+    "bbknn_matrix_sha256": "eebcc5ec28f172db5ca84f1888a8ffe9da0eaf97a57077e6aa0ed229b21fb19f",
+    "bbknn_source": "/opt/reference-donor/bbknn/matrix.py",
+    "numpy_version": "2.5.2",
+    "scanpy_version": "1.14.0.dev21+gfabadb941"
+  },
+  "reference_stderr": "",
+  "reward": 0.0,
+  "source_scan": {
+    "changed_files": [
+      "src/scanpy/preprocessing/__init__.py",
+      "src/scanpy/preprocessing/_batch_balanced.py"
+    ],
+    "findings": [],
+    "passed": true
+  },
+  "task": "ALGOBRIDGE-0001",
+  "total_cases": 15
+}

@@ -1,0 +1,19 @@
+{
+  "host": {
+    "software": "Scanpy",
+    "repo": "https://github.com/scverse/scanpy",
+    "head_commit": "fabadb9412c0d1cd9df9d9c2e95ac266d564ee18",
+    "git_tree": "c68e70c22539158ed52fd8169761d818ac8510a2",
+    "snapshot_path": "environment/host-source",
+    "license": "BSD-3-Clause"
+  },
+  "donor": {
+    "software": "BBKNN",
+    "repo": "https://github.com/Teichlab/bbknn",
+    "head_commit": "95ce34b8905cbde307704a77436c354938ba0367",
+    "git_tree": "b8705a65eefecacd34791d719de8406cb6451c8f",
+    "snapshot_path": "environment/donor-source",
+    "license": "MIT"
+  },
+  "resolved_at": "2026-08-12T03:22:26.644684+00:00"
+}
