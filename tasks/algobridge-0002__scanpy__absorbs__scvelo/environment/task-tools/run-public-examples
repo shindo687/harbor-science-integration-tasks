@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+
+runtime="$(mktemp -d /tmp/scanpy-velocity-public.XXXXXX)"
+trap 'rm -rf "$runtime"' EXIT
+python /opt/task-tools/materialize_candidate.py --output "$runtime"
+PYTHONPATH="$runtime" PYTHONNOUSERSITE=1 python /examples/verify_examples.py

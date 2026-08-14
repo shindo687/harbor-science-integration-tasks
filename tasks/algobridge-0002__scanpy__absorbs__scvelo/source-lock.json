@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "reference_model": "locked Scanpy AnnData workflow through locked scVelo versus merged Scanpy",
+  "host": {
+    "software": "Scanpy",
+    "repository": "https://github.com/scverse/scanpy",
+    "commit": "fabadb9412c0d1cd9df9d9c2e95ac266d564ee18",
+    "tree": "c68e70c22539158ed52fd8169761d818ac8510a2",
+    "license": "BSD-3-Clause"
+  },
+  "donor": {
+    "software": "scVelo",
+    "repository": "https://github.com/theislab/scvelo",
+    "commit": "f63c0e70596ced2f1bee8cf07e8ab66037cf86b2",
+    "tree": "50237cef428c6bf42611522d8721983847af4584",
+    "license": "BSD-3-Clause"
+  },
+  "resolved_at": "2026-08-13T23:45:00+00:00"
+}

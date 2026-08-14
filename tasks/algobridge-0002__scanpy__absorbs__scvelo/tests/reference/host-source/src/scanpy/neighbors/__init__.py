@@ -1,0 +1,985 @@
+"""Functions and classes for computing nearest neighbors."""
+
+from __future__ import annotations
+
+import contextlib
+from inspect import signature
+from textwrap import indent
+from types import MappingProxyType
+from typing import TYPE_CHECKING, NamedTuple, TypedDict
+
+import numpy as np
+import scipy
+from packaging.version import Version
+from scipy import sparse
+
+from .. import _utils
+from .. import logging as logg
+from .._compat import CSBase, CSRBase, SpBase, pkg_version, warn
+from .._docs import doc_rng
+from .._keys import _EmbeddingKeys, _existing_preset_keys
+from .._settings import settings
+from .._utils import NeighborsView, _doc_params, get_literal_vals
+from .._utils.random import (
+    _accepts_legacy_random_state,
+    _legacy_random_state,
+    _LegacyRng,
+)
+from . import _connectivity
+from ._common import (
+    _get_indices_distances_from_dense_matrix,
+    _get_indices_distances_from_sparse_matrix,
+    _get_sparse_matrix_from_indices_distances,
+)
+from ._connectivity import umap
+from ._doc import doc_n_pcs, doc_use_rep
+from ._types import _KnownTransformer, _Method
+
+if TYPE_CHECKING:
+    from collections.abc import Callable, Mapping, MutableMapping
+    from typing import Any, Literal, NotRequired, TypeAlias, Unpack
+
+    from anndata import AnnData
+    from igraph import Graph
+    from numpy.typing import NDArray
+
+    from .._utils.random import RNGLike, SeedLike, _LegacyRandom
+    from ._types import KnnTransformerLike, _Metric, _MetricFn
+
+    # TODO: make `type` when https://github.com/sphinx-doc/sphinx/pull/13508 is released
+    RPForestDict: TypeAlias = Mapping[str, Mapping[str, np.ndarray]]  # noqa: UP040
+
+
+SCIPY_1_17 = pkg_version("scipy") >= Version("1.17")
+
+
+class KwdsForTransformer(TypedDict):
+    """Keyword arguments passed to a _KnownTransformer.
+
+    IMPORTANT: when changing the parameters set here,
+    update the “*ignored*” part in the parameter docs!
+    """
+
+    n_neighbors: int
+    metric: _Metric | _MetricFn
+    metric_params: Mapping[str, Any]
+    random_state: _LegacyRandom
+
+
+class NeighborsDict(TypedDict):  # noqa: D101
+    connectivities_key: str
+    distances_key: str
+    params: NeighborsParams
+    rp_forest: NotRequired[RPForestDict]
+
+
+class NeighborsParams(TypedDict):  # noqa: D101
+    n_neighbors: int
+    method: _Method
+    random_state: _LegacyRandom
+    metric: _Metric | _MetricFn | None
+    metric_kwds: NotRequired[Mapping[str, Any]]
+    use_rep: NotRequired[str]
+    n_pcs: NotRequired[int]
+
+
+@_doc_params(n_pcs=doc_n_pcs, use_rep=doc_use_rep, rng=doc_rng)
+@_accepts_legacy_random_state(_DEFAULT_SEED := 0)
+def neighbors(  # noqa: PLR0913
+    adata: AnnData,
+    n_neighbors: int = 15,
+    n_pcs: int | None = None,
+    *,
+    distances: np.ndarray | SpBase | None = None,
+    use_rep: str | None = None,
+    knn: bool = True,
+    method: _Method = "umap",
+    transformer: KnnTransformerLike | _KnownTransformer | None = None,
+    metric: _Metric | _MetricFn | None = None,
+    metric_kwds: Mapping[str, Any] = MappingProxyType({}),
+    rng: SeedLike | RNGLike | None = None,
+    key_added: str | None = None,
+    copy: bool = False,
+) -> AnnData | None:
+    """Compute the nearest neighbors distance matrix and a neighborhood graph of observations :cite:p:`McInnes2018`.
+
+    The computation proceeds in two independent stages.
+    First, a k-nearest neighbor (kNN) search produces the distance matrix via the estimator passed as ``transformer``.
+    Second, connectivities are derived from the kNN search output by the kernel selected via ``method``.
+    The two stages are controlled by independent parameters:
+    ``transformer`` selects the kNN search backend,
+    ``method`` selects the connectivity kernel.
+
+    .. array-support:: pp.neighbors
+
+    Parameters
+    ----------
+    adata
+        Annotated data matrix.
+    n_neighbors
+        The size of local neighborhood (in terms of number of neighboring data
+        points) used for manifold approximation. Larger values result in more
+        global views of the manifold, while smaller values result in more local
+        data being preserved. In general values should be in the range 2 to 100.
+        If `knn` is `True`, number of nearest neighbors to be searched. If `knn`
+        is `False`, a Gaussian kernel width is set to the distance of the
+        `n_neighbors` neighbor.
+
+        *ignored if ``transformer`` is an instance.*
+    {n_pcs}
+    {use_rep}
+    knn
+        If `True`, use a hard threshold to restrict the number of neighbors to
+        `n_neighbors`, that is, consider a knn graph. Otherwise, use a Gaussian
+        Kernel to assign low weights to neighbors more distant than the
+        `n_neighbors` nearest neighbor.
+    method
+        Kernel that derives connectivities from the kNN search output.
+        The choice is independent of the kNN search backend,
+        which is controlled by ``transformer``.
+        Use 'umap' :cite:p:`McInnes2018`,
+        'gauss' (Gauss kernel following :cite:t:`Coifman2005` with adaptive width :cite:t:`Haghverdi2016`),
+        or 'jaccard' (Jaccard kernel as in PhenoGraph, :cite:t:`Levine2015`).
+    transformer
+        kNN search backend following the API of
+        :class:`~sklearn.neighbors.KNeighborsTransformer`.
+        See :doc:`/how-to/knn-transformers` for more details.
+        Also accepts the following known options:
+
+        `None` (the default)
+            Behavior depends on data size.
+            For small data, we will calculate exact kNN, otherwise we use
+            :class:`~pynndescent.pynndescent_.PyNNDescentTransformer`
+        `'pynndescent'`
+            :class:`~pynndescent.pynndescent_.PyNNDescentTransformer`
+    metric
+        A known metric’s name or a callable that returns a distance.
+        If `distances` is given, this parameter is simply stored in `.uns` (see below),
+        otherwise defaults to `'euclidean'`.
+
+        *ignored if ``transformer`` is an instance.*
+    metric_kwds
+        Options for the metric.
+
+        *ignored if ``transformer`` is an instance.*
+    {rng}
+
+        *ignored if ``transformer`` is an instance.*
+    key_added
+        If not specified, the neighbors data is stored in `.uns['neighbors']`,
+        distances and connectivities are stored in `.obsp['distances']` and
+        `.obsp['connectivities']` respectively.
+        If specified, the neighbors data is added to .uns[key_added],
+        distances are stored in `.obsp[f'{{key_added}}_distances']` and
+        connectivities in `.obsp[f'{{key_added}}_connectivities']`.
+    copy
+        Return a copy instead of writing to adata.
+
+    Returns
+    -------
+    Returns `None` if `copy=False`, else returns an `AnnData` object. Sets the following fields:
+
+    `adata.obsp['distances' | f'{{key_added}}_distances']` : :class:`scipy.sparse.csr_matrix` (dtype `float`)
+        Distance matrix of the nearest neighbors search. Each row (cell) has `n_neighbors`-1 non-zero entries. These are the distances to their `n_neighbors`-1 nearest neighbors (excluding the cell itself).
+    `adata.obsp['connectivities' | f'{{key_added}}_connectivities']` : :class:`scipy.sparse._csr.csr_matrix` (dtype `float`)
+        Weighted adjacency matrix of the neighborhood graph of data
+        points. Weights should be interpreted as connectivities.
+    `adata.uns['neighbors' | key_added]` : :class:`dict`
+        neighbors parameters.
+
+    Examples
+    --------
+    >>> import scanpy as sc
+    >>> adata = sc.datasets.pbmc68k_reduced()
+    >>> # Basic usage
+    >>> sc.pp.neighbors(adata, 20, metric="cosine")
+    >>> # Provide your own transformer for more control and flexibility
+    >>> from sklearn.neighbors import KNeighborsTransformer
+    >>> transformer = KNeighborsTransformer(
+    ...     n_neighbors=10, metric="manhattan", algorithm="kd_tree"
+    ... )
+    >>> sc.pp.neighbors(adata, transformer=transformer)
+    >>> # now you can e.g. access the index: `transformer._tree`
+
+    See Also
+    --------
+    :doc:`/how-to/knn-transformers`
+
+    """
+    meta_random_state = (
+        dict(random_state=rng.arg) if isinstance(rng, _LegacyRng) else {}
+    )
+
+    if distances is None:
+        if metric is None:
+            metric = "euclidean"
+        start = logg.info("computing neighbors")
+        adata = adata.copy() if copy else adata
+        if adata.is_view:  # we shouldn't need this here...
+            adata._init_as_actual(adata.copy())
+        neighbors_ = Neighbors(adata)
+        neighbors_.compute_neighbors(
+            n_neighbors,
+            n_pcs=n_pcs,
+            use_rep=use_rep,
+            knn=knn,
+            method=method,
+            transformer=transformer,
+            metric=metric,
+            metric_kwds=metric_kwds,
+            rng=rng,
+        )
+    else:
+        params = locals()
+        ignored = {
+            p.name
+            for p in signature(neighbors).parameters.values()
+            if p.name in {"use_rep", "knn", "n_pcs", "metric_kwds"}
+            if params[p.name] != p.default
+        }
+        if meta_random_state.get("random_state") != _DEFAULT_SEED:
+            # `random_state` different from default (or any `rng`) was passed
+            ignored.add("rng/random_state")
+            meta_random_state.pop("random_state", None)
+        if ignored:
+            warn(
+                f"Parameter(s) ignored if `distances` is given: {ignored}",
+                UserWarning,
+            )
+        if callable(metric):
+            msg = "`metric` must be a string if `distances` is given."
+            raise TypeError(msg)
+        start = logg.info("computing connectivities")
+        # if a precomputed distance matrix is provided, skip the PCA and distance computation
+        if isinstance(distances, SpBase):
+            if TYPE_CHECKING:
+                from scipy.sparse._base import _spbase
+
+                assert isinstance(distances, _spbase)
+            distances = distances.tocsr(copy=True)
+            distances.setdiag(0)
+            distances.eliminate_zeros()
+        else:
+            distances = np.asarray(distances)
+            np.fill_diagonal(distances, 0)
+
+        neighbors_ = Neighbors(adata)
+        neighbors_.n_neighbors = n_neighbors
+        neighbors_.knn = True
+        neighbors_._distances = distances
+        neighbors_._connectivities = neighbors_._compute_connectivites(method)
+
+    key_added, neighbors_dict = _get_metadata(
+        key_added,
+        n_neighbors=neighbors_.n_neighbors,
+        method=method,
+        metric=metric,
+        **meta_random_state,
+        **({} if not metric_kwds else dict(metric_kwds=metric_kwds)),
+        **({} if use_rep is None else dict(use_rep=use_rep)),
+        **({} if n_pcs is None else dict(n_pcs=n_pcs)),
+    )
+
+    if neighbors_.rp_forest is not None:
+        neighbors_dict["rp_forest"] = neighbors_.rp_forest
+
+    adata.uns[key_added] = neighbors_dict
+    adata.obsp[neighbors_dict["distances_key"]] = neighbors_.distances
+    adata.obsp[neighbors_dict["connectivities_key"]] = neighbors_.connectivities
+
+    logg.info(
+        "    finished",
+        time=start,
+        deep=(
+            f"added to `.uns[{key_added!r}]`\n"
+            f"    `.obsp[{neighbors_dict['distances_key']!r}]`, distances for each pair of neighbors\n"
+            f"    `.obsp[{neighbors_dict['connectivities_key']!r}]`, weighted adjacency matrix"
+        ),
+    )
+    return adata if copy else None
+
+
+def _get_metadata(
+    key_added: str | None,
+    **params: Unpack[NeighborsParams],
+) -> tuple[str, NeighborsDict]:
+    if key_added is None:
+        return "neighbors", NeighborsDict(
+            connectivities_key="connectivities",
+            distances_key="distances",
+            params=params,
+        )
+    return key_added, NeighborsDict(
+        connectivities_key=f"{key_added}_connectivities",
+        distances_key=f"{key_added}_distances",
+        params=params,
+    )
+
+
+class FlatTree(NamedTuple):  # noqa: D101
+    hyperplanes: None
+    offsets: None
+    children: None
+    indices: None
+
+
+def _make_forest_dict(forest):
+    d = {}
+    props = ("hyperplanes", "offsets", "children", "indices")
+    for prop in props:
+        d[prop] = {}
+        sizes = np.fromiter(
+            (getattr(tree, prop).shape[0] for tree in forest), dtype=int
+        )
+        d[prop]["start"] = np.zeros_like(sizes)
+        if prop == "offsets":
+            dims = sizes.sum()
+        else:
+            dims = (sizes.sum(), getattr(forest[0], prop).shape[1])
+        dtype = getattr(forest[0], prop).dtype
+        dat = np.empty(dims, dtype=dtype)
+        start = 0
+        for i, size in enumerate(sizes):
+            d[prop]["start"][i] = start
+            end = start + size
+            dat[start:end] = getattr(forest[i], prop)
+            start = end
+        d[prop]["data"] = dat
+    return d
+
+
+class OnFlySymMatrix:
+    """Emulate a matrix where elements are calculated on the fly."""
+
+    def __init__(
+        self,
+        get_row: Callable[[Any], np.ndarray],
+        shape: tuple[int, int],
+        *,
+        rows: MutableMapping[Any, np.ndarray] | None = None,
+        restrict_array: np.ndarray | None = None,
+    ):
+        self.get_row = get_row
+        self.shape = shape
+        self.rows = {} if rows is None else rows
+        self.restrict_array = restrict_array  # restrict the array to a subset
+
+    def __getitem__(self, index):  # noqa: D105
+        if isinstance(index, int | np.integer):
+            if self.restrict_array is None:
+                glob_index = index
+            else:
+                # map the index back to the global index
+                glob_index = self.restrict_array[index]
+            if glob_index not in self.rows:
+                self.rows[glob_index] = self.get_row(glob_index)
+            row = self.rows[glob_index]
+            if self.restrict_array is None:
+                return row
+            else:
+                return row[self.restrict_array]
+        else:
+            if self.restrict_array is None:
+                glob_index_0, glob_index_1 = index
+            else:
+                glob_index_0 = self.restrict_array[index[0]]
+                glob_index_1 = self.restrict_array[index[1]]
+            if glob_index_0 not in self.rows:
+                self.rows[glob_index_0] = self.get_row(glob_index_0)
+            return self.rows[glob_index_0][glob_index_1]
+
+    def restrict(self, index_array):
+        """Generate a view restricted to a subset of indices."""
+        new_shape = index_array.shape[0], index_array.shape[0]
+        return OnFlySymMatrix(
+            self.get_row, new_shape, rows=self.rows, restrict_array=index_array
+        )
+
+
+class Neighbors:
+    """Data represented as graph of nearest neighbors.
+
+    Represent a data matrix as a graph of nearest neighbor relations (edges)
+    among data points (nodes).
+
+    Parameters
+    ----------
+    adata
+        Annotated data object.
+    n_dcs
+        Number of diffusion components to use.
+    neighbors_key
+        Where to look in `.uns` and `.obsp` for neighbors data.
+
+    """
+
+    def __init__(  # noqa: PLR0912, PLR0915
+        self,
+        adata: AnnData,
+        *,
+        n_dcs: int | None = None,
+        neighbors_key: str | None = None,
+        diffmap_key: str | None = None,
+    ) -> None:
+        self._adata = adata
+        self._init_iroot()
+        # use the graph in adata
+        info_str = ""
+        self.knn: bool | None = None
+        self._distances: np.ndarray | CSRBase | None = None
+        self._connectivities: np.ndarray | CSRBase | None = None
+        self._transitions_sym: np.ndarray | CSRBase | None = None
+        self._number_connected_components: int | None = None
+        self._rp_forest: RPForestDict | None = None
+        if neighbors_key is None:
+            neighbors_key = "neighbors"
+        if neighbors_key in adata.uns:
+            neighbors = NeighborsView(adata, neighbors_key)
+            if "distances" in neighbors:
+                self.knn = isinstance(neighbors["distances"], CSBase)
+                self._distances = neighbors["distances"]
+            if "connectivities" in neighbors:
+                self.knn = isinstance(neighbors["connectivities"], CSBase)
+                self._connectivities = neighbors["connectivities"]
+            if "rp_forest" in neighbors:
+                self._rp_forest = neighbors["rp_forest"]
+            if "params" in neighbors:
+                self.n_neighbors = neighbors["params"]["n_neighbors"]
+            else:
+
+                def count_nonzero(a: np.ndarray | CSRBase) -> int:
+                    return (
+                        a.count_nonzero()
+                        if isinstance(a, CSRBase)
+                        else np.count_nonzero(a)
+                    )
+
+                # estimating n_neighbors
+                if self._connectivities is None:
+                    self.n_neighbors = int(
+                        count_nonzero(self._distances) / self._distances.shape[0]
+                    )
+                else:
+                    self.n_neighbors = int(
+                        count_nonzero(self._connectivities)
+                        / self._connectivities.shape[0]
+                        / 2
+                    )
+            info_str += "`.distances` `.connectivities` "
+            self._number_connected_components = 1
+            if isinstance(self._connectivities, CSBase):
+                from scipy.sparse.csgraph import connected_components
+
+                self._connected_components = connected_components(self._connectivities)
+                self._number_connected_components = self._connected_components[0]
+
+        if keys := (
+            _EmbeddingKeys(diffmap_key, diffmap_key)
+            if diffmap_key
+            else _existing_preset_keys(adata, "diffmap")
+        ):
+            self._eigen_values = adata.uns[keys.uns]
+            self._eigen_basis = adata.obsm[keys.obsm]
+            if n_dcs is not None:
+                if n_dcs > len(self._eigen_values):
+                    msg = (
+                        f"Cannot instantiate using `n_dcs`={n_dcs}. "
+                        "Compute diffmap/spectrum with more components first."
+                    )
+                    raise ValueError(msg)
+                self._eigen_values = self._eigen_values[:n_dcs]
+                self._eigen_basis = self._eigen_basis[:, :n_dcs]
+            self.n_dcs = len(self._eigen_values)
+            info_str += "`.eigen_values` `.eigen_basis` `.distances_dpt`"
+        else:
+            self._eigen_values = None
+            self._eigen_basis = None
+            self.n_dcs = None
+        if info_str != "":
+            logg.debug(f"    initialized {info_str}")
+
+    @property
+    def rp_forest(self) -> RPForestDict | None:
+        """PyNNDescent index."""
+        return self._rp_forest
+
+    @property
+    def distances(self) -> np.ndarray | CSRBase | None:
+        """Distances between data points (sparse matrix)."""
+        return self._distances
+
+    @property
+    def connectivities(self) -> np.ndarray | CSRBase | None:
+        """Connectivities between data points (sparse matrix)."""
+        return self._connectivities
+
+    @property
+    def transitions(self) -> np.ndarray | CSRBase:
+        """Transition matrix (sparse matrix).
+
+        Is conjugate to the symmetrized transition matrix via::
+
+            self.transitions = self.Z * self.transitions_sym / self.Z
+
+        where ``self.Z`` is the diagonal matrix storing the normalization of the
+        underlying kernel matrix.
+
+        Notes
+        -----
+        This has not been tested, in contrast to `transitions_sym`.
+
+        """
+        z_inv = (
+            self.Z.power(-1)
+            if isinstance(self.Z, SpBase)  # can be DIA matrix
+            else np.diag(1.0 / np.diag(self.Z))
+        )
+        return self.Z @ self.transitions_sym @ z_inv
+
+    @property
+    def transitions_sym(self) -> np.ndarray | CSRBase | None:
+        """Symmetrized transition matrix (sparse matrix).
+
+        Is conjugate to the transition matrix via::
+
+            self.transitions_sym = self.Z / self.transitions * self.Z
+
+        where ``self.Z`` is the diagonal matrix storing the normalization of the
+        underlying kernel matrix.
+        """
+        return self._transitions_sym
+
+    @property
+    def eigen_values(self) -> np.ndarray:
+        """Eigen values of transition matrix."""
+        return self._eigen_values
+
+    @property
+    def eigen_basis(self) -> np.ndarray:
+        """Eigen basis of transition matrix."""
+        return self._eigen_basis
+
+    @property
+    def distances_dpt(self) -> OnFlySymMatrix:
+        """DPT distances.
+
+        This is yields :cite:p:`Haghverdi2016`, Eq. 15 from the supplement with the
+        extensions of :cite:p:`Wolf2019`, supplement on random-walk based distance
+        measures.
+        """
+        return OnFlySymMatrix(self._get_dpt_row, shape=self._adata.shape)
+
+    def to_igraph(self) -> Graph:
+        """Generate igraph from connectiviies."""
+        return _utils.get_igraph_from_adjacency(self.connectivities, directed=False)
+
+    @_doc_params(n_pcs=doc_n_pcs, use_rep=doc_use_rep)
+    @_accepts_legacy_random_state(0)
+    def compute_neighbors(
+        self,
+        n_neighbors: int = 30,
+        n_pcs: int | None = None,
+        *,
+        use_rep: str | None = None,
+        knn: bool = True,
+        method: _Method | None = "umap",
+        transformer: KnnTransformerLike | _KnownTransformer | None = None,
+        metric: _Metric | _MetricFn = "euclidean",
+        metric_kwds: Mapping[str, Any] = MappingProxyType({}),
+        rng: SeedLike | RNGLike | None = None,
+    ) -> None:
+        """Compute distances and connectivities of neighbors.
+
+        Parameters
+        ----------
+        n_neighbors
+            Use this number of nearest neighbors.
+        {n_pcs}
+        {use_rep}
+        knn
+            Restrict result to `n_neighbors` nearest neighbors.
+        method
+            See :func:`scanpy.pp.neighbors`.
+            If `None`, skip calculating connectivities.
+
+        Returns
+        -------
+        Writes sparse graph attributes `.distances` and,
+        if `method` is not `None`, `.connectivities`.
+
+        """
+        from ..tools._utils import _choose_representation
+
+        start_neighbors = logg.debug("computing neighbors")
+        if transformer is not None and not isinstance(transformer, str):
+            n_neighbors = transformer.get_params()["n_neighbors"]
+        elif n_neighbors > self._adata.shape[0]:  # very small datasets
+            n_neighbors = 1 + int(0.5 * self._adata.shape[0])
+            logg.warning(f"n_obs too small: adjusting to `n_neighbors = {n_neighbors}`")
+
+        # default keyword arguments when `transformer` is not an instance
+        transformer_kwds_default = KwdsForTransformer(
+            n_neighbors=n_neighbors,
+            metric=metric,
+            metric_params=metric_kwds,  # most use _params, not _kwds
+            random_state=_legacy_random_state(rng),
+        )
+        method, transformer, shortcut = self._handle_transformer(
+            method, transformer, knn=knn, kwds=transformer_kwds_default
+        )
+
+        if self._adata.shape[0] >= 10000 and not knn:
+            logg.warning("Using high n_obs without `knn=True` takes a lot of memory...")
+        # do not use the cached rp_forest
+        self._rp_forest = None
+        self.n_neighbors = n_neighbors
+        self.knn = knn
+        x = _choose_representation(self._adata, use_rep=use_rep, n_pcs=n_pcs)
+        self._distances = transformer.fit_transform(x)
+        knn_indices, knn_distances = _get_indices_distances_from_sparse_matrix(
+            self._distances, n_neighbors
+        )
+        if shortcut:
+            # self._distances is a sparse matrix with a diag of 1, fix that
+            self._distances[np.diag_indices_from(self.distances)] = 0
+            if knn:  # remove too far away entries in self._distances
+                self._distances = _get_sparse_matrix_from_indices_distances(
+                    knn_indices, knn_distances, keep_self=False
+                )
+            else:  # convert to dense
+                self._distances = self._distances.toarray()
+        if index := getattr(transformer, "index_", None):
+            from pynndescent import NNDescent
+
+            if isinstance(index, NNDescent):
+                # very cautious here
+                # TODO catch the correct exception
+                with contextlib.suppress(Exception):
+                    self._rp_forest = _make_forest_dict(index)
+        start_connect = logg.debug("computed neighbors", time=start_neighbors)
+
+        self._connectivities = (
+            None
+            if method is None
+            else self._compute_connectivites(method, (knn_indices, knn_distances))
+        )
+        self._number_connected_components = 1
+        if isinstance(self._connectivities, CSBase):
+            from scipy.sparse.csgraph import connected_components
+
+            self._connected_components = connected_components(self._connectivities)
+            self._number_connected_components = self._connected_components[0]
+        if method is not None:
+            logg.debug("computed connectivities", time=start_connect)
+
+    def _compute_connectivites(
+        self,
+        method: _Method,
+        knn_ind_dist: (
+            tuple[NDArray[np.int32 | np.int64], NDArray[np.float32 | np.float64]] | None
+        ) = None,
+    ) -> CSRBase | NDArray[np.float32 | np.float64] | None:
+        def get_knn():
+            if knn_ind_dist is not None:
+                return knn_ind_dist
+            if isinstance(self._distances, CSBase):
+                return _get_indices_distances_from_sparse_matrix(
+                    self._distances.tocsr(), self.n_neighbors
+                )
+            assert self._distances is not None
+            return _get_indices_distances_from_dense_matrix(
+                self._distances, self.n_neighbors
+            )
+
+        if method == "umap":
+            knn_indices, knn_distances = get_knn()
+            return umap(
+                knn_indices,
+                knn_distances,
+                n_obs=self._adata.n_obs,
+                n_neighbors=self.n_neighbors,
+            )
+        if method == "gauss":
+            return _connectivity.gauss(self._distances, self.n_neighbors, knn=self.knn)
+        if method == "jaccard":
+            knn_indices, _ = get_knn()
+            return _connectivity.jaccard(
+                knn_indices, n_obs=self._adata.n_obs, n_neighbors=self.n_neighbors
+            )
+        msg = f"Method {method} not implemented."
+        raise NotImplementedError(msg)
+
+    def _handle_transformer(
+        self,
+        method: _Method | Literal["gauss"] | None,
+        transformer: KnnTransformerLike | _KnownTransformer | None,
+        *,
+        knn: bool,
+        kwds: KwdsForTransformer,
+    ) -> tuple[_Method | None, KnnTransformerLike, bool]:
+        """Return effective `method` and transformer.
+
+        `method` will be coerced to `'gauss'`, `'umap'`, or `'jaccard'`.
+        `transformer` is coerced from a str or instance to an instance class.
+
+        If `transformer` is `None` and there are few data points,
+        `transformer` will be set to a brute force
+        :class:`~sklearn.neighbors.KNeighborsTransformer`.
+
+        If `transformer` is `None` and there are many data points,
+        `transformer` will be set like `umap` does (i.e. to a
+        ~`pynndescent.PyNNDescentTransformer` with custom `n_trees` and `n_iter`).
+        """
+        # legacy logic
+        use_dense_distances = (
+            kwds["metric"] == "euclidean" and self._adata.n_obs < 8192
+        ) or not knn
+        shortcut = transformer == "sklearn" or (
+            transformer is None and (use_dense_distances or self._adata.n_obs < 4096)
+        )
+
+        # Coerce `method` to 'gauss', 'umap', or 'jaccard'
+        if method not in (methods := get_literal_vals(_Method)) and method is not None:
+            msg = f"`method` needs to be one of {methods}."
+            raise ValueError(msg)
+
+        # Validate `knn`
+        conn_method = method if method in {"gauss", "jaccard", None} else "umap"
+        if not knn and not (conn_method == "gauss" and transformer is None):
+            # “knn=False” seems to be only intended for method “gauss”
+            msg = f"`method = {method!r} only with `knn = True`."
+            raise ValueError(msg)
+
+        # Coerce `transformer` to an instance
+        if shortcut:
+            from sklearn.neighbors import KNeighborsTransformer
+
+            assert transformer in {None, "sklearn"}
+            n_neighbors = self._adata.n_obs - 1
+            if knn:  # only obey n_neighbors arg if knn set
+                n_neighbors = min(n_neighbors, kwds["n_neighbors"])
+            transformer = KNeighborsTransformer(
+                algorithm="brute",
+                n_jobs=settings.n_jobs,
+                n_neighbors=n_neighbors,
+                metric=kwds["metric"],
+                metric_params=dict(kwds["metric_params"]),  # needs dict
+                # no random_state
+            )
+        elif transformer is None or transformer == "pynndescent":
+            from pynndescent import PyNNDescentTransformer
+
+            kwds = kwds.copy()
+            kwds["metric_kwds"] = kwds.pop("metric_params")
+            if transformer is None:
+                # Use defaults from UMAP’s `nearest_neighbors` function
+                kwds.update(
+                    n_jobs=settings.n_jobs,
+                    n_trees=min(64, 5 + round((self._adata.n_obs) ** 0.5 / 20.0)),
+                    n_iters=max(5, round(np.log2(self._adata.n_obs))),
+                )
+            transformer = PyNNDescentTransformer(**kwds)
+        elif isinstance(transformer, str):
+            msg = (
+                f"Unknown transformer: {transformer}. "
+                f"Try passing a class or one of {get_literal_vals(_KnownTransformer)}"
+            )
+            raise ValueError(msg)
+        # else `transformer` is probably an instance
+        return conn_method, transformer, shortcut
+
+    def compute_transitions(self, *, density_normalize: bool = True) -> None:
+        """Compute transition matrix.
+
+        Parameters
+        ----------
+        density_normalize
+            The density rescaling of Coifman and Lafon (2006): Then only the
+            geometry of the data matters, not the sampled density.
+
+        Returns
+        -------
+        Makes attributes `.transitions_sym` and `.transitions` available.
+
+        """
+        start = logg.info("computing transitions")
+        conn = self._connectivities
+        # density normalization as of Coifman et al. (2005)
+        # ensures that kernel matrix is independent of sampling density
+        if density_normalize:
+            # dens[i] is an estimate for the sampling density at point i
+            # it's also the degree of the underlying graph
+            dens = np.asarray(conn.sum(axis=0))
+            if not isinstance(conn, CSBase):
+                dens = np.diag(1.0 / dens)
+            else:
+                dens = sparse.spdiags(1.0 / dens, 0, conn.shape[0], conn.shape[0])
+            conn_norm = dens @ conn @ dens
+        else:
+            conn_norm = conn
+
+        # z[i] is the square root of the row sum of conn_norm
+        z = np.sqrt(np.asarray(conn_norm.sum(axis=0)))
+        if not isinstance(conn_norm, CSBase):
+            self.Z = np.diag(1.0 / z)
+        else:
+            self.Z = sparse.spdiags(1.0 / z, 0, conn_norm.shape[0], conn_norm.shape[0])
+        self._transitions_sym = self.Z @ conn_norm @ self.Z
+        logg.info("    finished", time=start)
+
+    @_doc_params(rng=doc_rng)
+    @_accepts_legacy_random_state(0)
+    def compute_eigen(
+        self,
+        *,
+        n_comps: int = 15,
+        sort: Literal["decrease", "increase"] = "decrease",
+        rng: np.random.Generator,
+        # unused
+        sym: None = None,
+    ) -> None:
+        """Compute eigen decomposition of transition matrix.
+
+        Parameters
+        ----------
+        n_comps
+            Number of eigenvalues/vectors to be computed, set `n_comps = 0` if
+            you need all eigenvectors.
+        {rng}
+
+        Returns
+        -------
+        Writes the following attributes.
+
+        eigen_values : :class:`~numpy.ndarray`
+            Eigenvalues of transition matrix.
+        eigen_basis : :class:`~numpy.ndarray`
+            Matrix of eigenvectors (stored in columns).  `.eigen_basis` is
+            projection of data matrix on right eigenvectors, that is, the
+            projection on the diffusion components.  these are simply the
+            components of the right eigenvectors and can directly be used for
+            plotting.
+
+        """
+        rng = np.random.default_rng(rng)
+        np.set_printoptions(precision=10)
+        if self._transitions_sym is None:
+            msg = "Run `.compute_transitions` first."
+            raise ValueError(msg)
+        matrix = self._transitions_sym
+        # compute the spectrum
+        if n_comps == 0:
+            evals, evecs = scipy.linalg.eigh(matrix)
+        else:
+            n_comps = min(matrix.shape[0] - 1, n_comps)
+            # ncv = max(2 * n_comps + 1, int(np.sqrt(matrix.shape[0])))
+            ncv = None
+            which = "LM" if sort == "decrease" else "SM"
+            # it pays off to increase the stability with a bit more precision
+            matrix = matrix.astype(np.float64)
+
+            # Setting the random initial vector
+            v0 = rng.standard_normal(matrix.shape[0])
+            kw: Any = dict(rng=rng) if SCIPY_1_17 else {}
+            evals, evecs = sparse.linalg.eigsh(
+                matrix, k=n_comps, which=which, ncv=ncv, v0=v0, **kw
+            )
+            evals, evecs = evals.astype(np.float32), evecs.astype(np.float32)
+        if sort == "decrease":
+            evals = evals[::-1]
+            evecs = evecs[:, ::-1]
+        logg.info(f"    eigenvalues of transition matrix\n{indent(str(evals), '    ')}")
+        if self._number_connected_components > len(evals) / 2:
+            logg.warning("Transition matrix has many disconnected components!")
+        self._eigen_values = evals
+        self._eigen_basis = evecs
+
+    def _init_iroot(self):
+        self.iroot = None
+        # set iroot directly
+        if "iroot" in self._adata.uns:
+            if self._adata.uns["iroot"] >= self._adata.n_obs:
+                msg = (
+                    f"Root cell index {self._adata.uns['iroot']} does not "
+                    f"exist for {self._adata.n_obs} samples. It’s ignored."
+                )
+                logg.warning(msg)
+            else:
+                self.iroot = self._adata.uns["iroot"]
+            return
+        # set iroot via xroot
+        xroot = None
+        if "xroot" in self._adata.uns:
+            xroot = self._adata.uns["xroot"]
+        elif "xroot" in self._adata.var:
+            xroot = self._adata.var["xroot"]
+        # see whether we can set self.iroot using the full data matrix
+        if xroot is not None and xroot.size == self._adata.shape[1]:
+            self._set_iroot_via_xroot(xroot)
+
+    def _get_dpt_row(self, i: int) -> np.ndarray:
+        mask = None
+        if self._number_connected_components > 1:
+            label = self._connected_components[1][i]
+            mask = self._connected_components[1] == label
+        row = sum(
+            (
+                self.eigen_values[j]
+                / (1 - self.eigen_values[j])
+                * (self.eigen_basis[i, j] - self.eigen_basis[:, j])
+            )
+            ** 2
+            # account for float32 precision
+            for j in range(self.eigen_values.size)
+            if self.eigen_values[j] < 0.9994
+        )
+        # thanks to Marius Lange for pointing Alex to this:
+        # we will likely remove the contributions from the stationary state below when making
+        # backwards compat breaking changes, they originate from an early implementation in 2015
+        # they never seem to have deteriorated results, but also other distance measures (see e.g.
+        # PAGA paper) don't have it, which makes sense
+        row += sum(
+            (self.eigen_basis[i, k] - self.eigen_basis[:, k]) ** 2
+            for k in range(self.eigen_values.size)
+            if self.eigen_values[k] >= 0.9994
+        )
+        if mask is not None:
+            row[~mask] = np.inf
+        return np.sqrt(row)
+
+    def _set_pseudotime(self):
+        """Return pseudotime with respect to root point."""
+        self.pseudotime = self.distances_dpt[self.iroot].copy()
+        self.pseudotime /= np.max(self.pseudotime[self.pseudotime < np.inf])
+
+    def _set_iroot_via_xroot(self, xroot: np.ndarray):
+        """Determine the index of the root cell.
+
+        Given an expression vector, find the observation index that is closest
+        to this vector.
+
+        Parameters
+        ----------
+        xroot
+            Vector that marks the root cell, the vector storing the initial
+            condition, only relevant for computing pseudotime.
+
+        """
+        if self._adata.shape[1] != xroot.size:
+            msg = "The root vector you provided does not have the correct dimension."
+            raise ValueError(msg)
+        # this is the squared distance
+        dsqroot = 1e10
+        iroot = 0
+        for i in range(self._adata.shape[0]):
+            diff = self._adata.X[i, :] - xroot
+            dsq = diff @ diff
+            if dsq < dsqroot:
+                dsqroot = dsq
+                iroot = i
+                if np.sqrt(dsqroot) < 1e-10:
+                    break
+        logg.debug(f"setting root index to {iroot}")
+        if self.iroot is not None and iroot != self.iroot:
+            logg.warning(f"Changing index of iroot from {self.iroot} to {iroot}.")
+        self.iroot = iroot

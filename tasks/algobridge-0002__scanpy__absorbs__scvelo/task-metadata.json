@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "task_id": "algobridge-0002__scanpy__absorbs__scvelo",
+  "algorithm_question_id": "ALGOBRIDGE-0002",
+  "candidate_id": "WFBRIDGE-0102",
+  "authoring_state": "accepted",
+  "execution_target": "cpu",
+  "title": "Scanpy 原生 RNA velocity transition graph",
+  "domain": "single-cell",
+  "algorithm_family": "graph / numerical biology",
+  "algorithm": "scVelo deterministic velocity graph",
+  "bounded_subset": "给定 spliced/unspliced moments 与固定 kNN，计算 residual velocity、余弦相关、正负 transition graph 和 row-normalized transition；不含动力学参数拟合。",
+  "host_software": "Scanpy",
+  "donor_software": "scVelo",
+  "workflow_source": "Scanpy",
+  "workflow_target": "scVelo",
+  "host_side": "source",
+  "unique_paper_count": 17,
+  "paper_ids": [
+    "811828298303668225",
+    "811830390145679361",
+    "811846193075191810",
+    "812021473060323329",
+    "812042224706519040",
+    "812563224577703937",
+    "817350803097387008",
+    "895154607309717601",
+    "1012538123311120390",
+    "7463151590434484283",
+    "7463151783041118264",
+    "7463151796685189261",
+    "7463151796697772201",
+    "7463151947822739472",
+    "7463152024221986824",
+    "7463152028793778286",
+    "7463152089967702037"
+  ],
+  "input_contract": "AnnData 中 Ms、Mu、velocity layers 与固定 neighbors CSR。",
+  "output_contract": "positive/negative velocity graph、transition matrix 和 per-cell confidence。",
+  "reference_pipeline": "Scanpy 构图后由锁定 scVelo 在 deterministic mode 计算 velocity graph。",
+  "candidate_interface": "Scanpy 新增 velocity_transition_graph，不得调用 scVelo。",
+  "verification": {
+    "model": "original_A_plus_B_vs_merged_host",
+    "numeric_comparison": "CSR support 精确比较，权重 1e-6 容差，confidence 1e-7；固定零范数与负相关策略。",
+    "scientific_invariants": [
+      "transition 每个非空行的绝对值和为 1",
+      "正负图 support 不重叠",
+      "整体表达缩放不改变余弦 transition"
+    ],
+    "fixtures": "分叉流形、静止细胞、负相关边、零 velocity、基因子集和邻居重排。"
+  },
+  "non_glue_reason": "需要实现向量 residual、稀疏图打分和概率归一化，不是 layer 改名。",
+  "implementation_scope": "medium",
+  "estimated_changed_loc": "350-750",
+  "difficulty": "hard",
+  "license": {
+    "status": "low_risk_direction_available",
+    "host_license": "3-clause BSD License",
+    "donor_license": "BSD-3-Clause",
+    "clean_room_required": true
+  },
+  "source_locks": {
+    "host": {
+      "software": "Scanpy",
+      "repo": "https://github.com/scverse/scanpy",
+      "url": "https://github.com/scverse/scanpy",
+      "status": "locked",
+      "head_commit": "fabadb9412c0d1cd9df9d9c2e95ac266d564ee18",
+      "resolved_at": "2026-08-12T03:22:26.644684+00:00",
+      "stderr": ""
+    },
+    "donor": {
+      "software": "scVelo",
+      "repo": "https://github.com/theislab/scvelo",
+      "url": "https://github.com/theislab/scvelo",
+      "status": "locked",
+      "head_commit": "f63c0e70596ced2f1bee8cf07e8ab66037cf86b2",
+      "resolved_at": "2026-08-12T03:22:24.527990+00:00",
+      "stderr": ""
+    },
+    "workflow_source": {
+      "software": "Scanpy",
+      "repo": "https://github.com/scverse/scanpy",
+      "url": "https://github.com/scverse/scanpy",
+      "status": "locked",
+      "head_commit": "fabadb9412c0d1cd9df9d9c2e95ac266d564ee18",
+      "resolved_at": "2026-08-12T03:22:26.644684+00:00",
+      "stderr": ""
+    },
+    "workflow_target": {
+      "software": "scVelo",
+      "repo": "https://github.com/theislab/scvelo",
+      "url": "https://github.com/theislab/scvelo",
+      "status": "locked",
+      "head_commit": "f63c0e70596ced2f1bee8cf07e8ab66037cf86b2",
+      "resolved_at": "2026-08-12T03:22:24.527990+00:00",
+      "stderr": ""
+    }
+  }
+}

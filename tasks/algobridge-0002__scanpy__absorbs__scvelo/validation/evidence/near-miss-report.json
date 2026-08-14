@@ -1,0 +1,336 @@
+{
+  "task": "algobridge-0002__scanpy__absorbs__scvelo",
+  "hard_gates": {
+    "locked_source_integrity": true,
+    "locked_reference_pipeline": true,
+    "clean_room_source_scan": true,
+    "candidate_isolation": true,
+    "api_contract": true,
+    "candidate_regression": true
+  },
+  "points": [
+    {
+      "name": "linear_forward",
+      "passed": false,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.2183912992477417,
+        "negative_support": true,
+        "negative_max_error": 0.21275383234024048,
+        "transition_support": true,
+        "transition_max_error": 0.08752143383026123,
+        "confidence_max_error": 0.2183912992477417,
+        "self_transition_max_error": 0.19616806507110596,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "linear_reverse",
+      "passed": false,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.21275383234024048,
+        "negative_support": true,
+        "negative_max_error": 0.2183912992477417,
+        "transition_support": false,
+        "transition_max_error": null,
+        "confidence_max_error": 0.21275383234024048,
+        "self_transition_max_error": 0.2036551833152771,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "global_expression_scaling_invariance",
+      "passed": false,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 5.960464477539063e-08,
+        "negative_support": true,
+        "negative_max_error": 8.940696716308594e-08,
+        "transition_support": true,
+        "transition_max_error": 1.7881393432617188e-07,
+        "scaled_reference": {
+          "positive_support": true,
+          "positive_max_error": 0.36264365911483765,
+          "negative_support": true,
+          "negative_max_error": 0.3652561902999878,
+          "transition_support": false,
+          "transition_max_error": null,
+          "confidence_max_error": 0.3489840030670166,
+          "self_transition_max_error": 0.27080971002578735,
+          "scientific_invariants": true
+        }
+      }
+    },
+    {
+      "name": "branch_two_hop",
+      "passed": false,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.36264365911483765,
+        "negative_support": true,
+        "negative_max_error": 0.3652561902999878,
+        "transition_support": false,
+        "transition_max_error": null,
+        "confidence_max_error": 0.3267459273338318,
+        "self_transition_max_error": 0.28587573766708374,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "negative_enabled",
+      "passed": false,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.3652561902999878,
+        "negative_support": true,
+        "negative_max_error": 0.36264365911483765,
+        "transition_support": true,
+        "transition_max_error": 0.4260016977787018,
+        "confidence_max_error": 0.3652561902999878,
+        "self_transition_max_error": 0.32798516750335693,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "zero_velocity",
+      "passed": false,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.2183912992477417,
+        "negative_support": true,
+        "negative_max_error": 0.0,
+        "transition_support": true,
+        "transition_max_error": 0.08728957176208496,
+        "confidence_max_error": 0.2183912992477417,
+        "self_transition_max_error": 0.20092004537582397,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "mixed_stationary",
+      "passed": false,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.36264365911483765,
+        "negative_support": true,
+        "negative_max_error": 0.3652561902999878,
+        "transition_support": true,
+        "transition_max_error": 0.37994664907455444,
+        "confidence_max_error": 0.3489839434623718,
+        "self_transition_max_error": 0.29512840509414673,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "ring_tangent",
+      "passed": false,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.30092352628707886,
+        "negative_support": true,
+        "negative_max_error": 0.5449655652046204,
+        "transition_support": false,
+        "transition_max_error": null,
+        "confidence_max_error": 0.30092352628707886,
+        "self_transition_max_error": 0.2757717967033386,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "distance_truncate",
+      "passed": false,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.30092352628707886,
+        "negative_support": true,
+        "negative_max_error": 0.5449655652046204,
+        "transition_support": false,
+        "transition_max_error": null,
+        "confidence_max_error": 0.30092352628707886,
+        "self_transition_max_error": 0.2757717967033386,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "sqrt_transform",
+      "passed": false,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.61641725897789,
+        "negative_support": true,
+        "negative_max_error": 0.3563438057899475,
+        "transition_support": false,
+        "transition_max_error": null,
+        "confidence_max_error": 0.41222840547561646,
+        "self_transition_max_error": 0.28048962354660034,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "transition_scale_low",
+      "passed": false,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.36264365911483765,
+        "negative_support": true,
+        "negative_max_error": 0.3652561902999878,
+        "transition_support": false,
+        "transition_max_error": null,
+        "confidence_max_error": 0.3489839434623718,
+        "self_transition_max_error": 0.27080971002578735,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "transition_scale_high",
+      "passed": false,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.36264365911483765,
+        "negative_support": true,
+        "negative_max_error": 0.3652561902999878,
+        "transition_support": false,
+        "transition_max_error": null,
+        "confidence_max_error": 0.3489839434623718,
+        "self_transition_max_error": 0.27080971002578735,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "gene_subset_names",
+      "passed": false,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.4816790223121643,
+        "negative_support": true,
+        "negative_max_error": 0.48167890310287476,
+        "transition_support": false,
+        "transition_max_error": null,
+        "confidence_max_error": 0.4522774815559387,
+        "self_transition_max_error": 0.24189668893814087,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "gene_subset_mask",
+      "passed": false,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.36264365911483765,
+        "negative_support": true,
+        "negative_max_error": 0.365256130695343,
+        "transition_support": true,
+        "transition_max_error": 0.4675777554512024,
+        "confidence_max_error": 0.3489840626716614,
+        "self_transition_max_error": 0.2951284646987915,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "csr_storage_reorder",
+      "passed": false,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.36264365911483765,
+        "negative_support": true,
+        "negative_max_error": 0.3652561902999878,
+        "transition_support": false,
+        "transition_max_error": null,
+        "confidence_max_error": 0.3489839434623718,
+        "self_transition_max_error": 0.27080971002578735,
+        "scientific_invariants": true
+      }
+    }
+  ],
+  "integrity_failures": [],
+  "reference_provenance": {
+    "scanpy_file": "/opt/reference-host/src/scanpy/__init__.py",
+    "scanpy_version": "1.14.0.dev21+gfabadb941",
+    "scvelo_file": "/opt/reference-donor/scvelo/__init__.py",
+    "scvelo_version": "0.3.3+locked.f63c0e7",
+    "numpy_version": "2.5.2"
+  },
+  "reference_stderr_tail": "",
+  "source_scan": {
+    "findings": [],
+    "changed_files": [
+      "src/scanpy/tools/__init__.py",
+      "src/scanpy/tools/_velocity_transition.py",
+      "src/scanpy/tools/test_velocity_transition.py"
+    ],
+    "donor_fragments": 396910
+  },
+  "candidate_isolation": {
+    "tests_unreadable": true,
+    "reference_runner_removed": true,
+    "reference_host_removed": true,
+    "reference_donor_removed": true,
+    "pristine_host_removed": true,
+    "wheelhouse_removed": true,
+    "candidate_tools_removed": true,
+    "scvelo_unavailable": true
+  },
+  "candidate_stderr_tail": "",
+  "candidate_contract": {
+    "checks": [
+      {
+        "name": "dense_graph",
+        "rejected": true
+      },
+      {
+        "name": "missing_velocity",
+        "rejected": true
+      },
+      {
+        "name": "negative_distance",
+        "rejected": true
+      },
+      {
+        "name": "self_edge",
+        "rejected": true
+      },
+      {
+        "name": "empty_row",
+        "rejected": true
+      },
+      {
+        "name": "nonfinite_layer",
+        "rejected": true
+      },
+      {
+        "name": "bad_recurse",
+        "rejected": true
+      },
+      {
+        "name": "bad_scale",
+        "rejected": true
+      },
+      {
+        "name": "bad_subset",
+        "rejected": true
+      }
+    ],
+    "copy_semantics": true,
+    "overlay": [
+      "src/scanpy/tools/__init__.py",
+      "src/scanpy/tools/_velocity_transition.py",
+      "src/scanpy/tools/test_velocity_transition.py"
+    ]
+  },
+  "candidate_regression": {
+    "returncode": 0,
+    "targets": [
+      "/opt/candidate-runtime/scanpy/tools/test_velocity_transition.py"
+    ],
+    "stdout_tail": ".                                                                        [100%]\n1 passed in 1.59s\n",
+    "stderr_tail": ""
+  },
+  "summary": {
+    "passed": 0,
+    "total": 15,
+    "reward": 0.0,
+    "all_hard_gates": true
+  },
+  "elapsed_seconds": 13.087905883789062
+}

@@ -1,0 +1,336 @@
+{
+  "task": "algobridge-0002__scanpy__absorbs__scvelo",
+  "hard_gates": {
+    "locked_source_integrity": true,
+    "locked_reference_pipeline": true,
+    "clean_room_source_scan": true,
+    "candidate_isolation": true,
+    "api_contract": true,
+    "candidate_regression": true
+  },
+  "points": [
+    {
+      "name": "linear_forward",
+      "passed": true,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.0,
+        "negative_support": true,
+        "negative_max_error": 0.0,
+        "transition_support": true,
+        "transition_max_error": 0.0,
+        "confidence_max_error": 0.0,
+        "self_transition_max_error": 0.0,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "linear_reverse",
+      "passed": true,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.0,
+        "negative_support": true,
+        "negative_max_error": 0.0,
+        "transition_support": true,
+        "transition_max_error": 0.0,
+        "confidence_max_error": 0.0,
+        "self_transition_max_error": 0.0,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "global_expression_scaling_invariance",
+      "passed": true,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 5.960464477539063e-08,
+        "negative_support": true,
+        "negative_max_error": 1.1920928955078125e-07,
+        "transition_support": true,
+        "transition_max_error": 5.960464477539063e-08,
+        "scaled_reference": {
+          "positive_support": true,
+          "positive_max_error": 0.0,
+          "negative_support": true,
+          "negative_max_error": 0.0,
+          "transition_support": true,
+          "transition_max_error": 0.0,
+          "confidence_max_error": 0.0,
+          "self_transition_max_error": 0.0,
+          "scientific_invariants": true
+        }
+      }
+    },
+    {
+      "name": "branch_two_hop",
+      "passed": true,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.0,
+        "negative_support": true,
+        "negative_max_error": 0.0,
+        "transition_support": true,
+        "transition_max_error": 0.0,
+        "confidence_max_error": 0.0,
+        "self_transition_max_error": 0.0,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "negative_enabled",
+      "passed": true,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.0,
+        "negative_support": true,
+        "negative_max_error": 0.0,
+        "transition_support": true,
+        "transition_max_error": 0.0,
+        "confidence_max_error": 0.0,
+        "self_transition_max_error": 0.0,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "zero_velocity",
+      "passed": true,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.0,
+        "negative_support": true,
+        "negative_max_error": 0.0,
+        "transition_support": true,
+        "transition_max_error": 0.0,
+        "confidence_max_error": 0.0,
+        "self_transition_max_error": 0.0,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "mixed_stationary",
+      "passed": true,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.0,
+        "negative_support": true,
+        "negative_max_error": 0.0,
+        "transition_support": true,
+        "transition_max_error": 0.0,
+        "confidence_max_error": 0.0,
+        "self_transition_max_error": 0.0,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "ring_tangent",
+      "passed": true,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.0,
+        "negative_support": true,
+        "negative_max_error": 0.0,
+        "transition_support": true,
+        "transition_max_error": 0.0,
+        "confidence_max_error": 0.0,
+        "self_transition_max_error": 0.0,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "distance_truncate",
+      "passed": true,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.0,
+        "negative_support": true,
+        "negative_max_error": 0.0,
+        "transition_support": true,
+        "transition_max_error": 0.0,
+        "confidence_max_error": 0.0,
+        "self_transition_max_error": 0.0,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "sqrt_transform",
+      "passed": true,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.0,
+        "negative_support": true,
+        "negative_max_error": 0.0,
+        "transition_support": true,
+        "transition_max_error": 0.0,
+        "confidence_max_error": 0.0,
+        "self_transition_max_error": 0.0,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "transition_scale_low",
+      "passed": true,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.0,
+        "negative_support": true,
+        "negative_max_error": 0.0,
+        "transition_support": true,
+        "transition_max_error": 0.0,
+        "confidence_max_error": 0.0,
+        "self_transition_max_error": 0.0,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "transition_scale_high",
+      "passed": true,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.0,
+        "negative_support": true,
+        "negative_max_error": 0.0,
+        "transition_support": true,
+        "transition_max_error": 0.0,
+        "confidence_max_error": 0.0,
+        "self_transition_max_error": 0.0,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "gene_subset_names",
+      "passed": true,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.0,
+        "negative_support": true,
+        "negative_max_error": 0.0,
+        "transition_support": true,
+        "transition_max_error": 0.0,
+        "confidence_max_error": 0.0,
+        "self_transition_max_error": 0.0,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "gene_subset_mask",
+      "passed": true,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.0,
+        "negative_support": true,
+        "negative_max_error": 0.0,
+        "transition_support": true,
+        "transition_max_error": 0.0,
+        "confidence_max_error": 0.0,
+        "self_transition_max_error": 0.0,
+        "scientific_invariants": true
+      }
+    },
+    {
+      "name": "csr_storage_reorder",
+      "passed": true,
+      "details": {
+        "positive_support": true,
+        "positive_max_error": 0.0,
+        "negative_support": true,
+        "negative_max_error": 0.0,
+        "transition_support": true,
+        "transition_max_error": 0.0,
+        "confidence_max_error": 0.0,
+        "self_transition_max_error": 0.0,
+        "scientific_invariants": true
+      }
+    }
+  ],
+  "integrity_failures": [],
+  "reference_provenance": {
+    "scanpy_file": "/opt/reference-host/src/scanpy/__init__.py",
+    "scanpy_version": "1.14.0.dev21+gfabadb941",
+    "scvelo_file": "/opt/reference-donor/scvelo/__init__.py",
+    "scvelo_version": "0.3.3+locked.f63c0e7",
+    "numpy_version": "2.5.2"
+  },
+  "reference_stderr_tail": "",
+  "source_scan": {
+    "findings": [],
+    "changed_files": [
+      "src/scanpy/tools/__init__.py",
+      "src/scanpy/tools/_velocity_transition.py",
+      "src/scanpy/tools/test_velocity_transition.py"
+    ],
+    "donor_fragments": 396910
+  },
+  "candidate_isolation": {
+    "tests_unreadable": true,
+    "reference_runner_removed": true,
+    "reference_host_removed": true,
+    "reference_donor_removed": true,
+    "pristine_host_removed": true,
+    "wheelhouse_removed": true,
+    "candidate_tools_removed": true,
+    "scvelo_unavailable": true
+  },
+  "candidate_stderr_tail": "",
+  "candidate_contract": {
+    "checks": [
+      {
+        "name": "dense_graph",
+        "rejected": true
+      },
+      {
+        "name": "missing_velocity",
+        "rejected": true
+      },
+      {
+        "name": "negative_distance",
+        "rejected": true
+      },
+      {
+        "name": "self_edge",
+        "rejected": true
+      },
+      {
+        "name": "empty_row",
+        "rejected": true
+      },
+      {
+        "name": "nonfinite_layer",
+        "rejected": true
+      },
+      {
+        "name": "bad_recurse",
+        "rejected": true
+      },
+      {
+        "name": "bad_scale",
+        "rejected": true
+      },
+      {
+        "name": "bad_subset",
+        "rejected": true
+      }
+    ],
+    "copy_semantics": true,
+    "overlay": [
+      "src/scanpy/tools/__init__.py",
+      "src/scanpy/tools/_velocity_transition.py",
+      "src/scanpy/tools/test_velocity_transition.py"
+    ]
+  },
+  "candidate_regression": {
+    "returncode": 0,
+    "targets": [
+      "/opt/candidate-runtime/scanpy/tools/test_velocity_transition.py"
+    ],
+    "stdout_tail": ".                                                                        [100%]\n1 passed in 1.62s\n",
+    "stderr_tail": ""
+  },
+  "summary": {
+    "passed": 15,
+    "total": 15,
+    "reward": 1.0,
+    "all_hard_gates": true
+  },
+  "elapsed_seconds": 14.731360673904419
+}

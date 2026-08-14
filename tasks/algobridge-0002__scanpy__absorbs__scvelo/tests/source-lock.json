@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "host": {
+    "repository": "https://github.com/scverse/scanpy",
+    "commit": "fabadb9412c0d1cd9df9d9c2e95ac266d564ee18",
+    "tree": "c68e70c22539158ed52fd8169761d818ac8510a2",
+    "license": "BSD-3-Clause",
+    "snapshot_file_count": 842,
+    "reference_manifest_sha256": "3b14b76a6a993ded5a01efa6e019b808e86b7ef9ac35eaffa445be09f026f8de"
+  },
+  "donor": {
+    "repository": "https://github.com/theislab/scvelo",
+    "commit": "f63c0e70596ced2f1bee8cf07e8ab66037cf86b2",
+    "tree": "50237cef428c6bf42611522d8721983847af4584",
+    "license": "BSD-3-Clause",
+    "snapshot_file_count": 113,
+    "reference_manifest_sha256": "090e8b570cb87d3dffeea46ab7ea51d64a012e828c070373246905c36d1da3dc"
+  },
+  "runtime": {
+    "base_image": "python:3.12.11-slim-bookworm@sha256:519591d6871b7bc437060736b9f7456b8731f1499a57e22e6c285135ae657bf7",
+    "python": "3.12.11",
+    "scanpy": "1.14.0.dev21+gfabadb941",
+    "scvelo": "0.3.3+locked.f63c0e7",
+    "wheel_manifest_sha256": "df376d88fafc302e72207e4e74b1f93627a43b79307fa222d16f5992cb00a155"
+  }
+}

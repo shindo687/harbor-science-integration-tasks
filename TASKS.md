@@ -1,10 +1,11 @@
 # Task index
 
-This index contains **18** byte-exact standalone-repository snapshots.
+This index contains **19** byte-exact standalone-repository snapshots.
 
 | Suite | Task snapshot | Standalone repository | Commit | Files | Size |
 |---|---|---|---|---:|---:|
 | AlgoBridge | [algobridge-0001__scanpy__absorbs__bbknn](tasks/algobridge-0001__scanpy__absorbs__bbknn/) | [source](https://github.com/shindo687/algobridge-0001__scanpy__absorbs__bbknn) | `5fa798c1ee99` | 2189 | 527.1 MiB |
+| AlgoBridge | [algobridge-0002__scanpy__absorbs__scvelo](tasks/algobridge-0002__scanpy__absorbs__scvelo/) | [source](https://github.com/shindo687/algobridge-0002__scanpy__absorbs__scvelo) | `e6deab953474` | 2097 | 436.7 MiB |
 | AlgoBridge | [algobridge-0004__seurat__absorbs__clusterprofiler](tasks/algobridge-0004__seurat__absorbs__clusterprofiler/) | [source](https://github.com/shindo687/algobridge-0004__seurat__absorbs__clusterprofiler) | `5853c392754f` | 62 | 29.7 MiB |
 | AlgoBridge | [algobridge-0007__fasttree__absorbs__mafft](tasks/algobridge-0007__fasttree__absorbs__mafft/) | [source](https://github.com/shindo687/algobridge-0007__fasttree__absorbs__mafft) | `b3fd38093c9b` | 94 | 1.3 MiB |
 | AlgoBridge | [algobridge-0012__gromacs__absorbs__prody](tasks/algobridge-0012__gromacs__absorbs__prody/) | [source](https://github.com/shindo687/algobridge-0012__gromacs__absorbs__prody) | `bee40efe5138` | 70 | 279.2 MiB |

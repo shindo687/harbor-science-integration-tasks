@@ -1,0 +1,7 @@
+materialized 3 changed Python files in /tmp/scanpy-velocity-public.B3LE6c
+PASS linear_flow
+PASS two_hop_branch
+PASS negative_cosines
+PASS zero_velocity
+PASS gene_subset
+public examples: 5/5

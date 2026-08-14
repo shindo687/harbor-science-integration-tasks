@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "complete": false,
-  "task_count": 18,
+  "task_count": 19,
   "tasks": [
     {
       "name": "algobridge-0001__scanpy__absorbs__bbknn",
@@ -11,6 +11,15 @@
       "source_tree": "513f6f92e7a4ddbcd25c6e3d97326c3906990c1d",
       "file_count": 2189,
       "bytes": 552653488
+    },
+    {
+      "name": "algobridge-0002__scanpy__absorbs__scvelo",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0002__scanpy__absorbs__scvelo.git",
+      "commit": "e6deab9534749c394ee7c30bd4ab87a4f3f04c4d",
+      "source_tree": "1d9bc7c780759225e505eca82aa2562938ac4b66",
+      "file_count": 2097,
+      "bytes": 457936909
     },
     {
       "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
