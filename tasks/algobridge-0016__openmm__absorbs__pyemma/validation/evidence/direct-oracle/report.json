@@ -1,0 +1,101 @@
+{
+  "cases": [
+    {
+      "name": "two_state_balanced",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "two_state_asymmetric",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "three_state_dense",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "lag_two_sliding",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "lag_three_sample",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "multiple_trajectories",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "disconnected_equal_tie",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "disconnected_larger_component",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "gapped_state_labels",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "sparse_four_state_bridge",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "four_state_lag_two",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "periodic_pair_reversible",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "nonreversible_pair",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "nonreversible_three_cycle",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "multi_lag_two_nonreversible",
+      "passed": true,
+      "reasons": []
+    }
+  ],
+  "failed": 0,
+  "hard_gates": {
+    "candidate_protocol": "pass",
+    "locked_reference": "pass",
+    "reference_removed_before_candidate": "pass",
+    "source_policy": {
+      "added": [
+        "wrappers/python/openmm/app/markov_model.py"
+      ],
+      "changed": [
+        "wrappers/python/openmm/app/__init__.py"
+      ],
+      "module_bytes": 7907,
+      "module_sha256": "c2f1aed7eda6cb8b6071e62ac52f76e859f76252210815e5e27d434091ca3cf6"
+    }
+  },
+  "passed": 15,
+  "reference": "locked PyEMMA 2.5.12+6.g3327f28b estimate_markov_model",
+  "reward": 1.0,
+  "status": "completed",
+  "task": "ALGOBRIDGE-0016",
+  "total": 15
+}

@@ -1,0 +1,126 @@
+{
+  "cases": [
+    {
+      "name": "two_state_balanced",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "two_state_asymmetric",
+      "passed": false,
+      "reasons": [
+        "eigenvalues",
+        "stationary_distribution",
+        "timescales",
+        "transition_matrix"
+      ]
+    },
+    {
+      "name": "three_state_dense",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "lag_two_sliding",
+      "passed": false,
+      "reasons": [
+        "eigenvalues",
+        "stationary_distribution",
+        "timescales",
+        "transition_matrix"
+      ]
+    },
+    {
+      "name": "lag_three_sample",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "multiple_trajectories",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "disconnected_equal_tie",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "disconnected_larger_component",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "gapped_state_labels",
+      "passed": false,
+      "reasons": [
+        "eigenvalues",
+        "stationary_distribution",
+        "timescales",
+        "transition_matrix"
+      ]
+    },
+    {
+      "name": "sparse_four_state_bridge",
+      "passed": false,
+      "reasons": [
+        "eigenvalues",
+        "stationary_distribution",
+        "timescales",
+        "transition_matrix"
+      ]
+    },
+    {
+      "name": "four_state_lag_two",
+      "passed": false,
+      "reasons": [
+        "eigenvalues",
+        "stationary_distribution",
+        "timescales",
+        "transition_matrix"
+      ]
+    },
+    {
+      "name": "periodic_pair_reversible",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "nonreversible_pair",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "nonreversible_three_cycle",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "name": "multi_lag_two_nonreversible",
+      "passed": true,
+      "reasons": []
+    }
+  ],
+  "failed": 5,
+  "hard_gates": {
+    "candidate_protocol": "pass",
+    "locked_reference": "pass",
+    "reference_removed_before_candidate": "pass",
+    "source_policy": {
+      "added": [
+        "wrappers/python/openmm/app/markov_model.py"
+      ],
+      "changed": [
+        "wrappers/python/openmm/app/__init__.py"
+      ],
+      "module_bytes": 6971,
+      "module_sha256": "a00fb008814ae5a0d82998fe3ebe97e8c4aeebd057e8c37880a8fb3540a98351"
+    }
+  },
+  "passed": 10,
+  "reference": "locked PyEMMA 2.5.12+6.g3327f28b estimate_markov_model",
+  "reward": 0.6666666666666666,
+  "status": "completed",
+  "task": "ALGOBRIDGE-0016",
+  "total": 15
+}

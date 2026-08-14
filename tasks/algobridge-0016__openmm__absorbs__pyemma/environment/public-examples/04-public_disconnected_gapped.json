@@ -1,0 +1,4 @@
+{
+  "input": {"trajectories": [[2, 2, 5, 5, 2, 5, 2], [9, 9, 9, 9]], "lag": 1, "count_mode": "sliding", "reversible": true, "connectivity": "largest"},
+  "expected": {"active_set": [2, 5], "count_matrix": [[1, 2], [2, 1]], "transition_matrix": [[0.3333333333333333, 0.6666666666666666], [0.6666666666666666, 0.3333333333333333]], "stationary_distribution": [0.5, 0.5], "eigenvalues": [[1.0, 0.0], [-0.3333333333333333, 0.0]], "timescales": [0.9102392266268373]}
+}

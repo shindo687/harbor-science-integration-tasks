@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "task_id": "algobridge-0016__openmm__absorbs__pyemma",
+  "algorithm_question_id": "ALGOBRIDGE-0016",
+  "authoring_state": "accepted",
+  "title": "OpenMM native reversible Markov-state-model estimation",
+  "domain": "molecular-simulation",
+  "algorithm": "PyEMMA reversible transition-matrix maximum likelihood",
+  "host_software": "OpenMM",
+  "donor_software": "PyEMMA",
+  "input_contract": "bounded discrete trajectories, lag, count mode, reversible flag, and largest-component connectivity",
+  "output_contract": "active set, count/transition matrices, stationary distribution, eigenvalues, and implied timescales",
+  "verification_model": "original host-to-donor workflow versus merged host in a separate no-network verifier",
+  "clean_room_required": true
+}

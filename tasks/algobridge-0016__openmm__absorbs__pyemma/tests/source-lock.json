@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "reference_model": "locked OpenMM discrete trajectories through locked PyEMMA estimate_markov_model versus merged OpenMM",
+  "host": {
+    "name": "OpenMM",
+    "repository": "https://github.com/openmm/openmm",
+    "commit": "c6173db6e8edd705eb59172bd21e9ce69c572405",
+    "tree": "71424061bd461f029827cf2d1b54c966ac6dfbe1",
+    "license": "MIT and LGPL-2.1-or-later",
+    "snapshot_file_count": 2263,
+    "snapshot_sha256": "dfbb5c7b115dc5f5c96358561773a5ed6595f3fc5ff9aed16e06a7682a1b111d"
+  },
+  "donor": {
+    "name": "PyEMMA",
+    "repository": "https://github.com/markovmodel/PyEMMA",
+    "commit": "3327f28b49e388e1ce4a6a83ab2f0c0ac7ca5050",
+    "tree": "b9d85a96f348264a92173275639fc65de296c009",
+    "nearest_tag": "v2.5.12",
+    "describe": "v2.5.12-6-g3327f28b",
+    "wheel_version": "2.5.12+6.g3327f28b",
+    "license": "LGPL-3.0-or-later",
+    "snapshot_file_count": 371,
+    "snapshot_sha256": "acc2045d9be27621069cdb549aa4a6f6531a063eb9027c583c13786cd276677a",
+    "wheel_sha256": "b65aeae21df860fd6d5d484771037e1a40f4499a12d9ebc194c7fe16eaa69ba3"
+  },
+  "reference_engine": {
+    "package": "deeptime",
+    "version": "0.4.5",
+    "relationship": "The locked PyEMMA commit delegates transition-matrix estimation to deeptime.markov.tools.estimation"
+  },
+  "runtime": {
+    "python_base": "python:3.10.18-bookworm",
+    "python_base_digest": "sha256:ee0c7d26e2dba416773cb51c042496e9cffacc872459f57726935dd6833f2d96",
+    "reference_wheel_manifest_sha256": "52b83fbe0ef66ada95bbcaec942e1d79f791a3c84501ff0b0fa8d15151555e49",
+    "agent_wheel_manifest_sha256": "16ff06725baf9c903113d84f6bcae70d2e7784523d8ad1a53fa7ba4e4ca9985c"
+  }
+}
