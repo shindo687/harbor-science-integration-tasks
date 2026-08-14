@@ -86,6 +86,12 @@
       "commit": "fa04078e443535eeed883eee78b6fce77e30b52b"
     },
     {
+      "name": "algobridge-0022__wannier90__absorbs__z2pack",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0022__wannier90__absorbs__z2pack.git",
+      "commit": "9cf9bb4ce962c005590dbbca269dd16a0327c9b6"
+    },
+    {
       "name": "algobridge-0024__lammps__absorbs__phonopy",
       "suite": "AlgoBridge",
       "origin": "https://github.com/shindo687/algobridge-0024__lammps__absorbs__phonopy.git",

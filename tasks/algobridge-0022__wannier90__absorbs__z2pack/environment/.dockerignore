@@ -1,0 +1,8 @@
+*
+!host-source.tar.gz
+!donor-source.tar.gz
+!public-examples/
+!public-examples/**
+!task-tools/
+!task-tools/**
+

@@ -1,0 +1,15 @@
+{
+  "algorithm": "fixed-mesh hybrid-Wannier charge-center flow from occupied-subspace Wilson loops",
+  "donor": "Z2Pack v2.2.0",
+  "host": "Wannier90 e9f448e1ff4199ab5f983ec7265adca06b6363e8",
+  "id": "ALGOBRIDGE-0022",
+  "oracle_reference": "real locked z2pack.hm.System -> z2pack.surface.run -> z2pack.invariant.z2",
+  "scope": "2D gapped four-band Hamiltonian meshes with two occupied bands",
+  "verifier_cases": {
+    "hidden": 15,
+    "invalid": 10,
+    "metamorphic": 2,
+    "public": 5
+  }
+}
+

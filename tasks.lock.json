@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "complete": true,
-  "task_count": 23,
+  "task_count": 24,
   "tasks": [
     {
       "name": "algobridge-0001__scanpy__absorbs__bbknn",
@@ -184,6 +184,19 @@
       "lfs_object_count": 0,
       "lfs_bytes": 0,
       "materialized_bytes": 305761968
+    },
+    {
+      "name": "algobridge-0022__wannier90__absorbs__z2pack",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0022__wannier90__absorbs__z2pack.git",
+      "commit": "9cf9bb4ce962c005590dbbca269dd16a0327c9b6",
+      "source_tree": "d151d4a5317e4b844319bcdaf71cc1d1f5670f93",
+      "file_count": 89,
+      "git_blob_bytes": 63196001,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 63196001
     },
     {
       "name": "algobridge-0024__lammps__absorbs__phonopy",

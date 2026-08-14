@@ -1,0 +1,16 @@
+*
+!Dockerfile
+!host-source.tar.gz
+!donor-source.tar.gz
+!wheels/
+!wheels/**
+!candidate_runner.py
+!z2_wilson_driver.f90
+!cases.py
+!reference_runner.py
+!grader.py
+!test.sh
+!source-lock.json
+!public-examples/
+!public-examples/**
+

@@ -1,0 +1,247 @@
+{
+  "hidden": {
+    "cases": [
+      {
+        "candidate_status": "invalid_input",
+        "name": "hidden_topological_base",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "hidden_trivial_base",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "hidden_topological_mass_2",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "hidden_trivial_mass_minus_3",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "hidden_topological_random_basis_1",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "hidden_trivial_random_basis_1",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "hidden_topological_random_basis_2",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "hidden_trivial_random_basis_2",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "hidden_topological_particle_hole_asym",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "hidden_trivial_particle_hole_asym",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "hidden_topological_small_gap",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "hidden_trivial_small_gap",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "hidden_topological_energy_scaled",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "hidden_trivial_energy_scaled",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "hidden_topological_dense",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      }
+    ],
+    "passed": 0,
+    "total": 15
+  },
+  "invalid": {
+    "cases": [
+      {
+        "candidate_status": "invalid_input",
+        "name": "wrong_schema",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "unsupported_orbitals",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "unsupported_occupied",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "line_count_mismatch",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "loop_count_mismatch",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "negative_gap_tolerance",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "non_hermitian",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "ragged_mesh",
+        "passed": true,
+        "reference_status": "invalid_input"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "gap_closing",
+        "passed": false,
+        "reference_status": "gap_closed"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "non_finite",
+        "passed": true,
+        "reference_status": "invalid_input"
+      }
+    ],
+    "passed": 9,
+    "total": 10
+  },
+  "metamorphic": {
+    "cases": [
+      {
+        "name": "constant_unitary_basis",
+        "passed": false
+      },
+      {
+        "name": "identity_dispersion_and_energy_scale",
+        "passed": false
+      }
+    ],
+    "passed": 0,
+    "total": 2
+  },
+  "public": {
+    "cases": [
+      {
+        "candidate_status": "invalid_input",
+        "name": "public_topological_bhz",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "public_trivial_bhz",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "public_topological_gauge",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "public_trivial_dispersive",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      },
+      {
+        "candidate_status": "invalid_input",
+        "name": "public_topological_scaled",
+        "passed": false,
+        "reason": "status mismatch",
+        "reference_status": "ok"
+      }
+    ],
+    "passed": 0,
+    "total": 5
+  },
+  "reference": "locked real Z2Pack v2.2.0 hm.System/surface.run/invariant.z2",
+  "reward": 0.0,
+  "source_audit": {
+    "findings": [
+      "missing src/z2_wilson_loop.F90"
+    ],
+    "passed": false
+  },
+  "task": "algobridge-0022__wannier90__absorbs__z2pack",
+  "tolerances": {
+    "largest_gap": 1e-06,
+    "wcc_circle": 1e-06
+  }
+}
