@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "host": {
+    "software": "FastTree",
+    "version": "2.2.0",
+    "repository": "https://github.com/morgannprice/fasttree",
+    "commit": "a5a2723ea1e64faf3da7ea514521cfa348891add",
+    "tree": "9846f35974ab9b19ad7944329bb54a2ff111b252",
+    "license": "GPL-2.0-or-later",
+    "license_note": "FastTree.c grants GPL version 2 or later; the repository LICENSE file contains GPL version 3 text",
+    "archive": "host-source.tar.gz",
+    "archive_sha256": "ef088b6b1730cf919de22ff61e93f8a34b8b87ddf322d89fc5483d31379aeea1"
+  },
+  "donor": {
+    "software": "MAFFT core",
+    "repository": "https://gitlab.com/sysimm/mafft",
+    "commit": "0a2319b41ec99282487c2d758029cb7ef1fbc5c2",
+    "tree": "f9f7baaa55cde693d8596703a1bcfa699d5882ec",
+    "license": "BSD-3-Clause",
+    "archive": "donor-source.tar.gz",
+    "archive_sha256": "8e48a00ce32ec8c1c119b0e81fa63ef79b2f6e9b9564b829bf17147b1b561f27",
+    "included_paths": ["README.md", "license", "core/"],
+    "excluded_paths": ["extensions/", "binaries/", "MPI/"]
+  },
+  "build_image": {
+    "reference": "python:3.12.11-bookworm",
+    "digest": "sha256:13c9584604a99ca134c4f41800f74ffc64ee6ac8cf555cf1e704a6087fc84f12"
+  }
+}

@@ -1,0 +1,6 @@
+PASS public_dna_pair_indel
+PASS public_dna_terminal
+PASS public_dna_duplicates
+PASS public_protein_motif
+PASS public_protein_six
+public examples: 5/5

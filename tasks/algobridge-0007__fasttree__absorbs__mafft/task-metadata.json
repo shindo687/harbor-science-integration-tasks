@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "task_id": "algobridge-0007__fasttree__absorbs__mafft",
+  "algorithm_question_id": "ALGOBRIDGE-0007",
+  "candidate_id": "WFBRIDGE-0345",
+  "authoring_state": "accepted",
+  "execution_target": "cpu",
+  "title": "FastTree native bounded progressive alignment",
+  "domain": "sequence-analysis",
+  "algorithm_family": "dynamic programming / phylogenetics",
+  "host_software": "FastTree",
+  "donor_software": "MAFFT core",
+  "bounded_subset": "2-32 DNA/protein sequences; global affine-gap DP, deterministic UPGMA and profile-profile sum-of-pairs; no FFT or iterative refinement",
+  "candidate_interface": "FastTree --align-small",
+  "reference_pipeline": "locked MAFFT globalpair/one guide-tree pass, then locked FastTree 2.2.0",
+  "verification": {
+    "model": "original_A_plus_B_vs_merged_host",
+    "hidden_case_count": 15,
+    "public_case_count": 5,
+    "numeric_comparison": "alignment residue-pair homology plus final-tree normalized splits and branch lengths",
+    "scientific_invariants": [
+      "ungapped output rows equal input sequences",
+      "equal alignment widths and no all-gap column",
+      "exact leaf identifiers",
+      "finite non-negative ultrametric guide tree",
+      "permutation-invariant normalized homology and final-tree splits"
+    ]
+  },
+  "license": {
+    "host": "GPL-2.0-or-later",
+    "donor_core": "BSD-3-Clause",
+    "clean_room_required_by_task": true
+  }
+}

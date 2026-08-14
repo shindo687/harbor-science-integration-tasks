@@ -1,0 +1,76 @@
+{
+  "examples": [
+    {
+      "alphabet": "dna",
+      "directory": "01_public_dna_pair_indel",
+      "gap_extend": 0.75,
+      "gap_open": 4.0,
+      "id": "public_dna_pair_indel",
+      "matrix": "identity",
+      "sha256": {
+        "alignment": "1c763a0ad6349c5b1f2473ec0ae372ef21ed8270199e4e3c329eb180dd4623ce",
+        "final_tree": "4ebedc3834fd44b0622049ad0d9c14b72084e73674b7db8e82f12fa2e400213d",
+        "guide_tree": "580a332ce123488cd81228cf3e8b1679341c39789c49ed47c31336b1ffbe7ca2",
+        "input": "f35ef3e3c1ed2c1f9f26d86f7023a426381b398fef92db39cc41bf1c3ba219bf"
+      }
+    },
+    {
+      "alphabet": "dna",
+      "directory": "02_public_dna_terminal",
+      "gap_extend": 0.75,
+      "gap_open": 4.0,
+      "id": "public_dna_terminal",
+      "matrix": "identity",
+      "sha256": {
+        "alignment": "a8a9694e9e99078c5eb5718293dab7820b89215da6246f6fdb16236c1a1c552a",
+        "final_tree": "f9a6bbe89ea34f177fa39472843ade64a9dfee00ca18827fe8c12c65863c408f",
+        "guide_tree": "dc66899c6751a188eef3deb022add3f7a90cd0f08be2bc2caafcb2666623ba83",
+        "input": "4fb1b5a086322189025fc4243218d0455a3d9559193245ac0a50202646ca9f3f"
+      }
+    },
+    {
+      "alphabet": "dna",
+      "directory": "03_public_dna_duplicates",
+      "gap_extend": 0.75,
+      "gap_open": 4.0,
+      "id": "public_dna_duplicates",
+      "matrix": "identity",
+      "sha256": {
+        "alignment": "cb229b2d41fdcd390e4128ea2a17dc7aec9b475436a1fd49073d79d3d1cd2916",
+        "final_tree": "757e7a1ae7dbb38da4fe2a23d2ded6f922091e2c82640b702bb0a2dcc49b1dc4",
+        "guide_tree": "10b26217d22f4f752ec7c722372367c5ce3e4e46fdc5b4fb5822c209d629eec2",
+        "input": "679bf3f9b0693acb258d9447a81664acd0d76287f8f885c82d7d7265bdf032e5"
+      }
+    },
+    {
+      "alphabet": "protein",
+      "directory": "04_public_protein_motif",
+      "gap_extend": 0.75,
+      "gap_open": 4.0,
+      "id": "public_protein_motif",
+      "matrix": "blosum62",
+      "sha256": {
+        "alignment": "419b8cb9f6a2f94da2f73df14a53c1bdca58570ae288b1dab561a58735b778ca",
+        "final_tree": "1e4b9a02b3813f70fcec0a899929cca25a19c03ef9479ae4333f483608e47ca6",
+        "guide_tree": "b774517a89de046d950bab9354e66adf17f209890041a401a55b3903266110ea",
+        "input": "bf9066faa577b64aa9fd9ef910beb7e15ba62d84e48b13a15e8773625b593cf0"
+      }
+    },
+    {
+      "alphabet": "protein",
+      "directory": "05_public_protein_six",
+      "gap_extend": 0.75,
+      "gap_open": 4.0,
+      "id": "public_protein_six",
+      "matrix": "blosum62",
+      "sha256": {
+        "alignment": "b6bb2908cfaa40478d28efc662af28ed5272254a707e4b923e5e24e9167d9d0c",
+        "final_tree": "2e35af613d867eb4ae50b4aca7539d907d8c402654f80a0e7145f27166e106ec",
+        "guide_tree": "e98d79761c7339e8157b09bd09983b4f504708c2ac3fded5a62e72ae2ad45899",
+        "input": "a69edf917f7bafc6a57e415723a0be402c3e4e79857cd9e80e80dbdc5458084b"
+      }
+    }
+  ],
+  "generator": "locked MAFFT core -> locked FastTree plus independent bounded UPGMA",
+  "schema_version": 1
+}

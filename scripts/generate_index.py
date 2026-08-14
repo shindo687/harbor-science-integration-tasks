@@ -35,7 +35,7 @@ def main() -> None:
     lines.extend(
         [
             "",
-            "The full source commit and Git tree for every row are recorded in ",
+            "The full source commit and Git tree for every row are recorded in "
             "[`tasks.lock.json`](tasks.lock.json).",
             "",
         ]
