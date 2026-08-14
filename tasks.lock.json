@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "complete": false,
-  "task_count": 19,
+  "complete": true,
+  "task_count": 20,
   "tasks": [
     {
       "name": "algobridge-0001__scanpy__absorbs__bbknn",
@@ -29,6 +29,15 @@
       "source_tree": "24c3215e087bda897ad832d763955b9995f8754b",
       "file_count": 62,
       "bytes": 31192944
+    },
+    {
+      "name": "algobridge-0006__scanpy__absorbs__scib",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0006__scanpy__absorbs__scib.git",
+      "commit": "76b059e5e533005e910ae16216664aa2de1c5eb5",
+      "source_tree": "002a7f6f427d4907ec40fba844464b682d04731a",
+      "file_count": 2290,
+      "bytes": 530364805
     },
     {
       "name": "algobridge-0007__fasttree__absorbs__mafft",

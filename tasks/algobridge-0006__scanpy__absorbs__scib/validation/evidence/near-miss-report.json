@@ -1,0 +1,364 @@
+{
+  "api_isolation_and_host_regression": {
+    "details": {
+      "api_checks": {
+        "metrics_export": true,
+        "namespace_export": true,
+        "scanpy_module": true
+      },
+      "contract_checks": [
+        {
+          "name": "dense_graph",
+          "rejected": true
+        },
+        {
+          "name": "asymmetric_graph",
+          "rejected": true
+        },
+        {
+          "name": "negative_distance",
+          "rejected": true
+        },
+        {
+          "name": "label_length",
+          "rejected": true
+        },
+        {
+          "name": "neighbor_count",
+          "rejected": true
+        },
+        {
+          "name": "perplexity_low",
+          "rejected": true
+        },
+        {
+          "name": "perplexity_high",
+          "rejected": true
+        }
+      ],
+      "isolation_checks": {
+        "candidate_tools_removed": true,
+        "pristine_host_removed": true,
+        "reference_donor_removed": true,
+        "reference_host_removed": true,
+        "reference_runner_removed": true,
+        "reference_venv_removed": true,
+        "scib_unavailable": true,
+        "tests_unreadable": true,
+        "wheelhouse_removed": true
+      },
+      "regression_output": "............                                                             [100%]\n12 passed, 2 warnings in 21.59s\n",
+      "regression_returncode": 0
+    },
+    "passed": true
+  },
+  "candidate_stderr_tail": "",
+  "changed_files": [
+    "src/scanpy/metrics/__init__.py",
+    "src/scanpy/metrics/_lisi.py"
+  ],
+  "elapsed_seconds": 47.85,
+  "materialization": "materialized 2 changed Python files in /opt/candidate-runtime",
+  "overlay_manifest": [
+    "src/scanpy/metrics/__init__.py",
+    "src/scanpy/metrics/_lisi.py"
+  ],
+  "passed": 0,
+  "points": {
+    "alternating_ring_24": {
+      "details": {
+        "checks": {
+          "clisi": false,
+          "effective_neighbors": true,
+          "ilisi": false,
+          "median_clisi": false,
+          "median_ilisi": false
+        },
+        "max_abs_errors": {
+          "clisi": 1.786743757573145,
+          "ilisi": 0.8147699277354048,
+          "median_clisi": 1.4561398310259936,
+          "median_ilisi": 0.418245785306643
+        }
+      },
+      "passed": false
+    },
+    "dense_weight_gradient": {
+      "details": {
+        "checks": {
+          "clisi": false,
+          "effective_neighbors": true,
+          "ilisi": false,
+          "median_clisi": false,
+          "median_ilisi": false
+        },
+        "max_abs_errors": {
+          "clisi": 2.7309280799841877,
+          "ilisi": 1.139662252369619,
+          "median_clisi": 1.9923566413400522,
+          "median_ilisi": 0.4145273025230658
+        }
+      },
+      "passed": false
+    },
+    "equal_weight_ring": {
+      "details": {
+        "checks": {
+          "clisi": false,
+          "effective_neighbors": true,
+          "ilisi": false,
+          "median_clisi": true,
+          "median_ilisi": false
+        },
+        "max_abs_errors": {
+          "clisi": 0.41538461538461546,
+          "ilisi": 1.2000000000000002,
+          "median_clisi": 0.0,
+          "median_ilisi": 0.6352941176470592
+        }
+      },
+      "passed": false
+    },
+    "four_isolates": {
+      "details": {
+        "checks": {
+          "clisi": false,
+          "effective_neighbors": true,
+          "ilisi": false,
+          "median_clisi": false,
+          "median_ilisi": false
+        },
+        "max_abs_errors": {
+          "clisi": 1.9787259638110055,
+          "ilisi": 1.681534354071027,
+          "median_clisi": 1.2531443972177614,
+          "median_ilisi": 0.823610693974089
+        }
+      },
+      "passed": false
+    },
+    "high_perplexity": {
+      "details": {
+        "checks": {
+          "clisi": false,
+          "effective_neighbors": true,
+          "ilisi": false,
+          "median_clisi": false,
+          "median_ilisi": false
+        },
+        "max_abs_errors": {
+          "clisi": 1.6297654729976054,
+          "ilisi": 2.132046897363557,
+          "median_clisi": 1.0837967941530948,
+          "median_ilisi": 1.710000545967374
+        }
+      },
+      "passed": false
+    },
+    "imbalanced_hub": {
+      "details": {
+        "checks": {
+          "clisi": false,
+          "effective_neighbors": true,
+          "ilisi": false,
+          "median_clisi": false,
+          "median_ilisi": false
+        },
+        "max_abs_errors": {
+          "clisi": 2.3700247095022213,
+          "ilisi": 0.6135712987767141,
+          "median_clisi": 1.4427700892802267,
+          "median_ilisi": 0.19547154984995463
+        }
+      },
+      "passed": false
+    },
+    "integer_categories": {
+      "details": {
+        "checks": {
+          "clisi": false,
+          "effective_neighbors": true,
+          "ilisi": false,
+          "median_clisi": false,
+          "median_ilisi": false
+        },
+        "max_abs_errors": {
+          "clisi": 1.6138578460383926,
+          "ilisi": 1.6927290128504398,
+          "median_clisi": 0.4349018696143818,
+          "median_ilisi": 1.3081264707497637
+        }
+      },
+      "passed": false
+    },
+    "long_shortest_paths": {
+      "details": {
+        "checks": {
+          "clisi": false,
+          "effective_neighbors": true,
+          "ilisi": false,
+          "median_clisi": false,
+          "median_ilisi": false
+        },
+        "max_abs_errors": {
+          "clisi": 1.6725912178472866,
+          "ilisi": 1.4351568950096363,
+          "median_clisi": 1.1111832078088004,
+          "median_ilisi": 1.2790847493303552
+        }
+      },
+      "passed": false
+    },
+    "low_perplexity": {
+      "details": {
+        "checks": {
+          "clisi": false,
+          "effective_neighbors": true,
+          "ilisi": false,
+          "median_clisi": false,
+          "median_ilisi": false
+        },
+        "max_abs_errors": {
+          "clisi": 0.9756097459498745,
+          "ilisi": 1.5838089119955587,
+          "median_clisi": 0.975545979870563,
+          "median_ilisi": 1.377136709144486
+        }
+      },
+      "passed": false
+    },
+    "renamed_categories": {
+      "details": {
+        "checks": {
+          "clisi": false,
+          "effective_neighbors": true,
+          "ilisi": false,
+          "median_clisi": false,
+          "median_ilisi": false
+        },
+        "max_abs_errors": {
+          "clisi": 2.6702143600530586,
+          "ilisi": 1.633769194939004,
+          "median_clisi": 1.8646711777801506,
+          "median_ilisi": 1.0049525354234543
+        }
+      },
+      "passed": false
+    },
+    "three_disconnected_components": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": false,
+          "median_clisi": true,
+          "median_ilisi": false
+        },
+        "max_abs_errors": {
+          "clisi": 8.881784197001252e-16,
+          "ilisi": 2.553883177695798,
+          "median_clisi": 4.440892098500626e-16,
+          "median_ilisi": 1.9733575675147614
+        }
+      },
+      "passed": false
+    },
+    "three_weak_blocks": {
+      "details": {
+        "checks": {
+          "clisi": false,
+          "effective_neighbors": true,
+          "ilisi": false,
+          "median_clisi": false,
+          "median_ilisi": false
+        },
+        "max_abs_errors": {
+          "clisi": 2.1759301786139886,
+          "ilisi": 0.6200626887613478,
+          "median_clisi": 1.4907390149436033,
+          "median_ilisi": 0.2562043915866419
+        }
+      },
+      "passed": false
+    },
+    "two_disconnected_components": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": false,
+          "median_clisi": true,
+          "median_ilisi": false
+        },
+        "max_abs_errors": {
+          "clisi": 8.881784197001252e-16,
+          "ilisi": 1.518634501605958,
+          "median_clisi": 4.440892098500626e-16,
+          "median_ilisi": 0.890580125017534
+        }
+      },
+      "passed": false
+    },
+    "weighted_grid_5x6": {
+      "details": {
+        "checks": {
+          "clisi": false,
+          "effective_neighbors": true,
+          "ilisi": false,
+          "median_clisi": false,
+          "median_ilisi": false
+        },
+        "max_abs_errors": {
+          "clisi": 1.094828308365218,
+          "ilisi": 2.7101088319566577,
+          "median_clisi": 0.5201431854883862,
+          "median_ilisi": 2.348926951124107
+        }
+      },
+      "passed": false
+    },
+    "weighted_ladder": {
+      "details": {
+        "checks": {
+          "clisi": false,
+          "effective_neighbors": true,
+          "ilisi": false,
+          "median_clisi": false,
+          "median_ilisi": false
+        },
+        "max_abs_errors": {
+          "clisi": 0.7765958038255387,
+          "ilisi": 1.373457662701262,
+          "median_clisi": 0.719329514706758,
+          "median_ilisi": 1.2639971290769343
+        }
+      },
+      "passed": false
+    }
+  },
+  "reference_provenance": {
+    "knn_graph_file": "/opt/reference-venv/lib/python3.12/site-packages/scib/knn_graph/knn_graph.o",
+    "knn_graph_sha256": "d98f38a3028848782ecc481c7bde618233e04a40ddcf24a56761d351645a9414",
+    "numpy_version": "2.5.2",
+    "scanpy_file": "/usr/local/lib/python3.12/site-packages/scanpy/__init__.py",
+    "scanpy_version": "1.14.0.dev21+gfabadb941",
+    "scib_file": "/opt/reference-venv/lib/python3.12/site-packages/scib/__init__.py",
+    "scib_version": "1.1.7"
+  },
+  "reference_stderr_tail": "",
+  "reward": 0.0,
+  "scientific_invariants": {
+    "details": {
+      "batch_label_rename": true,
+      "cell_type_label_rename": true,
+      "csr_storage_order_clisi": true,
+      "csr_storage_order_ilisi": true,
+      "single_batch_lisi": true,
+      "single_type_lisi": true
+    },
+    "passed": true
+  },
+  "source_scan_findings": [],
+  "task": "ALGOBRIDGE-0006",
+  "total": 15
+}

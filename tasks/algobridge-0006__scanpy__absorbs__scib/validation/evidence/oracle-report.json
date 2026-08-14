@@ -1,0 +1,364 @@
+{
+  "api_isolation_and_host_regression": {
+    "details": {
+      "api_checks": {
+        "metrics_export": true,
+        "namespace_export": true,
+        "scanpy_module": true
+      },
+      "contract_checks": [
+        {
+          "name": "dense_graph",
+          "rejected": true
+        },
+        {
+          "name": "asymmetric_graph",
+          "rejected": true
+        },
+        {
+          "name": "negative_distance",
+          "rejected": true
+        },
+        {
+          "name": "label_length",
+          "rejected": true
+        },
+        {
+          "name": "neighbor_count",
+          "rejected": true
+        },
+        {
+          "name": "perplexity_low",
+          "rejected": true
+        },
+        {
+          "name": "perplexity_high",
+          "rejected": true
+        }
+      ],
+      "isolation_checks": {
+        "candidate_tools_removed": true,
+        "pristine_host_removed": true,
+        "reference_donor_removed": true,
+        "reference_host_removed": true,
+        "reference_runner_removed": true,
+        "reference_venv_removed": true,
+        "scib_unavailable": true,
+        "tests_unreadable": true,
+        "wheelhouse_removed": true
+      },
+      "regression_output": "............                                                             [100%]\n12 passed, 2 warnings in 18.85s\n",
+      "regression_returncode": 0
+    },
+    "passed": true
+  },
+  "candidate_stderr_tail": "",
+  "changed_files": [
+    "src/scanpy/metrics/__init__.py",
+    "src/scanpy/metrics/_lisi.py"
+  ],
+  "elapsed_seconds": 43.958,
+  "materialization": "materialized 2 changed Python files in /opt/candidate-runtime",
+  "overlay_manifest": [
+    "src/scanpy/metrics/__init__.py",
+    "src/scanpy/metrics/_lisi.py"
+  ],
+  "passed": 15,
+  "points": {
+    "alternating_ring_24": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": true,
+          "median_clisi": true,
+          "median_ilisi": true
+        },
+        "max_abs_errors": {
+          "clisi": 1.7763568394002505e-15,
+          "ilisi": 1.3322676295501878e-15,
+          "median_clisi": 0.0,
+          "median_ilisi": 4.440892098500626e-16
+        }
+      },
+      "passed": true
+    },
+    "dense_weight_gradient": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": true,
+          "median_clisi": true,
+          "median_ilisi": true
+        },
+        "max_abs_errors": {
+          "clisi": 1.3322676295501878e-15,
+          "ilisi": 1.3322676295501878e-15,
+          "median_clisi": 8.881784197001252e-16,
+          "median_ilisi": 4.440892098500626e-16
+        }
+      },
+      "passed": true
+    },
+    "equal_weight_ring": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": true,
+          "median_clisi": true,
+          "median_ilisi": true
+        },
+        "max_abs_errors": {
+          "clisi": 0.0,
+          "ilisi": 0.0,
+          "median_clisi": 0.0,
+          "median_ilisi": 0.0
+        }
+      },
+      "passed": true
+    },
+    "four_isolates": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": true,
+          "median_clisi": true,
+          "median_ilisi": true
+        },
+        "max_abs_errors": {
+          "clisi": 1.9984014443252818e-15,
+          "ilisi": 1.1102230246251565e-15,
+          "median_clisi": 0.0,
+          "median_ilisi": 8.881784197001252e-16
+        }
+      },
+      "passed": true
+    },
+    "high_perplexity": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": true,
+          "median_clisi": true,
+          "median_ilisi": true
+        },
+        "max_abs_errors": {
+          "clisi": 2.220446049250313e-15,
+          "ilisi": 3.552713678800501e-15,
+          "median_clisi": 0.0,
+          "median_ilisi": 0.0
+        }
+      },
+      "passed": true
+    },
+    "imbalanced_hub": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": true,
+          "median_clisi": true,
+          "median_ilisi": true
+        },
+        "max_abs_errors": {
+          "clisi": 1.3322676295501878e-15,
+          "ilisi": 1.1102230246251565e-15,
+          "median_clisi": 4.440892098500626e-16,
+          "median_ilisi": 4.440892098500626e-16
+        }
+      },
+      "passed": true
+    },
+    "integer_categories": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": true,
+          "median_clisi": true,
+          "median_ilisi": true
+        },
+        "max_abs_errors": {
+          "clisi": 1.3322676295501878e-15,
+          "ilisi": 8.881784197001252e-16,
+          "median_clisi": 0.0,
+          "median_ilisi": 0.0
+        }
+      },
+      "passed": true
+    },
+    "long_shortest_paths": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": true,
+          "median_clisi": true,
+          "median_ilisi": true
+        },
+        "max_abs_errors": {
+          "clisi": 1.3322676295501878e-15,
+          "ilisi": 2.220446049250313e-15,
+          "median_clisi": 2.220446049250313e-16,
+          "median_ilisi": 4.440892098500626e-16
+        }
+      },
+      "passed": true
+    },
+    "low_perplexity": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": true,
+          "median_clisi": true,
+          "median_ilisi": true
+        },
+        "max_abs_errors": {
+          "clisi": 8.881784197001252e-16,
+          "ilisi": 6.661338147750939e-16,
+          "median_clisi": 2.220446049250313e-16,
+          "median_ilisi": 2.220446049250313e-16
+        }
+      },
+      "passed": true
+    },
+    "renamed_categories": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": true,
+          "median_clisi": true,
+          "median_ilisi": true
+        },
+        "max_abs_errors": {
+          "clisi": 1.3322676295501878e-15,
+          "ilisi": 1.7763568394002505e-15,
+          "median_clisi": 4.440892098500626e-16,
+          "median_ilisi": 4.440892098500626e-16
+        }
+      },
+      "passed": true
+    },
+    "three_disconnected_components": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": true,
+          "median_clisi": true,
+          "median_ilisi": true
+        },
+        "max_abs_errors": {
+          "clisi": 6.661338147750939e-16,
+          "ilisi": 4.440892098500626e-16,
+          "median_clisi": 0.0,
+          "median_ilisi": 0.0
+        }
+      },
+      "passed": true
+    },
+    "three_weak_blocks": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": true,
+          "median_clisi": true,
+          "median_ilisi": true
+        },
+        "max_abs_errors": {
+          "clisi": 1.3322676295501878e-15,
+          "ilisi": 8.881784197001252e-16,
+          "median_clisi": 8.881784197001252e-16,
+          "median_ilisi": 0.0
+        }
+      },
+      "passed": true
+    },
+    "two_disconnected_components": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": true,
+          "median_clisi": true,
+          "median_ilisi": true
+        },
+        "max_abs_errors": {
+          "clisi": 1.3322676295501878e-15,
+          "ilisi": 2.4424906541753444e-15,
+          "median_clisi": 0.0,
+          "median_ilisi": 0.0
+        }
+      },
+      "passed": true
+    },
+    "weighted_grid_5x6": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": true,
+          "median_clisi": true,
+          "median_ilisi": true
+        },
+        "max_abs_errors": {
+          "clisi": 1.7763568394002505e-15,
+          "ilisi": 1.3322676295501878e-15,
+          "median_clisi": 2.220446049250313e-16,
+          "median_ilisi": 0.0
+        }
+      },
+      "passed": true
+    },
+    "weighted_ladder": {
+      "details": {
+        "checks": {
+          "clisi": true,
+          "effective_neighbors": true,
+          "ilisi": true,
+          "median_clisi": true,
+          "median_ilisi": true
+        },
+        "max_abs_errors": {
+          "clisi": 8.881784197001252e-16,
+          "ilisi": 1.3322676295501878e-15,
+          "median_clisi": 4.440892098500626e-16,
+          "median_ilisi": 0.0
+        }
+      },
+      "passed": true
+    }
+  },
+  "reference_provenance": {
+    "knn_graph_file": "/opt/reference-venv/lib/python3.12/site-packages/scib/knn_graph/knn_graph.o",
+    "knn_graph_sha256": "d98f38a3028848782ecc481c7bde618233e04a40ddcf24a56761d351645a9414",
+    "numpy_version": "2.5.2",
+    "scanpy_file": "/usr/local/lib/python3.12/site-packages/scanpy/__init__.py",
+    "scanpy_version": "1.14.0.dev21+gfabadb941",
+    "scib_file": "/opt/reference-venv/lib/python3.12/site-packages/scib/__init__.py",
+    "scib_version": "1.1.7"
+  },
+  "reference_stderr_tail": "",
+  "reward": 1.0,
+  "scientific_invariants": {
+    "details": {
+      "batch_label_rename": true,
+      "cell_type_label_rename": true,
+      "csr_storage_order_clisi": true,
+      "csr_storage_order_ilisi": true,
+      "single_batch_lisi": true,
+      "single_type_lisi": true
+    },
+    "passed": true
+  },
+  "source_scan_findings": [],
+  "task": "ALGOBRIDGE-0006",
+  "total": 15
+}

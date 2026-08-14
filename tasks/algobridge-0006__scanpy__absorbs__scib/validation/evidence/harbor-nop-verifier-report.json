@@ -1,0 +1,104 @@
+{
+  "changed_files": [],
+  "elapsed_seconds": 0.469,
+  "fatal_error": "RuntimeError: candidate has no changed Scanpy Python files",
+  "materialization": "materialized 0 changed Python files in /opt/candidate-runtime",
+  "overlay_manifest": [],
+  "passed": 0,
+  "points": {
+    "alternating_ring_24": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "dense_weight_gradient": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "equal_weight_ring": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "four_isolates": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "high_perplexity": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "imbalanced_hub": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "integer_categories": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "long_shortest_paths": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "low_perplexity": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "renamed_categories": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "three_disconnected_components": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "three_weak_blocks": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "two_disconnected_components": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "weighted_grid_5x6": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    },
+    "weighted_ladder": {
+      "details": {
+        "reason": "not run"
+      },
+      "passed": false
+    }
+  },
+  "reward": 0.0,
+  "source_scan_findings": [],
+  "task": "ALGOBRIDGE-0006",
+  "total": 15
+}

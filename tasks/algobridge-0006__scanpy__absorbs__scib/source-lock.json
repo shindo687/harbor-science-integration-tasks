@@ -1,0 +1,38 @@
+{
+  "host": {
+    "software": "Scanpy",
+    "repo": "https://github.com/scverse/scanpy",
+    "url": "https://github.com/scverse/scanpy",
+    "status": "locked",
+    "head_commit": "fabadb9412c0d1cd9df9d9c2e95ac266d564ee18",
+    "resolved_at": "2026-08-12T03:22:26.644684+00:00",
+    "stderr": ""
+  },
+  "donor": {
+    "software": "scIB",
+    "repo": "https://github.com/theislab/scib",
+    "url": "https://github.com/theislab/scib",
+    "status": "locked",
+    "head_commit": "cd67913396b4c0430710b3d90f1d1841f5fa4468",
+    "resolved_at": "2026-08-12T03:22:24.408760+00:00",
+    "stderr": ""
+  },
+  "workflow_source": {
+    "software": "Scanpy",
+    "repo": "https://github.com/scverse/scanpy",
+    "url": "https://github.com/scverse/scanpy",
+    "status": "locked",
+    "head_commit": "fabadb9412c0d1cd9df9d9c2e95ac266d564ee18",
+    "resolved_at": "2026-08-12T03:22:26.644684+00:00",
+    "stderr": ""
+  },
+  "workflow_target": {
+    "software": "scIB",
+    "repo": "https://github.com/theislab/scib",
+    "url": "https://github.com/theislab/scib",
+    "status": "locked",
+    "head_commit": "cd67913396b4c0430710b3d90f1d1841f5fa4468",
+    "resolved_at": "2026-08-12T03:22:24.408760+00:00",
+    "stderr": ""
+  }
+}

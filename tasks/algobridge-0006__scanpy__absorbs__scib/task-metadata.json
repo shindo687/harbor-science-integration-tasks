@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "task_id": "algobridge-0006__scanpy__absorbs__scib",
+  "algorithm_question_id": "ALGOBRIDGE-0006",
+  "candidate_id": "WFBRIDGE-0631",
+  "authoring_state": "accepted",
+  "execution_target": "cpu",
+  "title": "Scanpy 原生 LISI 批次混合与标签保持评分",
+  "domain": "single-cell",
+  "algorithm_family": "statistics / graph",
+  "algorithm": "scIB local inverse Simpson index (iLISI/cLISI)",
+  "bounded_subset": "在给定 kNN distance graph 上，以固定 perplexity 二分求局部概率并计算 batch/cell-type LISI；不含 embedding 或邻居重建。",
+  "host_software": "Scanpy",
+  "donor_software": "scIB",
+  "workflow_source": "Scanpy",
+  "workflow_target": "scIB",
+  "host_side": "source",
+  "unique_paper_count": 3,
+  "paper_ids": [
+    "977532130592555314",
+    "1250959351561060433",
+    "7463152076571095067"
+  ],
+  "input_contract": "对称 CSR 正边距离、batch label、cell-type label、n_neighbors、perplexity。",
+  "output_contract": "逐 cell iLISI/cLISI、有效邻居数与全局 median。",
+  "reference_pipeline": "Scanpy embedding/graph 交给锁定 scIB LISI 实现。",
+  "candidate_interface": "Scanpy 新增 lisi_graph_score，不得调用 scIB。",
+  "verification": {
+    "model": "original_A_plus_B_vs_merged_host",
+    "numeric_comparison": "逐 cell 分数 1e-6，median 1e-7；label 编码和 CSR 存储顺序规范化。",
+    "scientific_invariants": [
+      "LISI 在 1 与可见类别数之间",
+      "单一类别的 LISI 恒为 1",
+      "类别名称置换不改变分数"
+    ],
+    "fixtures": "完全混合/完全分离、孤立 cell、不平衡类别、重复距离、不同 perplexity。"
+  },
+  "non_glue_reason": "需要求解局部 entropy/perplexity 并计算概率多样性，是数值评分算法。",
+  "implementation_scope": "small",
+  "estimated_changed_loc": "220-450",
+  "difficulty": "medium",
+  "license": {
+    "status": "low_risk_direction_available",
+    "host_license": "3-clause BSD License",
+    "donor_license": "MIT",
+    "clean_room_required": true
+  },
+  "source_locks": {
+    "host": {
+      "software": "Scanpy",
+      "repo": "https://github.com/scverse/scanpy",
+      "url": "https://github.com/scverse/scanpy",
+      "status": "locked",
+      "head_commit": "fabadb9412c0d1cd9df9d9c2e95ac266d564ee18",
+      "resolved_at": "2026-08-12T03:22:26.644684+00:00",
+      "stderr": ""
+    },
+    "donor": {
+      "software": "scIB",
+      "repo": "https://github.com/theislab/scib",
+      "url": "https://github.com/theislab/scib",
+      "status": "locked",
+      "head_commit": "cd67913396b4c0430710b3d90f1d1841f5fa4468",
+      "resolved_at": "2026-08-12T03:22:24.408760+00:00",
+      "stderr": ""
+    },
+    "workflow_source": {
+      "software": "Scanpy",
+      "repo": "https://github.com/scverse/scanpy",
+      "url": "https://github.com/scverse/scanpy",
+      "status": "locked",
+      "head_commit": "fabadb9412c0d1cd9df9d9c2e95ac266d564ee18",
+      "resolved_at": "2026-08-12T03:22:26.644684+00:00",
+      "stderr": ""
+    },
+    "workflow_target": {
+      "software": "scIB",
+      "repo": "https://github.com/theislab/scib",
+      "url": "https://github.com/theislab/scib",
+      "status": "locked",
+      "head_commit": "cd67913396b4c0430710b3d90f1d1841f5fa4468",
+      "resolved_at": "2026-08-12T03:22:24.408760+00:00",
+      "stderr": ""
+    }
+  }
+}

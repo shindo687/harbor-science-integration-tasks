@@ -1,0 +1,43 @@
+schema_version = "1.3"
+
+artifacts = ["/testbed"]
+
+[task]
+name = "workflow-algorithm-bench/algobridge-0006__scanpy__absorbs__scib"
+description = "Scanpy 原生 LISI 批次混合与标签保持评分"
+keywords = ["workflow-algorithm-bench", "algorithm-migration", "single-cell"]
+
+[metadata]
+difficulty = "medium"
+category = "workflow-algorithm-bench"
+authoring_state = "accepted"
+execution_target = "cpu"
+tags = ["scanpy", "scib", "lisi", "graph", "differential", "no-network"]
+
+[verifier]
+timeout_sec = 3600.0
+user = "root"
+environment_mode = "separate"
+network_mode = "no-network"
+
+[verifier.environment]
+build_timeout_sec = 3600.0
+cpus = 8
+memory_mb = 16384
+storage_mb = 30720
+gpus = 0
+network_mode = "no-network"
+mcp_servers = []
+
+[agent]
+timeout_sec = 7200
+network_mode = "no-network"
+
+[environment]
+build_timeout_sec = 3600
+cpus = 8
+memory_mb = 16384
+storage_mb = 30720
+gpus = 0
+network_mode = "no-network"
+mcp_servers = []

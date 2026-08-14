@@ -1,0 +1,556 @@
+from __future__ import annotations
+
+from contextlib import nullcontext
+from functools import partial
+from typing import TYPE_CHECKING, TypedDict, cast
+
+import numba
+import numpy as np
+import pandas as pd
+import pytest
+from anndata import AnnData
+from scipy.stats import mannwhitneyu
+
+import scanpy as sc
+from scanpy._compat import CSBase
+from scanpy._utils import select_groups
+from scanpy._utils.random import _LegacyRng
+from scanpy.get import rank_genes_groups_df
+from scanpy.tools import rank_genes_groups
+from scanpy.tools._rank_genes_groups import _illico_results_to_iter, _RankGenes
+from testing.scanpy._helpers import random_mask
+from testing.scanpy._helpers.data import pbmc68k_reduced
+from testing.scanpy._pytest.marks import needs
+from testing.scanpy._pytest.params import ARRAY_TYPES, ARRAY_TYPES_MEM
+
+if TYPE_CHECKING:
+    from collections.abc import Callable, Sequence
+    from pathlib import Path
+    from typing import Any, Literal
+
+    from numpy.lib.npyio import NpzFile
+    from numpy.typing import NDArray
+
+# We test results for a simple generic example
+# Tests are conducted for sparse and non-sparse AnnData objects.
+# Due to minor changes in multiplication implementation for sparse and non-sparse objects,
+# results differ (very) slightly
+
+
+@pytest.mark.parametrize("array_type", ARRAY_TYPES)
+def get_example_data(
+    array_type: Callable[[np.ndarray], Any], *, rng: np.random.Generator | None = None
+) -> AnnData:
+    rng = np.random.default_rng(rng)
+    # create test object
+    adata = AnnData(
+        rng.binomial(1, 0.15, (100, 20)) * rng.negative_binomial(2, 0.25, (100, 20))
+    )
+    # adapt marker_genes for cluster (so as to have some form of reasonable input
+    adata.X[0:10, 0:5] = rng.binomial(1, 0.9, (10, 5)) * rng.negative_binomial(
+        1, 0.5, (10, 5)
+    )
+
+    adata.X = array_type(adata.X)
+
+    # Create cluster according to groups
+    adata.obs["true_groups"] = pd.Categorical(
+        np.concatenate((np.zeros((10,), dtype=int), np.ones((90,), dtype=int)))
+    )
+
+    return adata
+
+
+class Expected(TypedDict):
+    names: NDArray[np.str_]
+    scores: NDArray[np.floating]
+
+
+def get_true_scores(data_dir: Path, method: Literal["t-test", "wilcoxon"]) -> Expected:
+    path = data_dir / f"objs-{method}.npz"
+    with (
+        path.open("rb") as f,
+        cast("NpzFile", np.load(f, allow_pickle=False)) as z,
+    ):
+        expected = dict(z)
+    return Expected(names=expected["names"].astype("T"), scores=expected["scores"])
+
+
+def get_illico_results_df(
+    n_groups: int, n_genes: int, *, seed: int = 0
+) -> pd.DataFrame:
+    """Synthetic illico-shaped output used by the _illico_results_to_iter tests.
+
+    Features are in deliberately non-ascending to test ``var_name`` ordering.
+    """
+    rng = np.random.default_rng(seed)
+    groups = [f"g{i}" for i in range(n_groups)]
+    features = [f"f{n_genes - 1 - j}" for j in range(n_genes)]  # reversed -> not sorted
+    return pd.DataFrame(
+        {
+            "z_score": rng.normal(size=n_groups * n_genes),
+            "p_value": rng.uniform(size=n_groups * n_genes),
+        },
+        index=pd.MultiIndex.from_product([groups, features], names=["pert", "feature"]),
+    )
+
+
+# TODO: Make dask compatible
+@pytest.mark.parametrize("method", ["t-test", "wilcoxon"])
+@pytest.mark.parametrize("array_type", ARRAY_TYPES_MEM)
+def test_results(
+    subtests: pytest.Subtests,
+    data_dir: Path,
+    array_type,
+    method: Literal["t-test", "wilcoxon"],
+) -> None:
+    adata = get_example_data(array_type, rng=_LegacyRng(1234))
+    assert adata.raw is None  # Assumption for later checks
+    expected = get_true_scores(data_dir, method)
+    # no clue why we did this: https://github.com/scverse/scanpy/commit/7f10fa3138374bbc664776c6aae1c0e05cf2c5cf
+    n = 7 if method == "wilcoxon" else None
+
+    rank_genes_groups(adata, "true_groups", n_genes=20, method=method)
+    results = adata.uns["rank_genes_groups"]
+
+    for g in range(expected["names"].shape[0]):
+        with subtests.test(group=g):
+            # atol guards against ULP-level golden vs new-code bit-pattern
+            # differences at near-zero t-scores (e.g., genes with equal
+            # group/rest means produce 0.0 in one path vs ~1e-15 in another).
+            np.testing.assert_allclose(
+                expected["scores"][g, :n],
+                results["scores"][str(g)][:n],
+                rtol=1e-5,
+                atol=1e-10,
+            )
+            np.testing.assert_array_equal(
+                expected["names"][g, :n], results["names"][str(g)][:n]
+            )
+    assert results["params"]["use_raw"] is False
+
+
+@pytest.mark.parametrize("method", ["t-test", "wilcoxon"])
+@pytest.mark.parametrize("array_type", ARRAY_TYPES_MEM)
+def test_results_layers(
+    subtests: pytest.Subtests,
+    data_dir: Path,
+    array_type,
+    method: Literal["t-test", "wilcoxon"],
+) -> None:
+    adata = get_example_data(array_type, rng=_LegacyRng(1234))
+    adata.layers["to_test"] = adata.X.copy()
+    x = adata.X.tolil() if isinstance(adata.X, CSBase) else adata.X
+    mask = np.random.default_rng().integers(0, 2, adata.shape, dtype=bool)
+    x[mask] = 0
+    adata.X = array_type(x)
+    scores = get_true_scores(data_dir, method)["scores"]
+
+    with subtests.test("layer"):
+        rank_genes_groups(
+            adata,
+            "true_groups",
+            method=method,
+            layer="to_test",
+            use_raw=None if method == "wilcoxon" else False,
+            n_genes=20,
+        )
+        assert adata.uns["rank_genes_groups"]["params"]["use_raw"] is False
+        for g in range(scores.shape[0]):
+            np.testing.assert_allclose(
+                scores[g, :7],
+                adata.uns["rank_genes_groups"]["scores"][str(g)][:7],
+                rtol=1e-5,  # default of np.allclose
+            )
+
+    with subtests.test("X"):
+        rank_genes_groups(adata, "true_groups", method=method, n_genes=20)
+        for g in range(scores.shape[0]):
+            assert not np.allclose(
+                scores[g, :7], adata.uns["rank_genes_groups"]["scores"][str(g)][:7]
+            )
+
+
+def test_rank_genes_groups_use_raw():
+    # https://github.com/scverse/scanpy/issues/1929
+    pbmc = pbmc68k_reduced()
+    assert pbmc.raw is not None
+
+    sc.tl.rank_genes_groups(pbmc, groupby="bulk_labels", use_raw=True)
+
+    pbmc = pbmc68k_reduced()
+    del pbmc.raw
+    assert pbmc.raw is None
+
+    with pytest.raises(
+        ValueError, match=r"Received `use_raw=True`, but `adata\.raw` is empty"
+    ):
+        sc.tl.rank_genes_groups(pbmc, groupby="bulk_labels", use_raw=True)
+
+
+def test_singlets():
+    pbmc = pbmc68k_reduced()
+    pbmc.obs["louvain"] = pbmc.obs["louvain"].cat.add_categories(["11"])
+    pbmc.obs[0, "louvain"] = "11"
+
+    with pytest.raises(ValueError, match=rf"Could not calculate statistics.*{'11'}"):
+        rank_genes_groups(pbmc, groupby="louvain")
+
+
+def test_emptycat():
+    pbmc = pbmc68k_reduced()
+    pbmc.obs["louvain"] = pbmc.obs["louvain"].cat.add_categories(["11"])
+
+    with pytest.raises(ValueError, match=rf"Could not calculate statistics.*{'11'}"):
+        rank_genes_groups(pbmc, groupby="louvain")
+
+
+def test_log1p_save_restore(tmp_path):
+    """Tests the sequence log1p→save→load→rank_genes_groups."""
+    from anndata import read_h5ad
+
+    pbmc = pbmc68k_reduced()
+    pbmc.X = pbmc.raw.X
+    sc.pp.log1p(pbmc)
+
+    path = tmp_path / "test.h5ad"
+    pbmc.write(path)
+
+    pbmc = read_h5ad(path)
+
+    sc.tl.rank_genes_groups(pbmc, groupby="bulk_labels", use_raw=True)
+
+
+def test_wilcoxon_symmetry():
+    pbmc = pbmc68k_reduced()
+
+    rank_genes_groups(
+        pbmc,
+        groupby="bulk_labels",
+        groups=["CD14+ Monocyte", "Dendritic"],
+        reference="Dendritic",
+        method="wilcoxon",
+        rankby_abs=True,
+    )
+    assert pbmc.uns["rank_genes_groups"]["params"]["use_raw"] is True
+
+    stats_mono = (
+        rank_genes_groups_df(pbmc, group="CD14+ Monocyte")
+        .drop(columns="names")
+        .to_numpy()
+    )
+
+    rank_genes_groups(
+        pbmc,
+        groupby="bulk_labels",
+        groups=["CD14+ Monocyte", "Dendritic"],
+        reference="CD14+ Monocyte",
+        method="wilcoxon",
+        rankby_abs=True,
+    )
+
+    stats_dend = (
+        rank_genes_groups_df(pbmc, group="Dendritic").drop(columns="names").to_numpy()
+    )
+
+    assert np.allclose(np.abs(stats_mono), np.abs(stats_dend))
+
+
+@pytest.mark.filterwarnings("ignore:invalid value encountered:RuntimeWarning")
+@pytest.mark.parametrize("reference", [True, False], ids=["ref", "rest"])
+def test_wilcoxon_tie_correction(*, reference: bool) -> None:
+    pbmc = pbmc68k_reduced()
+
+    groups = ["CD14+ Monocyte", "Dendritic"]
+    groupby = "bulk_labels"
+
+    _, groups_masks = select_groups(pbmc, groups, groupby)
+
+    if reference:
+        ref = groups[1]
+        mask_rest = groups_masks[1]
+    else:
+        ref = "rest"
+        mask_rest = ~groups_masks[0]
+        groups = groups[:1]
+
+    assert isinstance(pbmc.raw.X, CSBase)
+    x = pbmc.raw.X[groups_masks[0]].toarray()
+    y = pbmc.raw.X[mask_rest].toarray()
+
+    pvals = mannwhitneyu(x, y, use_continuity=False, alternative="two-sided").pvalue
+    pvals[np.isnan(pvals)] = 1.0
+
+    test_obj = _RankGenes(pbmc, groups, groupby, reference=ref)
+    test_obj.compute_statistics(
+        "wilcoxon",
+        tie_correct=True,
+        corr_method="benjamini-hochberg",
+        n_genes_user=None,
+        rankby_abs=False,
+        mean_in_log_space=True,
+    )
+
+    np.testing.assert_allclose(test_obj.stats[groups[0]]["pvals"], pvals, atol=1e-5)
+
+
+def test_wilcoxon_huge_data(monkeypatch: pytest.MonkeyPatch) -> None:
+    max_size = 300
+    adata = pbmc68k_reduced()
+    monkeypatch.setattr(sc.tl._rank_genes_groups, "_CONST_MAX_SIZE", max_size)
+    rank_genes_groups(adata, groupby="bulk_labels", method="wilcoxon")
+
+
+@pytest.mark.parametrize(
+    "method",
+    [
+        pytest.param(
+            "t-test", marks=pytest.mark.xfail(reason="t-test doesn’t use numba (yet)")
+        ),
+        "wilcoxon",
+    ],
+)
+def test_set_numba_threads_from_settings(
+    monkeypatch: pytest.MonkeyPatch, method: Literal["t-test", "wilcoxon"]
+) -> None:
+    was_set_to = []
+    old_n_jobs = sc.settings.n_jobs
+    monkeypatch.setattr(numba, "get_num_threads", lambda: 8)
+    monkeypatch.setattr(numba, "set_num_threads", was_set_to.append)
+
+    try:
+        sc.settings.n_jobs = 2
+        adata = get_example_data(np.asarray)
+        rank_genes_groups(adata, "true_groups", n_genes=5, method=method)
+    finally:
+        sc.settings.n_jobs = old_n_jobs
+
+    assert 2 in was_set_to, "Wilcoxon path did not use scanpy.settings.n_jobs."
+    assert was_set_to[-1] == 8
+
+
+@pytest.mark.parametrize(
+    ("n_genes_add", "n_genes_out_add"),
+    [pytest.param(0, 0, id="equal"), pytest.param(2, 1, id="more")],
+)
+def test_mask_n_genes(n_genes_add, n_genes_out_add):
+    """Check if no. genes in output is correct.
+
+    1. =n_genes when n_genes<sum(mask)
+    2. =sum(mask) when n_genes>sum(mask)
+    """
+    pbmc = pbmc68k_reduced()
+    mask_var = np.zeros(pbmc.shape[1]).astype(bool)
+    mask_var[:6].fill(True)  # noqa: FBT003
+    no_genes = sum(mask_var) - 1
+
+    rank_genes_groups(
+        pbmc,
+        mask_var=mask_var,
+        groupby="bulk_labels",
+        groups=["CD14+ Monocyte", "Dendritic"],
+        reference="CD14+ Monocyte",
+        n_genes=no_genes + n_genes_add,
+        method="wilcoxon",
+    )
+
+    assert len(pbmc.uns["rank_genes_groups"]["scores"]) == no_genes + n_genes_out_add
+
+
+def test_mask_not_equal():
+    """Check that mask is applied successfully to data set where test statistics are already available (test stats overwritten)."""
+    pbmc = pbmc68k_reduced()
+    mask_var = random_mask(pbmc.shape[1])
+    n_genes = sum(mask_var)
+
+    run = partial(
+        rank_genes_groups,
+        pbmc,
+        groupby="bulk_labels",
+        groups=["CD14+ Monocyte", "Dendritic"],
+        reference="CD14+ Monocyte",
+        method="wilcoxon",
+    )
+
+    run(n_genes=n_genes)
+    no_mask = pbmc.uns["rank_genes_groups"]["names"]
+
+    run(mask_var=mask_var)
+    with_mask = pbmc.uns["rank_genes_groups"]["names"]
+
+    assert not np.array_equal(no_mask, with_mask)
+
+
+@pytest.mark.parametrize(
+    ("groups_order", "ireference", "expected_indices"),
+    [
+        (["g0", "g1", "g2"], None, [0, 1, 2]),
+        (["g0", "g1", "g2"], 1, [0, 2]),
+    ],
+    ids=["vs_rest", "vs_reference"],
+)
+@pytest.mark.parametrize("corr_method", ["benjamini-hochberg", "bonferroni"])
+def test_illico_iter(
+    groups_order: list[str],
+    ireference: int | None,
+    expected_indices: list[int],
+    corr_method: Literal["benjamini-hochberg", "bonferroni"],
+):
+    df = get_illico_results_df(n_groups=3, n_genes=4)
+    feature_order = df.index.unique(level="feature")
+    out = list(
+        _illico_results_to_iter(
+            df,
+            np.array(groups_order),
+            ireference,
+        )
+    )
+    assert sorted(t[0] for t in out) == sorted(expected_indices)
+    for gi, z, p in out:
+        sub = df.xs(groups_order[gi], level=0).reindex(feature_order)
+        np.testing.assert_array_equal(z, sub["z_score"].to_numpy())
+        np.testing.assert_array_equal(p, sub["p_value"].to_numpy())
+
+
+@pytest.mark.parametrize("corr_method", ["benjamini-hochberg", "bonferroni"])
+@pytest.mark.parametrize("test", ["ovo", "ovr"])  # pairwise or vs. rest
+@pytest.mark.parametrize(
+    "mean_in_log_space", [True, False], ids=["log_space_mean", "linear_space_mean"]
+)
+@pytest.mark.parametrize(
+    "tie_correct", [True, False], ids=["tie_correct", "no_tie_correct"]
+)
+@pytest.mark.parametrize("groups", [["CD14+ Monocyte", "Dendritic"], "all"])
+@pytest.mark.filterwarnings("ignore:invalid value encountered:RuntimeWarning")
+@needs.scanpy2
+def test_illico(
+    test: Literal["ovo", "ovr"],
+    corr_method: Literal["benjamini-hochberg", "bonferroni"],
+    subtests: pytest.Subtests,
+    groups: Literal["all"] | Sequence[str],
+    *,
+    mean_in_log_space: bool,
+    tie_correct: bool,
+):
+    pbmc = pbmc68k_reduced()
+    pbmc.raw.X.sum_duplicates()
+    pbmc.raw.X.sort_indices()
+    pbmc_illico = pbmc.copy()
+
+    reference = pbmc.obs["bulk_labels"].iloc[0] if test == "ovo" else "rest"
+    with sc.settings.override(preset=sc.Preset.ScanpyV2Preview):
+        sc.tl.rank_genes_groups(
+            pbmc_illico,
+            groupby="bulk_labels",
+            method="wilcoxon",
+            reference=reference if test == "ovo" else "rest",
+            n_genes=pbmc.n_vars,
+            tie_correct=tie_correct,
+            corr_method=corr_method,
+            mean_in_log_space=mean_in_log_space,
+            groups=groups,
+        )
+
+    sc.tl.rank_genes_groups(
+        pbmc,
+        groupby="bulk_labels",
+        method="wilcoxon",
+        reference=reference if test == "ovo" else "rest",
+        n_genes=pbmc.n_vars,
+        tie_correct=tie_correct,
+        corr_method=corr_method,
+        mean_in_log_space=mean_in_log_space,
+        groups=groups,
+    )
+    scanpy_results = pbmc.uns["rank_genes_groups"]
+    illico_results = pbmc_illico.uns["rank_genes_groups"]
+    assert set(illico_results.keys()) == set(scanpy_results.keys()), (
+        "Output keys do not match Scanpy's output format."
+    )
+
+    for k, ref in scanpy_results.items():
+        with subtests.test(k):
+            if k in ["params", "names"]:
+                # We can skip names ordering check as if incorrect, other values will mismatch
+                continue
+            res = np.array(illico_results[k].tolist())
+            ref_arr = np.array(ref.tolist())
+            mask = np.isfinite(ref_arr) * np.isfinite(
+                res
+            )  # Mask to ignore inf values in the comparison
+            np.testing.assert_allclose(
+                ref_arr[mask],
+                res[mask],
+                rtol=0,
+                atol=1e-6,
+                err_msg=f"Mismatch in '{k}' values between asymptotic_wilcoxon and Scanpy outputs.",
+            )
+
+
+@needs.illico
+def test_illico_deprecation_warning():
+    pbmc = pbmc68k_reduced()
+    pbmc.raw.X.sum_duplicates()
+    pbmc.raw.X.sort_indices()
+    with pytest.warns(
+        DeprecationWarning, match=r"`wilcoxon_illico` flavor will be removed"
+    ):
+        sc.tl.rank_genes_groups(
+            pbmc,
+            groupby="bulk_labels",
+            method="wilcoxon_illico",
+            reference="rest",
+        )
+
+
+@pytest.mark.parametrize(
+    ("mean_in_log_space", "expected_logfc"),
+    [
+        # exp after agg: log2(expm1(mean_log_a) / expm1(mean_log_b))
+        #              = log2(expm1(ln(9) * 5 / 10) / expm1(ln9)) = log2(2 / 8) = -2.0
+        (True, -2.0),
+        # exp before agg: log2(mean(expm1(linear_a)) / mean(expm1(linear_b)))
+        #               = log2(mean([0] * 5 + [8] * 5) / mean([8] * 10)) = log2(4 / 8) = -1.0
+        (False, -1.0),
+    ],
+)
+@pytest.mark.parametrize(
+    "method",
+    [
+        "wilcoxon",
+        "t-test",
+        "t-test_overestim_var",
+        pytest.param("wilcoxon_illico", marks=needs.scanpy2),
+    ],
+)
+def test_mean_in_log_space(
+    expected_logfc: float,
+    method: Literal["wilcoxon", "wilcoxon_illico", "t-test", "t-test_overestim_var"],
+    *,
+    mean_in_log_space: bool,
+):
+    # group_a: 5 cells with log-space value 0, 5 cells with log(9)
+    # group_b: 10 cells all with log(9)  (used as reference)
+    n_genes = 5
+    group_a = np.zeros((10, n_genes))
+    group_a[5:] = np.log(9)
+    group_b = np.full((10, n_genes), np.log(9))
+    adata = AnnData(
+        X=np.concatenate([group_a, group_b]),
+        obs={"bulk_labels": ["a"] * 10 + ["b"] * 10},
+    )
+    with (
+        sc.settings.override(preset=sc.Preset.ScanpyV2Preview)
+        if method == "wilcoxon_illico"
+        else nullcontext()
+    ):
+        rank_genes_groups(
+            adata,
+            groupby="bulk_labels",
+            groups=["a"],
+            reference="b",
+            method="wilcoxon" if "illico" in method else method,
+            mean_in_log_space=mean_in_log_space,
+        )
+    logfcs = adata.uns["rank_genes_groups"]["logfoldchanges"]["a"]
+    np.testing.assert_equal(logfcs, expected_logfc)

@@ -1,0 +1,61 @@
+{
+  "details": [
+    {
+      "checks": {
+        "clisi": true,
+        "effective_neighbors": true,
+        "ilisi": true,
+        "median_clisi": true,
+        "median_ilisi": true
+      },
+      "name": "public_alternating_ring",
+      "passed": true
+    },
+    {
+      "checks": {
+        "clisi": true,
+        "effective_neighbors": true,
+        "ilisi": true,
+        "median_clisi": true,
+        "median_ilisi": true
+      },
+      "name": "public_weak_blocks",
+      "passed": true
+    },
+    {
+      "checks": {
+        "clisi": true,
+        "effective_neighbors": true,
+        "ilisi": true,
+        "median_clisi": true,
+        "median_ilisi": true
+      },
+      "name": "public_two_isolates",
+      "passed": true
+    },
+    {
+      "checks": {
+        "clisi": true,
+        "effective_neighbors": true,
+        "ilisi": true,
+        "median_clisi": true,
+        "median_ilisi": true
+      },
+      "name": "public_repeated_distances",
+      "passed": true
+    },
+    {
+      "checks": {
+        "clisi": true,
+        "effective_neighbors": true,
+        "ilisi": true,
+        "median_clisi": true,
+        "median_ilisi": true
+      },
+      "name": "public_grid_low_perplexity",
+      "passed": true
+    }
+  ],
+  "passed": 5,
+  "total": 5
+}
