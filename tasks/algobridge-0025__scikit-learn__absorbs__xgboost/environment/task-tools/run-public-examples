@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+runtime=$(mktemp -d /tmp/algobridge0025-public-runtime.XXXXXX)
+trap 'rm -rf "$runtime"' EXIT INT TERM
+python /opt/task-tools/materialize_candidate.py --output "$runtime"
+cd /tmp
+PYTHONPATH="$runtime" exec python /examples/verify_examples.py

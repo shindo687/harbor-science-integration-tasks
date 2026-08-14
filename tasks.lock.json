@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "complete": false,
-  "task_count": 5,
+  "task_count": 6,
   "tasks": [
     {
       "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
@@ -20,6 +20,15 @@
       "source_tree": "a2312d1f60c0ff7d37f32dcf72c6e19bfaee50b7",
       "file_count": 94,
       "bytes": 1415372
+    },
+    {
+      "name": "algobridge-0025__scikit-learn__absorbs__xgboost",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0025__scikit-learn__absorbs__xgboost.git",
+      "commit": "e82e185b5942f1906f081c1f707840872adbf7f0",
+      "source_tree": "89f1579d4dce7f60923b0542d5939c989f97a247",
+      "file_count": 79,
+      "bytes": 148888408
     },
     {
       "name": "algobridge-0027__scikit-learn__absorbs__imbalanced-learn",

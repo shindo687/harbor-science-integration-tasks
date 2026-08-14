@@ -1,0 +1,168 @@
+{
+  "input": {
+    "name": "public_l1_regularization",
+    "X": [
+      [
+        0.0
+      ],
+      [
+        1.0
+      ],
+      [
+        2.0
+      ],
+      [
+        3.0
+      ],
+      [
+        4.0
+      ],
+      [
+        5.0
+      ],
+      [
+        6.0
+      ],
+      [
+        7.0
+      ],
+      [
+        8.0
+      ],
+      [
+        9.0
+      ]
+    ],
+    "y": [
+      -3.0,
+      -3.0,
+      -3.0,
+      -0.03,
+      0.03,
+      -0.03,
+      0.03,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "params": {
+      "objective": "squared_error",
+      "n_estimators": 2,
+      "max_depth": 2,
+      "learning_rate": 0.3,
+      "reg_lambda": 0.5,
+      "reg_alpha": 0.35,
+      "min_split_loss": 0.0
+    }
+  },
+  "expected": {
+    "name": "public_l1_regularization",
+    "trees": [
+      {
+        "node_id": 0,
+        "depth": 0,
+        "feature": 0,
+        "threshold": 2.5,
+        "missing": "left",
+        "gain": 24.9653797,
+        "cover": 10.0,
+        "left": {
+          "node_id": 1,
+          "depth": 1,
+          "leaf": -0.741428614,
+          "cover": 3.0
+        },
+        "right": {
+          "node_id": 2,
+          "depth": 1,
+          "feature": 0,
+          "threshold": 6.5,
+          "missing": "left",
+          "gain": 4.86438084,
+          "cover": 7.0,
+          "left": {
+            "node_id": 5,
+            "depth": 2,
+            "leaf": 0.0,
+            "cover": 4.0
+          },
+          "right": {
+            "node_id": 6,
+            "depth": 2,
+            "leaf": 0.484285742,
+            "cover": 3.0
+          }
+        }
+      },
+      {
+        "node_id": 0,
+        "depth": 0,
+        "feature": 0,
+        "threshold": 2.5,
+        "missing": "left",
+        "gain": 13.8097897,
+        "cover": 10.0,
+        "left": {
+          "node_id": 1,
+          "depth": 1,
+          "leaf": -0.550775528,
+          "cover": 3.0
+        },
+        "right": {
+          "node_id": 2,
+          "depth": 1,
+          "feature": 0,
+          "threshold": 6.5,
+          "missing": "left",
+          "gain": 2.68434381,
+          "cover": 7.0,
+          "left": {
+            "node_id": 5,
+            "depth": 2,
+            "leaf": 0.0,
+            "cover": 4.0
+          },
+          "right": {
+            "node_id": 6,
+            "depth": 2,
+            "leaf": 0.359755129,
+            "cover": 3.0
+          }
+        }
+      }
+    ],
+    "feature_gains": [
+      46.32389405
+    ],
+    "training_loss": [
+      1.9501799999919534,
+      1.109960162834641,
+      0.6381012303819823
+    ],
+    "margin": [
+      -1.2922041416168213,
+      -1.2922041416168213,
+      -1.2922041416168213,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.8440408706665039,
+      0.8440408706665039,
+      0.8440408706665039
+    ],
+    "prediction": [
+      -1.2922041416168213,
+      -1.2922041416168213,
+      -1.2922041416168213,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.8440408706665039,
+      0.8440408706665039,
+      0.8440408706665039
+    ],
+    "probability": null
+  }
+}

@@ -1,0 +1,3 @@
+#!/bin/sh
+set -eu
+exec python /opt/task-tools/materialize_candidate.py "$@"

@@ -1,0 +1,11 @@
+{
+  "hard_gates": {
+    "locked_reference": "pass"
+  },
+  "reason": "source policy failed: forbidden dependency or primitive: ['xgboost']",
+  "reference": "locked scikit-learn arrays to XGBoost a3e3df59 exact CPU",
+  "reward": 0.0,
+  "status": "hard_gate_failed",
+  "task": "ALGOBRIDGE-0025",
+  "total": 15
+}

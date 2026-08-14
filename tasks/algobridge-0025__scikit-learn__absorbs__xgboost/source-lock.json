@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "reference_model": "locked scikit-learn arrays passed to locked XGBoost exact CPU training versus merged sklearn estimator",
+  "host": {
+    "name": "scikit-learn",
+    "repository": "https://github.com/scikit-learn/scikit-learn",
+    "commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+    "tree": "87223e64df8880951bc88ee6049a8bf453dccf88",
+    "describe": "e27ccf585",
+    "license": "BSD-3-Clause with bundled notices",
+    "snapshot_file_count": 1807,
+    "snapshot_sha256": "5a07940f6efdf9dc79d92c625c46cf9b266ab47417bfee8f41dbf164f9ad9802"
+  },
+  "donor": {
+    "name": "XGBoost",
+    "repository": "https://github.com/dmlc/xgboost",
+    "commit": "a3e3df59b83e1f230bb238c99dbaf63d8382ed24",
+    "tree": "bd41fae2e12da04ce6e1969d60e800012ecb33f1",
+    "describe": "a3e3df59",
+    "package_version": "3.5.0-dev",
+    "license": "Apache-2.0",
+    "dmlc_core_commit": "4baa84e627849e675a3f99c92990ef9c39e4269e",
+    "snapshot_file_count": 1836,
+    "snapshot_sha256": "16540bd4551d0d0d521fef3399ace68499a654f21846d79056791707c476d70f"
+  },
+  "reference_runtime": {
+    "archive_sha256": "f95cf5467113eceb9f5ada0f94ec3d84a5b444af0883379a743a25f09ccfd5b3",
+    "libxgboost_sha256": "72a74268773454f12f76819ee1338a4eec7573558ee62b6fd9e20a3f5c99ac05",
+    "build": {
+      "compiler": "GNU C/C++ 11.4.0",
+      "cmake": "3.22.1",
+      "build_type": "Release",
+      "google_test": false,
+      "openmp": false,
+      "cuda": false,
+      "nccl": false,
+      "rmm": false,
+      "hide_cxx_symbols": true
+    },
+    "dynamic_dependencies": [
+      "libstdc++.so.6",
+      "libm.so.6",
+      "libgcc_s.so.1",
+      "libc.so.6"
+    ]
+  },
+  "runtime": {
+    "python_base": "python:3.12.11-bookworm",
+    "python_base_digest": "sha256:13c9584604a99ca134c4f41800f74ffc64ee6ac8cf555cf1e704a6087fc84f12",
+    "wheel_manifest_sha256": "ade5176387b89a04e8a4d6c28bf789adbe1830e76d92445dec210d46192992a0"
+  }
+}

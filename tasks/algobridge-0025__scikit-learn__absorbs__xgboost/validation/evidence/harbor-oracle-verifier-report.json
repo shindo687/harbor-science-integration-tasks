@@ -1,0 +1,258 @@
+{
+  "cases": [
+    {
+      "metrics": {
+        "feature_gain_reconstruction_max_abs": 0.0,
+        "feature_gains_max_abs": 4.517212204291354e-08,
+        "margin_max_abs": 0.0,
+        "margin_reconstruction_max_abs": 0.0,
+        "maximum_training_loss_increase": -0.14794849000402677,
+        "prediction_max_abs": 0.0,
+        "training_loss_max_abs": 0.0,
+        "tree_numeric_max_abs": 3.1005859213451004e-08
+      },
+      "name": "regression_stump",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "feature_gain_reconstruction_max_abs": 0.0,
+        "feature_gains_max_abs": 6.656898181134352e-06,
+        "margin_max_abs": 0.0,
+        "margin_reconstruction_max_abs": 0.0,
+        "maximum_training_loss_increase": -0.04820797271188473,
+        "prediction_max_abs": 0.0,
+        "training_loss_max_abs": 0.0,
+        "tree_numeric_max_abs": 3.8146675781225436e-06
+      },
+      "name": "regression_depth_three",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "feature_gain_reconstruction_max_abs": 0.0,
+        "feature_gains_max_abs": 1.2126121902156228e-05,
+        "margin_max_abs": 0.0,
+        "margin_reconstruction_max_abs": 0.0,
+        "maximum_training_loss_increase": -0.0961561710341351,
+        "prediction_max_abs": 0.0,
+        "training_loss_max_abs": 0.0,
+        "tree_numeric_max_abs": 7.632714840610788e-06
+      },
+      "name": "weighted_regression",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "feature_gain_reconstruction_max_abs": 0.0,
+        "feature_gains_max_abs": 1.1673426527636366e-06,
+        "margin_max_abs": 0.0,
+        "margin_reconstruction_max_abs": 0.0,
+        "maximum_training_loss_increase": -0.21464985191797936,
+        "prediction_max_abs": 0.0,
+        "training_loss_max_abs": 0.0,
+        "tree_numeric_max_abs": 9.281860346987969e-07
+      },
+      "name": "missing_default_right",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "feature_gain_reconstruction_max_abs": 0.0,
+        "feature_gains_max_abs": 1.1673426527636366e-06,
+        "margin_max_abs": 0.0,
+        "margin_reconstruction_max_abs": 0.0,
+        "maximum_training_loss_increase": -0.21464985191797936,
+        "prediction_max_abs": 0.0,
+        "training_loss_max_abs": 0.0,
+        "tree_numeric_max_abs": 9.281860346987969e-07
+      },
+      "name": "missing_default_left",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "feature_gain_reconstruction_max_abs": 0.0,
+        "feature_gains_max_abs": 1.189100952814215e-06,
+        "margin_max_abs": 0.0,
+        "margin_reconstruction_max_abs": 0.0,
+        "maximum_training_loss_increase": -0.18412637672482557,
+        "prediction_max_abs": 0.0,
+        "training_loss_max_abs": 0.0,
+        "tree_numeric_max_abs": 9.504260254367125e-07
+      },
+      "name": "constant_with_missing",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "feature_gain_reconstruction_max_abs": 0.0,
+        "feature_gains_max_abs": 7.738945299706756e-06,
+        "margin_max_abs": 0.0,
+        "margin_reconstruction_max_abs": 0.0,
+        "maximum_training_loss_increase": -1.0228743817844899,
+        "prediction_max_abs": 0.0,
+        "training_loss_max_abs": 0.0,
+        "tree_numeric_max_abs": 7.655664063577206e-06
+      },
+      "name": "l1_zero_leaf",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "feature_gain_reconstruction_max_abs": 0.0,
+        "feature_gains_max_abs": 2.4951170018994162e-09,
+        "margin_max_abs": 0.0,
+        "margin_reconstruction_max_abs": 0.0,
+        "maximum_training_loss_increase": -0.03595703371428949,
+        "prediction_max_abs": 0.0,
+        "training_loss_max_abs": 0.0,
+        "tree_numeric_max_abs": 2.4951170018994162e-09
+      },
+      "name": "gamma_pruning",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "feature_gain_reconstruction_max_abs": 0.0,
+        "feature_gains_max_abs": 4.816473406776822e-07,
+        "margin_max_abs": 0.0,
+        "margin_reconstruction_max_abs": 0.0,
+        "maximum_training_loss_increase": -0.0312683117124134,
+        "prediction_max_abs": 0.0,
+        "probability_max_abs": 0.0,
+        "training_loss_max_abs": 0.0,
+        "tree_numeric_max_abs": 4.755993652238999e-07
+      },
+      "name": "logistic_stump",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "feature_gain_reconstruction_max_abs": 0.0,
+        "feature_gains_max_abs": 4.83068784973284e-07,
+        "margin_max_abs": 5.960464477539063e-08,
+        "margin_reconstruction_max_abs": 0.0,
+        "maximum_training_loss_increase": -0.029442332784269887,
+        "prediction_max_abs": 0.0,
+        "probability_max_abs": 1.3450521918478842e-08,
+        "training_loss_max_abs": 1.1502948038533134e-09,
+        "tree_numeric_max_abs": 4.789660641435489e-07
+      },
+      "name": "logistic_depth_three",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "feature_gain_reconstruction_max_abs": 0.0,
+        "feature_gains_max_abs": 1.4224487916436601e-06,
+        "margin_max_abs": 1.1920928955078125e-07,
+        "margin_reconstruction_max_abs": 0.0,
+        "maximum_training_loss_increase": -0.03949965933081545,
+        "prediction_max_abs": 0.0,
+        "probability_max_abs": 1.942847074887233e-08,
+        "training_loss_max_abs": 3.0549688334602365e-09,
+        "tree_numeric_max_abs": 9.537097167555686e-07
+      },
+      "name": "logistic_weighted_missing",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "feature_gain_reconstruction_max_abs": 0.0,
+        "feature_gains_max_abs": 3.861660161419422e-06,
+        "margin_max_abs": 0.0,
+        "margin_reconstruction_max_abs": 0.0,
+        "maximum_training_loss_increase": 0.0,
+        "prediction_max_abs": 0.0,
+        "training_loss_max_abs": 0.0,
+        "tree_numeric_max_abs": 9.543066408213008e-07
+      },
+      "name": "learning_rate_zero",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "feature_gain_reconstruction_max_abs": 0.0,
+        "feature_gains_max_abs": 4.697607423054251e-07,
+        "margin_max_abs": 0.0,
+        "margin_reconstruction_max_abs": 0.0,
+        "maximum_training_loss_increase": -0.29852569580060107,
+        "prediction_max_abs": 0.0,
+        "training_loss_max_abs": 0.0,
+        "tree_numeric_max_abs": 4.803808595355008e-07
+      },
+      "name": "feature_split_tie",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "feature_gain_reconstruction_max_abs": 0.0,
+        "feature_gains_max_abs": 8.947258436364791e-06,
+        "margin_max_abs": 0.0,
+        "margin_reconstruction_max_abs": 0.0,
+        "maximum_training_loss_increase": -0.17700999118976662,
+        "prediction_max_abs": 0.0,
+        "training_loss_max_abs": 0.0,
+        "tree_numeric_max_abs": 3.771240233874096e-06
+      },
+      "name": "row_permutation_base",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "metrics": {
+        "feature_gain_reconstruction_max_abs": 0.0,
+        "feature_gains_max_abs": 8.947258436364791e-06,
+        "margin_max_abs": 0.0,
+        "margin_reconstruction_max_abs": 0.0,
+        "maximum_training_loss_increase": -0.17700999118976662,
+        "prediction_max_abs": 0.0,
+        "training_loss_max_abs": 0.0,
+        "tree_numeric_max_abs": 3.771240233874096e-06
+      },
+      "name": "row_permutation_shuffled",
+      "passed": true,
+      "reasons": []
+    }
+  ],
+  "hard_gates": {
+    "determinism_missing_l1_zero_rate": "pass",
+    "host_regression": "pass",
+    "invalid_input_rejection": "pass",
+    "locked_reference": "pass",
+    "reference_removed_before_candidate": "pass",
+    "reference_self_check": "pass",
+    "source_policy": {
+      "added": [
+        "sklearn/ensemble/_second_order_gradient_boosting.py"
+      ],
+      "candidate_bytes": 21539,
+      "changed": [
+        "sklearn/ensemble/__init__.py"
+      ],
+      "donor_fragment_scan": "pass",
+      "module_sha256": "7cf78d8383c8b0423405fe6b809701c2ea77bf28c67f211651838cfcdc370156",
+      "trusted_extensions": 68
+    }
+  },
+  "passed": 15,
+  "reference": "locked scikit-learn arrays to XGBoost a3e3df59 exact CPU",
+  "reward": 1.0,
+  "status": "completed",
+  "task": "ALGOBRIDGE-0025",
+  "total": 15
+}

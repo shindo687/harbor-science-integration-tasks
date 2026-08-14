@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "task_id": "algobridge-0025__scikit-learn__absorbs__xgboost",
+  "algorithm_question_id": "ALGOBRIDGE-0025",
+  "candidate_id": "WFBRIDGE-0101",
+  "authoring_state": "accepted",
+  "execution_target": "portable-cpu-docker",
+  "title": "scikit-learn 原生 bounded second-order boosted trees",
+  "domain": "machine-learning",
+  "algorithm_family": "optimization / decision trees",
+  "algorithm": "XGBoost exact greedy second-order boosting",
+  "bounded_subset": "dense numeric features，squared-error/logistic，depth<=3，exact split、L1/L2 leaf regularization、missing default direction、row weights；不含 histogram/distributed/GPU。",
+  "host_software": "scikit-learn",
+  "donor_software": "XGBoost",
+  "workflow_source": "scikit-learn",
+  "workflow_target": "XGBoost",
+  "host_side": "source",
+  "unique_paper_count": 17,
+  "paper_ids": [
+    "812484439622811649", "812487083607195648", "812554379100946433",
+    "812848566862086145", "817341528509775874", "835829125741543424",
+    "867773594212499641", "876052585633546240", "1070198009549029403",
+    "1073851310308065305", "1083104521132965973", "1219987863106486284",
+    "1225040519252410449", "1229509702115655682", "1250918837583347722",
+    "1250919905558003795", "7463151779496931460"
+  ],
+  "input_contract": "X/y、sample_weight、objective、n_estimators、depth、eta、lambda/alpha/gamma。",
+  "output_contract": "tree structures、raw margins、predict/proba 和 feature gain。",
+  "reference_pipeline": "scikit-learn 数据与参数交给锁定 XGBoost exact tree_method。",
+  "candidate_interface": "sklearn.ensemble.SecondOrderGradientBoosting；运行时不得使用 XGBoost。",
+  "verification": {
+    "model": "original_A_plus_B_vs_merged_host",
+    "numeric_comparison": "tree topology/feature/default direction 精确；threshold/leaf/margin/proba 约 2e-7；cover/gain 使用 float32-aware 容差；feature total gain 和 loss history 差分。",
+    "scientific_invariants": [
+      "每轮 weighted training loss 不增加",
+      "learning_rate=0 时 margin 不变",
+      "训练行置换不改变固定 tie-policy 模型",
+      "missing 样本遵循记录的 default branch",
+      "L1 可产生精确零叶"
+    ],
+    "fixtures": "15 个隐藏用例：回归/二分类、missing-left/right、sample weights、constant-with-missing、depth 1--3、gamma pruning、split tie、L1 zero leaf、eta=0 与 row permutation pair；另有 9 个非法输入。"
+  },
+  "non_glue_reason": "必须实现二阶 gradient/hessian、树生长、正则叶权重和逐轮更新。",
+  "implementation_scope": "large",
+  "estimated_changed_loc": "700-1300",
+  "difficulty": "expert",
+  "license": {
+    "status": "low_risk_direction_available",
+    "host_license": "BSD-3-Clause",
+    "donor_license": "Apache-2.0",
+    "clean_room_required": true
+  },
+  "source_locks": {
+    "host": {
+      "software": "scikit-learn",
+      "repo": "https://github.com/scikit-learn/scikit-learn",
+      "status": "locked",
+      "head_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+      "tree": "87223e64df8880951bc88ee6049a8bf453dccf88"
+    },
+    "donor": {
+      "software": "XGBoost",
+      "repo": "https://github.com/dmlc/xgboost",
+      "status": "locked",
+      "head_commit": "a3e3df59b83e1f230bb238c99dbaf63d8382ed24",
+      "tree": "bd41fae2e12da04ce6e1969d60e800012ecb33f1",
+      "dmlc_core_commit": "4baa84e627849e675a3f99c92990ef9c39e4269e"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+!Dockerfile
+!host-source.tar.gz
+!donor-source.tar.gz
+!wheels/**
+!task-tools/**
+!public-examples/**
