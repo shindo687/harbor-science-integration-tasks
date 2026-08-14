@@ -1,0 +1,15 @@
+{
+  "min_alternate_count": 1,
+  "min_alternate_fraction": 0.0,
+  "min_base_quality": 0,
+  "min_mapping_quality": 0,
+  "ploidy": 1,
+  "sam_flag_rules": [
+    {
+      "or_mask": 1024,
+      "prefix": "DUP_"
+    }
+  ],
+  "sample": "SAMPLE",
+  "theta": 0.001
+}

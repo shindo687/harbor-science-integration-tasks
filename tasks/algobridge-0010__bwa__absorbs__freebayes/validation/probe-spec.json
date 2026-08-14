@@ -1,0 +1,25 @@
+{
+  "loci": [
+    {
+      "alt_count": 9,
+      "balanced_strands": true,
+      "position": 500,
+      "quality": 30,
+      "ref_count": 5,
+      "stagger": 3
+    },
+    {
+      "alt_count": 5,
+      "balanced_strands": true,
+      "position": 1500,
+      "quality": 35,
+      "ref_count": 9,
+      "stagger": 4
+    }
+  ],
+  "min_alternate_count": 1,
+  "min_alternate_fraction": 0.0,
+  "ploidy": 2,
+  "seed": 10010,
+  "theta": 0.001
+}

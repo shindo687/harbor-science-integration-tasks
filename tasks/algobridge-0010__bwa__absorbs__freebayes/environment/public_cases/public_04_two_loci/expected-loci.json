@@ -1,0 +1,14 @@
+[
+  {
+    "alt": "A",
+    "chrom": "chr1",
+    "pos": 601,
+    "ref": "C"
+  },
+  {
+    "alt": "G",
+    "chrom": "chr1",
+    "pos": 1801,
+    "ref": "C"
+  }
+]

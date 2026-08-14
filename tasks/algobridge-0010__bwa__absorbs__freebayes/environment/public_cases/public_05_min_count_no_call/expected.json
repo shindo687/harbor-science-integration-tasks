@@ -1,0 +1,5 @@
+{
+  "calls": [],
+  "reference_pipeline": "pristine BWA-MEM 0.7.17 -> samtools 1.13 -> real FreeBayes 1.3.6",
+  "schema_version": 1
+}

@@ -1,0 +1,26 @@
+{
+  "calls": [
+    {
+      "ad": [
+        5,
+        9
+      ],
+      "alt": "A",
+      "chrom": "chr1",
+      "dp": 14,
+      "gl": [
+        -20.382,
+        0.0,
+        -9.58359
+      ],
+      "gq": 38.5421,
+      "gt": "0/1",
+      "pos": 501,
+      "qual": 144.663,
+      "ref": "T",
+      "sample_dp": 14
+    }
+  ],
+  "reference_pipeline": "pristine BWA-MEM 0.7.17 -> samtools 1.13 -> real FreeBayes 1.3.6",
+  "schema_version": 1
+}

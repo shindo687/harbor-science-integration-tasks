@@ -1,0 +1,223 @@
+{
+  "public": [
+    {
+      "id": "public_01_diploid_balanced",
+      "spec": {
+        "seed": 100101,
+        "ploidy": 2,
+        "loci": [
+          {"position": 500, "ref_count": 5, "alt_count": 9, "quality": 30, "stagger": 3}
+        ]
+      }
+    },
+    {
+      "id": "public_02_diploid_reference_skew",
+      "spec": {
+        "seed": 100102,
+        "ploidy": 2,
+        "loci": [
+          {"position": 700, "ref_count": 9, "alt_count": 5, "quality": 35, "stagger": 4}
+        ]
+      }
+    },
+    {
+      "id": "public_03_haploid_alternate",
+      "spec": {
+        "seed": 100103,
+        "ploidy": 1,
+        "loci": [
+          {"position": 900, "ref_count": 3, "alt_count": 7, "quality": 25, "stagger": 2}
+        ]
+      }
+    },
+    {
+      "id": "public_04_two_loci",
+      "spec": {
+        "seed": 100104,
+        "ploidy": 2,
+        "theta": 0.002,
+        "loci": [
+          {"position": 600, "ref_count": 5, "alt_count": 8, "quality": 28, "stagger": 3},
+          {"position": 1800, "ref_count": 8, "alt_count": 4, "quality": 32, "stagger": 4}
+        ]
+      }
+    },
+    {
+      "id": "public_05_min_count_no_call",
+      "spec": {
+        "seed": 100105,
+        "ploidy": 2,
+        "min_alternate_count": 4,
+        "loci": [
+          {"position": 1100, "ref_count": 9, "alt_count": 3, "quality": 30, "stagger": 3}
+        ]
+      }
+    }
+  ],
+  "hidden": [
+    {
+      "id": "hidden_01_homozygous_alternate",
+      "spec": {
+        "seed": 101001,
+        "ploidy": 2,
+        "loci": [
+          {"position": 500, "ref_count": 1, "alt_count": 6, "quality": 22, "stagger": 2}
+        ]
+      }
+    },
+    {
+      "id": "hidden_02_alternate_skew",
+      "spec": {
+        "seed": 101002,
+        "ploidy": 2,
+        "loci": [
+          {"position": 700, "ref_count": 4, "alt_count": 8, "quality": 28, "stagger": 3}
+        ]
+      }
+    },
+    {
+      "id": "hidden_03_reference_skew",
+      "spec": {
+        "seed": 101003,
+        "ploidy": 2,
+        "loci": [
+          {"position": 900, "ref_count": 8, "alt_count": 4, "quality": 28, "stagger": 3}
+        ]
+      }
+    },
+    {
+      "id": "hidden_04_low_base_quality_no_call",
+      "spec": {
+        "seed": 101004,
+        "ploidy": 2,
+        "min_base_quality": 20,
+        "loci": [
+          {"position": 1100, "ref_count": 8, "alt_count": 6, "ref_quality": 30, "alt_quality": 10, "stagger": 3}
+        ]
+      }
+    },
+    {
+      "id": "hidden_05_quality_boundary",
+      "spec": {
+        "seed": 101005,
+        "ploidy": 2,
+        "min_base_quality": 20,
+        "loci": [
+          {"position": 1300, "ref_count": 5, "alt_count": 7, "quality": 20, "stagger": 3}
+        ]
+      }
+    },
+    {
+      "id": "hidden_06_min_alternate_count",
+      "spec": {
+        "seed": 101006,
+        "ploidy": 2,
+        "min_alternate_count": 5,
+        "loci": [
+          {"position": 1500, "ref_count": 9, "alt_count": 4, "quality": 30, "stagger": 4}
+        ]
+      }
+    },
+    {
+      "id": "hidden_07_min_alternate_fraction",
+      "spec": {
+        "seed": 101007,
+        "ploidy": 2,
+        "min_alternate_fraction": 0.3,
+        "loci": [
+          {"position": 1700, "ref_count": 10, "alt_count": 4, "quality": 30, "stagger": 3}
+        ]
+      }
+    },
+    {
+      "id": "hidden_08_duplicate_filtering_call",
+      "spec": {
+        "seed": 101008,
+        "ploidy": 2,
+        "loci": [
+          {"position": 1900, "ref_count": 5, "alt_count": 9, "duplicate_alt_count": 5, "quality": 30, "stagger": 4}
+        ]
+      }
+    },
+    {
+      "id": "hidden_09_duplicate_filtering_no_call",
+      "spec": {
+        "seed": 101009,
+        "ploidy": 2,
+        "min_alternate_count": 3,
+        "loci": [
+          {"position": 2100, "ref_count": 6, "alt_count": 5, "duplicate_alt_count": 3, "quality": 30, "stagger": 3}
+        ]
+      }
+    },
+    {
+      "id": "hidden_10_mapping_quality_filter",
+      "spec": {
+        "seed": 101010,
+        "ploidy": 2,
+        "duplicate_contig": true,
+        "min_mapping_quality": 10,
+        "loci": [
+          {"position": 2300, "ref_count": 5, "alt_count": 8, "quality": 30, "stagger": 3}
+        ]
+      }
+    },
+    {
+      "id": "hidden_11_theta_high",
+      "spec": {
+        "seed": 101011,
+        "ploidy": 2,
+        "theta": 0.01,
+        "loci": [
+          {"position": 500, "ref_count": 5, "alt_count": 8, "quality": 27, "stagger": 3}
+        ]
+      }
+    },
+    {
+      "id": "hidden_12_theta_low",
+      "spec": {
+        "seed": 101012,
+        "ploidy": 2,
+        "theta": 0.0001,
+        "loci": [
+          {"position": 700, "ref_count": 6, "alt_count": 8, "quality": 26, "stagger": 4}
+        ]
+      }
+    },
+    {
+      "id": "hidden_13_haploid_reference_call",
+      "spec": {
+        "seed": 101013,
+        "ploidy": 1,
+        "loci": [
+          {"position": 900, "ref_count": 7, "alt_count": 3, "quality": 25, "stagger": 2}
+        ]
+      }
+    },
+    {
+      "id": "hidden_14_three_loci",
+      "spec": {
+        "seed": 101014,
+        "ploidy": 2,
+        "theta": 0.003,
+        "loci": [
+          {"position": 500, "ref_count": 5, "alt_count": 7, "quality": 24, "stagger": 2},
+          {"position": 1500, "ref_count": 7, "alt_count": 5, "quality": 29, "stagger": 3},
+          {"position": 2500, "ref_count": 4, "alt_count": 7, "quality": 26, "stagger": 4}
+        ]
+      }
+    },
+    {
+      "id": "hidden_15_alternate_fraction_boundary",
+      "spec": {
+        "seed": 101015,
+        "ploidy": 2,
+        "min_alternate_count": 3,
+        "min_alternate_fraction": 0.25,
+        "loci": [
+          {"position": 1200, "ref_count": 9, "alt_count": 3, "quality": 23, "stagger": 3}
+        ]
+      }
+    }
+  ]
+}

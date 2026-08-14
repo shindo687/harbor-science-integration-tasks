@@ -32,6 +32,12 @@
       "commit": "b3fd38093c9b3e1a08d5f82a906ddd3f2a61ee3d"
     },
     {
+      "name": "algobridge-0010__bwa__absorbs__freebayes",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0010__bwa__absorbs__freebayes.git",
+      "commit": "91e3cca4a1f7e1fb0610dbd0ee0efe96e9721c52"
+    },
+    {
       "name": "algobridge-0012__gromacs__absorbs__prody",
       "suite": "AlgoBridge",
       "origin": "https://github.com/shindo687/algobridge-0012__gromacs__absorbs__prody.git",

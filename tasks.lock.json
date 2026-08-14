@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "complete": true,
-  "task_count": 20,
+  "task_count": 21,
   "tasks": [
     {
       "name": "algobridge-0001__scanpy__absorbs__bbknn",
@@ -67,6 +67,19 @@
       "lfs_object_count": 0,
       "lfs_bytes": 0,
       "materialized_bytes": 1415372
+    },
+    {
+      "name": "algobridge-0010__bwa__absorbs__freebayes",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0010__bwa__absorbs__freebayes.git",
+      "commit": "91e3cca4a1f7e1fb0610dbd0ee0efe96e9721c52",
+      "source_tree": "944ee96bd09cbbd0aa02039d921bb28e19fb963d",
+      "file_count": 60,
+      "git_blob_bytes": 58960568,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 58960568
     },
     {
       "name": "algobridge-0012__gromacs__absorbs__prody",

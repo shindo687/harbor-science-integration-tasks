@@ -1,0 +1,46 @@
+{
+  "calls": [
+    {
+      "ad": [
+        5,
+        8
+      ],
+      "alt": "A",
+      "chrom": "chr1",
+      "dp": 13,
+      "gl": [
+        -16.5246,
+        0.0,
+        -8.96535
+      ],
+      "gq": 36.4619,
+      "gt": "0/1",
+      "pos": 601,
+      "qual": 111.387,
+      "ref": "C",
+      "sample_dp": 13
+    },
+    {
+      "ad": [
+        8,
+        4
+      ],
+      "alt": "G",
+      "chrom": "chr1",
+      "dp": 12,
+      "gl": [
+        -8.2251,
+        0.0,
+        -19.7426
+      ],
+      "gq": 25.5353,
+      "gt": "0/1",
+      "pos": 1801,
+      "qual": 25.5353,
+      "ref": "C",
+      "sample_dp": 12
+    }
+  ],
+  "reference_pipeline": "pristine BWA-MEM 0.7.17 -> samtools 1.13 -> real FreeBayes 1.3.6",
+  "schema_version": 1
+}

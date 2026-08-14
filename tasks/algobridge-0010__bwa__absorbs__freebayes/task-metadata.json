@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "task_id": "algobridge-0010__bwa__absorbs__freebayes",
+  "algorithm_question_id": "ALGOBRIDGE-0010",
+  "authoring_state": "accepted",
+  "execution_target": "cpu",
+  "title": "BWA native bounded biallelic SNV caller",
+  "domain": "sequence-analysis",
+  "algorithm_family": "pileup / Bayesian genotype likelihood",
+  "host_software": "BWA 0.7.17",
+  "donor_software": "FreeBayes 1.3.6",
+  "bounded_subset": "BWA-MEM SAM; haploid/diploid; biallelic SNVs only; no indels, MNPs or structural variants",
+  "candidate_interface": "bwa snv-call",
+  "reference_pipeline": "locked pristine BWA-MEM -> samtools -> real FreeBayes 1.3.6 -> normalized SNV VCF",
+  "verification": {
+    "model": "original_A_plus_B_vs_merged_host",
+    "hidden_case_count": 15,
+    "public_case_count": 5,
+    "numeric_comparison": "exact sites/GT/DP/AD; GL/QUAL/GQ within 1e-4",
+    "direct_oracle_result": "15/15 hidden, 5/5 public",
+    "harbor_oracle_reward": 1.0,
+    "harbor_nop_reward": 0.0,
+    "harbor_trials_errored": 0
+  },
+  "license": {
+    "host": "GPL-3.0-only",
+    "donor": "MIT",
+    "clean_room_required_by_task": true
+  }
+}
