@@ -1,0 +1,55 @@
+{
+  "base_image": {
+    "reference": "docker.io/library/r-base@sha256:a5845a19dbe67a49284a328ad2505cf8688aecaf22e4bbbac581044bbbd11c94",
+    "platform": "linux/amd64",
+    "r_version": "4.5.1",
+    "config_digest": "sha256:00ae9d30c37e27b1356e9c214136e538d5a350216a05898eb91b651d8877cf78"
+  },
+  "public_examples": {
+    "count": 5,
+    "expected_rds_sha256": "5b2253b75dc71f6f06e2f57d4600496f870a389640edb7443d63cf825bf3162e"
+  },
+  "host": {
+    "name": "Seurat",
+    "version": "5.3.1",
+    "repository": "https://github.com/satijalab/seurat.git",
+    "commit": "ca0ab0f9dd6863fac4a6af87280d48c8f9cc9b95",
+    "tree": "ea6c479cf7eaccf710c6892657062197a3b40964",
+    "file_count": 430,
+    "archive_sha256": "afa95adc7012df50fe7c63bc744eb44dd72e241929b9180a1bc6b53d050601ae",
+    "license": "MIT",
+    "license_file_sha256": "78b856611315077c592df6641f61ce0d37ac3523fd434461fe87912a4517cb82"
+  },
+  "donor": {
+    "name": "clusterProfiler",
+    "version": "4.16.0",
+    "repository": "https://git.bioconductor.org/packages/clusterProfiler.git",
+    "commit": "0f8dd3d779918e9fbcdd42aa726f634fa93a6a03",
+    "tree": "338afffc9f297d5265c9d8798cf0251c1fb47e46",
+    "file_count": 133,
+    "archive_sha256": "814bdb801534badf75c6efe8ff623cc7d2279e478055736aef4efbc6b593e324",
+    "license": "Artistic-2.0"
+  },
+  "reference_dependencies": [
+    {
+      "name": "DOSE",
+      "version": "4.2.0",
+      "repository": "https://git.bioconductor.org/packages/DOSE.git",
+      "commit": "eb8781d71676625aaca21d072968531335a39ab0",
+      "tree": "e817aaaf8abe8094c44808326f94b983d9419aeb",
+      "file_count": 83,
+      "archive_sha256": "94f09d7247b7c9c4f34475e984b87350d778eb1983e8240b7d575c6fedbb1f0b",
+      "license": "Artistic-2.0"
+    },
+    {
+      "name": "qvalue",
+      "version": "2.40.0",
+      "repository": "https://git.bioconductor.org/packages/qvalue.git",
+      "commit": "09da9f467ca4d8bddd2dbe82ba12401fcbbb2a65",
+      "tree": "f0a4899589f59f185fd3ebc2923a03ec09c3cbef",
+      "file_count": 30,
+      "archive_sha256": "569faa5c3757931d54159073764765cea532dd1a6faef9f832377b9a30d3b2c5",
+      "license": "LGPL"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "algobridge-0004",
+  "title": "Seurat absorbs clusterProfiler over-representation analysis",
+  "host": "Seurat",
+  "donor": "clusterProfiler",
+  "domain": "single-cell",
+  "algorithm_family": "statistics/enrichment",
+  "difficulty": "medium",
+  "authoring_state": "accepted",
+  "execution_target": "cpu",
+  "license_direction": "clean-room required",
+  "reference_workflow": "locked Seurat marker table -> locked clusterProfiler::enricher"
+}

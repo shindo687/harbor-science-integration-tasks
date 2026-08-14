@@ -1,8 +1,17 @@
 {
   "schema_version": 1,
   "complete": false,
-  "task_count": 1,
+  "task_count": 2,
   "tasks": [
+    {
+      "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0004__seurat__absorbs__clusterprofiler.git",
+      "commit": "5853c392754fa468250bfdb07a053f4a62f5620c",
+      "source_tree": "24c3215e087bda897ad832d763955b9995f8754b",
+      "file_count": 62,
+      "bytes": 31192944
+    },
     {
       "name": "algobridge-0007__fasttree__absorbs__mafft",
       "suite": "AlgoBridge",

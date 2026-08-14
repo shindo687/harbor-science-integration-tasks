@@ -1,0 +1,8 @@
+jobs/
+*.log
+*.Rout
+.Rhistory
+.RData
+.DS_Store
+validation/work/
+
