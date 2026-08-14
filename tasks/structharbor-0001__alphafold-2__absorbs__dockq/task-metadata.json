@@ -1,0 +1,59 @@
+{
+  "id": "structharbor-0001__alphafold-2__absorbs__dockq",
+  "title": "AlphaFold 2 原生 DockQ 二链复合物评分",
+  "host": "alphafold",
+  "donor": "dockq",
+  "target": "alphafold/common/dockq_score.py + run_alphafold.py prediction integration",
+  "module": "dockq_pair",
+  "difficulty": "hard",
+  "natural_fit": "高",
+  "glue_risk": "低",
+  "integration_form": "原生模块",
+  "benefit": "性能+正确性",
+  "formal_question_id": "STRUCTALG-0001",
+  "authoring_state": "executable",
+  "execution_target": "h200",
+  "final_validation": {
+    "date": "2026-08-13",
+    "harbor_oracle": {
+      "trials": 1,
+      "exceptions": 0,
+      "passed_cases": 15,
+      "total_cases": 15,
+      "reward": 1.0
+    },
+    "harbor_nop": {
+      "trials": 1,
+      "exceptions": 0,
+      "passed_cases": 0,
+      "total_cases": 15,
+      "reward": 0.0
+    }
+  },
+  "source_lock": {
+    "schema_version": 1,
+    "reference_model": "locked original host + donor versus merged host",
+    "host": {
+      "repository": "https://github.com/google-deepmind/alphafold",
+      "commit": "c77e5d2a8961d1a353632c462914ff0a32a950f6",
+      "snapshot_tree_sha256": "3e2e655861fe4b9b54786280c112890232a85d88b4882f2d18fdf4a1c8b0c01f"
+    },
+    "donor": {
+      "repository": "https://github.com/wallnerlab/DockQ",
+      "commit": "75db7ab4f6b824c70d120c5f620582e164ed5479",
+      "available_to_agent": true,
+      "path": "/opt/dockq",
+      "license": "MIT"
+    },
+    "scientific_contract": "dockq_pair",
+    "real_e2e": {
+      "device": "NVIDIA H200",
+      "model": "model_1_multimer_v3",
+      "model_params_sha256": "611da8fc7478928f68de12e8b226260ef1f4ce62bcc29b008572e52f4f212959",
+      "model_params_license": "CC BY 4.0",
+      "official_data_pipeline": true,
+      "official_run_model": true,
+      "fake_scored_cases": false
+    }
+  }
+}

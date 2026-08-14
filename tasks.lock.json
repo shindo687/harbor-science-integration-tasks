@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "complete": false,
-  "task_count": 12,
+  "task_count": 13,
   "tasks": [
     {
       "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
@@ -101,6 +101,15 @@
       "source_tree": "681f9b07e998ee6df434b7ef96759b9378c3ae23",
       "file_count": 777,
       "bytes": 215147335
+    },
+    {
+      "name": "structharbor-0001__alphafold-2__absorbs__dockq",
+      "suite": "StructHarbor",
+      "origin": "https://github.com/shindo687/structharbor-0001__alphafold-2__absorbs__dockq.git",
+      "commit": "a20792be30ca991121d991bd5418df23e79df3a2",
+      "source_tree": "8b62d21001b0875f802274a0932d06c0a549dcb0",
+      "file_count": 383,
+      "bytes": 42819232
     },
     {
       "name": "structharbor-0002__colabfold__absorbs__dockq-and-ipsae",

@@ -1,0 +1,53 @@
+schema_version = "1.3"
+
+# The candidate tree is the only artifact transferred from the Agent container
+# into the clean verifier container.  In particular, /opt/dockq is not copied.
+artifacts = [
+  { source = "/testbed", exclude = [".git", "__pycache__", "*.pyc"] },
+]
+
+[task]
+name = "workflow-feature-bench/structharbor-0001__alphafold-2__absorbs__dockq"
+description = "Integrate native, dependency-free DockQ scoring into AlphaFold 2's prediction workflow"
+keywords = ["workflow-feature-bench", "structural-biology", "algorithm-migration", "differential"]
+
+[metadata]
+difficulty = "hard"
+category = "scientific-software-engineering"
+tags = ["alphafold2", "dockq", "single-step", "separate-verifier", "no-network"]
+authoring_state = "executable"
+
+[verifier]
+timeout_sec = 900.0
+user = "root"
+environment_mode = "separate"
+network_mode = "no-network"
+
+# This explicit environment prevents Harbor from inheriting the Agent image,
+# which deliberately contains the donor source for study.
+[verifier.environment]
+# The verifier performs two bounded real AF2 multimer passes.  Harbor 0.20
+# rejects a nonzero generic GPU request for its local Docker provider before it
+# reads the task Compose overlay, so this compatibility field stays zero.  The
+# actual one-GPU requirement is declared portably through CDI in
+# tests/docker-compose.yaml.
+build_timeout_sec = 3600.0
+cpus = 8
+memory_mb = 32768
+storage_mb = 65536
+gpus = 0
+network_mode = "no-network"
+mcp_servers = []
+
+[agent]
+timeout_sec = 3600.0
+network_mode = "no-network"
+
+[environment]
+build_timeout_sec = 1800.0
+cpus = 4
+memory_mb = 8192
+storage_mb = 20480
+gpus = 0
+network_mode = "no-network"
+mcp_servers = []

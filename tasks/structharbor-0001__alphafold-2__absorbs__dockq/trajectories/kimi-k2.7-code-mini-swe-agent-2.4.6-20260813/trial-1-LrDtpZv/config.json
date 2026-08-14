@@ -1,0 +1,28 @@
+{
+    "task": {
+        "path": "/home/xjtan/new_bench_minimal/af2-dockq-kimi-mini-swe-task"
+    },
+    "trial_name": "af2-dockq-kimi-mini-swe-task__LrDtpZv",
+    "trials_dir": "/home/xjtan/new_bench_minimal/harbor-jobs-kimi-mini-swe/af2-dockq-kimi-k27code-mini-swe-3x-final-20260813",
+    "agent_setup_timeout_multiplier": 3.0,
+    "agent": {
+        "name": "mini-swe-agent",
+        "model_name": "openai/kimi-k2.7-code",
+        "extra_allowed_hosts": [
+            "api.epicllmrouter.top"
+        ],
+        "kwargs": {
+            "version": "2.4.6",
+            "max_tokens": 8192
+        }
+    },
+    "environment": {
+        "type": "docker",
+        "extra_allowed_hosts": [
+            "mirrors.aliyun.com",
+            "pypi.org",
+            "files.pythonhosted.org"
+        ]
+    },
+    "job_id": "85477a73-c670-4690-b639-201f7962d549"
+}

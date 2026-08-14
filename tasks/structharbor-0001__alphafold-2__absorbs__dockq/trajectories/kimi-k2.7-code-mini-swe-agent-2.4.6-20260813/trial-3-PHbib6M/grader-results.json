@@ -1,0 +1,327 @@
+{
+  "cases": [
+    {
+      "category": "scientific",
+      "detail": "locked DockQ differential passed",
+      "elapsed_seconds": 0.157892,
+      "index": 1,
+      "name": "identity",
+      "passed": true,
+      "reference_evidence": {
+        "case_index": 1,
+        "locked_mapping_runs": 1,
+        "model_pdb_sha256": "2ea0d6fd3d28186d9c7b843aa16d6108f346152c1e3d7645031c44fd03503092",
+        "native_pdb_sha256": "2ea0d6fd3d28186d9c7b843aa16d6108f346152c1e3d7645031c44fd03503092",
+        "reference_result_sha256": "9a4d979dabe2eb3e251840d05e7073c4edcf62cbfb10b6cd635721fe26e0d42f"
+      }
+    },
+    {
+      "category": "scientific",
+      "detail": "locked DockQ differential passed",
+      "elapsed_seconds": 0.111981,
+      "index": 2,
+      "name": "explicit_mapping_perturbation",
+      "passed": true,
+      "reference_evidence": {
+        "case_index": 2,
+        "locked_mapping_runs": 1,
+        "model_pdb_sha256": "bdfaa34c0428d0179600ebc77bec3c42e1df0ac90ac218a124086e928dd1eb8e",
+        "native_pdb_sha256": "2ea0d6fd3d28186d9c7b843aa16d6108f346152c1e3d7645031c44fd03503092",
+        "reference_result_sha256": "e24b3d41fdc0b35b0863eec9297157fc3ffbfa6f3758b6310fa2baa58858cd03"
+      }
+    },
+    {
+      "category": "scientific",
+      "detail": "locked DockQ differential passed",
+      "elapsed_seconds": 0.160965,
+      "index": 3,
+      "name": "rotated_distorted_complex",
+      "passed": true,
+      "reference_evidence": {
+        "case_index": 3,
+        "locked_mapping_runs": 1,
+        "model_pdb_sha256": "66e074c10500114f0948117b17304c73e394e8497a9d360afcd3f037d4686793",
+        "native_pdb_sha256": "2ea0d6fd3d28186d9c7b843aa16d6108f346152c1e3d7645031c44fd03503092",
+        "reference_result_sha256": "5e03cf55016419d863883d66b12209cfb2dc92fe0e3c780c9aa43419ac8819d3"
+      }
+    },
+    {
+      "category": "scientific",
+      "detail": "locked DockQ differential passed",
+      "elapsed_seconds": 0.150934,
+      "index": 4,
+      "name": "sequence_mapped_chain_swap",
+      "passed": true,
+      "reference_evidence": {
+        "case_index": 4,
+        "locked_mapping_runs": 1,
+        "model_pdb_sha256": "f960969dd31aeb04b020df3468ec6f599313582659baed55da1d3aa99092f6c8",
+        "native_pdb_sha256": "2ea0d6fd3d28186d9c7b843aa16d6108f346152c1e3d7645031c44fd03503092",
+        "reference_result_sha256": "e958421af5bc8504897f7db535e6bb35596441faf3bd6d46473d5972fe5bce8a"
+      }
+    },
+    {
+      "category": "scientific",
+      "detail": "locked DockQ differential passed",
+      "elapsed_seconds": 0.155361,
+      "index": 5,
+      "name": "seeded_perturbation_1",
+      "passed": true,
+      "reference_evidence": {
+        "case_index": 5,
+        "locked_mapping_runs": 1,
+        "model_pdb_sha256": "fdbbf8a2de854efcd88020acd403dd014869fc162ecd9bdbbe37d9ceb384bd0d",
+        "native_pdb_sha256": "2ea0d6fd3d28186d9c7b843aa16d6108f346152c1e3d7645031c44fd03503092",
+        "reference_result_sha256": "71510653cb69de83e09ca96df7597dcc172f0decd27b2d24f7c57ac0cf57bce5"
+      }
+    },
+    {
+      "category": "scientific",
+      "detail": "locked DockQ differential passed",
+      "elapsed_seconds": 0.156494,
+      "index": 6,
+      "name": "seeded_perturbation_2",
+      "passed": true,
+      "reference_evidence": {
+        "case_index": 6,
+        "locked_mapping_runs": 1,
+        "model_pdb_sha256": "abd977c4b2e168c735747d72aa9edd54470bb18e6edd512758b7bd8a7fa6b259",
+        "native_pdb_sha256": "2ea0d6fd3d28186d9c7b843aa16d6108f346152c1e3d7645031c44fd03503092",
+        "reference_result_sha256": "a00c0c4d44817a23285e8ab3f90300f83a28769abfc9d830238e0ebc1ad3d00f"
+      }
+    },
+    {
+      "category": "scientific",
+      "detail": "locked DockQ differential passed",
+      "elapsed_seconds": 0.156744,
+      "index": 7,
+      "name": "seeded_perturbation_3",
+      "passed": true,
+      "reference_evidence": {
+        "case_index": 7,
+        "locked_mapping_runs": 1,
+        "model_pdb_sha256": "1ad866784bda50e36b390b89b368f06625dff4f4a186c237b7592bc837035117",
+        "native_pdb_sha256": "2ea0d6fd3d28186d9c7b843aa16d6108f346152c1e3d7645031c44fd03503092",
+        "reference_result_sha256": "a12cbfac04370dec8c86c6f14a59848f88ae1828d1f30ab71ea6de73a598cf3b"
+      }
+    },
+    {
+      "category": "scientific",
+      "detail": "locked DockQ differential passed",
+      "elapsed_seconds": 0.150526,
+      "index": 8,
+      "name": "ambiguous_sequence_mapping_search",
+      "passed": true,
+      "reference_evidence": {
+        "case_index": 8,
+        "locked_mapping_runs": 2,
+        "model_pdb_sha256": "1725098eeffd7c69773fcf050cfec6f6e052e0fe2642acbd18fe072ff0c3a839",
+        "native_pdb_sha256": "5c417fbf4e86552c10ea2e61eedddfeff2a5923690bb74985c8bcc14042f5a12",
+        "reference_result_sha256": "4de929a2886555d81f32db32489b283b264730b3585a21e13fc79346af58658d"
+      }
+    },
+    {
+      "category": "scientific",
+      "detail": "locked DockQ differential passed",
+      "elapsed_seconds": 0.11361,
+      "index": 9,
+      "name": "rigid_body_invariance",
+      "passed": true,
+      "reference_evidence": {
+        "case_index": 9,
+        "locked_mapping_runs": 1,
+        "model_pdb_sha256": "48e7b4d3c9edb620f6204da2f364914ce75ddcd5853cf1a5099c80bc0a31984c",
+        "native_pdb_sha256": "2ea0d6fd3d28186d9c7b843aa16d6108f346152c1e3d7645031c44fd03503092",
+        "reference_result_sha256": "410a3c5b60be94f56b8bd87751766c068551179a9f7d19033ac9758cfd535c74"
+      }
+    },
+    {
+      "category": "cli",
+      "detail": "standalone JSON CLI differential passed",
+      "elapsed_seconds": 0.294921,
+      "index": 10,
+      "name": "standalone_json_cli",
+      "passed": true,
+      "reference_evidence": {
+        "case_index": 10,
+        "locked_mapping_runs": 1,
+        "model_pdb_sha256": "1ab492884bead17a7869b19a255c3108a4b756ae5ce6df94991f5262e9f08ab6",
+        "native_pdb_sha256": "2ea0d6fd3d28186d9c7b843aa16d6108f346152c1e3d7645031c44fd03503092",
+        "reference_result_sha256": "156f19c444f24efaebb0ea2f38ceb0979accd0c9dafaf9790183649ede7a8689"
+      }
+    },
+    {
+      "category": "workflow",
+      "detail": "AssertionError: AlphaFold DockQ CLI/signature contract incomplete: run_dockq_default_true, run_dockq_flag",
+      "elapsed_seconds": 0.158009,
+      "index": 11,
+      "name": "alphafold_cli_and_signature_contract",
+      "passed": false,
+      "reference_evidence": {
+        "case_index": 11
+      }
+    },
+    {
+      "category": "real_e2e",
+      "detail": "real H200 DataPipeline + RunModel inference passed",
+      "elapsed_seconds": 37.676659,
+      "index": 12,
+      "name": "real_h200_official_pipeline_and_model",
+      "passed": true,
+      "reference_evidence": {
+        "case_index": 12,
+        "elapsed_seconds": 115.94010519981384,
+        "jax_devices": [
+          "cuda:0"
+        ],
+        "locked_af2_commit": "c77e5d2a8961d1a353632c462914ff0a32a950f6",
+        "model_name": "model_1_multimer_v3",
+        "model_params_sha256": "611da8fc7478928f68de12e8b226260ef1f4ce62bcc29b008572e52f4f212959",
+        "num_recycle": 1,
+        "reference_dockq_sha256": "9f6330da04d794fa1e2c35fede89d8ca4c6c85850446d5ec0dc1b27a5679053a",
+        "reference_prediction_pdb_sha256": "c318b6a354797dfbb1bf51fee88cffed77e0d2c82b1890334065ef8a383efa23",
+        "sequence_lengths": [
+          12,
+          10
+        ]
+      }
+    },
+    {
+      "category": "real_e2e",
+      "detail": "pristine and modified AF2 predictions are byte-equivalent",
+      "elapsed_seconds": 4e-06,
+      "index": 13,
+      "name": "real_upstream_prediction_equivalence",
+      "passed": true,
+      "reference_evidence": {
+        "case_index": 13,
+        "elapsed_seconds": 115.94010519981384,
+        "jax_devices": [
+          "cuda:0"
+        ],
+        "locked_af2_commit": "c77e5d2a8961d1a353632c462914ff0a32a950f6",
+        "model_name": "model_1_multimer_v3",
+        "model_params_sha256": "611da8fc7478928f68de12e8b226260ef1f4ce62bcc29b008572e52f4f212959",
+        "num_recycle": 1,
+        "reference_dockq_sha256": "9f6330da04d794fa1e2c35fede89d8ca4c6c85850446d5ec0dc1b27a5679053a",
+        "reference_prediction_pdb_sha256": "c318b6a354797dfbb1bf51fee88cffed77e0d2c82b1890334065ef8a383efa23",
+        "sequence_lengths": [
+          12,
+          10
+        ]
+      }
+    },
+    {
+      "category": "real_e2e",
+      "detail": "integrated in-memory DockQ matches locked original DockQ",
+      "elapsed_seconds": 4.3e-05,
+      "index": 14,
+      "name": "real_integrated_dockq_differential",
+      "passed": true,
+      "reference_evidence": {
+        "case_index": 14,
+        "elapsed_seconds": 115.94010519981384,
+        "jax_devices": [
+          "cuda:0"
+        ],
+        "locked_af2_commit": "c77e5d2a8961d1a353632c462914ff0a32a950f6",
+        "model_name": "model_1_multimer_v3",
+        "model_params_sha256": "611da8fc7478928f68de12e8b226260ef1f4ce62bcc29b008572e52f4f212959",
+        "num_recycle": 1,
+        "reference_dockq_sha256": "9f6330da04d794fa1e2c35fede89d8ca4c6c85850446d5ec0dc1b27a5679053a",
+        "reference_prediction_pdb_sha256": "c318b6a354797dfbb1bf51fee88cffed77e0d2c82b1890334065ef8a383efa23",
+        "sequence_lengths": [
+          12,
+          10
+        ]
+      }
+    },
+    {
+      "category": "real_e2e",
+      "detail": "real AF2 standard artifacts and integrated JSON/pickle passed",
+      "elapsed_seconds": 1.4e-05,
+      "index": 15,
+      "name": "real_alphafold_artifact_integration",
+      "passed": true,
+      "reference_evidence": {
+        "case_index": 15,
+        "elapsed_seconds": 115.94010519981384,
+        "jax_devices": [
+          "cuda:0"
+        ],
+        "locked_af2_commit": "c77e5d2a8961d1a353632c462914ff0a32a950f6",
+        "model_name": "model_1_multimer_v3",
+        "model_params_sha256": "611da8fc7478928f68de12e8b226260ef1f4ce62bcc29b008572e52f4f212959",
+        "num_recycle": 1,
+        "reference_dockq_sha256": "9f6330da04d794fa1e2c35fede89d8ca4c6c85850446d5ec0dc1b27a5679053a",
+        "reference_prediction_pdb_sha256": "c318b6a354797dfbb1bf51fee88cffed77e0d2c82b1890334065ef8a383efa23",
+        "sequence_lengths": [
+          12,
+          10
+        ]
+      }
+    }
+  ],
+  "donor_commit": "75db7ab4f6b824c70d120c5f620582e164ed5479",
+  "elapsed_seconds": 164.917739,
+  "hard_gate_passed": true,
+  "hard_gates": [
+    {
+      "detail": "locked original DockQ executed dynamically; pristine locked AF2 also ran a real H200 multimer inference",
+      "hard_gate": false,
+      "name": "locked_reference_generation",
+      "passed": true
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.007059,
+      "hard_gate": true,
+      "name": "compile",
+      "passed": true
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.035474,
+      "hard_gate": true,
+      "name": "locked_alphafold_tree_integrity",
+      "passed": true
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.439667,
+      "hard_gate": true,
+      "name": "forbidden_dependency_or_vendored_donor",
+      "passed": true
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.178826,
+      "hard_gate": true,
+      "name": "unprivileged_import_and_score_complex_signature",
+      "passed": true
+    },
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.166752,
+      "hard_gate": true,
+      "name": "alphafold_host_regression_integrity",
+      "passed": true
+    }
+  ],
+  "isolation": {
+    "candidate_gid": 10001,
+    "candidate_uid": 10001,
+    "logs_mode": 448,
+    "reference_removed": true,
+    "tests_mode": 448
+  },
+  "passed_cases": 14,
+  "reference_policy": "dynamic locked-original DockQ plus pristine real AF2/H200 completed before donor deletion; no expected values were written into /testbed",
+  "reward": 0.9333333333333333,
+  "schema_version": 1,
+  "tolerance": {
+    "absolute": 0.0005,
+    "relative": 0.0005
+  },
+  "total_cases": 15
+}

@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "tolerance": {"absolute": 0.0005, "relative": 0.0005},
+  "native": {"chains": {
+    "A": [
+      {"name": "ALA", "atoms": {"CA": [0.0, 0.0, 0.0], "CB": [0.0, 0.9, 0.5]}},
+      {"name": "GLY", "atoms": {"CA": [3.7, 0.0, 0.0], "CB": [3.7, 0.9, 0.5]}},
+      {"name": "SER", "atoms": {"CA": [7.4, 0.0, 0.0], "CB": [7.4, 0.9, 0.5]}},
+      {"name": "LEU", "atoms": {"CA": [11.1, 0.0, 0.0], "CB": [11.1, 0.9, 0.5]}}
+    ],
+    "B": [
+      {"name": "TYR", "atoms": {"CA": [0.0, 4.2, 0.0], "CB": [0.0, 5.1, 0.5]}},
+      {"name": "VAL", "atoms": {"CA": [3.7, 4.2, 0.0], "CB": [3.7, 5.1, 0.5]}},
+      {"name": "ASP", "atoms": {"CA": [7.4, 4.2, 0.0], "CB": [7.4, 5.1, 0.5]}}
+    ]
+  }},
+  "examples": [
+    {
+      "name": "identity",
+      "model": {"chains": {
+        "A": [
+          {"name": "ALA", "atoms": {"CA": [0.0, 0.0, 0.0], "CB": [0.0, 0.9, 0.5]}},
+          {"name": "GLY", "atoms": {"CA": [3.7, 0.0, 0.0], "CB": [3.7, 0.9, 0.5]}},
+          {"name": "SER", "atoms": {"CA": [7.4, 0.0, 0.0], "CB": [7.4, 0.9, 0.5]}},
+          {"name": "LEU", "atoms": {"CA": [11.1, 0.0, 0.0], "CB": [11.1, 0.9, 0.5]}}
+        ],
+        "B": [
+          {"name": "TYR", "atoms": {"CA": [0.0, 4.2, 0.0], "CB": [0.0, 5.1, 0.5]}},
+          {"name": "VAL", "atoms": {"CA": [3.7, 4.2, 0.0], "CB": [3.7, 5.1, 0.5]}},
+          {"name": "ASP", "atoms": {"CA": [7.4, 4.2, 0.0], "CB": [7.4, 5.1, 0.5]}}
+        ]
+      }},
+      "mapping": null,
+      "expected": {"fnat": 1.0, "iRMSD": 4.321703754305676e-07, "LRMSD": 0.0, "DockQ": 0.9999999999999724, "CAPRI": "high", "native_contacts": 8, "preserved_contacts": 8, "mapping": {"A": "A", "B": "B"}}
+    },
+    {
+      "name": "ligand_translation",
+      "model": {"chains": {
+        "A": [
+          {"name": "ALA", "atoms": {"CA": [0.0, 0.0, 0.0], "CB": [0.0, 0.9, 0.5]}},
+          {"name": "GLY", "atoms": {"CA": [3.7, 0.0, 0.0], "CB": [3.7, 0.9, 0.5]}},
+          {"name": "SER", "atoms": {"CA": [7.4, 0.0, 0.0], "CB": [7.4, 0.9, 0.5]}},
+          {"name": "LEU", "atoms": {"CA": [11.1, 0.0, 0.0], "CB": [11.1, 0.9, 0.5]}}
+        ],
+        "B": [
+          {"name": "TYR", "atoms": {"CA": [0.2, 5.6, -0.2], "CB": [0.2, 6.5, 0.3]}},
+          {"name": "VAL", "atoms": {"CA": [3.9, 5.6, -0.2], "CB": [3.9, 6.5, 0.3]}},
+          {"name": "ASP", "atoms": {"CA": [7.6, 5.6, -0.2], "CB": [7.6, 6.5, 0.3]}}
+        ]
+      }},
+      "mapping": null,
+      "expected": {"fnat": 0.375, "iRMSD": 0.6761650557082446, "LRMSD": 1.4282858045045155, "DockQ": 0.7262191045188638, "CAPRI": "medium", "native_contacts": 8, "preserved_contacts": 3, "mapping": {"A": "A", "B": "B"}}
+    },
+    {
+      "name": "rigid_transform_with_interface_error",
+      "model": {"chains": {
+        "A": [
+          {"name": "ALA", "atoms": {"CA": [6.0, -2.0, 3.0], "CB": [6.325, -1.161, 3.5]}},
+          {"name": "GLY", "atoms": {"CA": [9.45, -3.338, 3.0], "CB": [9.775, -2.499, 3.5]}},
+          {"name": "SER", "atoms": {"CA": [12.899, -4.676, 3.0], "CB": [13.225, -3.837, 3.5]}},
+          {"name": "LEU", "atoms": {"CA": [16.349, -6.014, 3.0], "CB": [16.674, -5.175, 3.5]}}
+        ],
+        "B": [
+          {"name": "TYR", "atoms": {"CA": [8.242, 3.78, 3.4], "CB": [8.567, 4.62, 3.9]}},
+          {"name": "VAL", "atoms": {"CA": [11.692, 2.442, 3.4], "CB": [12.017, 3.282, 3.9]}},
+          {"name": "ASP", "atoms": {"CA": [15.141, 1.104, 3.4], "CB": [15.467, 1.944, 3.9]}}
+        ]
+      }},
+      "mapping": null,
+      "expected": {"fnat": 0.0, "iRMSD": 0.9757639279224782, "LRMSD": 2.0391981972202173, "DockQ": 0.549412690457673, "CAPRI": "medium", "native_contacts": 8, "preserved_contacts": 0, "mapping": {"A": "A", "B": "B"}}
+    },
+    {
+      "name": "automatic_chain_mapping",
+      "model": {"chains": {
+        "X": [
+          {"name": "TYR", "atoms": {"CA": [0.0, 4.2, 0.0], "CB": [0.0, 5.1, 0.5]}},
+          {"name": "VAL", "atoms": {"CA": [3.7, 4.2, 0.0], "CB": [3.7, 5.1, 0.5]}},
+          {"name": "ASP", "atoms": {"CA": [7.4, 4.2, 0.0], "CB": [7.4, 5.1, 0.5]}}
+        ],
+        "Y": [
+          {"name": "ALA", "atoms": {"CA": [0.0, 0.0, 0.0], "CB": [0.0, 0.9, 0.5]}},
+          {"name": "GLY", "atoms": {"CA": [3.7, 0.0, 0.0], "CB": [3.7, 0.9, 0.5]}},
+          {"name": "SER", "atoms": {"CA": [7.4, 0.0, 0.0], "CB": [7.4, 0.9, 0.5]}},
+          {"name": "LEU", "atoms": {"CA": [11.1, 0.0, 0.0], "CB": [11.1, 0.9, 0.5]}}
+        ]
+      }},
+      "mapping": null,
+      "expected": {"fnat": 1.0, "iRMSD": 4.321703754305676e-07, "LRMSD": 0.0, "DockQ": 0.9999999999999724, "CAPRI": "high", "native_contacts": 8, "preserved_contacts": 8, "mapping": {"X": "B", "Y": "A"}}
+    },
+    {
+      "name": "explicit_mapping",
+      "model": {"chains": {
+        "A": [
+          {"name": "ALA", "atoms": {"CA": [0.0, 0.0, 0.0], "CB": [0.0, 0.9, 0.5]}},
+          {"name": "GLY", "atoms": {"CA": [3.7, 0.0, 0.0], "CB": [3.7, 0.9, 0.5]}},
+          {"name": "SER", "atoms": {"CA": [7.4, 0.0, 0.0], "CB": [7.4, 0.9, 0.5]}},
+          {"name": "LEU", "atoms": {"CA": [11.1, 0.0, 0.0], "CB": [11.1, 0.9, 0.5]}}
+        ],
+        "B": [
+          {"name": "TYR", "atoms": {"CA": [-0.4, 5.0, 0.6], "CB": [-0.4, 5.9, 1.1]}},
+          {"name": "VAL", "atoms": {"CA": [3.3, 5.0, 0.6], "CB": [3.3, 5.9, 1.1]}},
+          {"name": "ASP", "atoms": {"CA": [7.0, 5.0, 0.6], "CB": [7.0, 5.9, 1.1]}}
+        ]
+      }},
+      "mapping": {"A": "A", "B": "B"},
+      "expected": {"fnat": 0.375, "iRMSD": 0.45851445650965267, "LRMSD": 1.0770331119558338, "DockQ": 0.75791497548336, "CAPRI": "medium", "native_contacts": 8, "preserved_contacts": 3, "mapping": {"A": "A", "B": "B"}}
+    }
+  ]
+}

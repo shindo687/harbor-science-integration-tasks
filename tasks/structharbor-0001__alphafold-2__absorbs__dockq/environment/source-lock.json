@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "reference_model": "locked original host + donor versus merged host",
+  "host": {
+    "repository": "https://github.com/google-deepmind/alphafold",
+    "commit": "c77e5d2a8961d1a353632c462914ff0a32a950f6",
+    "snapshot_tree_sha256": "3e2e655861fe4b9b54786280c112890232a85d88b4882f2d18fdf4a1c8b0c01f"
+  },
+  "donor": {
+    "repository": "https://github.com/wallnerlab/DockQ",
+    "commit": "75db7ab4f6b824c70d120c5f620582e164ed5479",
+    "available_to_agent": true,
+    "path": "/opt/dockq",
+    "license": "MIT"
+  },
+  "scientific_contract": "dockq_pair"
+}

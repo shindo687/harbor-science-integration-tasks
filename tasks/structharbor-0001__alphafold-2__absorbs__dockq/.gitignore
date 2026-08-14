@@ -1,0 +1,15 @@
+# Harbor run artifacts are generated locally and are not part of the task.
+/jobs/
+
+# Python caches and local test artifacts.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Editor and OS metadata.
+.DS_Store
+*.swp
+*~

@@ -1,0 +1,12 @@
+services:
+  main:
+    # Harbor 0.20's local provider does not translate task.toml `gpus` into a
+    # Compose request, so use the runtime-neutral CDI interface.  The NVIDIA
+    # Container Toolkit injects the selected device and its matching driver
+    # libraries; no host device or driver-library path is mounted directly.
+    # Override the default on a shared host, for example:
+    # AF2_VERIFIER_GPU_CDI=nvidia.com/gpu=3
+    devices:
+      - "${AF2_VERIFIER_GPU_CDI:-nvidia.com/gpu=0}"
+    environment:
+      XLA_PYTHON_CLIENT_PREALLOCATE: "false"
