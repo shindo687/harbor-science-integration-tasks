@@ -6,8 +6,8 @@ GitHub 仓库；本仓库在 `tasks/` 下保存各独立仓库指定 commit 的�
 
 ## 当前收录
 
-- 25 个已验收 Task
-- AlgoBridge：23 个
+- 26 个已验收 Task
+- AlgoBridge：24 个
 - StructHarbor：2 个
 - 独立仓库不会被本仓库替代或删除
 
@@ -56,7 +56,7 @@ harbor run --path . --agent oracle --job-name smoke
 python3 scripts/verify_snapshots.py
 ```
 
-验证器要求 25 个目录全部存在，并检查：来源记录、锁定 commit、子目录 Git
+验证器要求 26 个目录全部存在，并检查：来源记录、锁定 commit、子目录 Git
 tree、文件数量、Git/LFS/展开字节数，以及 GitHub 100 MB 普通 Git 单文件限制。
 
 ## 更新快照

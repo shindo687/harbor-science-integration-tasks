@@ -1,11 +1,12 @@
 # Task index
 
-This index contains **25** byte-exact standalone-repository snapshots.
+This index contains **26** byte-exact standalone-repository snapshots.
 
 | Suite | Task snapshot | Standalone repository | Commit | Files | Materialized size | LFS |
 |---|---|---|---|---:|---:|---:|
 | AlgoBridge | [algobridge-0001__scanpy__absorbs__bbknn](tasks/algobridge-0001__scanpy__absorbs__bbknn/) | [source](https://github.com/shindo687/algobridge-0001__scanpy__absorbs__bbknn) | `5fa798c1ee99` | 2189 | 527.1 MiB | — |
 | AlgoBridge | [algobridge-0002__scanpy__absorbs__scvelo](tasks/algobridge-0002__scanpy__absorbs__scvelo/) | [source](https://github.com/shindo687/algobridge-0002__scanpy__absorbs__scvelo) | `e6deab953474` | 2097 | 436.7 MiB | — |
+| AlgoBridge | [algobridge-0003__seurat__absorbs__monocle](tasks/algobridge-0003__seurat__absorbs__monocle/) | [source](https://github.com/shindo687/algobridge-0003__seurat__absorbs__monocle) | `d8e6190c1352` | 78 | 40.3 MiB | — |
 | AlgoBridge | [algobridge-0004__seurat__absorbs__clusterprofiler](tasks/algobridge-0004__seurat__absorbs__clusterprofiler/) | [source](https://github.com/shindo687/algobridge-0004__seurat__absorbs__clusterprofiler) | `5853c392754f` | 62 | 29.7 MiB | — |
 | AlgoBridge | [algobridge-0005__edger__absorbs__limma](tasks/algobridge-0005__edger__absorbs__limma/) | [source](https://github.com/shindo687/algobridge-0005__edger__absorbs__limma) | `62fb7e7bfc2f` | 37 | 6.6 MiB | — |
 | AlgoBridge | [algobridge-0006__scanpy__absorbs__scib](tasks/algobridge-0006__scanpy__absorbs__scib/) | [source](https://github.com/shindo687/algobridge-0006__scanpy__absorbs__scib) | `76b059e5e533` | 2290 | 505.8 MiB | — |

@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "complete": true,
-  "task_count": 25,
+  "task_count": 26,
   "tasks": [
     {
       "name": "algobridge-0001__scanpy__absorbs__bbknn",
@@ -28,6 +28,19 @@
       "lfs_object_count": 0,
       "lfs_bytes": 0,
       "materialized_bytes": 457936909
+    },
+    {
+      "name": "algobridge-0003__seurat__absorbs__monocle",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0003__seurat__absorbs__monocle.git",
+      "commit": "d8e6190c1352d1ed22081a896374dd5fa12361de",
+      "source_tree": "55f4fa78878f77b9d39231d99caa81c68d104e43",
+      "file_count": 78,
+      "git_blob_bytes": 42290165,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 42290165
     },
     {
       "name": "algobridge-0004__seurat__absorbs__clusterprofiler",

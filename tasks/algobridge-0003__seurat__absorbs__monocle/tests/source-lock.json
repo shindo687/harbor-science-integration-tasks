@@ -1,0 +1,28 @@
+{
+  "archive_policy": "Complete ordinary tracked files from exact official Git commits; Git metadata is excluded.",
+  "donor": {
+    "archive": "environment/donor-source.tar.gz",
+    "archive_file_count": 227,
+    "commit": "4f4239a0afb0dd1941a0359ba6bec95eb0ccf628",
+    "name": "Monocle3",
+    "repository": "https://github.com/cole-trapnell-lab/monocle3.git",
+    "sha256": "f14316ae6050718f5b0779a644a4b3c9958877b388151e607b36e895092d7792",
+    "tree": "b66f99042bf3a13cd7848fcb4d1cc5093134afe4",
+    "version": "1.4.26"
+  },
+  "host": {
+    "archive": "environment/host-source.tar.gz",
+    "archive_file_count": 455,
+    "commit": "258a250c7b27e70f6651443d9835cd3c289c51ee",
+    "name": "Seurat",
+    "repository": "https://github.com/satijalab/seurat.git",
+    "sha256": "ec63d2ffc7536ae16949c6de75a03bc574a3520f9f8651bfcfd04e59255dc00b",
+    "tree": "6965b1a4697ef62a6d9a51af21f0ad4587812b40",
+    "version": "5.5.1.9000"
+  },
+  "reference_runtime": {
+    "image": "quay.io/biocontainers/r-monocle3@sha256:513fa87e98bebc2bc81442d779788866acfe9c29d42ec345db65d9818405050a",
+    "monocle3_version": "1.4.26",
+    "r_version": "4.4.3"
+  }
+}

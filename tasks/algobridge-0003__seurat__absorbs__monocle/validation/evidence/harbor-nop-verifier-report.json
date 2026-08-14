@@ -1,0 +1,247 @@
+{
+  "task": "algobridge-0003__seurat__absorbs__monocle",
+  "reference": "locked real Monocle3 1.4.26 project2MST plus order_cells",
+  "pseudotime_tolerance": 1e-08,
+  "source_audit": {
+    "passed": false,
+    "findings": "missing R/principal_graph_pseudotime.R"
+  },
+  "public": {
+    "passed": 0,
+    "total": 5,
+    "cases": [
+      {
+        "name": "public_line_root_vertex",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "public_y_branch",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "public_curved_root_cell",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "public_cycle",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "public_two_components",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      }
+    ]
+  },
+  "hidden": {
+    "passed": 0,
+    "total": 15,
+    "cases": [
+      {
+        "name": "hidden_long_line",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "hidden_middle_root",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "hidden_y_reverse_root",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "hidden_star",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "hidden_three_dimensions",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "hidden_triangle_cycle",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "hidden_cycle_with_tail",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "hidden_two_components_vertices",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "hidden_two_components_cells",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "hidden_near_projection_ties",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "hidden_irregular_lengths",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "hidden_root_cell",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "hidden_cell_order",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "hidden_dense_edges",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      },
+      {
+        "name": "hidden_three_components",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "invalid_input",
+        "reason": "status mismatch"
+      }
+    ]
+  },
+  "invalid": {
+    "passed": 10,
+    "total": 10,
+    "cases": [
+      {
+        "name": "wrong_schema",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "unsupported_dimensions",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "duplicate_cells",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "nonsequential_vertices",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "unknown_edge_vertex",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "self_loop",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "missing_root",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "two_root_modes",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "unknown_root",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "unrooted_component",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      }
+    ]
+  },
+  "metamorphic": {
+    "passed": 0,
+    "total": 2,
+    "cases": [
+      {
+        "name": "edge_order_and_direction",
+        "passed": false,
+        "pseudotime_invariance_error": null,
+        "categorical_fields_invariant": false
+      },
+      {
+        "name": "cell_permutation",
+        "passed": false,
+        "pseudotime_invariance_error": null,
+        "categorical_fields_invariant": false
+      }
+    ]
+  },
+  "reward": 0,
+  "reward_rule": "hidden pass fraction; source audit gates to zero; incomplete invalid or metamorphic coverage caps an otherwise perfect score at 14/15"
+}

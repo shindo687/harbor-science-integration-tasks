@@ -1,0 +1,17 @@
+{
+  "algorithm": "principal-graph cell projection and root-oriented geodesic pseudotime",
+  "donor": "Monocle3 1.4.26",
+  "host": "Seurat 5.5.1.9000",
+  "id": "ALGOBRIDGE-0003",
+  "oracle_reference": "real locked Monocle3 project2MST plus order_cells",
+  "scope": "bounded named 2D/3D embeddings with a supplied small undirected principal graph",
+  "status": "accepted",
+  "verification": {
+    "harbor_nop_reward": 0.0,
+    "harbor_oracle_reward": 1.0,
+    "hidden": "15/15",
+    "invalid": "10/10",
+    "metamorphic": "2/2",
+    "public": "5/5"
+  }
+}

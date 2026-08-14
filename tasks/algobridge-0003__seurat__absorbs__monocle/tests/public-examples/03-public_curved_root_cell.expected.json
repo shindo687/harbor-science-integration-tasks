@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "cell_names": ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9"],
+  "pseudotime": [0, 0.44621212121212117, 0.89242424242424256, 1.4290618216211015, 1.7540618216211017, 2.0790618216211016, 2.3808816393048748, 2.9180028514260865, 3.4551240635472986],
+  "closest_vertex": ["Y_1", "Y_1", "Y_2", "Y_2", "Y_3", "Y_3", "Y_3", "Y_4", "Y_4"],
+  "cell_state": ["node:Y_1", "node:Y_1", "segment:Y_2", "segment:Y_2", "segment:Y_2", "segment:Y_2", "segment:Y_2", "segment:Y_2", "segment:Y_2"],
+  "vertex_names": ["Y_1", "Y_2", "Y_3", "Y_4"],
+  "vertex_role": ["root", "internal", "internal", "leaf"],
+  "root_vertices": "Y_1"
+}

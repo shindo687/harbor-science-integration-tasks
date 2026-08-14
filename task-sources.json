@@ -14,6 +14,12 @@
       "commit": "e6deab9534749c394ee7c30bd4ab87a4f3f04c4d"
     },
     {
+      "name": "algobridge-0003__seurat__absorbs__monocle",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0003__seurat__absorbs__monocle.git",
+      "commit": "d8e6190c1352d1ed22081a896374dd5fa12361de"
+    },
+    {
       "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
       "suite": "AlgoBridge",
       "origin": "https://github.com/shindo687/algobridge-0004__seurat__absorbs__clusterprofiler.git",
