@@ -1,0 +1,196 @@
+{
+  "candidate": {
+    "fatal": null,
+    "isolation_checks": {
+      "reference_host_removed": true,
+      "reference_runner_unreadable": true,
+      "reference_venv_removed": true,
+      "tests_unreadable": true,
+      "wheelhouse_removed": true
+    },
+    "networkx_file": "/testbed/networkx/__init__.py",
+    "networkx_version": "3.7rc0.dev0",
+    "stderr_tail": ""
+  },
+  "candidate_isolation_probe": {
+    "reference_host_removed": true,
+    "reference_runner_unreadable": true,
+    "reference_venv_removed": true,
+    "tests_unreadable": true,
+    "wheelhouse_removed": true
+  },
+  "elapsed_seconds": 15.496272802352905,
+  "forbidden_findings": [],
+  "hard_gates": {
+    "candidate_clean_runtime": true,
+    "candidate_private_paths_inaccessible": true,
+    "candidate_tree_locked": true,
+    "donor_removed_before_candidate": true,
+    "forbidden_dependency_scan": true,
+    "host_regression": true,
+    "label_rename_invariant": true,
+    "locked_reference_pipeline": true
+  },
+  "hard_gates_passed": true,
+  "host_regression": {
+    "returncode": 0,
+    "stderr_tail": "/testbed/networkx/conftest.py:52: UserWarning: \n\n             WARNING: Mixed NetworkX configuration! \n\n        This environment has mixed configuration for networkx.\n        The test object nx_loopback is not configured correctly.\n        You should not be seeing this message.\n        Try `pip install -e .`, or change your PYTHONPATH\n        Make sure python finds the networkx repo you are testing\n\n\n  warnings.warn(\n",
+    "stdout_tail": "........................................................................ [ 36%]\n........................................................................ [ 72%]\n......................................................                   [100%]\n=============================== warnings summary ===============================\n../usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:475\n  /usr/local/lib/python3.12/site-packages/_pytest/cacheprovider.py:475: PytestCacheWarning: could not create cache path /testbed/.pytest_cache/v/cache/nodeids: [Errno 13] Permission denied: '/testbed/pytest-cache-files-5k_7p3gw'\n    config.cache.set(\"cache/nodeids\", sorted(self.cached_nodeids))\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n198 passed, 1 warning in 3.08s\n"
+  },
+  "passed": 2,
+  "points": [
+    {
+      "ari": 0.3652445369406868,
+      "eigenvalue_error": 4.05407999787851e-16,
+      "name": "two_moons",
+      "normalized_cut_error": 0.0,
+      "passed": false,
+      "projector_error": 1.0000000000000004
+    },
+    {
+      "ari": 0.19356421073285593,
+      "eigenvalue_error": 0.003335439872434267,
+      "name": "weighted_sbm",
+      "normalized_cut_error": 0.004628421047550346,
+      "passed": false,
+      "projector_error": 0.9999999999365955
+    },
+    {
+      "ari": 0.25865580448065173,
+      "eigenvalue_error": 8.881788131901764e-16,
+      "name": "disconnected_components",
+      "normalized_cut_error": 0.0,
+      "passed": false,
+      "projector_error": 1.0000000000000002
+    },
+    {
+      "ari": 0.13768115942028986,
+      "eigenvalue_error": 3.191891195797325e-16,
+      "name": "isolates",
+      "normalized_cut_error": 0.0,
+      "passed": false,
+      "projector_error": 1.0
+    },
+    {
+      "ari": 0.3244444444444445,
+      "eigenvalue_error": 0.0013202954985923685,
+      "name": "weighted_ties",
+      "normalized_cut_error": 0.0013324450366422385,
+      "passed": false,
+      "projector_error": 0.9999999896003945
+    },
+    {
+      "ari": 0.23333333333333334,
+      "eigenvalue_error": 4.579511333237212e-16,
+      "name": "degenerate_eigenspace",
+      "normalized_cut_error": 0.0,
+      "passed": false,
+      "projector_error": 1.0000000000000004
+    },
+    {
+      "ari": -0.0355029585798816,
+      "eigenvalue_error": 0.0005596944442033836,
+      "name": "heterogeneous_degree",
+      "normalized_cut_error": 0.0005600672080649678,
+      "passed": false,
+      "projector_error": 0.9999999942577806
+    },
+    {
+      "ari": 0.34465020576131683,
+      "eigenvalue_error": 0.0015273124267976496,
+      "name": "weighted_path",
+      "normalized_cut_error": 0.002103602564591883,
+      "passed": false,
+      "projector_error": 0.9999999999990502
+    },
+    {
+      "ari": 0.32333333333333336,
+      "eigenvalue_error": 0.0007223084985100527,
+      "name": "ring_of_cliques",
+      "normalized_cut_error": 0.001999200319872051,
+      "passed": false,
+      "projector_error": 0.9999999999999991
+    },
+    {
+      "ari": 0.006642512077294592,
+      "eigenvalue_error": 0.002746138191643392,
+      "name": "weighted_grid",
+      "normalized_cut_error": 0.0028380722131707567,
+      "passed": false,
+      "projector_error": 0.9999998592979392
+    },
+    {
+      "ari": 0.11294765840220385,
+      "eigenvalue_error": 0.001223878410265366,
+      "name": "barbell",
+      "normalized_cut_error": 0.009615606869611448,
+      "passed": false,
+      "projector_error": 1.0
+    },
+    {
+      "ari": 0.4569023301257655,
+      "eigenvalue_error": 0.00033520889585390173,
+      "name": "four_blocks",
+      "normalized_cut_error": 0.0005984781822015291,
+      "passed": false,
+      "projector_error": 0.9999999999999999
+    },
+    {
+      "ari": 1.0,
+      "eigenvalue_error": 0.0,
+      "name": "node_insertion_order_invariant",
+      "normalized_cut_error": 0.0,
+      "passed": true,
+      "projector_error": 0.0
+    },
+    {
+      "clusters": 3,
+      "components": 3,
+      "name": "disconnected_components_not_mixed",
+      "no_cluster_mixes_components": false,
+      "no_component_split": false,
+      "passed": false
+    },
+    {
+      "contract_checks": [
+        {
+          "name": "directed",
+          "rejected": true
+        },
+        {
+          "name": "multigraph",
+          "rejected": true
+        },
+        {
+          "name": "negative_weight",
+          "rejected": true
+        },
+        {
+          "name": "assign_labels",
+          "rejected": true
+        },
+        {
+          "name": "cluster_count",
+          "rejected": true
+        }
+      ],
+      "host_regression_passed": true,
+      "name": "api_contract_and_host_regression",
+      "passed": true
+    }
+  ],
+  "reference": {
+    "locked_donor_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+    "provenance": {
+      "networkx_file": "/opt/reference-host/networkx/__init__.py",
+      "networkx_version": "3.7rc0.dev0",
+      "numpy_version": "2.3.2",
+      "sklearn_file": "/opt/reference-venv/lib/python3.12/site-packages/sklearn/__init__.py",
+      "sklearn_version": "1.10.dev0"
+    },
+    "stderr_tail": ""
+  },
+  "reward": 0.13333333333333333,
+  "task": "algobridge-0029__networkx__absorbs__scikit-learn",
+  "total": 15
+}

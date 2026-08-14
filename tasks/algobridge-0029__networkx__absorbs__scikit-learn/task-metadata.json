@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "task_id": "algobridge-0029__networkx__absorbs__scikit-learn",
+  "algorithm_question_id": "ALGOBRIDGE-0029",
+  "candidate_id": "WFBRIDGE-0408",
+  "authoring_state": "accepted",
+  "execution_target": "cpu",
+  "title": "NetworkX 原生 normalized spectral clustering",
+  "domain": "network-science",
+  "algorithm_family": "spectral graph theory / clustering",
+  "algorithm": "scikit-learn normalized spectral clustering",
+  "bounded_subset": "无向加权图，symmetric normalized Laplacian，smallest eigenvectors，row normalization 与 deterministic k-means；支持 disconnected graph；不含 Nyström/AMG。",
+  "host_software": "NetworkX",
+  "donor_software": "scikit-learn",
+  "workflow_source": "NetworkX",
+  "workflow_target": "scikit-learn",
+  "host_side": "source",
+  "unique_paper_count": 5,
+  "paper_ids": [
+    "811107415930961920",
+    "817349715464028163",
+    "1119297431809294340",
+    "1229630512931274752",
+    "1251071421174513675"
+  ],
+  "input_contract": "NetworkX graph、n_clusters、assign_labels=kmeans、seed、eigen tolerance。",
+  "output_contract": "node->cluster partition、eigenvalues/embedding、normalized-cut score。",
+  "reference_pipeline": "NetworkX adjacency 交给锁定 sklearn SpectralClustering。",
+  "candidate_interface": "NetworkX 新增 spectral_clustering，不得 import scikit-learn。",
+  "verification": {
+    "model": "original_A_plus_B_vs_merged_host",
+    "numeric_comparison": "partition 用 label-permutation invariant ARI=1；eigenspace projector 1e-6；Ncut 1e-8。",
+    "scientific_invariants": [
+      "cluster label 重命名不影响 partition",
+      "node insertion order 不影响规范结果",
+      "完全断开的 components 在 k 足够时不被拆混"
+    ],
+    "fixtures": "two moons graph、SBM、disconnected components、isolates、weighted ties、degenerate eigenvalues。"
+  },
+  "non_glue_reason": "核心是 Laplacian 谱分解和聚类优化，而非图格式适配。",
+  "implementation_scope": "medium",
+  "estimated_changed_loc": "350-700",
+  "difficulty": "hard",
+  "license": {
+    "status": "low_risk_direction_available",
+    "host_license": "BSD licenses",
+    "donor_license": "3-clause BSD License",
+    "clean_room_required": true
+  },
+  "source_locks": {
+    "host": {
+      "software": "NetworkX",
+      "repo": "https://github.com/NetworkX/NetworkX",
+      "url": "https://github.com/NetworkX/NetworkX",
+      "status": "locked",
+      "head_commit": "30bfe1b2c32afa8d3abdc4d2a10bcacd33b3dce5",
+      "resolved_at": "2026-08-12T03:22:20.710318+00:00",
+      "stderr": ""
+    },
+    "donor": {
+      "software": "scikit-learn",
+      "repo": "https://github.com/scikit-learn/scikit-learn",
+      "url": "https://github.com/scikit-learn/scikit-learn",
+      "status": "locked",
+      "head_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+      "resolved_at": "2026-08-12T03:22:23.597342+00:00",
+      "stderr": ""
+    },
+    "workflow_source": {
+      "software": "NetworkX",
+      "repo": "https://github.com/NetworkX/NetworkX",
+      "url": "https://github.com/NetworkX/NetworkX",
+      "status": "locked",
+      "head_commit": "30bfe1b2c32afa8d3abdc4d2a10bcacd33b3dce5",
+      "resolved_at": "2026-08-12T03:22:20.710318+00:00",
+      "stderr": ""
+    },
+    "workflow_target": {
+      "software": "scikit-learn",
+      "repo": "https://github.com/scikit-learn/scikit-learn",
+      "url": "https://github.com/scikit-learn/scikit-learn",
+      "status": "locked",
+      "head_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+      "resolved_at": "2026-08-12T03:22:23.597342+00:00",
+      "stderr": ""
+    }
+  }
+}

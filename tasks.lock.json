@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "complete": false,
-  "task_count": 4,
+  "task_count": 5,
   "tasks": [
     {
       "name": "algobridge-0004__seurat__absorbs__clusterprofiler",
@@ -29,6 +29,15 @@
       "source_tree": "4a7d28d6692a60f82baec92d4e7ce074fc82b4bf",
       "file_count": 3744,
       "bytes": 178904167
+    },
+    {
+      "name": "algobridge-0029__networkx__absorbs__scikit-learn",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0029__networkx__absorbs__scikit-learn.git",
+      "commit": "a1f4fd37242fd656af49642b3b0c829e714a08e5",
+      "source_tree": "57afb1dea8f0a07f4a729e3cb9600e99f0388ad3",
+      "file_count": 3592,
+      "bytes": 161916051
     },
     {
       "name": "structharbor-0002__colabfold__absorbs__dockq-and-ipsae",

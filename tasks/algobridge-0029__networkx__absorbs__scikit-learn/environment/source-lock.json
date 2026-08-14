@@ -1,0 +1,47 @@
+{
+  "host": {
+    "software": "NetworkX",
+    "repo": "https://github.com/NetworkX/NetworkX",
+    "url": "https://github.com/NetworkX/NetworkX",
+    "status": "locked",
+    "head_commit": "30bfe1b2c32afa8d3abdc4d2a10bcacd33b3dce5",
+    "resolved_at": "2026-08-12T03:22:20.710318+00:00",
+    "stderr": ""
+  },
+  "donor": {
+    "software": "scikit-learn",
+    "repo": "https://github.com/scikit-learn/scikit-learn",
+    "url": "https://github.com/scikit-learn/scikit-learn",
+    "status": "locked",
+    "head_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+    "resolved_at": "2026-08-12T03:22:23.597342+00:00",
+    "stderr": ""
+  },
+  "workflow_source": {
+    "software": "NetworkX",
+    "repo": "https://github.com/NetworkX/NetworkX",
+    "url": "https://github.com/NetworkX/NetworkX",
+    "status": "locked",
+    "head_commit": "30bfe1b2c32afa8d3abdc4d2a10bcacd33b3dce5",
+    "resolved_at": "2026-08-12T03:22:20.710318+00:00",
+    "stderr": ""
+  },
+  "materialization": {
+    "normalizations": [
+      {
+        "path": "benchmarks/pyproject.toml",
+        "reason": "Locked Git blob is a symlink target with a trailing newline and is therefore broken on POSIX filesystems; materialized as a byte-identical copy of the root pyproject.toml for Harbor portability.",
+        "sha256": "a4b61213f694bbe8bc6a50423cfbe2ad85a6eb1c90f9d4588eed9ef5da63f55a"
+      }
+    ]
+  },
+  "workflow_target": {
+    "software": "scikit-learn",
+    "repo": "https://github.com/scikit-learn/scikit-learn",
+    "url": "https://github.com/scikit-learn/scikit-learn",
+    "status": "locked",
+    "head_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+    "resolved_at": "2026-08-12T03:22:23.597342+00:00",
+    "stderr": ""
+  }
+}

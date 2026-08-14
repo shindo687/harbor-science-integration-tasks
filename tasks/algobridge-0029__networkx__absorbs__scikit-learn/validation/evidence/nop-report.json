@@ -1,0 +1,45 @@
+{
+  "candidate": {
+    "fatal": "AttributeError: networkx.spectral_clustering is missing",
+    "isolation_checks": {},
+    "networkx_file": null,
+    "networkx_version": null,
+    "stderr_tail": ""
+  },
+  "candidate_isolation_probe": {
+    "reference_host_removed": true,
+    "reference_runner_unreadable": true,
+    "reference_venv_removed": true,
+    "tests_unreadable": true,
+    "wheelhouse_removed": true
+  },
+  "elapsed_seconds": 11.40605878829956,
+  "fatal_error": "RuntimeError: candidate runner failed: AttributeError: networkx.spectral_clustering is missing",
+  "forbidden_findings": [],
+  "hard_gates": {
+    "candidate_clean_runtime": false,
+    "candidate_private_paths_inaccessible": true,
+    "candidate_tree_locked": true,
+    "donor_removed_before_candidate": true,
+    "forbidden_dependency_scan": true,
+    "label_rename_invariant": true,
+    "locked_reference_pipeline": true
+  },
+  "hard_gates_passed": false,
+  "passed": 0,
+  "points": [],
+  "reference": {
+    "locked_donor_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+    "provenance": {
+      "networkx_file": "/opt/reference-host/networkx/__init__.py",
+      "networkx_version": "3.7rc0.dev0",
+      "numpy_version": "2.3.2",
+      "sklearn_file": "/opt/reference-venv/lib/python3.12/site-packages/sklearn/__init__.py",
+      "sklearn_version": "1.10.dev0"
+    },
+    "stderr_tail": ""
+  },
+  "reward": 0.0,
+  "task": "algobridge-0029__networkx__absorbs__scikit-learn",
+  "total": 15
+}
