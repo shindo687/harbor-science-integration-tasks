@@ -1,0 +1,505 @@
+{
+  "build": {
+    "binary_sha256": "6272f4526ab1b58549b64350328890bb7b93a9bb311e445d3fb066c88bb2c48c",
+    "command": [
+      "g++",
+      "-std=c++11",
+      "-O3",
+      "-Wall",
+      "-Wextra",
+      "-pedantic",
+      "/testbed/src/hhcontacts.cpp",
+      "-o",
+      "/testbed/hhcontacts"
+    ],
+    "help": "pass"
+  },
+  "cases": [
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.999731036598498,
+        "objective_absolute_error": 8.297867822033368,
+        "raw_correlation": 0.999299096850468,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 4.440892098500626e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "short_coupled"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9998944748238373,
+        "objective_absolute_error": 8.830909181945174,
+        "raw_correlation": 0.9992144703684244,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 5.551115123125783e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "duplicate_families"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9999951049718812,
+        "objective_absolute_error": 13.80940453306198,
+        "raw_correlation": 0.9999850428243734,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 7.771561172376096e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "gap_heavy"
+    },
+    {
+      "components": {
+        "apc": false,
+        "objective": false,
+        "raw": false,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9987632139932064,
+        "objective_absolute_error": 11.88542407309177,
+        "raw_correlation": 0.9958430642734757,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 3.3306690738754696e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "uniform_weights"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9999966338002626,
+        "objective_absolute_error": 13.959564219189758,
+        "raw_correlation": 0.9999909217108197,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 4.440892098500626e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "a3m_insertions"
+    },
+    {
+      "components": {
+        "apc": false,
+        "objective": false,
+        "raw": false,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9957704344687407,
+        "objective_absolute_error": 5.069306100695506,
+        "raw_correlation": 0.9905789532606145,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 6.661338147750939e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "minimum_length"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9999747556273221,
+        "objective_absolute_error": 7.994518408686574,
+        "raw_correlation": 0.9999787223065247,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 1.1102230246251565e-15,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "two_latent_pairs"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": false
+      },
+      "errors": {
+        "apc_correlation": 0.9999902920816344,
+        "objective_absolute_error": 11.129419186014417,
+        "raw_correlation": 0.9999448635427972,
+        "top_l2_overlap": 0.8
+      },
+      "invariants": {
+        "apc_formula_max_error": 3.3306690738754696e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "weight_boundary"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9998479240925947,
+        "objective_absolute_error": 9.779369514214153,
+        "raw_correlation": 0.9990535732956913,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 4.440892098500626e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "duplicate_pairs"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9998350390365576,
+        "objective_absolute_error": 15.713745520301586,
+        "raw_correlation": 0.9997095458209155,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 5.551115123125783e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "terminal_gaps"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9999559790158069,
+        "objective_absolute_error": 21.0120045239222,
+        "raw_correlation": 0.9992772319526884,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 3.3306690738754696e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "three_couplings"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": false,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9999728088772615,
+        "objective_absolute_error": 21.282499994028512,
+        "raw_correlation": 0.9989494159483489,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 2.220446049250313e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "mixed_insertions"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.999998672657731,
+        "objective_absolute_error": 25.3959448534099,
+        "raw_correlation": 0.9999719865515625,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 3.3306690738754696e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "low_reweight"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.999995988316635,
+        "objective_absolute_error": 21.704233227030045,
+        "raw_correlation": 0.9998280110595481,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 4.996003610813204e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "strong_regularization"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9999581416558004,
+        "objective_absolute_error": 26.538950685158397,
+        "raw_correlation": 0.9997555588671141,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 1.1657341758564144e-15,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "sparse_gaps"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9999945720311388,
+        "objective_absolute_error": 28.438189590050797,
+        "raw_correlation": 0.9998105028912551,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 6.661338147750939e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "four_couplings"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": false
+      },
+      "errors": {
+        "apc_correlation": 0.9999850809893898,
+        "objective_absolute_error": 26.00858285226218,
+        "raw_correlation": 0.999466810751864,
+        "top_l2_overlap": 0.9285714285714286
+      },
+      "invariants": {
+        "apc_formula_max_error": 6.661338147750939e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "large_duplicates"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9999905681161066,
+        "objective_absolute_error": 31.434211240750756,
+        "raw_correlation": 0.9999449100776897,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 1.1102230246251565e-15,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "long_gap_heavy"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9999994880288249,
+        "objective_absolute_error": 10.073407230604516,
+        "raw_correlation": 0.9999614936002075,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 4.440892098500626e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "largest_fixture"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": false,
+        "raw": false,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9997401309201122,
+        "objective_absolute_error": 5.644307070730065,
+        "raw_correlation": 0.996613470535118,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 2.7755575615628914e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "seed_contract"
+    }
+  ],
+  "hidden_cases": 15,
+  "invalid_inputs": {
+    "duplicate": true,
+    "iterations": true,
+    "l2": true,
+    "residue": true,
+    "seed": true,
+    "threshold": true,
+    "too_long": true,
+    "unequal": true
+  },
+  "isolation": {
+    "/opt/donor-source": {
+      "list": false,
+      "read": false
+    },
+    "/opt/pristine-host": {
+      "list": false,
+      "read": false
+    },
+    "/opt/reference-ccmpred": {
+      "list": false,
+      "read": false
+    },
+    "/opt/source-archives": {
+      "list": false,
+      "read": false
+    },
+    "/opt/task-source-lock.json": {
+      "list": false,
+      "read": false
+    },
+    "/tests": {
+      "list": false,
+      "read": false
+    }
+  },
+  "provenance": {
+    "build_patch": true,
+    "donor_archive": true,
+    "donor_member_count": true,
+    "host_archive": true,
+    "host_member_count": true,
+    "lock_copies": true,
+    "reference_binary": true
+  },
+  "public_cases": 5,
+  "reward": 0.65,
+  "row_permutation": {
+    "apc_correlation": 1.0,
+    "objective_absolute_error": 2.842170943040401e-14,
+    "raw_correlation": 1.0,
+    "top_l2_equal": true
+  },
+  "scientific_components_passed": 52,
+  "scientific_components_total": 80,
+  "source_integrity": {
+    "baseline_files": 581,
+    "candidate_source_bytes": 23532
+  },
+  "source_policy": {
+    "donor_windows": 23492,
+    "forbidden_patterns": 5,
+    "overlap": 0
+  },
+  "status": "partial"
+}

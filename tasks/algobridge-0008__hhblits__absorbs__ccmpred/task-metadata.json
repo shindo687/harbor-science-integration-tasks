@@ -1,0 +1,13 @@
+{
+  "id": "algobridge-0008",
+  "host": "HH-suite / HHblits",
+  "donor": "CCMpred",
+  "capability": "bounded CPU pseudo-likelihood Potts contact scoring with APC",
+  "domain": "sequence-analysis",
+  "algorithm_family": "regularized pseudo-likelihood Potts models",
+  "difficulty": "expert",
+  "status": "accepted",
+  "reference": "locked official CCMpred CPU mode",
+  "candidate": "modified HH-suite only",
+  "license_review": "GPL-3.0 host; AGPL-3.0-or-later donor retained only as verifier/source-provenance asset; clean-room candidate required"
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "complete": true,
-  "task_count": 34,
+  "task_count": 35,
   "tasks": [
     {
       "name": "algobridge-0001__scanpy__absorbs__bbknn",
@@ -93,6 +93,19 @@
       "lfs_object_count": 0,
       "lfs_bytes": 0,
       "materialized_bytes": 1415372
+    },
+    {
+      "name": "algobridge-0008__hhblits__absorbs__ccmpred",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0008__hhblits__absorbs__ccmpred.git",
+      "commit": "63cbf19701942bd72ddc5c9c7ec4f49608896c74",
+      "source_tree": "2d912be6cbf4af67adc37d9dd37cac417941fb12",
+      "file_count": 56,
+      "git_blob_bytes": 13915666,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 13915666
     },
     {
       "name": "algobridge-0009__gatk__absorbs__hap-py",

@@ -1,0 +1,505 @@
+{
+  "build": {
+    "binary_sha256": "99f094866a2f1e6f9b2393f8cb49cc9ff2dca9e75870c83f11842ddfd1483092",
+    "command": [
+      "g++",
+      "-std=c++11",
+      "-O3",
+      "-Wall",
+      "-Wextra",
+      "-pedantic",
+      "/testbed/src/hhcontacts.cpp",
+      "-o",
+      "/testbed/hhcontacts"
+    ],
+    "help": "pass"
+  },
+  "cases": [
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 3.288735399564757e-07,
+        "raw_correlation": 1.0,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 4.440892098500626e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "short_coupled"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 2.590992096429545e-07,
+        "raw_correlation": 1.0,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 5.551115123125783e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "duplicate_families"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 2.993022008013213e-07,
+        "raw_correlation": 1.0,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 3.0531133177191805e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "gap_heavy"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 3.3235636465178686e-07,
+        "raw_correlation": 1.0,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 4.440892098500626e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "uniform_weights"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9999999999999999,
+        "objective_absolute_error": 4.224469307700929e-07,
+        "raw_correlation": 1.0,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 5.551115123125783e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "a3m_insertions"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 3.980840403983166e-07,
+        "raw_correlation": 1.0,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 4.440892098500626e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "minimum_length"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9999999999999999,
+        "objective_absolute_error": 1.6441813954770623e-07,
+        "raw_correlation": 1.0,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 6.661338147750939e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "two_latent_pairs"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 1.8225208009425842e-07,
+        "raw_correlation": 1.0000000000000002,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 5.551115123125783e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "weight_boundary"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 0.9999999999999998,
+        "objective_absolute_error": 1.590167357790051e-07,
+        "raw_correlation": 0.9999999999999998,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 3.3306690738754696e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "duplicate_pairs"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 1.694302227406297e-07,
+        "raw_correlation": 1.0000000000000002,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 8.881784197001252e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "terminal_gaps"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 3.28647388414538e-07,
+        "raw_correlation": 1.0,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 4.440892098500626e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "three_couplings"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 1.1528641152835917e-07,
+        "raw_correlation": 0.9999999999999999,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 4.440892098500626e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "mixed_insertions"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 4.541861926554702e-07,
+        "raw_correlation": 1.0000000000000002,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 5.551115123125783e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "low_reweight"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 1.902458279801067e-07,
+        "raw_correlation": 1.0,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 2.7755575615628914e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "strong_regularization"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 2.764138571365038e-07,
+        "raw_correlation": 0.9999999999999999,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 4.440892098500626e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "sparse_gaps"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 4.695177722169319e-07,
+        "raw_correlation": 1.0,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 5.551115123125783e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "four_couplings"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 3.419067979848478e-07,
+        "raw_correlation": 1.0,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 6.661338147750939e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "large_duplicates"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 9.9231783678988e-08,
+        "raw_correlation": 1.0,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 6.106226635438361e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "long_gap_heavy"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 3.811728674918413e-07,
+        "raw_correlation": 1.0,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 6.661338147750939e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "largest_fixture"
+    },
+    {
+      "components": {
+        "apc": true,
+        "objective": true,
+        "raw": true,
+        "top_l2": true
+      },
+      "errors": {
+        "apc_correlation": 1.0,
+        "objective_absolute_error": 2.876521421057987e-07,
+        "raw_correlation": 0.9999999999999999,
+        "top_l2_overlap": 1.0
+      },
+      "invariants": {
+        "apc_formula_max_error": 5.551115123125783e-16,
+        "apc_symmetric_zero_diagonal": true,
+        "raw_symmetric_zero_diagonal": true,
+        "top_contacts_consistent": true
+      },
+      "name": "seed_contract"
+    }
+  ],
+  "hidden_cases": 15,
+  "invalid_inputs": {
+    "duplicate": true,
+    "iterations": true,
+    "l2": true,
+    "residue": true,
+    "seed": true,
+    "threshold": true,
+    "too_long": true,
+    "unequal": true
+  },
+  "isolation": {
+    "/opt/donor-source": {
+      "list": false,
+      "read": false
+    },
+    "/opt/pristine-host": {
+      "list": false,
+      "read": false
+    },
+    "/opt/reference-ccmpred": {
+      "list": false,
+      "read": false
+    },
+    "/opt/source-archives": {
+      "list": false,
+      "read": false
+    },
+    "/opt/task-source-lock.json": {
+      "list": false,
+      "read": false
+    },
+    "/tests": {
+      "list": false,
+      "read": false
+    }
+  },
+  "provenance": {
+    "build_patch": true,
+    "donor_archive": true,
+    "donor_member_count": true,
+    "host_archive": true,
+    "host_member_count": true,
+    "lock_copies": true,
+    "reference_binary": true
+  },
+  "public_cases": 5,
+  "reward": 1.0,
+  "row_permutation": {
+    "apc_correlation": 1.0000000000000002,
+    "objective_absolute_error": 2.842170943040401e-14,
+    "raw_correlation": 0.9999999999999999,
+    "top_l2_equal": true
+  },
+  "scientific_components_passed": 80,
+  "scientific_components_total": 80,
+  "source_integrity": {
+    "baseline_files": 581,
+    "candidate_source_bytes": 23532
+  },
+  "source_policy": {
+    "donor_windows": 23492,
+    "forbidden_patterns": 5,
+    "overlap": 0
+  },
+  "status": "passed"
+}

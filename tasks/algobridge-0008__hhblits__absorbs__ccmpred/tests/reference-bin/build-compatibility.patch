@@ -1,0 +1,19 @@
+diff --git a/src/conjugrad.c b/src/conjugrad.c
+index a258691..cc62dfb 100644
+--- a/src/conjugrad.c
++++ b/src/conjugrad.c
+@@ -1,11 +1,11 @@
+-#include "conjugrad.h"
+-#include "arithmetic.h"
+-
+ #include <math.h>
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <stdbool.h>
+ 
++#include "conjugrad.h"
++#include "arithmetic.h"
++
+ 
+ void swap(conjugrad_float_t **a, conjugrad_float_t **b) {
+ 	conjugrad_float_t *c = *a;

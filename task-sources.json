@@ -44,6 +44,12 @@
       "commit": "b3fd38093c9b3e1a08d5f82a906ddd3f2a61ee3d"
     },
     {
+      "name": "algobridge-0008__hhblits__absorbs__ccmpred",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0008__hhblits__absorbs__ccmpred.git",
+      "commit": "63cbf19701942bd72ddc5c9c7ec4f49608896c74"
+    },
+    {
       "name": "algobridge-0009__gatk__absorbs__hap-py",
       "suite": "AlgoBridge",
       "origin": "https://github.com/shindo687/algobridge-0009__gatk__absorbs__hap-py.git",

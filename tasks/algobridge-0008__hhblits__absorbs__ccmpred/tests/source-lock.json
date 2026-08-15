@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "task": "algobridge-0008__hhblits__absorbs__ccmpred",
+  "host": {
+    "name": "HH-suite / HHblits",
+    "repository": "https://github.com/soedinglab/hh-suite",
+    "commit": "43095e46ada4ec2a8a47d47ef5ad7e38b1429f7b",
+    "tree": "632486e75cc3ca06d225455038fd469602453086",
+    "commit_date": "2025-08-12T17:47:42+09:00",
+    "license": "GPL-3.0-only",
+    "license_sha256": "589ed823e9a84c56feb95ac58e7cf384626b9cbf4fda2a907bc36e103de1bad2",
+    "archive": "host-source.tar.gz",
+    "archive_sha256": "76134adb5a9c942e94f6757664c2c9d008608dfe6cf5cdab94ed8c0c175c8fff",
+    "archive_size": 6680286,
+    "archive_files": 581,
+    "cmake_baseline_sha256": "4d42a7069e4507362adb0bbc4fdba3bffb6e6a1b95f52d82d42a69993eaf5562"
+  },
+  "donor": {
+    "name": "CCMpred",
+    "repository": "https://github.com/soedinglab/CCMpred",
+    "commit": "2919b9c9ae976f73bc4dbb67908170afc3578da8",
+    "tree": "2b7bc25323c5f0fd24bbdf50447d9f1d99240e1d",
+    "commit_date": "2020-08-27T16:01:13+02:00",
+    "license": "AGPL-3.0-or-later",
+    "license_sha256": "57c8ff33c9c0cfc3ef00e650a1cc910d7ee479a8bc509f6c9209a7c2a11399d6",
+    "archive": "donor-source.tar.gz",
+    "archive_sha256": "458c50a70bf21fafecb8bebd934748b5986219e143a56baeaaa5e4905db22b81",
+    "archive_size": 115417,
+    "archive_files": 57,
+    "submodule": {
+      "name": "libconjugrad",
+      "repository": "https://bitbucket.org/soedinglab/libconjugrad.git",
+      "commit": "e503ee8a1e1d392339a1cd3ddd540468fe896cd1",
+      "tree": "02072542e361cf7352c555496f4e8c67b230c8ea"
+    }
+  },
+  "reference_runtime": {
+    "binary": "ccmpred",
+    "sha256": "0bef74b7e079c0d7fce91f6d9998baa053f3729fec4b02c0b4e24cefed0a1ed1",
+    "size": 115896,
+    "build": "CMake Release, CPU-only, OpenMP/CUDA/curses/msgpack/jansson/uuid/padding disabled, CONJUGRAD_FLOAT=64",
+    "toolchain": "GCC 11.4.0, glibc 2.35",
+    "compatibility_patch": "build-compatibility.patch",
+    "compatibility_patch_sha256": "1a0e99773badbfbc980dca8686db729d9af39b45e3547a9514e78a7b73c164df"
+  },
+  "candidate_contract": {
+    "source": "src/hhcontacts.cpp",
+    "cmake": "src/CMakeLists.txt",
+    "expected_cmake_sha256": "95360c53a4a4ef1e691209718cd8f3686b86b6c4a69c836c117ac3be91ec1d7e",
+    "max_source_bytes": 50000
+  },
+  "images": {
+    "agent": "python:3.12.11-bookworm@sha256:13c9584604a99ca134c4f41800f74ffc64ee6ac8cf555cf1e704a6087fc84f12",
+    "verifier": "python:3.12.11-bookworm@sha256:13c9584604a99ca134c4f41800f74ffc64ee6ac8cf555cf1e704a6087fc84f12"
+  }
+}
