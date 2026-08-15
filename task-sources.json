@@ -62,6 +62,12 @@
       "commit": "bee40efe51380ae64b5c66ac51f855be47f6bd05"
     },
     {
+      "name": "algobridge-0013__pdb2pqr__absorbs__apbs",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0013__pdb2pqr__absorbs__apbs.git",
+      "commit": "c7c43106a96c174e1e0ec6693b9c74b2aad9b65f"
+    },
+    {
       "name": "algobridge-0014__crest-conformer-rotamer-ensemble-sampling-tool__absorbs__rdkit",
       "suite": "AlgoBridge",
       "origin": "https://github.com/shindo687/algobridge-0014__crest-conformer-rotamer-ensemble-sampling-tool__absorbs__rdkit.git",

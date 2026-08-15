@@ -1,0 +1,396 @@
+{
+  "candidate_identity": {
+    "reference_paths_readable": false,
+    "uid": 10001
+  },
+  "candidate_isolation": {
+    "protected_paths_unreadable": [
+      "/tests",
+      "/opt/reference-apbs",
+      "/opt/reference-apbs-source",
+      "/opt/reference-wheels",
+      "/opt/pristine-host",
+      "/opt/reference-runner",
+      "/opt/source-archives"
+    ],
+    "uid": 10001
+  },
+  "hidden": {
+    "cases": [
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 1.3282262472102957e-06,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 1.4210854715202004e-14,
+          "independent_absolute_residual": 1.4604129380499333e-07,
+          "independent_relative_residual": 6.647318882201931e-11,
+          "potential_max_abs": 5.2749648276062544e-05
+        },
+        "name": "hidden_off_grid_monopole",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 1.2295819544760889e-06,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 0.0,
+          "independent_absolute_residual": 1.7539249080410965e-07,
+          "independent_relative_residual": 6.897109023186718e-11,
+          "potential_max_abs": 5.838804508329076e-06
+        },
+        "name": "hidden_zero_salt",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 7.45537320767653e-08,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 0.0,
+          "independent_absolute_residual": 1.0934134582244326e-07,
+          "independent_relative_residual": 7.978821763116439e-11,
+          "potential_max_abs": 4.1270113317892765e-06
+        },
+        "name": "hidden_warm_solvent",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 5.336925852361674e-07,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 3.552713678800501e-15,
+          "independent_absolute_residual": 1.8297286537725875e-07,
+          "independent_relative_residual": 8.320654895240198e-11,
+          "potential_max_abs": 5.009636954156349e-06
+        },
+        "name": "hidden_cold_solvent",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 5.873247872045795e-06,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 3.552713678800501e-15,
+          "independent_absolute_residual": 1.551644389075465e-07,
+          "independent_relative_residual": 9.122877773253289e-11,
+          "potential_max_abs": 1.7066679589561318e-05
+        },
+        "name": "hidden_rectangular_x",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 1.6822545170214198e-06,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 0.0,
+          "independent_absolute_residual": 1.4138461475722521e-07,
+          "independent_relative_residual": 8.697975206008268e-11,
+          "potential_max_abs": 7.511847329055854e-06
+        },
+        "name": "hidden_rectangular_y",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 8.836825990954367e-07,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 0.0,
+          "independent_absolute_residual": 1.0045699772850555e-07,
+          "independent_relative_residual": 7.618768615394972e-11,
+          "potential_max_abs": 5.114349633572601e-06
+        },
+        "name": "hidden_rectangular_z",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 5.030225658231302e-08,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 1.7763568394002505e-15,
+          "independent_absolute_residual": 1.463303928699468e-07,
+          "independent_relative_residual": 8.552737110308664e-11,
+          "potential_max_abs": 4.133715940213278e-06
+        },
+        "name": "hidden_three_positive",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 3.4730446429875883e-07,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 0.0,
+          "independent_absolute_residual": 1.6872071887414002e-07,
+          "independent_relative_residual": 9.452513326883213e-11,
+          "potential_max_abs": 4.898243872730745e-06
+        },
+        "name": "hidden_four_neutral",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 2.3471137922115304e-07,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 0.0,
+          "independent_absolute_residual": 1.5002949028254828e-07,
+          "independent_relative_residual": 9.509565860939202e-11,
+          "potential_max_abs": 4.438705124343301e-06
+        },
+        "name": "hidden_five_mixed",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 4.854818769217673e-07,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 0.0,
+          "independent_absolute_residual": 1.8742745730286565e-07,
+          "independent_relative_residual": 9.234754330487306e-11,
+          "potential_max_abs": 2.0848828192754354e-06
+        },
+        "name": "hidden_high_dielectric",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 2.0033452674539376e-08,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 4.440892098500626e-16,
+          "independent_absolute_residual": 1.7519543995233336e-07,
+          "independent_relative_residual": 9.980248453528091e-11,
+          "potential_max_abs": 4.896916339092172e-07
+        },
+        "name": "hidden_uniform_water",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 8.200243861722356e-08,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 1.7763568394002505e-15,
+          "independent_absolute_residual": 1.269645132222288e-07,
+          "independent_relative_residual": 7.537309680718912e-11,
+          "potential_max_abs": 3.8031384264058943e-06
+        },
+        "name": "hidden_uniform_low",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 4.499974792793182e-07,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 0.0,
+          "independent_absolute_residual": 1.478885445813137e-07,
+          "independent_relative_residual": 9.181857485680799e-11,
+          "potential_max_abs": 4.194661997303228e-06
+        },
+        "name": "hidden_net_negative",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 3.8352955300524627e-07,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 0.0,
+          "independent_absolute_residual": 1.0628487920620334e-07,
+          "independent_relative_residual": 9.542782325445001e-11,
+          "potential_max_abs": 4.321175627097773e-06
+        },
+        "name": "hidden_compact_six",
+        "passed": true,
+        "reasons": []
+      }
+    ],
+    "passed": 15,
+    "total": 15
+  },
+  "invalid_contract": {
+    "cases": [
+      {
+        "name": "invalid_schema",
+        "passed": true
+      },
+      {
+        "name": "invalid_dims_even",
+        "passed": true
+      },
+      {
+        "name": "invalid_dims_small",
+        "passed": true
+      },
+      {
+        "name": "invalid_spacing",
+        "passed": true
+      },
+      {
+        "name": "invalid_zmagic",
+        "passed": true
+      },
+      {
+        "name": "invalid_zkappa2",
+        "passed": true
+      },
+      {
+        "name": "invalid_grid_length",
+        "passed": true
+      },
+      {
+        "name": "invalid_dielectric",
+        "passed": true
+      },
+      {
+        "name": "invalid_kappa",
+        "passed": true
+      },
+      {
+        "name": "invalid_charge_nan",
+        "passed": true
+      },
+      {
+        "name": "invalid_tolerance",
+        "passed": true
+      },
+      {
+        "name": "invalid_iterations",
+        "passed": true
+      }
+    ],
+    "passed": 12,
+    "total": 12
+  },
+  "metamorphic": {
+    "cases": [
+      {
+        "name": "operator_source_scale_homogeneity",
+        "passed": true
+      },
+      {
+        "name": "charge_boundary_sign_inversion",
+        "passed": true
+      }
+    ],
+    "passed": 2,
+    "total": 2
+  },
+  "provenance": {
+    "apbs_version": "3.4.1",
+    "archive_asset_and_wheel_checks": 4
+  },
+  "public": {
+    "cases": [
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 1.1658046616958018e-07,
+          "energy_limit": 0.021352945307760003,
+          "energy_self_consistency_abs": 0.0,
+          "independent_absolute_residual": 2.146030253221778e-07,
+          "independent_relative_residual": 6.60540493629275e-11,
+          "potential_max_abs": 3.6642563742361745e-05
+        },
+        "name": "public_single_charge",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 3.3141341759801435e-07,
+          "energy_limit": 0.038789744182200006,
+          "energy_self_consistency_abs": 0.0,
+          "independent_absolute_residual": 2.2573125812187047e-07,
+          "independent_relative_residual": 4.9866536068461004e-11,
+          "potential_max_abs": 4.230494178614208e-05
+        },
+        "name": "public_dipole",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 1.4921642907950172e-06,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 0.0,
+          "independent_absolute_residual": 2.0190182391787235e-07,
+          "independent_relative_residual": 8.585085722974763e-11,
+          "potential_max_abs": 4.205104758625566e-06
+        },
+        "name": "public_anisotropic_triad",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 4.2112811016181695e-08,
+          "energy_limit": 0.02,
+          "energy_self_consistency_abs": 0.0,
+          "independent_absolute_residual": 1.7266416674798227e-07,
+          "independent_relative_residual": 9.251947775832409e-11,
+          "potential_max_abs": 5.144711359150733e-07
+        },
+        "name": "public_single_dielectric",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "boundary_max_abs": 0.0,
+          "energy_abs": 2.738324070605813e-06,
+          "energy_limit": 0.03055001689922,
+          "energy_self_consistency_abs": 5.684341886080802e-14,
+          "independent_absolute_residual": 1.8522359740802486e-07,
+          "independent_relative_residual": 7.141916428734598e-11,
+          "potential_max_abs": 2.9945119024432643e-05
+        },
+        "name": "public_smooth_cluster",
+        "passed": true,
+        "reasons": []
+      }
+    ],
+    "passed": 5,
+    "total": 5
+  },
+  "reference": "official APBS 3.4.1 uniform-grid LPBE (root-only)",
+  "reward": 1.0,
+  "source_policy": {
+    "added": [
+      "pdb2pqr/lpbe_grid.py"
+    ],
+    "allowed_import_scan": "pass",
+    "donor_file_hash_scan": "pass",
+    "forbidden_dependency_scan": "pass",
+    "module_bytes": 6823,
+    "module_sha256": "ea06f5b8ddab6f300fa70b291432515776e220b29bca18b003f30a4771e38df1"
+  },
+  "status": "graded",
+  "task": "ALGOBRIDGE-0013"
+}

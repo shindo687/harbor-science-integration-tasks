@@ -1,0 +1,13 @@
+*
+!Dockerfile
+!host-source.tar.gz
+!donor-source.tar.gz
+!APBS-3.4.1.Linux.zip
+!source-lock.json
+!wheels/
+!wheels/**
+!candidate_runner.py
+!reference_runner.py
+!cases.py
+!grader.py
+!test.sh

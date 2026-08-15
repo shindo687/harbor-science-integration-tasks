@@ -1,0 +1,11 @@
+*
+!Dockerfile
+!host-source.tar.gz
+!donor-source.tar.gz
+!source-lock.json
+!wheels/
+!wheels/**
+!task-tools/
+!task-tools/**
+!public-examples/
+!public-examples/**

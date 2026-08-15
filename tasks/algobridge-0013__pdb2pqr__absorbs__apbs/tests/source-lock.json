@@ -1,0 +1,38 @@
+{
+  "archive_policy": "Complete ordinary tracked files from exact official Git commits; Git metadata and the one recorded APBS pybind11 gitlink are excluded.",
+  "host": {
+    "name": "PDB2PQR",
+    "version": "3.7.1",
+    "repository": "https://github.com/Electrostatics/pdb2pqr.git",
+    "commit": "c714997761cf10797c9f3bd9c84af54579337786",
+    "tree": "f55bf865ce02a9763ceb27afb18440806916508f",
+    "archive": "environment/host-source.tar.gz",
+    "tracked_entries": 208,
+    "archive_file_count": 208,
+    "excluded_gitlinks": 0,
+    "sha256": "b4038953e6d7703905229c3b83935b85f283d4c5bdef9dafcc6a373225307bbb",
+    "license": "BSD-3-Clause"
+  },
+  "donor": {
+    "name": "APBS",
+    "version": "3.4.1",
+    "repository": "https://github.com/Electrostatics/apbs.git",
+    "commit": "f24dd7629a41e253287bbb643589cd2afb776484",
+    "tree": "f5b20b10108515175dc40322ae92e6edba03f86e",
+    "archive": "environment/donor-source.tar.gz",
+    "tracked_entries": 1405,
+    "archive_file_count": 1404,
+    "excluded_gitlinks": 1,
+    "sha256": "93b5db948d66f45f25dc6f3089e87c3a0b551971aadd6c35eed79864b2b139d2",
+    "license": "BSD-3-Clause"
+  },
+  "reference_runtime": {
+    "base_image": "docker.io/library/python@sha256:ffb752e139c0a19692a43af8d8523b274222dd68eebad5d583b45c2201c6e30a",
+    "policy": "The root-only reference runs the official APBS 3.4.1 Linux release, exports finite-volume coefficient maps and potentials, and evaluates the clean-room PDB2PQR solver.",
+    "apbs_release": "APBS-3.4.1.Linux.zip",
+    "apbs_release_url": "https://github.com/Electrostatics/apbs/releases/download/v3.4.1/APBS-3.4.1.Linux.zip",
+    "apbs_release_sha256": "750f6a2df7b5a82b69be5c4cb192115c02fa261d0ff52cf1d9632ed1eda8b4f0",
+    "numpy_wheel": "numpy-2.3.5-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "numpy_wheel_sha256": "11e06aa0af8c0f05104d56450d6093ee639e15f24ecf62d417329d06e522e017"
+  }
+}

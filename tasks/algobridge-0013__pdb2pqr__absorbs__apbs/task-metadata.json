@@ -1,0 +1,19 @@
+{
+  "algorithm": "uniform-grid linearized Poisson-Boltzmann finite-volume solve with Jacobi-preconditioned conjugate gradients",
+  "authoring_state": "accepted",
+  "donor": "APBS 3.4.1",
+  "host": "PDB2PQR 3.7.1",
+  "id": "ALGOBRIDGE-0013",
+  "oracle_reference": "locked official APBS 3.4.1 Linux release",
+  "scope": "orthogonal odd grids up to 65^3 after APBS map and Debye-Huckel boundary construction",
+  "status": "accepted",
+  "verification": {
+    "harbor_nop_reward": 0.0,
+    "harbor_oracle_reward": 1.0,
+    "hidden": "15/15",
+    "invalid": "12/12",
+    "metamorphic": "2/2",
+    "near_miss_omit_salt_reward": 0.05,
+    "public": "5/5"
+  }
+}

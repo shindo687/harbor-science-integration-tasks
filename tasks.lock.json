@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "complete": true,
-  "task_count": 31,
+  "task_count": 32,
   "tasks": [
     {
       "name": "algobridge-0001__scanpy__absorbs__bbknn",
@@ -132,6 +132,19 @@
       "lfs_object_count": 0,
       "lfs_bytes": 0,
       "materialized_bytes": 292774909
+    },
+    {
+      "name": "algobridge-0013__pdb2pqr__absorbs__apbs",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0013__pdb2pqr__absorbs__apbs.git",
+      "commit": "c7c43106a96c174e1e0ec6693b9c74b2aad9b65f",
+      "source_tree": "9486372154e14c0875d1304d4817df49cb9db93e",
+      "file_count": 51,
+      "git_blob_bytes": 268067786,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 268067786
     },
     {
       "name": "algobridge-0014__crest-conformer-rotamer-ensemble-sampling-tool__absorbs__rdkit",
