@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "complete": true,
-  "task_count": 33,
+  "task_count": 34,
   "tasks": [
     {
       "name": "algobridge-0001__scanpy__absorbs__bbknn",
@@ -275,6 +275,19 @@
       "lfs_object_count": 0,
       "lfs_bytes": 0,
       "materialized_bytes": 63196001
+    },
+    {
+      "name": "algobridge-0023__lammps__absorbs__mlip",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0023__lammps__absorbs__mlip.git",
+      "commit": "471828c1d2aa10bdbebbb54fb2b13ee3dfd16584",
+      "source_tree": "348c081890971919edbf9e69f0eef1df9f16959a",
+      "file_count": 64,
+      "git_blob_bytes": 140009872,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 140009872
     },
     {
       "name": "algobridge-0024__lammps__absorbs__phonopy",

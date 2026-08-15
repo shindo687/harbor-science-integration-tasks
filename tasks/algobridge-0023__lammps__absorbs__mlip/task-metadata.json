@@ -1,0 +1,13 @@
+{
+  "id": "algobridge-0023",
+  "host": "LAMMPS",
+  "donor": "MLIP-3",
+  "capability": "bounded single-element MTP energy, analytic force, and virial inference",
+  "domain": "materials-science",
+  "algorithm_family": "moment tensor potentials",
+  "difficulty": "expert",
+  "status": "accepted",
+  "reference": "locked official MLIP-3 inference",
+  "candidate": "modified LAMMPS only",
+  "license_review": "BSD-2-Clause donor selected; MLIP-2 excluded"
+}

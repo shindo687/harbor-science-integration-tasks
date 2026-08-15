@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+exec python3 /opt/task-tools/public_check.py
+

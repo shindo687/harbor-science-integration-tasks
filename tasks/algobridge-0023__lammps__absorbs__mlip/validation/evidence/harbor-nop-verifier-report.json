@@ -1,0 +1,10 @@
+{
+  "provenance": {
+    "authenticated_files": 9,
+    "mlip_runtime": "pass"
+  },
+  "reason": "GateFailure: missing, linked, or oversized candidate source: src/pair_mtp_bounded.cpp",
+  "reward": 0.0,
+  "status": "hard_gate_failed",
+  "task": "ALGOBRIDGE-0023"
+}

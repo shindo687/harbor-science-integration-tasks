@@ -128,6 +128,12 @@
       "commit": "9cf9bb4ce962c005590dbbca269dd16a0327c9b6"
     },
     {
+      "name": "algobridge-0023__lammps__absorbs__mlip",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0023__lammps__absorbs__mlip.git",
+      "commit": "471828c1d2aa10bdbebbb54fb2b13ee3dfd16584"
+    },
+    {
       "name": "algobridge-0024__lammps__absorbs__phonopy",
       "suite": "AlgoBridge",
       "origin": "https://github.com/shindo687/algobridge-0024__lammps__absorbs__phonopy.git",

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "task": "algobridge-0023__lammps__absorbs__mlip",
+  "host": {
+    "name": "LAMMPS",
+    "repository": "https://github.com/lammps/lammps",
+    "tag": "stable_22Jul2025_update5",
+    "commit": "9e42b6f0f2c68a092d5847d4127a053dc50e126a",
+    "tree": "cba1b7100d890cbabeba23fd85bc11e5b886ed66",
+    "commit_date": "2026-08-08T00:25:46-04:00",
+    "license": "GPL-2.0-only",
+    "license_sha256": "be38e38d9482c2beae35408e413045b4363e0e067b0d9f31549047948637a7ed",
+    "archive_sha256": "a73a74ab6a5c266c13da160ccb7affa809e8d3daa109c597c655a0d4ba88084a",
+    "archive_size": 57228899,
+    "archive_files": 9677,
+    "parts": [
+      {"name": "host-source.tar.gz.part-00", "size": 45000000, "sha256": "4bcd479fbd41447a4bd3dbc5ae1904d6b139461b7e5e029232581a5b9c5e9b88"},
+      {"name": "host-source.tar.gz.part-01", "size": 12228899, "sha256": "83eaf9d02f756c012e91d7549a3df8c682f1843b15ca1afb6b782e0e52fbdaec"}
+    ],
+    "snapshot_policy": "Exact accepted ALGOBRIDGE-0024 core/build snapshot; data-heavy bench, examples, and potentials directories omitted."
+  },
+  "donor": {
+    "name": "MLIP-3",
+    "repository": "https://gitlab.com/ashapeev/mlip-3.git",
+    "commit": "7fe598da1de1e81d1ca222f4ab6b5d594278605c",
+    "tree": "d2bb6f7a2cead46b10a77577a2632b1cfd5647b6",
+    "commit_date": "2025-05-04T10:08:39+07:00",
+    "license": "BSD-2-Clause",
+    "license_sha256": "3543579d168334f7bb792950ae04d4561faf661426348ef9e70627ea13182fe2",
+    "archive_sha256": "1d0081baebab0ae87e3568289fa8b8301bc6e9fb7632ca1cdf76d05830909b90",
+    "archive_size": 10042399,
+    "archive_files": 296,
+    "parts": [
+      {"name": "donor-source.tar.gz.part-00", "size": 10042399, "sha256": "1d0081baebab0ae87e3568289fa8b8301bc6e9fb7632ca1cdf76d05830909b90"}
+    ]
+  },
+  "potential": {
+    "upstream_path": "test/self-test/MTP9fitted.mtp",
+    "format": "MTP 1.1.0 / RBChebyshev / single species",
+    "sha256": "887ebdb4eaf0587957ea8ad9d1c714b850927908ce580926efc1a5d9cb03db61",
+    "size": 1856
+  },
+  "reference_runtime": {
+    "source_commit": "7fe598da1de1e81d1ca222f4ab6b5d594278605c",
+    "build": "./configure --no-mpi --blas=embedded --compiler=gnu && make -j2 mlp",
+    "toolchain": "GCC/GFortran 11.4.0, glibc 2.35",
+    "mlp_sha256": "eb94b1d1ea49588a4ded5ca426c239bb740b3814a19184f5e7c4ad01b5614d39",
+    "libgfortran_sha256": "3ec471016fbfea6ccda4736fbbf2d0098e6386d2c34fb7ae9b15d91fa1b38874",
+    "libquadmath_sha256": "67d3147512460e56dc805582ed5d32b66a7a199247ba5a27b7cb3054d2b2fef2"
+  },
+  "images": {
+    "agent": "python:3.12.11-bookworm@sha256:13c9584604a99ca134c4f41800f74ffc64ee6ac8cf555cf1e704a6087fc84f12",
+    "verifier": "python:3.12.11-bookworm@sha256:13c9584604a99ca134c4f41800f74ffc64ee6ac8cf555cf1e704a6087fc84f12"
+  }
+}
