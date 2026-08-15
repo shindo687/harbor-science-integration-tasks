@@ -1,6 +1,6 @@
 # Task index
 
-This index contains **30** byte-exact standalone-repository snapshots.
+This index contains **31** byte-exact standalone-repository snapshots.
 
 | Suite | Task snapshot | Standalone repository | Commit | Files | Materialized size | LFS |
 |---|---|---|---|---:|---:|---:|
@@ -14,6 +14,7 @@ This index contains **30** byte-exact standalone-repository snapshots.
 | AlgoBridge | [algobridge-0010__bwa__absorbs__freebayes](tasks/algobridge-0010__bwa__absorbs__freebayes/) | [source](https://github.com/shindo687/algobridge-0010__bwa__absorbs__freebayes) | `91e3cca4a1f7` | 60 | 56.2 MiB | — |
 | AlgoBridge | [algobridge-0011__gromacs__absorbs__dssp](tasks/algobridge-0011__gromacs__absorbs__dssp/) | [source](https://github.com/shindo687/algobridge-0011__gromacs__absorbs__dssp) | `d9b606b6ab01` | 68 | 137.5 MiB | — |
 | AlgoBridge | [algobridge-0012__gromacs__absorbs__prody](tasks/algobridge-0012__gromacs__absorbs__prody/) | [source](https://github.com/shindo687/algobridge-0012__gromacs__absorbs__prody) | `bee40efe5138` | 70 | 279.2 MiB | — |
+| AlgoBridge | [algobridge-0014__crest-conformer-rotamer-ensemble-sampling-tool__absorbs__rdkit](tasks/algobridge-0014__crest-conformer-rotamer-ensemble-sampling-tool__absorbs__rdkit/) | [source](https://github.com/shindo687/algobridge-0014__crest-conformer-rotamer-ensemble-sampling-tool__absorbs__rdkit) | `c2d1142cd579` | 51 | 219.6 MiB | — |
 | AlgoBridge | [algobridge-0015__openmm__absorbs__pymbar](tasks/algobridge-0015__openmm__absorbs__pymbar/) | [source](https://github.com/shindo687/algobridge-0015__openmm__absorbs__pymbar) | `a408abe0605d` | 63 | 200.5 MiB | — |
 | AlgoBridge | [algobridge-0016__openmm__absorbs__pyemma](tasks/algobridge-0016__openmm__absorbs__pyemma/) | [source](https://github.com/shindo687/algobridge-0016__openmm__absorbs__pyemma) | `56cf9f890839` | 97 | 235.4 MiB | — |
 | AlgoBridge | [algobridge-0017__gromacs__absorbs__pymbar](tasks/algobridge-0017__gromacs__absorbs__pymbar/) | [source](https://github.com/shindo687/algobridge-0017__gromacs__absorbs__pymbar) | `9c8bb798f0d4` | 70 | 216.1 MiB | — |

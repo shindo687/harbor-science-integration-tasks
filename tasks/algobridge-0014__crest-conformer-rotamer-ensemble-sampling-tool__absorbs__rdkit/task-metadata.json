@@ -1,0 +1,17 @@
+{
+  "algorithm": "bounded ETKDG topology-distance embedding, stereochemistry enforcement, and ensemble pruning",
+  "donor": "RDKit 2026.03.5",
+  "host": "CREST 3.0.2",
+  "id": "ALGOBRIDGE-0014",
+  "oracle_reference": "locked official RDKit ETKDGv3 runtime",
+  "scope": "non-macrocyclic molecules with at most 64 heavy atoms; unsmoothed topology bounds supplied after chemical perception",
+  "status": "accepted",
+  "verification": {
+    "harbor_nop_reward": 0.0,
+    "harbor_oracle_reward": 1.0,
+    "hidden": "15/15",
+    "invalid": "12/12",
+    "metamorphic": "2/2",
+    "public": "5/5"
+  }
+}

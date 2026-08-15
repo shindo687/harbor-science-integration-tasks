@@ -1,0 +1,39 @@
+{
+    "id": "c1b0c1a1-682e-4a13-8e60-3209c12ffe3b",
+    "started_at": "2026-08-15T21:40:10.760971",
+    "updated_at": "2026-08-15T21:40:48.139292",
+    "finished_at": "2026-08-15T21:40:48.139292",
+    "n_total_trials": 1,
+    "stats": {
+        "n_completed_trials": 1,
+        "n_errored_trials": 0,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "nop__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "algobridge-0014__crest-conformer__7fdnkJF"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        },
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null
+    }
+}

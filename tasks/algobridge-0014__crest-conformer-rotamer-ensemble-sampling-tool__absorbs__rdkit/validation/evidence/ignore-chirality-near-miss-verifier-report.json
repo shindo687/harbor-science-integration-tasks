@@ -1,0 +1,316 @@
+{
+  "candidate_identity": {
+    "reference_paths_readable": false,
+    "uid": 10001
+  },
+  "candidate_isolation": {
+    "protected_paths_unreadable": [
+      "/tests",
+      "/opt/reference-rdkit",
+      "/opt/reference-rdkit-source",
+      "/opt/reference-wheels",
+      "/opt/pristine-host",
+      "/opt/reference-runner",
+      "/opt/source-archives"
+    ],
+    "uid": 10001
+  },
+  "hidden": {
+    "cases": [
+      {
+        "metrics": {
+          "max_bound_violation": 0.006597184053116489,
+          "minimum_pair_drms": null,
+          "native_coverage_max_drms": 0.03542479378143282,
+          "rmsd_matrix_max_abs": 0.0,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "hidden_ethanol",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.09106161716620553,
+          "minimum_pair_drms": 0.14499766327176739,
+          "native_coverage_max_drms": 0.2591815417568558,
+          "rmsd_matrix_max_abs": 0.0,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "hidden_pentane",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.10405560792428403,
+          "minimum_pair_drms": 0.19467577458701815,
+          "native_coverage_max_drms": 0.4906327743489163,
+          "rmsd_matrix_max_abs": 5.551115123125783e-17,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "hidden_hexane",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.03462887110798851,
+          "minimum_pair_drms": null,
+          "native_coverage_max_drms": 0.03920543741188195,
+          "rmsd_matrix_max_abs": 0.0,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "hidden_isobutane",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.10310979042239032,
+          "minimum_pair_drms": 0.15483582086800324,
+          "native_coverage_max_drms": 0.3908326998156539,
+          "rmsd_matrix_max_abs": 0.0,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "hidden_diethyl_ether",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.20019713692861485,
+          "minimum_pair_drms": 0.17570706571678088,
+          "native_coverage_max_drms": 0.22514076789650975,
+          "rmsd_matrix_max_abs": 5.551115123125783e-17,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "hidden_propylbenzene",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.05905021230969587,
+          "minimum_pair_drms": 0.1296354562325857,
+          "native_coverage_max_drms": 0.07540529574058602,
+          "rmsd_matrix_max_abs": 5.551115123125783e-17,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "hidden_ethyl_acetate",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.04909773518800087,
+          "minimum_pair_drms": 0.1652577928082032,
+          "native_coverage_max_drms": 0.21972661045618946,
+          "rmsd_matrix_max_abs": 1.1102230246251565e-16,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "hidden_alanine",
+        "passed": false,
+        "reasons": [
+          "chirality"
+        ]
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.06912229968737149,
+          "minimum_pair_drms": 0.16810225830200506,
+          "native_coverage_max_drms": 0.15419772809535343,
+          "rmsd_matrix_max_abs": 5.551115123125783e-17,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "hidden_two_butanol",
+        "passed": false,
+        "reasons": [
+          "chirality"
+        ]
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.1172799900196968,
+          "minimum_pair_drms": 0.21531868908765447,
+          "native_coverage_max_drms": 0.13038367293321998,
+          "rmsd_matrix_max_abs": 2.7755575615628914e-17,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "hidden_phenylethanol",
+        "passed": false,
+        "reasons": [
+          "chirality"
+        ]
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.10736008113441331,
+          "minimum_pair_drms": 0.2586130413530202,
+          "native_coverage_max_drms": 0.38203009135550126,
+          "rmsd_matrix_max_abs": 0.0,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "hidden_threonine",
+        "passed": false,
+        "reasons": [
+          "chirality"
+        ]
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.2540417861232771,
+          "minimum_pair_drms": 0.3763914299721916,
+          "native_coverage_max_drms": 0.7053763820349143,
+          "rmsd_matrix_max_abs": 1.1102230246251565e-16,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "hidden_ibuprofen",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.07699668502077284,
+          "minimum_pair_drms": null,
+          "native_coverage_max_drms": 0.04756292763845081,
+          "rmsd_matrix_max_abs": 0.0,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "hidden_cyclopentane",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.13524475449171636,
+          "minimum_pair_drms": 0.1052620139362819,
+          "native_coverage_max_drms": 0.09758131565033039,
+          "rmsd_matrix_max_abs": 1.3877787807814457e-17,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "hidden_methylcyclohexane",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.012374249660449976,
+          "minimum_pair_drms": null,
+          "native_coverage_max_drms": 0.03289741253738172,
+          "rmsd_matrix_max_abs": 0.0,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "hidden_benzene",
+        "passed": true,
+        "reasons": []
+      }
+    ],
+    "passed": 11,
+    "total": 15
+  },
+  "invalid_contract": {
+    "passed": 12,
+    "total": 12
+  },
+  "metamorphic": {
+    "cases": [
+      {
+        "name": "fixed_seed_determinism",
+        "passed": true
+      },
+      {
+        "name": "bound_record_reordering",
+        "passed": true
+      }
+    ],
+    "passed": 2,
+    "total": 2
+  },
+  "provenance": {
+    "archive_and_wheel_checks": 5,
+    "rdkit_version": "2026.03.5"
+  },
+  "public": {
+    "cases": [
+      {
+        "metrics": {
+          "max_bound_violation": 0.055636034393648615,
+          "minimum_pair_drms": 0.14906672107895863,
+          "native_coverage_max_drms": 0.11089940652204969,
+          "rmsd_matrix_max_abs": 0.0,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "public_butane",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.07027006134953817,
+          "minimum_pair_drms": null,
+          "native_coverage_max_drms": 0.05441540155066677,
+          "rmsd_matrix_max_abs": 0.0,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "public_cyclohexane",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.03344437581982973,
+          "minimum_pair_drms": 0.1660101586208451,
+          "native_coverage_max_drms": 0.11795299583938319,
+          "rmsd_matrix_max_abs": 5.551115123125783e-17,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "public_lactic_acid",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.009590176756263169,
+          "minimum_pair_drms": 0.1548416226152397,
+          "native_coverage_max_drms": 0.09410011839523577,
+          "rmsd_matrix_max_abs": 2.7755575615628914e-17,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "public_dichloroethane",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "max_bound_violation": 0.0561911403653661,
+          "minimum_pair_drms": 0.41292572868853084,
+          "native_coverage_max_drms": 0.5211636801509849,
+          "rmsd_matrix_max_abs": 1.1102230246251565e-16,
+          "smoothed_bound_max_abs": 0.0
+        },
+        "name": "public_tartaric_acid",
+        "passed": false,
+        "reasons": [
+          "chirality"
+        ]
+      }
+    ],
+    "passed": 4,
+    "total": 5
+  },
+  "reference": "official RDKit 2026.03.5 ETKDGv3 (root-only)",
+  "reward": 0.7333333333333333,
+  "source_policy": {
+    "added": [
+      "src/etkdg_init.py"
+    ],
+    "allowed_import_scan": "pass",
+    "donor_file_hash_scan": "pass",
+    "forbidden_dependency_scan": "pass",
+    "module_bytes": 13714,
+    "module_sha256": "644da53f69f0e037713215fb694b1d04b28cceded86b031ad72ea31981b7fc44"
+  },
+  "status": "graded",
+  "task": "ALGOBRIDGE-0014"
+}

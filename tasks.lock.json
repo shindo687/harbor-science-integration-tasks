@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "complete": true,
-  "task_count": 30,
+  "task_count": 31,
   "tasks": [
     {
       "name": "algobridge-0001__scanpy__absorbs__bbknn",
@@ -132,6 +132,19 @@
       "lfs_object_count": 0,
       "lfs_bytes": 0,
       "materialized_bytes": 292774909
+    },
+    {
+      "name": "algobridge-0014__crest-conformer-rotamer-ensemble-sampling-tool__absorbs__rdkit",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0014__crest-conformer-rotamer-ensemble-sampling-tool__absorbs__rdkit.git",
+      "commit": "c2d1142cd579127e5f55d905fff913c2ae073fab",
+      "source_tree": "7ddd0018e1d4099ee6415a7ece16874c549f258a",
+      "file_count": 51,
+      "git_blob_bytes": 230268514,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 230268514
     },
     {
       "name": "algobridge-0015__openmm__absorbs__pymbar",
