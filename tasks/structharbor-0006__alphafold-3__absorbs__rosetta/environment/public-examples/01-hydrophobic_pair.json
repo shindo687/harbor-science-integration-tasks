@@ -1,0 +1,92 @@
+{
+  "atoms": [
+    {
+      "acceptor_direction": null,
+      "chain": "A",
+      "charge": 0.0,
+      "coord": [
+        0.0,
+        -1.2,
+        0.0
+      ],
+      "donor_direction": null,
+      "epsilon": 0.1,
+      "id": "a1",
+      "residue": "LEU1",
+      "sasa_radius": 1.7,
+      "sigma": 3.4
+    },
+    {
+      "acceptor_direction": null,
+      "chain": "A",
+      "charge": 0.0,
+      "coord": [
+        0.1,
+        1.3,
+        0.2
+      ],
+      "donor_direction": null,
+      "epsilon": 0.1,
+      "id": "a2",
+      "residue": "LEU1",
+      "sasa_radius": 1.7,
+      "sigma": 3.4
+    },
+    {
+      "acceptor_direction": null,
+      "chain": "B",
+      "charge": 0.0,
+      "coord": [
+        4.0,
+        -1.0,
+        0.1
+      ],
+      "donor_direction": null,
+      "epsilon": 0.1,
+      "id": "b1",
+      "residue": "VAL7",
+      "sasa_radius": 1.7,
+      "sigma": 3.4
+    },
+    {
+      "acceptor_direction": null,
+      "chain": "B",
+      "charge": 0.0,
+      "coord": [
+        4.2,
+        1.4,
+        -0.1
+      ],
+      "donor_direction": null,
+      "epsilon": 0.1,
+      "id": "b2",
+      "residue": "VAL7",
+      "sasa_radius": 1.7,
+      "sigma": 3.4
+    }
+  ],
+  "compute_forces": true,
+  "group_a": [
+    "A"
+  ],
+  "group_b": [
+    "B"
+  ],
+  "name": "hydrophobic_pair",
+  "parameters": {
+    "cutoff": 10.0,
+    "dielectric": 40.0,
+    "hbond_distance": 2.9,
+    "hbond_strength": 1.5,
+    "hbond_width": 0.45,
+    "probe_radius": 1.4,
+    "solvation_gamma": 0.005,
+    "switch_distance": 8.0
+  },
+  "separation_direction": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "separation_distance": 30.0
+}

@@ -1,0 +1,39 @@
+{
+    "id": "7387391c-a7d0-4603-8c13-a347d6eb3d17",
+    "started_at": "2026-08-16T00:32:22.103747",
+    "updated_at": "2026-08-16T00:33:14.439353",
+    "finished_at": "2026-08-16T00:33:14.439353",
+    "n_total_trials": 1,
+    "stats": {
+        "n_completed_trials": 1,
+        "n_errored_trials": 0,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "oracle__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 1.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "1.0": [
+                            "structharbor-0006__alphafold-3__JLRfvi6"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        },
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null
+    }
+}

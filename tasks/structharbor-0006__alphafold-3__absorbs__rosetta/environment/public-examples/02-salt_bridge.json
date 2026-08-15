@@ -1,0 +1,92 @@
+{
+  "atoms": [
+    {
+      "acceptor_direction": null,
+      "chain": "A",
+      "charge": 1.0,
+      "coord": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "donor_direction": null,
+      "epsilon": 0.08,
+      "id": "lys_nz",
+      "residue": "LYS4",
+      "sasa_radius": 1.55,
+      "sigma": 3.25
+    },
+    {
+      "acceptor_direction": null,
+      "chain": "A",
+      "charge": 0.0,
+      "coord": [
+        -1.7,
+        0.5,
+        0.0
+      ],
+      "donor_direction": null,
+      "epsilon": 0.1,
+      "id": "lys_cb",
+      "residue": "LYS4",
+      "sasa_radius": 1.7,
+      "sigma": 3.4
+    },
+    {
+      "acceptor_direction": null,
+      "chain": "B",
+      "charge": -1.0,
+      "coord": [
+        3.2,
+        0.0,
+        0.0
+      ],
+      "donor_direction": null,
+      "epsilon": 0.12,
+      "id": "asp_od",
+      "residue": "ASP9",
+      "sasa_radius": 1.52,
+      "sigma": 3.0
+    },
+    {
+      "acceptor_direction": null,
+      "chain": "B",
+      "charge": 0.0,
+      "coord": [
+        4.7,
+        0.4,
+        0.0
+      ],
+      "donor_direction": null,
+      "epsilon": 0.1,
+      "id": "asp_cg",
+      "residue": "ASP9",
+      "sasa_radius": 1.7,
+      "sigma": 3.4
+    }
+  ],
+  "compute_forces": true,
+  "group_a": [
+    "A"
+  ],
+  "group_b": [
+    "B"
+  ],
+  "name": "salt_bridge",
+  "parameters": {
+    "cutoff": 10.0,
+    "dielectric": 40.0,
+    "hbond_distance": 2.9,
+    "hbond_strength": 1.5,
+    "hbond_width": 0.45,
+    "probe_radius": 1.4,
+    "solvation_gamma": 0.005,
+    "switch_distance": 8.0
+  },
+  "separation_direction": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "separation_distance": 30.0
+}

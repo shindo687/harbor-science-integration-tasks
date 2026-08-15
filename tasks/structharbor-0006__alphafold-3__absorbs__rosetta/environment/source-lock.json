@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "task": "structharbor-0006__alphafold-3__absorbs__rosetta",
+  "host": {
+    "name": "AlphaFold 3",
+    "repository": "https://github.com/google-deepmind/alphafold3",
+    "commit": "29596b97021cfc941b1993249969c4f268efdbab",
+    "tree": "59fbfa971dce6261c4c1d8bcfd0b3b34236bb232",
+    "commit_date": "2026-08-11T03:58:43-07:00",
+    "license": "Apache-2.0 (source code; model weights have separate terms)",
+    "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "archive": "host-source.tar.gz",
+    "archive_sha256": "e9eeb0d1936a1459c69e077b454f0af8f4d63d311a48576a14209f4b792c76f7",
+    "archive_size": 5960601,
+    "archive_files": 201
+  },
+  "donor": {
+    "name": "Rosetta",
+    "repository": "https://github.com/RosettaCommons/rosetta",
+    "commit": "fa5ce209894d40d0cb2bb6676757b7b1ce4abc87",
+    "tree": "74fd351487c3565850bf00133463fdd8a500f186",
+    "commit_date": "2026-08-07T16:34:48-07:00",
+    "license": "Rosetta Software Non-Commercial License Agreement",
+    "license_sha256": "8cc2e394ee31761ac27a9ebee4fe2a567758e17cadc1ed0318c54e9cfe0d5214",
+    "distributed_archive": null,
+    "distribution_policy": "Donor source, binary, database, and parameters are not bundled. Obtain Rosetta from its official repository under its own terms."
+  },
+  "calibration": {
+    "file": "rosetta-calibration.json",
+    "sha256": "62ff9398f15dd2ac3ed0b41efeeeb99676c686e261e94791051b57eb21cacd2f",
+    "size": 371986,
+    "cases": 8,
+    "source_structure": "8ZR4 fragment H:109-115 / A:263-269",
+    "rosetta_release": "2025.03+release.1f5080a079",
+    "rosetta_binary_sha256": "723b3ba5a969708c1a32b877ab56e94ebb34cba587c18ba0cf2e45a695cb6857",
+    "scope": "Frozen InterfaceAnalyzer/ref2015 ranking scalars only; no Rosetta artifact is distributed and no numerical equivalence is claimed."
+  },
+  "candidate_contract": {
+    "source": "src/alphafold3/model/interface_energy_lite.py",
+    "max_source_bytes": 60000,
+    "allowed_imports": ["__future__", "math"]
+  },
+  "image": "python:3.12.11-bookworm@sha256:13c9584604a99ca134c4f41800f74ffc64ee6ac8cf555cf1e704a6087fc84f12"
+}

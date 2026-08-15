@@ -1,0 +1,132 @@
+{
+  "atoms": [
+    {
+      "acceptor_direction": null,
+      "chain": "A",
+      "charge": 0.3,
+      "coord": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "donor_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "epsilon": 0.08,
+      "id": "a_n",
+      "residue": "SER3",
+      "sasa_radius": 1.55,
+      "sigma": 2.8
+    },
+    {
+      "acceptor_direction": null,
+      "chain": "A",
+      "charge": 0.0,
+      "coord": [
+        -0.4,
+        2.8,
+        0.2
+      ],
+      "donor_direction": null,
+      "epsilon": 0.1,
+      "id": "a_c1",
+      "residue": "SER3",
+      "sasa_radius": 1.7,
+      "sigma": 3.4
+    },
+    {
+      "acceptor_direction": null,
+      "chain": "A",
+      "charge": 0.0,
+      "coord": [
+        0.2,
+        -2.7,
+        -0.3
+      ],
+      "donor_direction": null,
+      "epsilon": 0.18,
+      "id": "a_c2",
+      "residue": "PHE4",
+      "sasa_radius": 1.7,
+      "sigma": 3.8
+    },
+    {
+      "acceptor_direction": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "chain": "B",
+      "charge": -0.5,
+      "coord": [
+        3.0,
+        0.1,
+        0.0
+      ],
+      "donor_direction": null,
+      "epsilon": 0.12,
+      "id": "b_o",
+      "residue": "GLU8",
+      "sasa_radius": 1.52,
+      "sigma": 2.7
+    },
+    {
+      "acceptor_direction": null,
+      "chain": "B",
+      "charge": 0.0,
+      "coord": [
+        4.0,
+        2.7,
+        0.1
+      ],
+      "donor_direction": null,
+      "epsilon": 0.15,
+      "id": "b_c1",
+      "residue": "LEU9",
+      "sasa_radius": 1.7,
+      "sigma": 3.7
+    },
+    {
+      "acceptor_direction": null,
+      "chain": "B",
+      "charge": 0.0,
+      "coord": [
+        4.1,
+        -2.6,
+        -0.2
+      ],
+      "donor_direction": null,
+      "epsilon": 0.15,
+      "id": "b_c2",
+      "residue": "LEU9",
+      "sasa_radius": 1.7,
+      "sigma": 3.7
+    }
+  ],
+  "compute_forces": true,
+  "group_a": [
+    "A"
+  ],
+  "group_b": [
+    "B"
+  ],
+  "name": "mixed_interface",
+  "parameters": {
+    "cutoff": 10.0,
+    "dielectric": 40.0,
+    "hbond_distance": 2.9,
+    "hbond_strength": 1.5,
+    "hbond_width": 0.45,
+    "probe_radius": 1.4,
+    "solvation_gamma": 0.005,
+    "switch_distance": 8.0
+  },
+  "separation_direction": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "separation_distance": 35.0
+}

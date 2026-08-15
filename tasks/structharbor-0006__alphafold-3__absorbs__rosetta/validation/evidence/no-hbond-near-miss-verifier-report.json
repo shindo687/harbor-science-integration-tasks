@@ -1,0 +1,328 @@
+{
+  "differential": {
+    "cases": [
+      {
+        "name": "hydrophobic_pair",
+        "passed": true,
+        "reasons": [],
+        "term_max_abs": 0.0
+      },
+      {
+        "name": "salt_bridge",
+        "passed": true,
+        "reasons": [],
+        "term_max_abs": 0.0
+      },
+      {
+        "name": "single_backbone_hbond",
+        "passed": false,
+        "reasons": [
+          "bound.hbond",
+          "bound.total",
+          "delta.hbond",
+          "delta.total",
+          "per_residue.A:ASN2.hbond",
+          "per_residue.A:ASN2.total",
+          "per_residue.B:GLY8.hbond",
+          "per_residue.B:GLY8.total"
+        ],
+        "term_max_abs": 1.5
+      },
+      {
+        "name": "steric_clash",
+        "passed": true,
+        "reasons": [],
+        "term_max_abs": 0.0
+      },
+      {
+        "name": "mixed_interface",
+        "passed": false,
+        "reasons": [
+          "bound.hbond",
+          "bound.total",
+          "delta.hbond",
+          "delta.total",
+          "forces_numeric",
+          "per_residue.A:SER3.hbond",
+          "per_residue.A:SER3.total",
+          "per_residue.B:GLU8.hbond",
+          "per_residue.B:GLU8.total"
+        ],
+        "term_max_abs": 1.458958886398781
+      },
+      {
+        "name": "hidden_mixed_00",
+        "passed": false,
+        "reasons": [
+          "bound.hbond",
+          "bound.total",
+          "delta.hbond",
+          "delta.total",
+          "forces_numeric",
+          "per_residue.A:R0_0.hbond",
+          "per_residue.A:R0_0.total",
+          "per_residue.B:R0_0.hbond",
+          "per_residue.B:R0_0.total"
+        ],
+        "term_max_abs": 0.49204034883191866
+      },
+      {
+        "name": "hidden_mixed_01",
+        "passed": true,
+        "reasons": [],
+        "term_max_abs": 0.0
+      },
+      {
+        "name": "hidden_mixed_02",
+        "passed": false,
+        "reasons": [
+          "bound.hbond",
+          "bound.total",
+          "delta.hbond",
+          "delta.total",
+          "forces_numeric",
+          "per_residue.A:R2_0.hbond",
+          "per_residue.A:R2_0.total",
+          "per_residue.B:R2_0.hbond",
+          "per_residue.B:R2_0.total"
+        ],
+        "term_max_abs": 0.9631828517301656
+      },
+      {
+        "name": "hidden_mixed_03",
+        "passed": true,
+        "reasons": [],
+        "term_max_abs": 0.0
+      },
+      {
+        "name": "hidden_mixed_04",
+        "passed": false,
+        "reasons": [
+          "bound.hbond",
+          "bound.total",
+          "delta.hbond",
+          "delta.total",
+          "forces_numeric",
+          "per_residue.A:R4_0.hbond",
+          "per_residue.A:R4_0.total",
+          "per_residue.B:R4_0.hbond",
+          "per_residue.B:R4_0.total"
+        ],
+        "term_max_abs": 0.05632565898382012
+      },
+      {
+        "name": "hidden_mixed_05",
+        "passed": true,
+        "reasons": [],
+        "term_max_abs": 0.0
+      },
+      {
+        "name": "hidden_mixed_06",
+        "passed": false,
+        "reasons": [
+          "bound.hbond",
+          "bound.total",
+          "delta.hbond",
+          "delta.total",
+          "per_residue.A:R6_0.hbond",
+          "per_residue.A:R6_0.total",
+          "per_residue.B:R6_0.hbond",
+          "per_residue.B:R6_0.total"
+        ],
+        "term_max_abs": 0.003930319215799561
+      },
+      {
+        "name": "hidden_mixed_07",
+        "passed": true,
+        "reasons": [],
+        "term_max_abs": 0.0
+      },
+      {
+        "name": "hidden_mixed_08",
+        "passed": false,
+        "reasons": [
+          "bound.hbond",
+          "bound.total",
+          "delta.hbond",
+          "delta.total",
+          "per_residue.A:R8_0.hbond",
+          "per_residue.A:R8_0.total",
+          "per_residue.B:R8_0.hbond",
+          "per_residue.B:R8_0.total"
+        ],
+        "term_max_abs": 0.0006356776421693228
+      },
+      {
+        "name": "hidden_mixed_09",
+        "passed": true,
+        "reasons": [],
+        "term_max_abs": 0.0
+      },
+      {
+        "name": "hidden_mixed_10",
+        "passed": false,
+        "reasons": [
+          "bound.hbond",
+          "bound.total",
+          "delta.hbond",
+          "delta.total",
+          "per_residue.A:R10_0.hbond",
+          "per_residue.A:R10_0.total",
+          "per_residue.B:R10_0.hbond",
+          "per_residue.B:R10_0.total"
+        ],
+        "term_max_abs": 4.49167470270043e-06
+      },
+      {
+        "name": "hidden_mixed_11",
+        "passed": true,
+        "reasons": [],
+        "term_max_abs": 0.0
+      },
+      {
+        "name": "hidden_mixed_12",
+        "passed": false,
+        "reasons": [
+          "bound.hbond",
+          "bound.total",
+          "delta.hbond",
+          "delta.total",
+          "per_residue.A:R12_0.hbond",
+          "per_residue.A:R12_0.total",
+          "per_residue.B:R12_0.hbond",
+          "per_residue.B:R12_0.total"
+        ],
+        "term_max_abs": 1.6333408319139995e-05
+      },
+      {
+        "name": "hidden_mixed_13",
+        "passed": true,
+        "reasons": [],
+        "term_max_abs": 0.0
+      },
+      {
+        "name": "hidden_mixed_14",
+        "passed": true,
+        "reasons": [],
+        "term_max_abs": 8.925617236751916e-09
+      },
+      {
+        "name": "hidden_mixed_15",
+        "passed": true,
+        "reasons": [],
+        "term_max_abs": 0.0
+      },
+      {
+        "name": "hidden_mixed_16",
+        "passed": true,
+        "reasons": [],
+        "term_max_abs": 2.320439475505451e-12
+      },
+      {
+        "name": "hidden_mixed_17",
+        "passed": true,
+        "reasons": [],
+        "term_max_abs": 0.0
+      }
+    ],
+    "force_cases_passed": 5,
+    "force_cases_total": 10,
+    "passed": 14,
+    "total": 23
+  },
+  "finite_difference_1e-4": {
+    "max_abs": 5.7948090770310046e-09,
+    "passed": true
+  },
+  "invalid_input_gate": {
+    "rejected": 12
+  },
+  "invariants": {
+    "checks": {
+      "chain_group_swap": true,
+      "common_rigid_transform": true,
+      "infinite_separation_limit": true
+    },
+    "far_separation_abs": 0.0,
+    "rigid_max_abs": 1.7763568394002505e-15,
+    "swap_max_abs": 5.329070518200751e-15
+  },
+  "isolation": {
+    "protected_paths_unreadable": [
+      "/tests",
+      "/opt/pristine-host",
+      "/opt/source-archives"
+    ],
+    "uid": 10001
+  },
+  "points": 61.34782608695653,
+  "points_total": 80.0,
+  "provenance": {
+    "calibration_cases": 8,
+    "checked_artifacts": [
+      "/opt/source-archives/host-source.tar.gz",
+      "/tests/rosetta-calibration.json"
+    ],
+    "donor_runtime_absent": true
+  },
+  "reward": 0.7668478260869567,
+  "rosetta_ranking": {
+    "passed": true,
+    "rows": [
+      {
+        "lite_delta": 18.24889831368981,
+        "name": "rosetta_8zr4_fragment_shift_m0_5",
+        "rosetta_dG_separated": 14.376
+      },
+      {
+        "lite_delta": 194.72405340104692,
+        "name": "rosetta_8zr4_fragment_shift_m1_0",
+        "rosetta_dG_separated": 88.731
+      },
+      {
+        "lite_delta": 1721.5031275071171,
+        "name": "rosetta_8zr4_fragment_shift_m1_5",
+        "rosetta_dG_separated": 299.327
+      },
+      {
+        "lite_delta": -6.710555629267273,
+        "name": "rosetta_8zr4_fragment_shift_p0_0",
+        "rosetta_dG_separated": -1.253
+      },
+      {
+        "lite_delta": -8.396420796765886,
+        "name": "rosetta_8zr4_fragment_shift_p0_5",
+        "rosetta_dG_separated": -1.484
+      },
+      {
+        "lite_delta": -6.5550037161845935,
+        "name": "rosetta_8zr4_fragment_shift_p1_0",
+        "rosetta_dG_separated": -1.046
+      },
+      {
+        "lite_delta": -3.1646559876849705,
+        "name": "rosetta_8zr4_fragment_shift_p2_0",
+        "rosetta_dG_separated": -0.374
+      },
+      {
+        "lite_delta": -0.5482808872387634,
+        "name": "rosetta_8zr4_fragment_shift_p4_0",
+        "rosetta_dG_separated": -0.043
+      }
+    ],
+    "scope": "frozen ranking calibration only; no numerical equivalence claim",
+    "spearman": 1.0,
+    "threshold": 0.98
+  },
+  "source_policy": {
+    "added": [
+      "src/alphafold3/model/interface_energy_lite.py"
+    ],
+    "ast_and_dependency_scan": "pass",
+    "locked_host_unchanged": true,
+    "module_bytes": 12258,
+    "module_sha256": "d53f9a67ad0bac5fe25f310a9671fbe15d44dfb066d378bc6b940b2e067ac176"
+  },
+  "status": "partial",
+  "task": "structharbor-0006__alphafold-3__absorbs__rosetta"
+}

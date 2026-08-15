@@ -1,0 +1,60 @@
+{
+  "atoms": [
+    {
+      "acceptor_direction": null,
+      "chain": "A",
+      "charge": 0.0,
+      "coord": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "donor_direction": null,
+      "epsilon": 0.2,
+      "id": "ca",
+      "residue": "ALA1",
+      "sasa_radius": 1.7,
+      "sigma": 3.8
+    },
+    {
+      "acceptor_direction": null,
+      "chain": "B",
+      "charge": 0.0,
+      "coord": [
+        2.1,
+        0.0,
+        0.0
+      ],
+      "donor_direction": null,
+      "epsilon": 0.25,
+      "id": "cb",
+      "residue": "TRP5",
+      "sasa_radius": 1.7,
+      "sigma": 4.0
+    }
+  ],
+  "compute_forces": false,
+  "group_a": [
+    "A"
+  ],
+  "group_b": [
+    "B"
+  ],
+  "name": "steric_clash",
+  "parameters": {
+    "cutoff": 10.0,
+    "dielectric": 40.0,
+    "hbond_distance": 2.9,
+    "hbond_strength": 1.5,
+    "hbond_width": 0.45,
+    "probe_radius": 1.4,
+    "solvation_gamma": 0.005,
+    "switch_distance": 8.0
+  },
+  "separation_direction": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "separation_distance": 30.0
+}

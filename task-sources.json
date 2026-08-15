@@ -210,6 +210,12 @@
       "suite": "StructHarbor",
       "origin": "https://github.com/shindo687/structharbor-0005__openmm__absorbs__autodock-vina.git",
       "commit": "9b6f612740d19eb6782ebde271c41babe2a5107b"
+    },
+    {
+      "name": "structharbor-0006__alphafold-3__absorbs__rosetta",
+      "suite": "StructHarbor",
+      "origin": "https://github.com/shindo687/structharbor-0006__alphafold-3__absorbs__rosetta.git",
+      "commit": "ca0979529a8b3c18f2091586d5b06c77e75f2227"
     }
   ]
 }

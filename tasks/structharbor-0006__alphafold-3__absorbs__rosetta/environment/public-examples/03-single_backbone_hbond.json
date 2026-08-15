@@ -1,0 +1,68 @@
+{
+  "atoms": [
+    {
+      "acceptor_direction": null,
+      "chain": "A",
+      "charge": 0.0,
+      "coord": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "donor_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "epsilon": 0.06,
+      "id": "donor_n",
+      "residue": "ASN2",
+      "sasa_radius": 1.55,
+      "sigma": 2.6
+    },
+    {
+      "acceptor_direction": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "chain": "B",
+      "charge": 0.0,
+      "coord": [
+        2.9,
+        0.0,
+        0.0
+      ],
+      "donor_direction": null,
+      "epsilon": 0.08,
+      "id": "acceptor_o",
+      "residue": "GLY8",
+      "sasa_radius": 1.52,
+      "sigma": 2.5
+    }
+  ],
+  "compute_forces": true,
+  "group_a": [
+    "A"
+  ],
+  "group_b": [
+    "B"
+  ],
+  "name": "single_backbone_hbond",
+  "parameters": {
+    "cutoff": 10.0,
+    "dielectric": 40.0,
+    "hbond_distance": 2.9,
+    "hbond_strength": 1.5,
+    "hbond_width": 0.45,
+    "probe_radius": 1.4,
+    "solvation_gamma": 0.005,
+    "switch_distance": 8.0
+  },
+  "separation_direction": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "separation_distance": 30.0
+}

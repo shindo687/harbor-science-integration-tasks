@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "complete": true,
-  "task_count": 35,
+  "task_count": 36,
   "tasks": [
     {
       "name": "algobridge-0001__scanpy__absorbs__bbknn",
@@ -457,6 +457,19 @@
       "lfs_object_count": 0,
       "lfs_bytes": 0,
       "materialized_bytes": 133115870
+    },
+    {
+      "name": "structharbor-0006__alphafold-3__absorbs__rosetta",
+      "suite": "StructHarbor",
+      "origin": "https://github.com/shindo687/structharbor-0006__alphafold-3__absorbs__rosetta.git",
+      "commit": "ca0979529a8b3c18f2091586d5b06c77e75f2227",
+      "source_tree": "ba48e69ee6f14a09757fefdf2d963f275ff16875",
+      "file_count": 53,
+      "git_blob_bytes": 12411314,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 12411314
     }
   ]
 }

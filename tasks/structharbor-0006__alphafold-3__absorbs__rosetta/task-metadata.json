@@ -1,0 +1,20 @@
+{
+  "question_id": "STRUCTHARBOR-0006",
+  "task_id": "structharbor-0006__alphafold-3__absorbs__rosetta",
+  "title": "AlphaFold 3 native Rosetta-style interface energy subset",
+  "host": "AlphaFold 3",
+  "donor": "Rosetta",
+  "algorithm": "Bounded clean-room interface energy lite",
+  "bounded_subset": "Fixed protein-protein/protein-peptide pose; switched Lennard-Jones attraction/repulsion, Coulomb, orientation-aware backbone H-bond, smooth SASA burial, bound-unbound DeltaE, per-residue decomposition, and forces.",
+  "candidate": "One native AlphaFold 3 Python post-processing module; no Rosetta dependency or runtime access.",
+  "comparison": "Analytic term fixtures plus finite-difference forces and invariants; frozen Rosetta InterfaceAnalyzer/ref2015 ranking Spearman >= 0.98.",
+  "license_status": "source_available_exception_noncommercial",
+  "authoring_state": "accepted",
+  "host_repo": "https://github.com/google-deepmind/alphafold3",
+  "donor_repo": "https://github.com/RosettaCommons/rosetta",
+  "source_locks": {
+    "host": "29596b97021cfc941b1993249969c4f268efdbab",
+    "donor": "fa5ce209894d40d0cb2bb6676757b7b1ce4abc87"
+  },
+  "runtime_policy": "Rosetta source, binaries, databases, and parameters are not distributed and are absent during candidate execution."
+}
