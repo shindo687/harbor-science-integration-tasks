@@ -1,0 +1,36 @@
+{
+  "archive_policy": "Complete ordinary tracked files from exact official Git commits; Git metadata is excluded.",
+  "host": {
+    "name": "AutoDock Vina",
+    "version": "1.2.7",
+    "repository": "https://github.com/ccsb-scripps/AutoDock-Vina.git",
+    "commit": "8eb40404f4f45608acb3b01427587ac049f27c1f",
+    "tree": "0652dd53597524a3f114d7b41d4356685bdd1203",
+    "archive": "environment/host-source.tar.gz",
+    "archive_file_count": 308,
+    "sha256": "afd33fc6d6df356a2a8adf3041619abb8c39f0dd1d989e6c0122fcf2c2e4634e",
+    "license": "Apache-2.0"
+  },
+  "donor": {
+    "name": "RDKit",
+    "version": "2026.03.5",
+    "repository": "https://github.com/rdkit/rdkit.git",
+    "commit": "de8add1e32ff6d3c4e4e406f64b703b662dff1d6",
+    "tree": "08d1f100b37b6e5ea9e24238e506edd006adc791",
+    "archive": "environment/donor-source.tar.gz",
+    "archive_file_count": 6197,
+    "sha256": "552ad28a9073021c7cd652ed08a56f20228f8ae2e1de14bd7216e770a923615d",
+    "license": "BSD-3-Clause"
+  },
+  "reference_runtime": {
+    "base_image": "docker.io/library/python@sha256:ffb752e139c0a19692a43af8d8523b274222dd68eebad5d583b45c2201c6e30a",
+    "policy": "The root-only reference imports the locked official RDKit wheel, constructs MMFF94 molecule properties and force fields, and evaluates each native energy component independently.",
+    "rdkit_wheel": "rdkit-2026.3.5-cp313-cp313-manylinux_2_28_x86_64.whl",
+    "rdkit_wheel_sha256": "04a75a048cd61ef934fd2fd474ff426f40cf22e83fe8cd038d1563d695f7e314",
+    "numpy_wheel": "numpy-2.3.5-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "numpy_wheel_sha256": "11e06aa0af8c0f05104d56450d6093ee639e15f24ecf62d417329d06e522e017",
+    "pillow_wheel": "pillow-12.1.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "pillow_wheel_sha256": "47b94983da0c642de92ced1702c5b6c292a84bd3a8e1d1702ff923f183594717",
+    "protocol": "SMILES and deterministic geometry specification to a preparameterized interaction packet plus seven native MMFF94 component energies"
+  }
+}

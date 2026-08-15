@@ -170,6 +170,12 @@
       "commit": "66b4c4e3b8b82b0d9a266229f9d8b1408438c3ad"
     },
     {
+      "name": "structharbor-0004__autodock-vina__absorbs__rdkit",
+      "suite": "StructHarbor",
+      "origin": "https://github.com/shindo687/structharbor-0004__autodock-vina__absorbs__rdkit.git",
+      "commit": "5ed6801a2c4e3b32100c567fb2e5393929bb6c4e"
+    },
+    {
       "name": "structharbor-0005__openmm__absorbs__autodock-vina",
       "suite": "StructHarbor",
       "origin": "https://github.com/shindo687/structharbor-0005__openmm__absorbs__autodock-vina.git",

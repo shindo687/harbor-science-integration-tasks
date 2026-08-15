@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "complete": true,
-  "task_count": 29,
+  "task_count": 30,
   "tasks": [
     {
       "name": "algobridge-0001__scanpy__absorbs__bbknn",
@@ -366,6 +366,19 @@
       "lfs_object_count": 0,
       "lfs_bytes": 0,
       "materialized_bytes": 70621102
+    },
+    {
+      "name": "structharbor-0004__autodock-vina__absorbs__rdkit",
+      "suite": "StructHarbor",
+      "origin": "https://github.com/shindo687/structharbor-0004__autodock-vina__absorbs__rdkit.git",
+      "commit": "5ed6801a2c4e3b32100c567fb2e5393929bb6c4e",
+      "source_tree": "fe45510925989328c7f235d5c88649366b996a19",
+      "file_count": 51,
+      "git_blob_bytes": 319915897,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 319915897
     },
     {
       "name": "structharbor-0005__openmm__absorbs__autodock-vina",

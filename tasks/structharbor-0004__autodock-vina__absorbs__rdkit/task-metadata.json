@@ -1,0 +1,17 @@
+{
+  "algorithm": "MMFF94 bonded and nonbonded fixed-geometry ligand strain energy",
+  "donor": "RDKit 2026.03.5",
+  "host": "AutoDock Vina 1.2.7",
+  "id": "STRUCTHARBOR-0004",
+  "oracle_reference": "locked official RDKit MMFF94 force-field runtime",
+  "scope": "bounded preparameterized fixed ligand geometry; no atom typing, parameter assignment, conformer generation, or minimization",
+  "status": "accepted",
+  "verification": {
+    "harbor_nop_reward": 0.0,
+    "harbor_oracle_reward": 1.0,
+    "hidden": "15/15",
+    "invalid": "12/12",
+    "metamorphic": "2/2",
+    "public": "5/5"
+  }
+}
