@@ -1,0 +1,48 @@
+{
+  "expected": {
+    "query": [
+      {
+        "id": "query_del",
+        "status": "TP"
+      }
+    ],
+    "summary": {
+      "f1": 1.0,
+      "fn": 0,
+      "fp": 0,
+      "precision": 1.0,
+      "query_tp": 1,
+      "recall": 1.0,
+      "truth_tp": 1
+    },
+    "truth": [
+      {
+        "id": "truth_del",
+        "status": "TP"
+      }
+    ]
+  },
+  "packet": {
+    "name": "public_shifted_homopolymer_deletion",
+    "query": [
+      {
+        "alt": "A",
+        "genotype": "1/1",
+        "id": "query_del",
+        "position": 44,
+        "ref": "AA"
+      }
+    ],
+    "reference": "GCATGCAATGCATGGCATGCAATGCATGGCATGCAATAAAAAAAAAACAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATG",
+    "reference_start": 1,
+    "truth": [
+      {
+        "alt": "A",
+        "genotype": "1/1",
+        "id": "truth_del",
+        "position": 40,
+        "ref": "AA"
+      }
+    ]
+  }
+}

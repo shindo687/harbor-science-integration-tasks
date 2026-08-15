@@ -1,6 +1,6 @@
 # Task index
 
-This index contains **32** byte-exact standalone-repository snapshots.
+This index contains **33** byte-exact standalone-repository snapshots.
 
 | Suite | Task snapshot | Standalone repository | Commit | Files | Materialized size | LFS |
 |---|---|---|---|---:|---:|---:|
@@ -11,6 +11,7 @@ This index contains **32** byte-exact standalone-repository snapshots.
 | AlgoBridge | [algobridge-0005__edger__absorbs__limma](tasks/algobridge-0005__edger__absorbs__limma/) | [source](https://github.com/shindo687/algobridge-0005__edger__absorbs__limma) | `62fb7e7bfc2f` | 37 | 6.6 MiB | — |
 | AlgoBridge | [algobridge-0006__scanpy__absorbs__scib](tasks/algobridge-0006__scanpy__absorbs__scib/) | [source](https://github.com/shindo687/algobridge-0006__scanpy__absorbs__scib) | `76b059e5e533` | 2290 | 505.8 MiB | — |
 | AlgoBridge | [algobridge-0007__fasttree__absorbs__mafft](tasks/algobridge-0007__fasttree__absorbs__mafft/) | [source](https://github.com/shindo687/algobridge-0007__fasttree__absorbs__mafft) | `b3fd38093c9b` | 94 | 1.3 MiB | — |
+| AlgoBridge | [algobridge-0009__gatk__absorbs__hap-py](tasks/algobridge-0009__gatk__absorbs__hap-py/) | [source](https://github.com/shindo687/algobridge-0009__gatk__absorbs__hap-py) | `df2ccea869f7` | 59 | 501.1 MiB | — |
 | AlgoBridge | [algobridge-0010__bwa__absorbs__freebayes](tasks/algobridge-0010__bwa__absorbs__freebayes/) | [source](https://github.com/shindo687/algobridge-0010__bwa__absorbs__freebayes) | `91e3cca4a1f7` | 60 | 56.2 MiB | — |
 | AlgoBridge | [algobridge-0011__gromacs__absorbs__dssp](tasks/algobridge-0011__gromacs__absorbs__dssp/) | [source](https://github.com/shindo687/algobridge-0011__gromacs__absorbs__dssp) | `d9b606b6ab01` | 68 | 137.5 MiB | — |
 | AlgoBridge | [algobridge-0012__gromacs__absorbs__prody](tasks/algobridge-0012__gromacs__absorbs__prody/) | [source](https://github.com/shindo687/algobridge-0012__gromacs__absorbs__prody) | `bee40efe5138` | 70 | 279.2 MiB | — |

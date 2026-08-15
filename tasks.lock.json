@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "complete": true,
-  "task_count": 32,
+  "task_count": 33,
   "tasks": [
     {
       "name": "algobridge-0001__scanpy__absorbs__bbknn",
@@ -93,6 +93,19 @@
       "lfs_object_count": 0,
       "lfs_bytes": 0,
       "materialized_bytes": 1415372
+    },
+    {
+      "name": "algobridge-0009__gatk__absorbs__hap-py",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0009__gatk__absorbs__hap-py.git",
+      "commit": "df2ccea869f70424052ace59ae0a8563d3bf790c",
+      "source_tree": "4ca0a50a665aa9551808c25ee7bb631c4bfdf359",
+      "file_count": 59,
+      "git_blob_bytes": 525445892,
+      "lfs_file_count": 0,
+      "lfs_object_count": 0,
+      "lfs_bytes": 0,
+      "materialized_bytes": 525445892
     },
     {
       "name": "algobridge-0010__bwa__absorbs__freebayes",

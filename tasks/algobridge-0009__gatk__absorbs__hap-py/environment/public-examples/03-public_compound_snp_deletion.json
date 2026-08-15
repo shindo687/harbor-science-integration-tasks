@@ -1,0 +1,59 @@
+{
+  "expected": {
+    "query": [
+      {
+        "id": "q_complex",
+        "status": "TP"
+      }
+    ],
+    "summary": {
+      "f1": 1.0,
+      "fn": 0,
+      "fp": 0,
+      "precision": 1.0,
+      "query_tp": 1,
+      "recall": 1.0,
+      "truth_tp": 2
+    },
+    "truth": [
+      {
+        "id": "t_snp",
+        "status": "TP"
+      },
+      {
+        "id": "t_del",
+        "status": "TP"
+      }
+    ]
+  },
+  "packet": {
+    "name": "public_compound_snp_deletion",
+    "query": [
+      {
+        "alt": "CT",
+        "genotype": "0/1",
+        "id": "q_complex",
+        "position": 55,
+        "ref": "ATT"
+      }
+    ],
+    "reference": "TGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCAT",
+    "reference_start": 1,
+    "truth": [
+      {
+        "alt": "C",
+        "genotype": "0/1",
+        "id": "t_snp",
+        "position": 55,
+        "ref": "A"
+      },
+      {
+        "alt": "T",
+        "genotype": "0/1",
+        "id": "t_del",
+        "position": 56,
+        "ref": "TT"
+      }
+    ]
+  }
+}

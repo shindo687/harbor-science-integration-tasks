@@ -44,6 +44,12 @@
       "commit": "b3fd38093c9b3e1a08d5f82a906ddd3f2a61ee3d"
     },
     {
+      "name": "algobridge-0009__gatk__absorbs__hap-py",
+      "suite": "AlgoBridge",
+      "origin": "https://github.com/shindo687/algobridge-0009__gatk__absorbs__hap-py.git",
+      "commit": "df2ccea869f70424052ace59ae0a8563d3bf790c"
+    },
+    {
       "name": "algobridge-0010__bwa__absorbs__freebayes",
       "suite": "AlgoBridge",
       "origin": "https://github.com/shindo687/algobridge-0010__bwa__absorbs__freebayes.git",

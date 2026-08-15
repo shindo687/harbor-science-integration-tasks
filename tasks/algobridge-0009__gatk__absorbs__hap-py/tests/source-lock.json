@@ -1,0 +1,73 @@
+{
+  "archive_policy": "Complete Git tree blobs from exact official commits, exported without Git metadata. Symlinks are preserved. GATK Git LFS objects are intentionally retained as their committed pointer blobs because this bounded source-only Java task uses none of those large model/test assets.",
+  "host": {
+    "name": "GATK",
+    "version": "4.6.2.0",
+    "repository": "https://github.com/broadinstitute/gatk.git",
+    "tag": "4.6.2.0",
+    "commit": "76edc75c26504da94bbaee66584e107e76ee15de",
+    "tree": "eb92452f97d98692e21cf4dc9a884446c2648f95",
+    "archive": "environment/source-parts/host-source.tar.gz.part-*",
+    "archive_sha256": "2b237ef65d0c596705f7d53e2e5175101ab5b506b93aea0f5f9d4e825e7ebbe6",
+    "archive_bytes": 130752763,
+    "archive_file_count": 7063,
+    "symlink_count": 13,
+    "gitlink_count": 0,
+    "lfs_pointer_count": 813,
+    "parts": [
+      {
+        "name": "host-source.tar.gz.part-00",
+        "bytes": 90000000,
+        "sha256": "4d43763f81e850a8b96ef44c7aa691623e87824a69b6737213e237057411d06f"
+      },
+      {
+        "name": "host-source.tar.gz.part-01",
+        "bytes": 40752763,
+        "sha256": "cdab4cc3fd50beb3a000a409f97dcf7169cb11477c1b58a3c90a822f5f60e84f"
+      }
+    ],
+    "license": "Apache-2.0"
+  },
+  "donor": {
+    "name": "hap.py",
+    "version": "0.3.15",
+    "repository": "https://github.com/Illumina/hap.py.git",
+    "tag": "v0.3.15",
+    "commit": "84011695b2ff2406c16a335106db6831fb67fdfe",
+    "tree": "eb6c2dd6a3f1f899ffeb45437028bbf0850bf442",
+    "archive": "environment/source-parts/donor-source.tar.gz.part-*",
+    "archive_sha256": "9b1a105d7614468730ec9a3e6287e2c82df6cbf7a1742abbc37fbc68e5b70a73",
+    "archive_bytes": 128511880,
+    "archive_file_count": 553,
+    "symlink_count": 0,
+    "gitlink_count": 0,
+    "lfs_pointer_count": 0,
+    "parts": [
+      {
+        "name": "donor-source.tar.gz.part-00",
+        "bytes": 90000000,
+        "sha256": "433cac9e50d87ee0c9a5d2c00a2b821281a2f5fd5668c1b8abdbaec16652c4b2"
+      },
+      {
+        "name": "donor-source.tar.gz.part-01",
+        "bytes": 38511880,
+        "sha256": "4eee42064a7ecc13350c7538d67224cdc7eaa76ebf9eb55ca3c43cc5ae7c67e2"
+      }
+    ],
+    "license": "BSD-2-Clause"
+  },
+  "reference_runtime": {
+    "base_image": "docker.io/library/python@sha256:ffb752e139c0a19692a43af8d8523b274222dd68eebad5d583b45c2201c6e30a",
+    "jdk_image": "docker.io/library/eclipse-temurin@sha256:29467857e8bde40ab1f7befecbda0ea764b95afec1cc7f89aa90f7a766577e19",
+    "java_version": "OpenJDK 17.0.19+10",
+    "policy": "The root-only oracle runs hap.py v0.3.15 xcmp with always-hapcmp, a 30 bp block window/expansion, and a 4096-haplotype limit; its HapMatch-aware quantification is compared to the submitted native GATK Java primitive.",
+    "xcmp_version": "v0.3.15",
+    "xcmp_sha256": "82836775d06cda08d8167f3415001907ac4394a86dadad62ed4ec52b44e46d4a",
+    "bgzip_version": "htslib 1.4.1",
+    "bgzip_sha256": "b95af0eea70c5b6784e40a8711f24c1d921217cfae244d0dad465f2364f6cbb2",
+    "tabix_version": "htslib 1.4.1",
+    "tabix_sha256": "65a6de482987e706ba7bf3ba3c99344b4306d5b7f49bf9fe44faa195d3384a3e",
+    "compatibility_patch": "tests/reference-bin/xcmp-build-compat.patch",
+    "compatibility_patch_sha256": "67a21bb586ad26fab6cdd91bc5e3bbfb5df2b10feeb6ca7633d63ac0eef1f3af"
+  }
+}

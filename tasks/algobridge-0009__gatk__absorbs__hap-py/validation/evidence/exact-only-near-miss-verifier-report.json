@@ -1,0 +1,177 @@
+{
+  "hard_gates": {
+    "candidate_isolation": {
+      "protected_paths_unreadable": [
+        "/tests",
+        "/opt/reference-happy",
+        "/opt/donor-source",
+        "/opt/pristine-host",
+        "/opt/reference-runner",
+        "/opt/source-archives",
+        "/opt/candidate-runner/HaplotypeCompareHarness.java"
+      ],
+      "uid": 10001
+    },
+    "invalid_inputs": {
+      "failures": [],
+      "passed": 12,
+      "total": 12
+    },
+    "java_compile": {
+      "classes": "/tmp/algobridge-candidate-classes-1q1as6nr"
+    },
+    "metamorphic": {
+      "failures": [],
+      "passed": 2,
+      "total": 2
+    },
+    "provenance": {
+      "authenticated_files": 10,
+      "versions": {
+        "bgzip": "1.4.1",
+        "java": "17.0.19",
+        "tabix": "1.4.1",
+        "xcmp": "v0.3.15"
+      }
+    },
+    "source_policy": {
+      "added": [
+        "src/main/java/org/broadinstitute/hellbender/tools/walkers/variantutils/HaplotypeCompareVariants.java"
+      ],
+      "allowed_import_scan": "pass",
+      "donor_file_hash_scan": "pass",
+      "forbidden_primitive_scan": "pass",
+      "module_bytes": 16544,
+      "module_sha256": "5a2523d88614694b524c42b553ecd148986fe70104065cbbb48f4da6e4a7c87a"
+    }
+  },
+  "reward": 0.6,
+  "scientific": {
+    "hidden": {
+      "passed": 11,
+      "total": 15
+    },
+    "public": {
+      "passed": 1,
+      "total": 5
+    }
+  },
+  "scientific_failures": [
+    {
+      "case": "public_shifted_homopolymer_deletion",
+      "reasons": [
+        "f1",
+        "fn",
+        "fp",
+        "precision",
+        "query_statuses",
+        "query_tp",
+        "recall",
+        "truth_statuses",
+        "truth_tp"
+      ]
+    },
+    {
+      "case": "public_compound_snp_deletion",
+      "reasons": [
+        "f1",
+        "fn",
+        "fp",
+        "precision",
+        "query_statuses",
+        "query_tp",
+        "recall",
+        "truth_statuses",
+        "truth_tp"
+      ]
+    },
+    {
+      "case": "public_mixed_tp_fp_fn",
+      "reasons": [
+        "f1",
+        "fn",
+        "fp",
+        "precision",
+        "query_statuses",
+        "query_tp",
+        "recall",
+        "truth_statuses",
+        "truth_tp"
+      ]
+    },
+    {
+      "case": "public_phased_truth_unphased_query",
+      "reasons": [
+        "f1",
+        "fn",
+        "fp",
+        "precision",
+        "query_statuses",
+        "query_tp",
+        "recall",
+        "truth_statuses",
+        "truth_tp"
+      ]
+    },
+    {
+      "case": "hidden_shifted_homopolymer_insertion",
+      "reasons": [
+        "f1",
+        "fn",
+        "fp",
+        "precision",
+        "query_statuses",
+        "query_tp",
+        "recall",
+        "truth_statuses",
+        "truth_tp"
+      ]
+    },
+    {
+      "case": "hidden_compound_snp_insertion",
+      "reasons": [
+        "f1",
+        "fn",
+        "fp",
+        "precision",
+        "query_statuses",
+        "query_tp",
+        "recall",
+        "truth_statuses",
+        "truth_tp"
+      ]
+    },
+    {
+      "case": "hidden_homalt_shifted_deletion",
+      "reasons": [
+        "f1",
+        "fn",
+        "fp",
+        "precision",
+        "query_statuses",
+        "query_tp",
+        "recall",
+        "truth_statuses",
+        "truth_tp"
+      ]
+    },
+    {
+      "case": "hidden_independent_blocks",
+      "reasons": [
+        "f1",
+        "fn",
+        "fp",
+        "precision",
+        "query_statuses",
+        "query_tp",
+        "recall",
+        "truth_statuses",
+        "truth_tp"
+      ]
+    }
+  ],
+  "scientific_passed": 12,
+  "scientific_total": 20,
+  "status": "scientific_failures",
+  "task": "ALGOBRIDGE-0009"
+}

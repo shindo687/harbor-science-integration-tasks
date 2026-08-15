@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+classes="$(mktemp -d /tmp/algobridge-public-classes.XXXXXX)"
+/opt/java/openjdk/bin/javac -encoding UTF-8 -d "$classes" \
+  /testbed/src/main/java/org/broadinstitute/hellbender/tools/walkers/variantutils/HaplotypeCompareVariants.java \
+  /opt/task-tools/HaplotypeCompareHarness.java
+CANDIDATE_CLASSES="$classes" python /examples/verify_examples.py

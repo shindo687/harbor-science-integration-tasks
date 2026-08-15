@@ -1,0 +1,25 @@
+diff --git a/external/make_dependencies.sh b/external/make_dependencies.sh
+index 4e0790b..d36c137 100755
+--- a/external/make_dependencies.sh
++++ b/external/make_dependencies.sh
+@@ -41,8 +41,8 @@ then
+         tar xjf ${DIR}/boost_subset_1_58_0.tar.bz2
+         cd boost_subset_1_58_0
+         ./bootstrap.sh
+-        ./b2 link=static -j4 --prefix=$ISD -sZLIB_SOURCE=$TLD
+-        ./b2 link=static -j4 --prefix=$ISD install -sZLIB_SOURCE=$TLD/zlib-1.2.8
++        ./b2 link=static -j4 --prefix=$ISD -sZLIB_SOURCE=$TLD -sNO_BZIP2=1
++        ./b2 link=static -j4 --prefix=$ISD install -sZLIB_SOURCE=$TLD/zlib-1.2.8 -sNO_BZIP2=1
+     else
+         echo "Boost already built. To rebuild, delete ${ISD}/include/boost"
+     fi
+diff --git a/src/c++/lib/tools/Roc.cpp b/src/c++/lib/tools/Roc.cpp
+index 8f8762f..9fb287e 100644
+--- a/src/c++/lib/tools/Roc.cpp
++++ b/src/c++/lib/tools/Roc.cpp
+@@ -36,4 +36,5 @@
+ #include <algorithm>
+ #include <cmath>
+ #include <fstream>
++#include <limits>
+ #include <helpers/StringUtil.hh>

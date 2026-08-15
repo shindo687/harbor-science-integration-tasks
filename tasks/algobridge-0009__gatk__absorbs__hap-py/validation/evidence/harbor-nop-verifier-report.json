@@ -1,0 +1,18 @@
+{
+  "hard_gates": {
+    "provenance": {
+      "authenticated_files": 10,
+      "versions": {
+        "bgzip": "1.4.1",
+        "java": "17.0.19",
+        "tabix": "1.4.1",
+        "xcmp": "v0.3.15"
+      }
+    },
+    "source_policy": "unexpected added files: []"
+  },
+  "reason": "unexpected added files: []",
+  "reward": 0.0,
+  "status": "hard_gate_failed",
+  "task": "ALGOBRIDGE-0009"
+}

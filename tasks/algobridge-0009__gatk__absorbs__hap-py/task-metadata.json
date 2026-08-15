@@ -1,0 +1,19 @@
+{
+  "algorithm": "bounded diploid local-haplotype enumeration and HapMatch-aware per-allele classification",
+  "authoring_state": "accepted",
+  "donor": "hap.py 0.3.15",
+  "host": "GATK 4.6.2.0",
+  "id": "ALGOBRIDGE-0009",
+  "oracle_reference": "locked official hap.py 0.3.15 xcmp",
+  "scope": "diploid phased/unphased biallelic SNPs and indels up to 50 bp, 30 bp superloci, and at most 4096 haplotype configurations",
+  "status": "accepted",
+  "verification": {
+    "harbor_nop_reward": 0.0,
+    "harbor_oracle_reward": 1.0,
+    "hidden": "15/15",
+    "invalid": "12/12",
+    "metamorphic": "2/2",
+    "near_miss_exact_only_reward": 0.6,
+    "public": "5/5"
+  }
+}

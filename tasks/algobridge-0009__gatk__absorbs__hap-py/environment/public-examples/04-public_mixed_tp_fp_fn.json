@@ -1,0 +1,92 @@
+{
+  "expected": {
+    "query": [
+      {
+        "id": "query_exact",
+        "status": "TP"
+      },
+      {
+        "id": "query_shift",
+        "status": "TP"
+      },
+      {
+        "id": "query_only",
+        "status": "FP"
+      }
+    ],
+    "summary": {
+      "f1": 0.6666666666666666,
+      "fn": 1,
+      "fp": 1,
+      "precision": 0.6666666666666666,
+      "query_tp": 2,
+      "recall": 0.6666666666666666,
+      "truth_tp": 2
+    },
+    "truth": [
+      {
+        "id": "truth_exact",
+        "status": "TP"
+      },
+      {
+        "id": "truth_shift",
+        "status": "TP"
+      },
+      {
+        "id": "truth_only",
+        "status": "FN"
+      }
+    ]
+  },
+  "packet": {
+    "name": "public_mixed_tp_fp_fn",
+    "query": [
+      {
+        "alt": "T",
+        "genotype": "0/1",
+        "id": "query_exact",
+        "position": 20,
+        "ref": "G"
+      },
+      {
+        "alt": "C",
+        "genotype": "0/1",
+        "id": "query_shift",
+        "position": 76,
+        "ref": "CC"
+      },
+      {
+        "alt": "C",
+        "genotype": "0/1",
+        "id": "query_only",
+        "position": 210,
+        "ref": "T"
+      }
+    ],
+    "reference": "TGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCACCCCCCCCCCTGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTGCATGCCATGCATTG",
+    "reference_start": 1,
+    "truth": [
+      {
+        "alt": "T",
+        "genotype": "0/1",
+        "id": "truth_exact",
+        "position": 20,
+        "ref": "G"
+      },
+      {
+        "alt": "C",
+        "genotype": "0/1",
+        "id": "truth_shift",
+        "position": 72,
+        "ref": "CC"
+      },
+      {
+        "alt": "G",
+        "genotype": "0/1",
+        "id": "truth_only",
+        "position": 150,
+        "ref": "T"
+      }
+    ]
+  }
+}

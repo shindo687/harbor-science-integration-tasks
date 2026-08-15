@@ -1,0 +1,70 @@
+{
+  "expected": {
+    "query": [
+      {
+        "id": "query_snp",
+        "status": "TP"
+      },
+      {
+        "id": "query_ins",
+        "status": "TP"
+      }
+    ],
+    "summary": {
+      "f1": 1.0,
+      "fn": 0,
+      "fp": 0,
+      "precision": 1.0,
+      "query_tp": 2,
+      "recall": 1.0,
+      "truth_tp": 2
+    },
+    "truth": [
+      {
+        "id": "truth_snp",
+        "status": "TP"
+      },
+      {
+        "id": "truth_ins",
+        "status": "TP"
+      }
+    ]
+  },
+  "packet": {
+    "name": "public_phased_truth_unphased_query",
+    "query": [
+      {
+        "alt": "A",
+        "genotype": "0/1",
+        "id": "query_snp",
+        "position": 72,
+        "ref": "T"
+      },
+      {
+        "alt": "GG",
+        "genotype": "1/0",
+        "id": "query_ins",
+        "position": 101,
+        "ref": "G"
+      }
+    ],
+    "reference": "ATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGGGGGGGGGGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCATGCAATGCATGGCA",
+    "reference_start": 1,
+    "truth": [
+      {
+        "alt": "A",
+        "genotype": "1|0",
+        "id": "truth_snp",
+        "position": 72,
+        "ref": "T"
+      },
+      {
+        "alt": "GG",
+        "genotype": "1|0",
+        "id": "truth_ins",
+        "position": 98,
+        "ref": "G"
+      }
+    ]
+  }
+}

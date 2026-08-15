@@ -1,0 +1,64 @@
+{
+  "hard_gates": {
+    "candidate_isolation": {
+      "protected_paths_unreadable": [
+        "/tests",
+        "/opt/reference-happy",
+        "/opt/donor-source",
+        "/opt/pristine-host",
+        "/opt/reference-runner",
+        "/opt/source-archives",
+        "/opt/candidate-runner/HaplotypeCompareHarness.java"
+      ],
+      "uid": 10001
+    },
+    "invalid_inputs": {
+      "failures": [],
+      "passed": 12,
+      "total": 12
+    },
+    "java_compile": {
+      "classes": "/tmp/algobridge-candidate-classes-79trtrh2"
+    },
+    "metamorphic": {
+      "failures": [],
+      "passed": 2,
+      "total": 2
+    },
+    "provenance": {
+      "authenticated_files": 10,
+      "versions": {
+        "bgzip": "1.4.1",
+        "java": "17.0.19",
+        "tabix": "1.4.1",
+        "xcmp": "v0.3.15"
+      }
+    },
+    "source_policy": {
+      "added": [
+        "src/main/java/org/broadinstitute/hellbender/tools/walkers/variantutils/HaplotypeCompareVariants.java"
+      ],
+      "allowed_import_scan": "pass",
+      "donor_file_hash_scan": "pass",
+      "forbidden_primitive_scan": "pass",
+      "module_bytes": 16563,
+      "module_sha256": "3806493bb24d15029d70b5b462cdeac7b9b3b5c22a826b9395106ce40c91733c"
+    }
+  },
+  "reward": 1.0,
+  "scientific": {
+    "hidden": {
+      "passed": 15,
+      "total": 15
+    },
+    "public": {
+      "passed": 5,
+      "total": 5
+    }
+  },
+  "scientific_failures": [],
+  "scientific_passed": 20,
+  "scientific_total": 20,
+  "status": "passed",
+  "task": "ALGOBRIDGE-0009"
+}
