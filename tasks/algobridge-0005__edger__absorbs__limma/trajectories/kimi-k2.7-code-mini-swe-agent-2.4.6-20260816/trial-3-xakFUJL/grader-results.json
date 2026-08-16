@@ -1,0 +1,1 @@
+{"task_id":"ALGOBRIDGE-0005","status":"hard_gate_failed","reason":"forbidden dependency/execution token: limma","hard_gates":{"reference_integrity":"pass"},"hidden":{"passed":0,"total":15},"public":{"passed":0,"total":5},"cases":[],"reward":0e+00}
