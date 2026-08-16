@@ -1,0 +1,333 @@
+{
+  "cases": [
+    {
+      "affine_sp_score_error": 0.0,
+      "alignment_homology_f1": 1.0,
+      "bounded_upgma_guide_match": true,
+      "candidate_affine_sp_score": 26.5,
+      "candidate_homology_pairs": 16,
+      "candidate_stderr_tail": "",
+      "final_tree_match": true,
+      "id": "dna_pair_internal",
+      "mafft_internal_guide_topology_match_diagnostic": true,
+      "passed": true,
+      "problems": [],
+      "reference_affine_sp_score": 26.5,
+      "reference_homology_pairs": 16
+    },
+    {
+      "affine_sp_score_error": 0.0,
+      "alignment_homology_f1": 1.0,
+      "bounded_upgma_guide_match": true,
+      "candidate_affine_sp_score": 103.0,
+      "candidate_homology_pairs": 60,
+      "candidate_stderr_tail": "",
+      "final_tree_match": true,
+      "id": "dna_three_internal",
+      "mafft_internal_guide_topology_match_diagnostic": true,
+      "passed": true,
+      "problems": [],
+      "reference_affine_sp_score": 103.0,
+      "reference_homology_pairs": 60
+    },
+    {
+      "affine_sp_score_error": 0.0,
+      "alignment_homology_f1": 1.0,
+      "bounded_upgma_guide_match": false,
+      "candidate_affine_sp_score": 110.25,
+      "candidate_homology_pairs": 75,
+      "candidate_stderr_tail": "",
+      "final_tree_match": true,
+      "id": "dna_terminal",
+      "mafft_internal_guide_topology_match_diagnostic": false,
+      "passed": false,
+      "problems": [
+        "bounded UPGMA guide tree: leaf-pair branch distance error 0.0016233767 exceeds 1e-05"
+      ],
+      "reference_affine_sp_score": 110.25,
+      "reference_homology_pairs": 75
+    },
+    {
+      "affine_sp_score_error": 0.0,
+      "alignment_homology_f1": 1.0,
+      "bounded_upgma_guide_match": true,
+      "candidate_affine_sp_score": 160.5,
+      "candidate_homology_pairs": 100,
+      "candidate_stderr_tail": "",
+      "final_tree_match": true,
+      "id": "dna_long_insert",
+      "mafft_internal_guide_topology_match_diagnostic": false,
+      "passed": true,
+      "problems": [],
+      "reference_affine_sp_score": 160.5,
+      "reference_homology_pairs": 100
+    },
+    {
+      "affine_sp_score_error": 23.75,
+      "alignment_homology_f1": 0.8461538461538461,
+      "bounded_upgma_guide_match": true,
+      "candidate_affine_sp_score": 103.75,
+      "candidate_homology_pairs": 78,
+      "candidate_stderr_tail": "",
+      "final_tree_match": false,
+      "id": "dna_duplicates",
+      "mafft_internal_guide_topology_match_diagnostic": true,
+      "passed": false,
+      "problems": [
+        "alignment homology F1 is 0.846153846, expected 1",
+        "affine sum-of-pairs score error is 23.75",
+        "final tree: leaf-pair branch distance error 0.30339363 exceeds 1e-05"
+      ],
+      "reference_affine_sp_score": 127.5,
+      "reference_homology_pairs": 78
+    },
+    {
+      "affine_sp_score_error": 0.0,
+      "alignment_homology_f1": 1.0,
+      "bounded_upgma_guide_match": true,
+      "candidate_affine_sp_score": 126.0,
+      "candidate_homology_pairs": 72,
+      "candidate_stderr_tail": "",
+      "final_tree_match": true,
+      "id": "dna_tied_guide",
+      "mafft_internal_guide_topology_match_diagnostic": false,
+      "passed": true,
+      "problems": [],
+      "reference_affine_sp_score": 126.0,
+      "reference_homology_pairs": 72
+    },
+    {
+      "affine_sp_score_error": 0.0,
+      "alignment_homology_f1": 1.0,
+      "bounded_upgma_guide_match": false,
+      "candidate_affine_sp_score": 301.0,
+      "candidate_homology_pairs": 198,
+      "candidate_stderr_tail": "",
+      "final_tree_match": true,
+      "id": "dna_six_clusters",
+      "mafft_internal_guide_topology_match_diagnostic": false,
+      "passed": false,
+      "problems": [
+        "bounded UPGMA guide tree: normalized split sets differ"
+      ],
+      "reference_affine_sp_score": 301.0,
+      "reference_homology_pairs": 198
+    },
+    {
+      "affine_sp_score_error": 0.0,
+      "alignment_homology_f1": 1.0,
+      "bounded_upgma_guide_match": false,
+      "candidate_affine_sp_score": 7496.0,
+      "candidate_homology_pairs": 3924,
+      "candidate_stderr_tail": "",
+      "final_tree_match": true,
+      "id": "dna_sixteen_indel",
+      "mafft_internal_guide_topology_match_diagnostic": false,
+      "passed": false,
+      "problems": [
+        "bounded UPGMA guide tree: normalized split sets differ"
+      ],
+      "reference_affine_sp_score": 7496.0,
+      "reference_homology_pairs": 3924
+    },
+    {
+      "affine_sp_score_error": 0.0,
+      "alignment_homology_f1": 1.0,
+      "bounded_upgma_guide_match": false,
+      "candidate_affine_sp_score": 301.0,
+      "candidate_homology_pairs": 198,
+      "candidate_stderr_tail": "",
+      "final_tree_match": true,
+      "id": "dna_six_permuted",
+      "mafft_internal_guide_topology_match_diagnostic": false,
+      "passed": false,
+      "problems": [
+        "bounded UPGMA guide tree: normalized split sets differ"
+      ],
+      "reference_affine_sp_score": 301.0,
+      "reference_homology_pairs": 198
+    },
+    {
+      "affine_sp_score_error": 0.0,
+      "alignment_homology_f1": 1.0,
+      "bounded_upgma_guide_match": true,
+      "candidate_affine_sp_score": 66.5,
+      "candidate_homology_pairs": 15,
+      "candidate_stderr_tail": "",
+      "final_tree_match": true,
+      "id": "protein_pair",
+      "mafft_internal_guide_topology_match_diagnostic": true,
+      "passed": true,
+      "problems": [],
+      "reference_affine_sp_score": 66.5,
+      "reference_homology_pairs": 15
+    },
+    {
+      "affine_sp_score_error": 0.0,
+      "alignment_homology_f1": 1.0,
+      "bounded_upgma_guide_match": true,
+      "candidate_affine_sp_score": 409.0,
+      "candidate_homology_pairs": 93,
+      "candidate_stderr_tail": "",
+      "final_tree_match": true,
+      "id": "protein_motif",
+      "mafft_internal_guide_topology_match_diagnostic": false,
+      "passed": true,
+      "problems": [],
+      "reference_affine_sp_score": 409.0,
+      "reference_homology_pairs": 93
+    },
+    {
+      "affine_sp_score_error": 0.0,
+      "alignment_homology_f1": 1.0,
+      "bounded_upgma_guide_match": true,
+      "candidate_affine_sp_score": 461.5,
+      "candidate_homology_pairs": 87,
+      "candidate_stderr_tail": "",
+      "final_tree_match": true,
+      "id": "protein_long_insert",
+      "mafft_internal_guide_topology_match_diagnostic": false,
+      "passed": true,
+      "problems": [],
+      "reference_affine_sp_score": 461.5,
+      "reference_homology_pairs": 87
+    },
+    {
+      "affine_sp_score_error": 0.0,
+      "alignment_homology_f1": 1.0,
+      "bounded_upgma_guide_match": true,
+      "candidate_affine_sp_score": 441.75,
+      "candidate_homology_pairs": 84,
+      "candidate_stderr_tail": "",
+      "final_tree_match": true,
+      "id": "protein_duplicates",
+      "mafft_internal_guide_topology_match_diagnostic": true,
+      "passed": true,
+      "problems": [],
+      "reference_affine_sp_score": 441.75,
+      "reference_homology_pairs": 84
+    },
+    {
+      "affine_sp_score_error": 0.0,
+      "alignment_homology_f1": 1.0,
+      "bounded_upgma_guide_match": true,
+      "candidate_affine_sp_score": 1357.0,
+      "candidate_homology_pairs": 288,
+      "candidate_stderr_tail": "",
+      "final_tree_match": true,
+      "id": "protein_six_clusters",
+      "mafft_internal_guide_topology_match_diagnostic": false,
+      "passed": true,
+      "problems": [],
+      "reference_affine_sp_score": 1357.0,
+      "reference_homology_pairs": 288
+    },
+    {
+      "affine_sp_score_error": 0.0,
+      "alignment_homology_f1": 1.0,
+      "bounded_upgma_guide_match": true,
+      "candidate_affine_sp_score": 1357.0,
+      "candidate_homology_pairs": 288,
+      "candidate_stderr_tail": "",
+      "final_tree_match": true,
+      "id": "protein_six_permuted",
+      "mafft_internal_guide_topology_match_diagnostic": false,
+      "passed": true,
+      "problems": [],
+      "reference_affine_sp_score": 1357.0,
+      "reference_homology_pairs": 288
+    }
+  ],
+  "gates": {
+    "candidate_build": {
+      "binary_sha256": "fc5059b405e0781d822d7af33be0eb05748600c004518a1ad789dc93078195bc",
+      "command": [
+        "/usr/bin/gcc",
+        "-O3",
+        "-std=c99",
+        "-I",
+        "/tmp/candidate-build-m4w93p9z",
+        "-o",
+        "/tmp/candidate-build-m4w93p9z/FastTree-candidate",
+        "/tmp/candidate-build-m4w93p9z/FastTree.c",
+        "/tmp/candidate-build-m4w93p9z/align.c",
+        "-lm"
+      ],
+      "passed": true,
+      "source_files": [
+        "FastTree.c",
+        "align.c"
+      ],
+      "stderr_tail": ""
+    },
+    "candidate_isolation": {
+      "mafft_in_path": false,
+      "passed": true,
+      "removed": [
+        "/opt/reference-tools",
+        "/opt/reference-mafft-source",
+        "/opt/pristine-host",
+        "/opt/task-inputs"
+      ]
+    },
+    "legacy_fasttree_regression": {
+      "detail": "ok",
+      "passed": true
+    },
+    "permutation_invariance": {
+      "groups": {
+        "dna-six": {
+          "cases": [
+            "dna_six_clusters",
+            "dna_six_permuted"
+          ],
+          "detail": "ok",
+          "passed": true
+        },
+        "protein-six": {
+          "cases": [
+            "protein_six_clusters",
+            "protein_six_permuted"
+          ],
+          "detail": "ok",
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    "reference_determinism": {
+      "case": "dna_pair_internal",
+      "passed": true
+    },
+    "reference_pipeline": {
+      "cases": 15,
+      "legacy_tree_sha256": "ef7c20284cbf8bd669905c652e7076e8785383142dd9797febf7f649bc88a9ae",
+      "passed": true,
+      "workflow": "locked MAFFT core -> locked FastTree 2.2.0"
+    },
+    "source_policy": {
+      "details": {
+        "candidate_fasttree_sha256": "65a153c656ca64c367d21e03fbff920341552a8eb1552bb71da89beb29d402e3",
+        "donor_exact_72_token_windows": 0,
+        "donor_normalized_128_token_windows": 0,
+        "donor_source_files": 77,
+        "pristine_fasttree_sha256": "975202a6b74c9996af871404ff043bb2152edcbda539035662514bc12d1f3431",
+        "regular_files": 8,
+        "source_bytes": 417695,
+        "source_files": [
+          "FastTree.c",
+          "align.c",
+          "align.h"
+        ]
+      },
+      "passed": true,
+      "problems": []
+    }
+  },
+  "hidden_case_count": 15,
+  "passed_cases": 10,
+  "reward": 0.6666666666666666,
+  "schema_version": 1,
+  "summary": "10/15 hidden differential cases passed",
+  "task": "algobridge-0007__fasttree__absorbs__mafft"
+}

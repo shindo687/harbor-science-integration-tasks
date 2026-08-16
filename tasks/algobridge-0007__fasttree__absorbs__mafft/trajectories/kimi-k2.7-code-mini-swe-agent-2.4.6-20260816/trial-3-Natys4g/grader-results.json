@@ -1,0 +1,30 @@
+{
+  "cases": [],
+  "gates": {
+    "source_policy": {
+      "details": {
+        "candidate_fasttree_sha256": "4d37918968644b03642fe1a127ad9221ce1c3ceb88c7717a40d1049333f2bfb7",
+        "donor_exact_72_token_windows": 0,
+        "donor_normalized_128_token_windows": 0,
+        "donor_source_files": 77,
+        "pristine_fasttree_sha256": "975202a6b74c9996af871404ff043bb2152edcbda539035662514bc12d1f3431",
+        "regular_files": 11,
+        "source_bytes": 416275,
+        "source_files": [
+          "FastTree.c",
+          "align_small.h"
+        ]
+      },
+      "passed": false,
+      "problems": [
+        "bundled executable is forbidden: FastTreeAS",
+        "bundled executable is forbidden: FastTreeDbg"
+      ]
+    }
+  },
+  "hidden_case_count": 15,
+  "reward": 0.0,
+  "schema_version": 1,
+  "summary": "source policy hard gate failed",
+  "task": "algobridge-0007__fasttree__absorbs__mafft"
+}
