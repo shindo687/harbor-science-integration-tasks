@@ -1,0 +1,304 @@
+{
+  "candidate_stderr_tail": "",
+  "changed_files": [
+    "wrappers/python/openmm/app/__init__.py",
+    "wrappers/python/openmm/app/mbar.py"
+  ],
+  "hard_gates": {
+    "candidate_materialized": true,
+    "candidate_protocol": true,
+    "host_regression": true,
+    "reference_integrity": true,
+    "reference_isolation": true,
+    "source_policy": true
+  },
+  "metamorphic_common_offset": true,
+  "overlay_manifest": [
+    "wrappers/python/openmm/app/mbar.py -> openmm/app/mbar.py",
+    "wrappers/python/openmm/app/__init__.py -> public export"
+  ],
+  "passed": 15,
+  "points": [
+    {
+      "details": {
+        "Delta_f_max_abs": 0.0,
+        "Delta_f_max_scaled": 0.0,
+        "covariance_max_abs": 2.0599841277224584e-18,
+        "covariance_max_scaled": 2.0599841277224584e-18,
+        "dDelta_f_max_abs": 8.326672684688674e-17,
+        "dDelta_f_max_scaled": 8.326672684688674e-17,
+        "effective_sample_number_max_abs": 2.1316282072803006e-14,
+        "effective_sample_number_max_scaled": 3.9461520051707926e-16,
+        "f_k_max_abs": 0.0,
+        "f_k_max_scaled": 0.0,
+        "overlap_max_abs": 1.6653345369377348e-16,
+        "overlap_max_scaled": 1.6653345369377348e-16,
+        "scientific_invariants": true,
+        "weights_max_abs": 2.0816681711721685e-17,
+        "weights_max_scaled": 2.0816681711721685e-17
+      },
+      "name": "two_state_high_overlap",
+      "passed": true
+    },
+    {
+      "details": {
+        "Delta_f_max_abs": 7.30526750203353e-13,
+        "Delta_f_max_scaled": 7.30526750203353e-13,
+        "covariance_max_abs": 4.4298076318227686e-10,
+        "covariance_max_scaled": 4.926830432635704e-12,
+        "dDelta_f_max_abs": 3.8305358884827e-11,
+        "dDelta_f_max_scaled": 2.019858350517356e-12,
+        "effective_sample_number_max_abs": 7.105427357601002e-15,
+        "effective_sample_number_max_scaled": 1.9735774019346077e-16,
+        "f_k_max_abs": 7.30526750203353e-13,
+        "f_k_max_scaled": 7.30526750203353e-13,
+        "overlap_max_abs": 2.220446049250313e-16,
+        "overlap_max_scaled": 2.220446049250313e-16,
+        "scientific_invariants": true,
+        "weights_max_abs": 1.3877787807814457e-17,
+        "weights_max_scaled": 1.3877787807814457e-17
+      },
+      "name": "two_state_low_overlap",
+      "passed": true
+    },
+    {
+      "details": {
+        "Delta_f_max_abs": 4.440892098500626e-16,
+        "Delta_f_max_scaled": 4.440892098500626e-16,
+        "covariance_max_abs": 1.3877787807814457e-17,
+        "covariance_max_scaled": 1.3877787807814457e-17,
+        "dDelta_f_max_abs": 5.551115123125783e-17,
+        "dDelta_f_max_scaled": 5.551115123125783e-17,
+        "effective_sample_number_max_abs": 4.263256414560601e-14,
+        "effective_sample_number_max_scaled": 6.963409314786052e-16,
+        "f_k_max_abs": 4.440892098500626e-16,
+        "f_k_max_scaled": 4.440892098500626e-16,
+        "overlap_max_abs": 5.551115123125783e-16,
+        "overlap_max_scaled": 5.551115123125783e-16,
+        "scientific_invariants": true,
+        "weights_max_abs": 3.122502256758253e-17,
+        "weights_max_scaled": 3.122502256758253e-17
+      },
+      "name": "unequal_counts",
+      "passed": true
+    },
+    {
+      "details": {
+        "Delta_f_max_abs": 8.881784197001252e-16,
+        "Delta_f_max_scaled": 8.881784197001252e-16,
+        "covariance_max_abs": 4.85722573273506e-17,
+        "covariance_max_scaled": 4.85722573273506e-17,
+        "dDelta_f_max_abs": 8.326672684688674e-17,
+        "dDelta_f_max_scaled": 8.326672684688674e-17,
+        "effective_sample_number_max_abs": 7.105427357601002e-15,
+        "effective_sample_number_max_scaled": 1.9828802053308982e-16,
+        "f_k_max_abs": 8.881784197001252e-16,
+        "f_k_max_scaled": 8.881784197001252e-16,
+        "overlap_max_abs": 2.220446049250313e-16,
+        "overlap_max_scaled": 2.220446049250313e-16,
+        "scientific_invariants": true,
+        "weights_max_abs": 2.0816681711721685e-17,
+        "weights_max_scaled": 2.0816681711721685e-17
+      },
+      "name": "three_state_bridge",
+      "passed": true
+    },
+    {
+      "details": {
+        "Delta_f_max_abs": 1.3322676295501878e-15,
+        "Delta_f_max_scaled": 1.3322676295501878e-15,
+        "covariance_max_abs": 2.7755575615628914e-16,
+        "covariance_max_scaled": 2.7755575615628914e-16,
+        "dDelta_f_max_abs": 8.326672684688674e-16,
+        "dDelta_f_max_scaled": 8.326672684688674e-16,
+        "effective_sample_number_max_abs": 2.842170943040401e-14,
+        "effective_sample_number_max_scaled": 5.111366871101708e-16,
+        "f_k_max_abs": 1.3322676295501878e-15,
+        "f_k_max_scaled": 1.3322676295501878e-15,
+        "overlap_max_abs": 4.440892098500626e-16,
+        "overlap_max_scaled": 4.440892098500626e-16,
+        "scientific_invariants": true,
+        "weights_max_abs": 3.469446951953614e-17,
+        "weights_max_scaled": 3.469446951953614e-17
+      },
+      "name": "unsampled_middle",
+      "passed": true
+    },
+    {
+      "details": {
+        "Delta_f_max_abs": 4.440892098500626e-16,
+        "Delta_f_max_scaled": 4.440892098500626e-16,
+        "covariance_max_abs": 2.42861286636753e-17,
+        "covariance_max_scaled": 2.42861286636753e-17,
+        "dDelta_f_max_abs": 1.6653345369377348e-16,
+        "dDelta_f_max_scaled": 1.6653345369377348e-16,
+        "effective_sample_number_max_abs": 2.842170943040401e-14,
+        "effective_sample_number_max_scaled": 6.240295862793036e-16,
+        "f_k_max_abs": 4.440892098500626e-16,
+        "f_k_max_scaled": 4.440892098500626e-16,
+        "overlap_max_abs": 2.220446049250313e-16,
+        "overlap_max_scaled": 2.220446049250313e-16,
+        "scientific_invariants": true,
+        "weights_max_abs": 2.0816681711721685e-17,
+        "weights_max_scaled": 2.0816681711721685e-17
+      },
+      "name": "duplicated_samples",
+      "passed": true
+    },
+    {
+      "details": {
+        "Delta_f_max_abs": 2.2737367544323206e-13,
+        "Delta_f_max_scaled": 1.7488596266060854e-16,
+        "covariance_max_abs": 1.5768636396629176e-15,
+        "covariance_max_scaled": 1.5768636396629176e-15,
+        "dDelta_f_max_abs": 1.4349632593280148e-14,
+        "dDelta_f_max_scaled": 1.4349632593280148e-14,
+        "effective_sample_number_max_abs": 2.2566837287740782e-11,
+        "effective_sample_number_max_scaled": 2.668538141955014e-13,
+        "f_k_max_abs": 2.2737367544323206e-13,
+        "f_k_max_scaled": 1.7488596266060854e-16,
+        "overlap_max_abs": 9.459100169806334e-14,
+        "overlap_max_scaled": 9.459100169806334e-14,
+        "scientific_invariants": true,
+        "weights_max_abs": 4.805184028455756e-15,
+        "weights_max_scaled": 4.805184028455756e-15
+      },
+      "name": "large_state_offsets",
+      "passed": true
+    },
+    {
+      "details": {
+        "Delta_f_max_abs": 0.0,
+        "Delta_f_max_scaled": 0.0,
+        "covariance_max_abs": 2.740863092043355e-16,
+        "covariance_max_scaled": 2.740863092043355e-16,
+        "dDelta_f_max_abs": 1.887379141862766e-15,
+        "dDelta_f_max_scaled": 1.887379141862766e-15,
+        "effective_sample_number_max_abs": 1.1084466677857563e-12,
+        "effective_sample_number_max_scaled": 1.3107429160732648e-14,
+        "f_k_max_abs": 0.0,
+        "f_k_max_scaled": 0.0,
+        "overlap_max_abs": 7.327471962526033e-15,
+        "overlap_max_scaled": 7.327471962526033e-15,
+        "scientific_invariants": true,
+        "weights_max_abs": 4.697631172945194e-15,
+        "weights_max_scaled": 4.697631172945194e-15
+      },
+      "name": "common_sample_offsets",
+      "passed": true
+    },
+    {
+      "details": {
+        "Delta_f_max_abs": 4.440892098500626e-16,
+        "Delta_f_max_scaled": 4.440892098500626e-16,
+        "covariance_max_abs": 1.3877787807814457e-17,
+        "covariance_max_scaled": 1.3877787807814457e-17,
+        "dDelta_f_max_abs": 8.326672684688674e-17,
+        "dDelta_f_max_scaled": 8.326672684688674e-17,
+        "effective_sample_number_max_abs": 2.1316282072803006e-14,
+        "effective_sample_number_max_scaled": 4.145893823911848e-16,
+        "f_k_max_abs": 4.440892098500626e-16,
+        "f_k_max_scaled": 4.440892098500626e-16,
+        "overlap_max_abs": 4.440892098500626e-16,
+        "overlap_max_scaled": 4.440892098500626e-16,
+        "scientific_invariants": true,
+        "weights_max_abs": 2.0816681711721685e-17,
+        "weights_max_scaled": 2.0816681711721685e-17
+      },
+      "name": "warm_start",
+      "passed": true
+    },
+    {
+      "details": {
+        "Delta_f_max_abs": 0.0,
+        "Delta_f_max_scaled": 0.0,
+        "covariance_max_abs": 4.336808819188988e-19,
+        "covariance_max_scaled": 4.336808819188988e-19,
+        "dDelta_f_max_abs": 7.695441540131551e-14,
+        "dDelta_f_max_scaled": 7.695441540131551e-14,
+        "effective_sample_number_max_abs": 1.4210854715202004e-14,
+        "effective_sample_number_max_scaled": 1.7763568439135454e-16,
+        "f_k_max_abs": 0.0,
+        "f_k_max_scaled": 0.0,
+        "overlap_max_abs": 1.1102230246251565e-16,
+        "overlap_max_scaled": 1.1102230246251565e-16,
+        "scientific_invariants": true,
+        "weights_max_abs": 1.214306433183765e-17,
+        "weights_max_scaled": 1.214306433183765e-17
+      },
+      "name": "near_identical",
+      "passed": true
+    },
+    {
+      "details": {
+        "Delta_f_max_abs": 8.881784197001252e-16,
+        "Delta_f_max_scaled": 8.881784197001252e-16,
+        "covariance_max_abs": 6.765421556309548e-17,
+        "covariance_max_scaled": 6.765421556309548e-17,
+        "dDelta_f_max_abs": 2.220446049250313e-16,
+        "dDelta_f_max_scaled": 2.220446049250313e-16,
+        "effective_sample_number_max_abs": 2.842170943040401e-14,
+        "effective_sample_number_max_scaled": 6.037237849898997e-16,
+        "f_k_max_abs": 8.881784197001252e-16,
+        "f_k_max_scaled": 8.881784197001252e-16,
+        "overlap_max_abs": 3.3306690738754696e-16,
+        "overlap_max_scaled": 3.3306690738754696e-16,
+        "scientific_invariants": true,
+        "weights_max_abs": 2.7755575615628914e-17,
+        "weights_max_scaled": 2.7755575615628914e-17
+      },
+      "name": "four_state_ladder",
+      "passed": true
+    },
+    {
+      "details": {
+        "Delta_f_max_abs": 0.0,
+        "Delta_f_max_scaled": 0.0,
+        "covariance_max_abs": 6.5052130349130266e-18,
+        "covariance_max_scaled": 6.5052130349130266e-18,
+        "dDelta_f_max_abs": 6.938893903907228e-17,
+        "dDelta_f_max_scaled": 6.938893903907228e-17,
+        "effective_sample_number_max_abs": 1.4210854715202004e-14,
+        "effective_sample_number_max_scaled": 1.919870265419005e-16,
+        "f_k_max_abs": 0.0,
+        "f_k_max_scaled": 0.0,
+        "overlap_max_abs": 2.220446049250313e-16,
+        "overlap_max_scaled": 2.220446049250313e-16,
+        "scientific_invariants": true,
+        "weights_max_abs": 2.7755575615628914e-17,
+        "weights_max_scaled": 2.7755575615628914e-17
+      },
+      "name": "asymmetric_stiffness",
+      "passed": true
+    },
+    {
+      "details": {
+        "error": "ValueError"
+      },
+      "name": "invalid_count_sum",
+      "passed": true
+    },
+    {
+      "details": {
+        "error": "ValueError"
+      },
+      "name": "invalid_negative_count",
+      "passed": true
+    },
+    {
+      "details": {
+        "error": "ValueError"
+      },
+      "name": "invalid_nonfinite",
+      "passed": true
+    }
+  ],
+  "reference_integrity_findings": [],
+  "reference_runtime": "8.5.2",
+  "reference_stderr_tail": "Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.\nFailed to reach a solution to within tolerance with hybr: trying next method\nFailed to reach a solution to within tolerance with hybr: trying next method\nFailed to reach a solution to within tolerance with hybr: trying next method\n",
+  "regression_stderr_tail": "",
+  "reward": 1.0,
+  "source_findings": [],
+  "task": "ALGOBRIDGE-0015",
+  "total": 15
+}

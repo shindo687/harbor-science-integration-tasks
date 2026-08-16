@@ -1,0 +1,17 @@
+{
+  "changed_files": [
+    "wrappers/python/openmm/app/__init__.py",
+    "wrappers/python/openmm/app/mbar.py"
+  ],
+  "hard_gates": {
+    "reference_integrity": true,
+    "source_policy": false
+  },
+  "points": [],
+  "reference_integrity_findings": [],
+  "source_findings": [
+    "forbidden reference in wrappers/python/openmm/app/mbar.py: 'pymbar'",
+    "donor token fragment (48) in wrappers/python/openmm/app/mbar.py"
+  ],
+  "task": "ALGOBRIDGE-0015"
+}
