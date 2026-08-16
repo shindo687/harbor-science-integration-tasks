@@ -1,0 +1,49 @@
+{
+  "isolation": {
+    "/opt/donor-source": {
+      "list": false,
+      "read": false
+    },
+    "/opt/pristine-host": {
+      "list": false,
+      "read": false
+    },
+    "/opt/reference-ccmpred": {
+      "list": false,
+      "read": false
+    },
+    "/opt/source-archives": {
+      "list": false,
+      "read": false
+    },
+    "/opt/task-source-lock.json": {
+      "list": false,
+      "read": false
+    },
+    "/tests": {
+      "list": false,
+      "read": false
+    }
+  },
+  "provenance": {
+    "build_patch": true,
+    "donor_archive": true,
+    "donor_member_count": true,
+    "host_archive": true,
+    "host_member_count": true,
+    "lock_copies": true,
+    "reference_binary": true
+  },
+  "reason": "GateFailure: compiled hhcontacts does not expose the required CLI",
+  "reward": 0.0,
+  "source_integrity": {
+    "baseline_files": 581,
+    "candidate_source_bytes": 22036
+  },
+  "source_policy": {
+    "donor_windows": 23492,
+    "forbidden_patterns": 5,
+    "overlap": 0
+  },
+  "status": "hard_gate_failed"
+}

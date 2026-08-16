@@ -1,0 +1,14 @@
+{
+  "provenance": {
+    "build_patch": true,
+    "donor_archive": true,
+    "donor_member_count": true,
+    "host_archive": true,
+    "host_member_count": true,
+    "lock_copies": true,
+    "reference_binary": true
+  },
+  "reason": "GateFailure: missing, linked, or oversized src/hhcontacts.cpp",
+  "reward": 0.0,
+  "status": "hard_gate_failed"
+}

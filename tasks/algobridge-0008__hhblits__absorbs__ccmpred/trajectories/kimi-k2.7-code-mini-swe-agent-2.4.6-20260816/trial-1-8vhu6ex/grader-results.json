@@ -1,0 +1,14 @@
+{
+  "provenance": {
+    "build_patch": true,
+    "donor_archive": true,
+    "donor_member_count": true,
+    "host_archive": true,
+    "host_member_count": true,
+    "lock_copies": true,
+    "reference_binary": true
+  },
+  "reason": "GateFailure: unexpected files in candidate host: ['hhcontacts_O0', 'hhcontacts_dbg2', 'hhcontacts_dbg3', 'hhcontacts_debug', 'hhcontacts_gapskip']",
+  "reward": 0.0,
+  "status": "hard_gate_failed"
+}
