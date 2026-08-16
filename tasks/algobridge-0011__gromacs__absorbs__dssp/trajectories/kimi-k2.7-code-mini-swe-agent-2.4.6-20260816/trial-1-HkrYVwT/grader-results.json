@@ -1,0 +1,12 @@
+{
+  "hard_gates": {
+    "reference_integrity": "pass"
+  },
+  "hidden_total": 15,
+  "public_total": 5,
+  "reason": "source policy: unexpected added files: []",
+  "reference": "locked native mkdssp 4.4.11 over bounded GROMACS frames",
+  "reward": 0.0,
+  "status": "hard_gate_failed",
+  "task": "ALGOBRIDGE-0011"
+}
