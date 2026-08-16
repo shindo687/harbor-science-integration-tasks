@@ -1,0 +1,155 @@
+{
+    "id": "d1c23adb-9aad-4e9c-a7d8-1fe7f8a4d181",
+    "task_name": "workflow-algorithm-bench/algobridge-0012__gromacs__absorbs__prody",
+    "trial_name": "algobridge-0012__gromacs__absorb__mp2tYZ6",
+    "trial_uri": "file:///home/xjtan/new_bench_minimal/harbor-jobs-kimi-mini-swe-batch/kimi-k27-mini-swe-algobridge-0012-r1-20260817-004310/algobridge-0012__gromacs__absorb__mp2tYZ6",
+    "task_id": {
+        "path": "/home/xjtan/new_bench_minimal/harbor-science-integration-tasks/tasks/algobridge-0012__gromacs__absorbs__prody"
+    },
+    "source": null,
+    "task_checksum": "98fb7af3d653244239fdd09fcd48390a8dfd8de8fe7942796c1febfafb970fb9",
+    "config": {
+        "task": {
+            "path": "/home/xjtan/new_bench_minimal/harbor-science-integration-tasks/tasks/algobridge-0012__gromacs__absorbs__prody",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "algobridge-0012__gromacs__absorb__mp2tYZ6",
+        "trials_dir": "/home/xjtan/new_bench_minimal/harbor-jobs-kimi-mini-swe-batch/kimi-k27-mini-swe-algobridge-0012-r1-20260817-004310",
+        "install_only": false,
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": 3.0,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "mini-swe-agent",
+            "import_path": null,
+            "model_name": "openai/kimi-k2.7-code",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [
+                "api.epicllmrouter.top"
+            ],
+            "kwargs": {
+                "version": "2.4.6",
+                "max_tokens": 8192
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": [
+                {
+                    "type": "bind",
+                    "source": "/home/xjtan/.local/bin/uv",
+                    "target": "/opt/harbor-mini-swe-bootstrap/uv",
+                    "read_only": true
+                },
+                {
+                    "type": "bind",
+                    "source": "/home/xjtan/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu",
+                    "target": "/opt/harbor-mini-swe-bootstrap/python",
+                    "read_only": true
+                },
+                {
+                    "type": "bind",
+                    "source": "/home/xjtan/new_bench_minimal/mini-swe-agent-2.4.6-wheelhouse-lite",
+                    "target": "/opt/harbor-mini-swe-bootstrap/wheels",
+                    "read_only": true
+                },
+                {
+                    "type": "bind",
+                    "source": "/lib/x86_64-linux-gnu/libstdc++.so.6",
+                    "target": "/opt/harbor-mini-swe-bootstrap/lib/libstdc++.so.6",
+                    "read_only": true
+                }
+            ],
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": [
+                "deb.debian.org",
+                "security.debian.org",
+                "mirrors.aliyun.com",
+                "astral.sh",
+                "releases.astral.sh",
+                "github.com",
+                "objects.githubusercontent.com",
+                "release-assets.githubusercontent.com",
+                "raw.githubusercontent.com",
+                "pypi.org",
+                "files.pythonhosted.org"
+            ]
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "5f5008fb-2b41-4b74-bc95-130abad367eb"
+    },
+    "agent_info": {
+        "name": "mini-swe-agent",
+        "version": "2.4.6",
+        "model_info": {
+            "name": "kimi-k2.7-code",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 346212,
+        "n_cache_tokens": 319488,
+        "n_output_tokens": 21179,
+        "cost_usd": 0.0,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-08-16T16:43:18.658478Z",
+    "finished_at": "2026-08-16T16:51:01.869333Z",
+    "environment_setup": {
+        "started_at": "2026-08-16T16:43:20.732514Z",
+        "finished_at": "2026-08-16T16:43:27.456760Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-08-16T16:43:27.457052Z",
+        "finished_at": "2026-08-16T16:43:30.332361Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-08-16T16:43:30.332810Z",
+        "finished_at": "2026-08-16T16:50:11.649499Z"
+    },
+    "verifier": {
+        "started_at": "2026-08-16T16:50:31.879058Z",
+        "finished_at": "2026-08-16T16:51:01.869312Z"
+    },
+    "step_results": null
+}
