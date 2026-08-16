@@ -1,0 +1,11 @@
+{
+  "hard_gates": {
+    "locked_reference": "pass"
+  },
+  "reason": "source policy failed: OpenMM app __init__.py was modified beyond an appended export",
+  "reference": "locked PyEMMA 2.5.12+6.g3327f28b estimate_markov_model",
+  "reward": 0.0,
+  "status": "hard_gate_failed",
+  "task": "ALGOBRIDGE-0016",
+  "total": 15
+}
