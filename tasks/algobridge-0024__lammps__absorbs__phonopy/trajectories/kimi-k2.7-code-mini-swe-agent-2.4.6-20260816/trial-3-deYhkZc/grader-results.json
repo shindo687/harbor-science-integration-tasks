@@ -1,0 +1,12 @@
+{
+  "cases": [],
+  "fatal_error": "unauthorized added files: ['src/log.lammps', 'src/Obj_mpi/.depend', 'src/Obj_mpi/fastdep.exe', 'src/Obj_mpi/Makefile.package', 'src/Obj_mpi/Makefile', 'src/Obj_mpi/Makefile.package.settings']",
+  "hard_gates": {},
+  "summary": {
+    "elapsed_sec": 5.04635763168335,
+    "passed": 0,
+    "reward": 0.0,
+    "total": 15
+  },
+  "task": "algobridge-0024__lammps__absorbs__phonopy"
+}

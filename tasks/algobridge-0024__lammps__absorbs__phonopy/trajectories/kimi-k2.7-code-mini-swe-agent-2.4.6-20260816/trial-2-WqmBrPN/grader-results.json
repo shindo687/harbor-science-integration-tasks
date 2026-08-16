@@ -1,0 +1,12 @@
+{
+  "cases": [],
+  "fatal_error": "host source file changed: src/Makefile.list",
+  "hard_gates": {},
+  "summary": {
+    "elapsed_sec": 4.1891186237335205,
+    "passed": 0,
+    "reward": 0.0,
+    "total": 15
+  },
+  "task": "algobridge-0024__lammps__absorbs__phonopy"
+}

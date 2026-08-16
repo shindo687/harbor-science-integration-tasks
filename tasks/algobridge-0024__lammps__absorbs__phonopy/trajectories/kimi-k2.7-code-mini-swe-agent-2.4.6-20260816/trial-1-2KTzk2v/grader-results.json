@@ -1,0 +1,12 @@
+{
+  "cases": [],
+  "fatal_error": "required candidate source missing: ['src/fit_harmonic_fc2.cpp']",
+  "hard_gates": {},
+  "summary": {
+    "elapsed_sec": 5.20981502532959,
+    "passed": 0,
+    "reward": 0.0,
+    "total": 15
+  },
+  "task": "algobridge-0024__lammps__absorbs__phonopy"
+}
