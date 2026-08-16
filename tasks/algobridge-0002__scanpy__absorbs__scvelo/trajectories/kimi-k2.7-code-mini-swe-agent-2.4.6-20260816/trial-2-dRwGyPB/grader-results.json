@@ -1,0 +1,36 @@
+{
+  "task": "algobridge-0002__scanpy__absorbs__scvelo",
+  "hard_gates": {
+    "locked_source_integrity": true,
+    "locked_reference_pipeline": true,
+    "clean_room_source_scan": false
+  },
+  "points": [],
+  "integrity_failures": [],
+  "reference_provenance": {
+    "scanpy_file": "/opt/reference-host/src/scanpy/__init__.py",
+    "scanpy_version": "1.14.0.dev21+gfabadb941",
+    "scvelo_file": "/opt/reference-donor/scvelo/__init__.py",
+    "scvelo_version": "0.3.3+locked.f63c0e7",
+    "numpy_version": "2.5.2"
+  },
+  "reference_stderr_tail": "",
+  "source_scan": {
+    "findings": [
+      "missing native velocity transition module"
+    ],
+    "changed_files": [
+      "src/scanpy/tools/__init__.py",
+      "src/scanpy/tools/_velocity.py",
+      "tests/test_velocity_transition_graph.py"
+    ],
+    "donor_fragments": 396910
+  },
+  "fatal_error": "RuntimeError: candidate source scan failed",
+  "summary": {
+    "passed": 0,
+    "total": 15,
+    "reward": 0.0
+  },
+  "elapsed_seconds": 7.4079201221466064
+}
