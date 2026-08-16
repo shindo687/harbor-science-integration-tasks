@@ -1,0 +1,880 @@
+{
+  "hard_gates": {
+    "candidate_isolation": {
+      "donor": "unreadable and absent from PYTHONPATH",
+      "network": "disabled by Harbor",
+      "testbed": "read-only",
+      "tests": "unreadable",
+      "uid": 10001
+    },
+    "invalid_inputs": {
+      "passed": 10,
+      "total": 10
+    },
+    "metamorphic_invariants": [
+      {
+        "detail": "all outputs",
+        "name": "metamorphic_common_energy_shift",
+        "pass": true
+      },
+      {
+        "detail": "all outputs",
+        "name": "metamorphic_band_k_permutation",
+        "pass": true
+      }
+    ],
+    "public_examples": {
+      "passed": 5,
+      "total": 5
+    },
+    "real_reference": {
+      "distinct_output_hashes": 22,
+      "executions": 48,
+      "pipeline": "unchanged BTPDOS -> fermiintegrals -> calc_Onsager_coefficients",
+      "status": "pass"
+    },
+    "reference_integrity": {
+      "donor_archive_sha256": "0578bc1c58380ad9ad7d8d47bef7616bbd6c5146ad14ad1af836a4122ac0988b",
+      "entry_points": [
+        "BTPDOS",
+        "fermiintegrals",
+        "calc_Onsager_coefficients"
+      ],
+      "host_archive_sha256": "ece7507b819fcf69d46caf31e430565066804e805e8446a0cd37fe83dd7b4c38"
+    },
+    "source_policy": {
+      "added": [
+        "PP/src/transport_moments.f90"
+      ],
+      "donor_fragment_scan": "pass (64/96 normalized tokens)",
+      "module_bytes": 12941,
+      "module_sha256": "f4a0ca5e1aef6c4798d9b0c46b8243bdf3c4e6ad27edd7a8a42e860bc0f32794",
+      "numeric_literals": 246
+    }
+  },
+  "hidden_cases": [
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 3.647082635893639e-14,
+          "scaled_relative": 5.437491066586983e-14
+        },
+        "L1": {
+          "max_abs": 3.028989819381378e-18,
+          "scaled_relative": 7.995107194309503e-14
+        },
+        "L2": {
+          "max_abs": 2.2333876538931747e-22,
+          "scaled_relative": 1.4852873305742252e-14
+        },
+        "carrier_density_cm3": {
+          "max_abs": 294387712.0,
+          "scaled_relative": 3.400335900592717e-14
+        },
+        "electron_count": {
+          "max_abs": 4.707345624410664e-14,
+          "scaled_relative": 2.6898371118799834e-14
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 1.0586278438568115,
+          "scaled_relative": 2.3083496382747885e-12
+        },
+        "seebeck_V_K": {
+          "max_abs": 1.925543058334256e-15,
+          "scaled_relative": 2.355604100084347e-13
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 6414336.0,
+          "scaled_relative": 5.429912730302521e-14
+        }
+      },
+      "name": "hidden_low_temperature",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 8.187894806610529e-16,
+          "scaled_relative": 7.9324835112641e-15
+        },
+        "L1": {
+          "max_abs": 3.3068166260807885e-18,
+          "scaled_relative": 7.323825352925743e-15
+        },
+        "L2": {
+          "max_abs": 6.437450399132683e-20,
+          "scaled_relative": 7.546246158817984e-15
+        },
+        "carrier_density_cm3": {
+          "max_abs": 182452224.0,
+          "scaled_relative": 1.4800725147859673e-14
+        },
+        "electron_count": {
+          "max_abs": 2.930988785010413e-14,
+          "scaled_relative": 7.61065128581883e-15
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 1.75,
+          "scaled_relative": 7.762539818409707e-15
+        },
+        "seebeck_V_K": {
+          "max_abs": 3.2526065174565133e-19,
+          "scaled_relative": 7.847419054845505e-16
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 141312.0,
+          "scaled_relative": 7.773277247194957e-15
+        }
+      },
+      "name": "hidden_high_temperature",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 1.457167719820518e-16,
+          "scaled_relative": 2.479149023119236e-15
+        },
+        "L1": {
+          "max_abs": 2.1006417091906648e-19,
+          "scaled_relative": 3.5090758892930976e-15
+        },
+        "L2": {
+          "max_abs": 2.117582368135751e-21,
+          "scaled_relative": 3.1779505473569927e-15
+        },
+        "carrier_density_cm3": {
+          "max_abs": 22183936.0,
+          "scaled_relative": 3.549734436133519e-15
+        },
+        "electron_count": {
+          "max_abs": 3.552713678800501e-15,
+          "scaled_relative": 3.257490617481205e-15
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 0.390625,
+          "scaled_relative": 3.346604577437528e-15
+        },
+        "seebeck_V_K": {
+          "max_abs": 4.0115480381963664e-17,
+          "scaled_relative": 4.420537180227731e-14
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 24576.0,
+          "scaled_relative": 2.3740643195261314e-15
+        }
+      },
+      "name": "hidden_spin_one",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 0.0,
+          "scaled_relative": 0.0
+        },
+        "L1": {
+          "max_abs": 0.0,
+          "scaled_relative": 0.0
+        },
+        "L2": {
+          "max_abs": 0.0,
+          "scaled_relative": 0.0
+        },
+        "carrier_density_cm3": {
+          "max_abs": 0.0,
+          "scaled_relative": 0.0
+        },
+        "electron_count": {
+          "max_abs": 0.0,
+          "scaled_relative": 0.0
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 0.0,
+          "scaled_relative": 0.0
+        },
+        "seebeck_V_K": {
+          "max_abs": 0.0,
+          "scaled_relative": 0.0
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 0.0,
+          "scaled_relative": 0.0
+        }
+      },
+      "name": "hidden_empty_fermi_window",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 9.43689570931383e-16,
+          "scaled_relative": 2.5217286044343705e-15
+        },
+        "L1": {
+          "max_abs": 7.589415207398531e-19,
+          "scaled_relative": 3.782635982130437e-15
+        },
+        "L2": {
+          "max_abs": 3.5998900258307764e-21,
+          "scaled_relative": 3.623725545308837e-15
+        },
+        "carrier_density_cm3": {
+          "max_abs": 89128960.0,
+          "scaled_relative": 5.916335826091955e-15
+        },
+        "electron_count": {
+          "max_abs": 1.4210854715202004e-14,
+          "scaled_relative": 3.2670985013749566e-15
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 0.265625,
+          "scaled_relative": 3.391076860683703e-15
+        },
+        "seebeck_V_K": {
+          "max_abs": 1.0310762660337147e-15,
+          "scaled_relative": 1.9031868334278208e-13
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 163840.0,
+          "scaled_relative": 2.4858637410284867e-15
+        }
+      },
+      "name": "hidden_three_bands",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 7.771561172376096e-16,
+          "scaled_relative": 3.1206646728217985e-15
+        },
+        "L1": {
+          "max_abs": 6.776263578034403e-19,
+          "scaled_relative": 3.3391664846707823e-15
+        },
+        "L2": {
+          "max_abs": 3.3881317890172014e-21,
+          "scaled_relative": 3.118092962166488e-15
+        },
+        "carrier_density_cm3": {
+          "max_abs": 47185920.0,
+          "scaled_relative": 3.7804205525292166e-15
+        },
+        "electron_count": {
+          "max_abs": 7.549516567451064e-15,
+          "scaled_relative": 3.206070824146146e-15
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 0.375,
+          "scaled_relative": 4.522769205435631e-15
+        },
+        "seebeck_V_K": {
+          "max_abs": 1.1275702593849246e-17,
+          "scaled_relative": 1.2906017310205125e-14
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 139264.0,
+          "scaled_relative": 3.175162019448648e-15
+        }
+      },
+      "name": "hidden_high_multiplicity_weights",
+      "pass": true
+    },
+    {
+      "detail": "numeric mismatch for electron_count",
+      "max_errors": {
+        "electron_count": {
+          "max_abs": 0.17551891270773146,
+          "scaled_relative": 0.07127441989908702
+        }
+      },
+      "name": "hidden_flat_band_zero_velocity",
+      "pass": false
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 8.049116928532385e-16,
+          "scaled_relative": 3.5405012865954203e-15
+        },
+        "L1": {
+          "max_abs": 4.607859233063394e-19,
+          "scaled_relative": 3.404187774350144e-15
+        },
+        "L2": {
+          "max_abs": 2.752857078576476e-21,
+          "scaled_relative": 3.057641759134139e-15
+        },
+        "carrier_density_cm3": {
+          "max_abs": 27787264.0,
+          "scaled_relative": 6.3513746285714286e-15
+        },
+        "electron_count": {
+          "max_abs": 4.440892098500626e-15,
+          "scaled_relative": 3.443761983006453e-15
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 0.453125,
+          "scaled_relative": 3.3385914921354557e-15
+        },
+        "seebeck_V_K": {
+          "max_abs": 9.094947017729282e-12,
+          "scaled_relative": 3.9931123593512095e-15
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 139264.0,
+          "scaled_relative": 3.47811210907471e-15
+        }
+      },
+      "name": "hidden_nearly_rank_two",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 4.496403249731884e-15,
+          "scaled_relative": 1.3988419900055983e-14
+        },
+        "L1": {
+          "max_abs": 2.2768245622195593e-18,
+          "scaled_relative": 8.030034031885018e-15
+        },
+        "L2": {
+          "max_abs": 1.249373597200093e-20,
+          "scaled_relative": 7.947624043240665e-15
+        },
+        "carrier_density_cm3": {
+          "max_abs": 207618048.0,
+          "scaled_relative": 1.6609443839999997e-14
+        },
+        "electron_count": {
+          "max_abs": 3.3306690738754696e-14,
+          "scaled_relative": 8.326672684688743e-15
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 0.84375,
+          "scaled_relative": 7.847028328563915e-15
+        },
+        "seebeck_V_K": {
+          "max_abs": 2.9597364056138664e-16,
+          "scaled_relative": 1.781003321623105e-13
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 794624.0,
+          "scaled_relative": 1.4036320508813679e-14
+        }
+      },
+      "name": "hidden_dense_mu_temperature_grid",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 7.424616477180734e-16,
+          "scaled_relative": 1.2850901395168699e-14
+        },
+        "L1": {
+          "max_abs": 7.047314121155779e-19,
+          "scaled_relative": 1.0545061738728114e-14
+        },
+        "L2": {
+          "max_abs": 4.393983413881683e-21,
+          "scaled_relative": 1.0273904555084673e-14
+        },
+        "carrier_density_cm3": {
+          "max_abs": 163577856.0,
+          "scaled_relative": 2.8195543422255476e-14
+        },
+        "electron_count": {
+          "max_abs": 2.6201263381153694e-14,
+          "scaled_relative": 1.0722238068853017e-14
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 0.640625,
+          "scaled_relative": 1.0518767003040833e-14
+        },
+        "seebeck_V_K": {
+          "max_abs": 8.348356728138384e-18,
+          "scaled_relative": 1.69128953277521e-14
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 129024.0,
+          "scaled_relative": 1.267997097426466e-14
+        }
+      },
+      "name": "hidden_random_mesh",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 8.104628079763643e-15,
+          "scaled_relative": 1.1985841610107836e-14
+        },
+        "L1": {
+          "max_abs": 1.3010426069826053e-17,
+          "scaled_relative": 1.135023989547833e-14
+        },
+        "L2": {
+          "max_abs": 2.947674656444965e-19,
+          "scaled_relative": 1.0459733791226771e-14
+        },
+        "carrier_density_cm3": {
+          "max_abs": 228589568.0,
+          "scaled_relative": 4.1706199864556296e-14
+        },
+        "electron_count": {
+          "max_abs": 2.930988785010413e-14,
+          "scaled_relative": 1.0849239487022686e-14
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 38.5,
+          "scaled_relative": 1.0475835690796583e-14
+        },
+        "seebeck_V_K": {
+          "max_abs": 1.4690939437178585e-17,
+          "scaled_relative": 1.488863006871854e-14
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 1802240.0,
+          "scaled_relative": 1.2106712995275085e-14
+        }
+      },
+      "name": "hidden_particle_hole_cold_hot",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 7.771561172376096e-16,
+          "scaled_relative": 2.58987572286011e-15
+        },
+        "L1": {
+          "max_abs": 6.505213034913027e-19,
+          "scaled_relative": 3.1713828198897312e-15
+        },
+        "L2": {
+          "max_abs": 4.235164736271502e-21,
+          "scaled_relative": 3.261234990315625e-15
+        },
+        "carrier_density_cm3": {
+          "max_abs": 372113408.0,
+          "scaled_relative": 3.44213679843523e-15
+        },
+        "electron_count": {
+          "max_abs": 6.8833827526759706e-15,
+          "scaled_relative": 3.442229693794879e-15
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 2.6875,
+          "scaled_relative": 3.1659041127074666e-15
+        },
+        "seebeck_V_K": {
+          "max_abs": 3.0574501264091225e-17,
+          "scaled_relative": 2.6300702313161695e-14
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 1179648.0,
+          "scaled_relative": 2.5808515664140456e-15
+        }
+      },
+      "name": "hidden_small_volume",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 7.771561172376096e-16,
+          "scaled_relative": 2.58987572286011e-15
+        },
+        "L1": {
+          "max_abs": 6.505213034913027e-19,
+          "scaled_relative": 3.1713828198897312e-15
+        },
+        "L2": {
+          "max_abs": 4.235164736271502e-21,
+          "scaled_relative": 3.261234990315625e-15
+        },
+        "carrier_density_cm3": {
+          "max_abs": 2868224.0,
+          "scaled_relative": 3.4419565698394035e-15
+        },
+        "electron_count": {
+          "max_abs": 6.8833827526759706e-15,
+          "scaled_relative": 3.442229693794879e-15
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 0.0205078125,
+          "scaled_relative": 3.134065982095701e-15
+        },
+        "seebeck_V_K": {
+          "max_abs": 7.058156142880634e-17,
+          "scaled_relative": 6.071545108463928e-14
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 9216.0,
+          "scaled_relative": 2.6157279389331547e-15
+        }
+      },
+      "name": "hidden_large_volume",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 1.5543122344752192e-15,
+          "scaled_relative": 5.332450693046367e-15
+        },
+        "L1": {
+          "max_abs": 1.3552527156068805e-18,
+          "scaled_relative": 6.974370516798985e-15
+        },
+        "L2": {
+          "max_abs": 9.952637130238029e-21,
+          "scaled_relative": 6.871589782851995e-15
+        },
+        "carrier_density_cm3": {
+          "max_abs": 116573417.58564144,
+          "scaled_relative": 1.8986536465601728e-14
+        },
+        "electron_count": {
+          "max_abs": 1.865174681370263e-14,
+          "scaled_relative": 4.643951321781373e-15
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 0.5738525390625,
+          "scaled_relative": 6.323096757425756e-13
+        },
+        "seebeck_V_K": {
+          "max_abs": 2.883977778811442e-17,
+          "scaled_relative": 2.1933212821714024e-14
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 270336.0,
+          "scaled_relative": 5.265997609738357e-15
+        }
+      },
+      "name": "hidden_single_kpoint",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 8.951173136040325e-16,
+          "scaled_relative": 1.031353499603756e-14
+        },
+        "L1": {
+          "max_abs": 5.759824041329242e-19,
+          "scaled_relative": 1.0188995117345686e-14
+        },
+        "L2": {
+          "max_abs": 6.45862622281404e-21,
+          "scaled_relative": 9.847651208766317e-15
+        },
+        "carrier_density_cm3": {
+          "max_abs": 452984832.0,
+          "scaled_relative": 2.1655391914652273e-14
+        },
+        "electron_count": {
+          "max_abs": 7.283063041541027e-14,
+          "scaled_relative": 9.913163812943452e-15
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 0.75,
+          "scaled_relative": 9.914281931944826e-15
+        },
+        "seebeck_V_K": {
+          "max_abs": 2.5717275531356165e-16,
+          "scaled_relative": 1.0076207130062424e-13
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 157696.0,
+          "scaled_relative": 1.031659680782616e-14
+        }
+      },
+      "name": "hidden_four_band_stress",
+      "pass": true
+    }
+  ],
+  "invalid_cases": [
+    {
+      "detail": "candidate process failed (2): STOP 2\n",
+      "name": "invalid_weight_sum",
+      "pass": true
+    },
+    {
+      "detail": "candidate process failed (2): STOP 2\n",
+      "name": "invalid_negative_weight",
+      "pass": true
+    },
+    {
+      "detail": "velocity vector shape mismatch",
+      "name": "invalid_bad_velocity_shape",
+      "pass": true
+    },
+    {
+      "detail": "ragged band_energies_ev",
+      "name": "invalid_band_shape",
+      "pass": true
+    },
+    {
+      "detail": "candidate process failed (2): STOP 2\n",
+      "name": "invalid_zero_volume",
+      "pass": true
+    },
+    {
+      "detail": "candidate process failed (2): STOP 2\n",
+      "name": "invalid_zero_temperature",
+      "pass": true
+    },
+    {
+      "detail": "candidate process failed (2): STOP 2\n",
+      "name": "invalid_nonfinite",
+      "pass": true
+    },
+    {
+      "detail": "candidate process failed (2): STOP 2\n",
+      "name": "invalid_bad_spin",
+      "pass": true
+    },
+    {
+      "detail": "candidate process failed (2): STOP 2\n",
+      "name": "invalid_too_few_bins",
+      "pass": true
+    },
+    {
+      "detail": "candidate process failed (2): STOP 2\n",
+      "name": "invalid_reversed_energy_range",
+      "pass": true
+    }
+  ],
+  "metamorphic_cases": [
+    {
+      "detail": "all outputs",
+      "name": "metamorphic_common_energy_shift",
+      "pass": true
+    },
+    {
+      "detail": "all outputs",
+      "name": "metamorphic_band_k_permutation",
+      "pass": true
+    }
+  ],
+  "passed": 14,
+  "public_cases": [
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 1.1796119636642288e-16,
+          "scaled_relative": 3.5097616655171565e-15
+        },
+        "L1": {
+          "max_abs": 3.3881317890172014e-19,
+          "scaled_relative": 3.2171548187384084e-15
+        },
+        "L2": {
+          "max_abs": 1.2176098616780567e-21,
+          "scaled_relative": 3.1387428521710774e-15
+        },
+        "carrier_density_cm3": {
+          "max_abs": 49807360.0,
+          "scaled_relative": 2.108089011404474e-14
+        },
+        "electron_count": {
+          "max_abs": 7.993605777301127e-15,
+          "scaled_relative": 3.3614423563209295e-15
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 0.1640625,
+          "scaled_relative": 3.430934907046411e-15
+        },
+        "seebeck_V_K": {
+          "max_abs": 2.80876125309526e-18,
+          "scaled_relative": 3.69998831584564e-15
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 20480.0,
+          "scaled_relative": 3.4598446671139068e-15
+        }
+      },
+      "name": "public_isotropic_two_band",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 2.6645352591003757e-15,
+          "scaled_relative": 3.615094175620721e-15
+        },
+        "L1": {
+          "max_abs": 4.7704895589362195e-18,
+          "scaled_relative": 3.484487946494202e-15
+        },
+        "L2": {
+          "max_abs": 6.776263578034403e-20,
+          "scaled_relative": 3.2864705944653486e-15
+        },
+        "carrier_density_cm3": {
+          "max_abs": 70254592.0,
+          "scaled_relative": 1.3420703444276223e-14
+        },
+        "electron_count": {
+          "max_abs": 8.881784197001252e-15,
+          "scaled_relative": 3.3264444246269635e-15
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 12.5,
+          "scaled_relative": 3.3471011286491815e-15
+        },
+        "seebeck_V_K": {
+          "max_abs": 1.1384122811097797e-18,
+          "scaled_relative": 2.9135365725045247e-15
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 589824.0,
+          "scaled_relative": 3.634952685269806e-15
+        }
+      },
+      "name": "public_particle_hole",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 4.440892098500626e-15,
+          "scaled_relative": 3.5408222927342035e-15
+        },
+        "L1": {
+          "max_abs": 1.0503208545953324e-18,
+          "scaled_relative": 3.962390122968523e-15
+        },
+        "L2": {
+          "max_abs": 2.752857078576476e-21,
+          "scaled_relative": 2.490670777691334e-15
+        },
+        "carrier_density_cm3": {
+          "max_abs": 113246208.0,
+          "scaled_relative": 5.214463383704678e-15
+        },
+        "electron_count": {
+          "max_abs": 1.0658141036401503e-14,
+          "scaled_relative": 3.53050953361931e-15
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 1123.9855728149414,
+          "scaled_relative": 2.6557451944993486e-12
+        },
+        "seebeck_V_K": {
+          "max_abs": 2.791451965411529e-14,
+          "scaled_relative": 3.1732227628234673e-12
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 1310720.0,
+          "scaled_relative": 3.4119281101096913e-15
+        }
+      },
+      "name": "public_anisotropic_offdiagonal",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 3.3306690738754696e-16,
+          "scaled_relative": 3.586176474989873e-15
+        },
+        "L1": {
+          "max_abs": 9.215718466126788e-19,
+          "scaled_relative": 3.3792823226373016e-15
+        },
+        "L2": {
+          "max_abs": 3.1763735522036263e-21,
+          "scaled_relative": 3.568316424723804e-15
+        },
+        "carrier_density_cm3": {
+          "max_abs": 47185920.0,
+          "scaled_relative": 3.919156476098207e-15
+        },
+        "electron_count": {
+          "max_abs": 7.549516567451064e-15,
+          "scaled_relative": 3.537610670064862e-15
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 0.53125,
+          "scaled_relative": 1.4923565514708052e-14
+        },
+        "seebeck_V_K": {
+          "max_abs": 6.900946827870236e-17,
+          "scaled_relative": 1.0000951476320189e-13
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 59392.0,
+          "scaled_relative": 3.630916939812794e-15
+        }
+      },
+      "name": "public_symmetry_weights",
+      "pass": true
+    },
+    {
+      "detail": "match",
+      "max_errors": {
+        "L0": {
+          "max_abs": 8.743006318923108e-16,
+          "scaled_relative": 8.280783040283988e-15
+        },
+        "L1": {
+          "max_abs": 1.7076184216646695e-18,
+          "scaled_relative": 8.85773664458979e-15
+        },
+        "L2": {
+          "max_abs": 5.823351512373315e-21,
+          "scaled_relative": 8.112474475360457e-15
+        },
+        "carrier_density_cm3": {
+          "max_abs": 104857600.0,
+          "scaled_relative": 1.1186113101433543e-14
+        },
+        "electron_count": {
+          "max_abs": 1.6653345369377348e-14,
+          "scaled_relative": 8.327399873951054e-15
+        },
+        "kappa_over_tau_W_m_K_s": {
+          "max_abs": 0.9375,
+          "scaled_relative": 8.440508666127867e-15
+        },
+        "seebeck_V_K": {
+          "max_abs": 6.505213034913027e-19,
+          "scaled_relative": 5.950893024706027e-16
+        },
+        "sigma_over_tau_S_m_s": {
+          "max_abs": 155648.0,
+          "scaled_relative": 8.370325552942918e-15
+        }
+      },
+      "name": "public_rank_one_transport",
+      "pass": true
+    }
+  ],
+  "reward": 0.9333333333333333,
+  "status": "scored",
+  "task": "ALGOBRIDGE-0020",
+  "total": 15
+}

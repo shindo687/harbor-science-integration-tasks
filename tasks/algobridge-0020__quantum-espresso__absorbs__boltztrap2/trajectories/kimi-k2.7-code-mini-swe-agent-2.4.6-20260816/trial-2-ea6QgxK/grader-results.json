@@ -1,0 +1,17 @@
+{
+  "hard_gates": {
+    "reference_integrity": {
+      "donor_archive_sha256": "0578bc1c58380ad9ad7d8d47bef7616bbd6c5146ad14ad1af836a4122ac0988b",
+      "entry_points": [
+        "BTPDOS",
+        "fermiintegrals",
+        "calc_Onsager_coefficients"
+      ],
+      "host_archive_sha256": "ece7507b819fcf69d46caf31e430565066804e805e8446a0cd37fe83dd7b4c38"
+    }
+  },
+  "reason": "candidate uses a forbidden dependency, I/O, or execution primitive",
+  "reward": 0.0,
+  "status": "hard_gate_failed",
+  "task": "ALGOBRIDGE-0020"
+}
