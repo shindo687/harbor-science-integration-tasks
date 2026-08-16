@@ -1,0 +1,268 @@
+{
+  "task": "algobridge-0003__seurat__absorbs__monocle",
+  "reference": "locked real Monocle3 1.4.26 project2MST plus order_cells",
+  "pseudotime_tolerance": 1e-08,
+  "source_audit": {
+    "passed": false,
+    "findings": "forbidden downstream package name"
+  },
+  "public": {
+    "passed": 5,
+    "total": 5,
+    "cases": [
+      {
+        "name": "public_line_root_vertex",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 0,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "public_y_branch",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 4.4408920985006262e-16,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "public_curved_root_cell",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 8.8817841970012523e-16,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "public_cycle",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 4.4408920985006262e-16,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "public_two_components",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 0,
+        "categorical_fields_exact": true
+      }
+    ]
+  },
+  "hidden": {
+    "passed": 14,
+    "total": 15,
+    "cases": [
+      {
+        "name": "hidden_long_line",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 0,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "hidden_middle_root",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 0,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "hidden_y_reverse_root",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 1.7763568394002505e-15,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "hidden_star",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 1.7763568394002505e-15,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "hidden_three_dimensions",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 4.4408920985006262e-16,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "hidden_triangle_cycle",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 4.4408920985006262e-16,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "hidden_cycle_with_tail",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 4.4408920985006262e-16,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "hidden_two_components_vertices",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 2.6645352591003757e-15,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "hidden_two_components_cells",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 4.4408920985006262e-15,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "hidden_near_projection_ties",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 0,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "hidden_irregular_lengths",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 0,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "hidden_root_cell",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 0,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "hidden_cell_order",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 8.8817841970012523e-16,
+        "categorical_fields_exact": true
+      },
+      {
+        "name": "hidden_dense_edges",
+        "passed": false,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 1.7763568394002505e-15,
+        "categorical_fields_exact": false,
+        "reason": "scientific output mismatch"
+      },
+      {
+        "name": "hidden_three_components",
+        "passed": true,
+        "reference_status": "ok",
+        "candidate_status": "ok",
+        "pseudotime_max_abs_error": 1.1102230246251565e-16,
+        "categorical_fields_exact": true
+      }
+    ]
+  },
+  "invalid": {
+    "passed": 10,
+    "total": 10,
+    "cases": [
+      {
+        "name": "wrong_schema",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "unsupported_dimensions",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "duplicate_cells",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "nonsequential_vertices",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "unknown_edge_vertex",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "self_loop",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "missing_root",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "two_root_modes",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "unknown_root",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      },
+      {
+        "name": "unrooted_component",
+        "passed": true,
+        "reference_status": "invalid_input",
+        "candidate_status": "invalid_input"
+      }
+    ]
+  },
+  "metamorphic": {
+    "passed": 2,
+    "total": 2,
+    "cases": [
+      {
+        "name": "edge_order_and_direction",
+        "passed": true,
+        "pseudotime_invariance_error": 0,
+        "categorical_fields_invariant": true
+      },
+      {
+        "name": "cell_permutation",
+        "passed": true,
+        "pseudotime_invariance_error": 0,
+        "categorical_fields_invariant": true
+      }
+    ]
+  },
+  "reward": 0,
+  "reward_rule": "hidden pass fraction; source audit gates to zero; incomplete invalid or metamorphic coverage caps an otherwise perfect score at 14/15"
+}
