@@ -1,0 +1,36 @@
+{
+  "candidate_isolation": {
+    "protected_paths_unreadable": [
+      "/tests",
+      "/opt/reference-rdkit",
+      "/opt/reference-rdkit-source",
+      "/opt/reference-wheels",
+      "/opt/pristine-host",
+      "/opt/reference-runner",
+      "/opt/source-archives"
+    ],
+    "uid": 10001
+  },
+  "invalid_contract": {
+    "passed": 11,
+    "total": 12
+  },
+  "provenance": {
+    "archive_and_wheel_checks": 5,
+    "rdkit_version": "2026.03.5"
+  },
+  "reason": "invalid-input contract gate failed",
+  "reward": 0.0,
+  "source_policy": {
+    "added": [
+      "src/etkdg_init.py"
+    ],
+    "allowed_import_scan": "pass",
+    "donor_file_hash_scan": "pass",
+    "forbidden_dependency_scan": "pass",
+    "module_bytes": 18067,
+    "module_sha256": "3139718f25bc859e6dddd7c59e66e656ddaf1f1c766f33eafcd56d15c28a61a7"
+  },
+  "status": "hard_gate_failed",
+  "task": "ALGOBRIDGE-0014"
+}
