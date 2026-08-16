@@ -1,0 +1,61 @@
+{
+  "build_log_tail": "p.o\n[1133/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/nbsearch.cpp.o\n[1134/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/indexutil.cpp.o\n[1135/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/compiler.cpp.o\n[1136/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/poscalc.cpp.o\n[1137/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/position.cpp.o\n[1138/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/parsetree.cpp.o\n[1139/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/scanner_internal.cpp.o\n[1140/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/fileio/matio.cpp.o\n[1141/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/params.cpp.o\n[1142/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selection.cpp.o\n[1143/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/fileio/tpxio.cpp.o\n[1144/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selectionoptionbehavior.cpp.o\n[1145/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selectionoptionmanager.cpp.o\n[1146/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selmethod.cpp.o\n[1147/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selvalue.cpp.o\n[1148/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selhelp.cpp.o\n[1149/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selelem.cpp.o\n[1150/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selectionoption.cpp.o\n[1151/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_distance.cpp.o\n[1152/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_compare.cpp.o\n[1153/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_merge.cpp.o\n[1154/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/selectioncollection.cpp.o\n[1155/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_position.cpp.o\n[1156/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_permute.cpp.o\n[1157/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_insolidangle.cpp.o\n[1158/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_same.cpp.o\n[1159/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/symrec.cpp.o\n[1160/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_simple.cpp.o\n[1161/1164] Building CXX object src/gromacs/CMakeFiles/libgromacs.dir/selection/sm_keywords.cpp.o\n[1162/1164] Linking CXX shared library lib/libgromacs.so.9.0.0\n[1163/1164] Creating library symlink lib/libgromacs.so.9 lib/libgromacs.so\n[1164/1164] Linking CXX executable bin/gmx\n",
+  "candidate_stderr_tail": "",
+  "hard_gates": {
+    "candidate_protocol": "pass",
+    "invalid_input_rejection": {
+      "passed": 12,
+      "total": 12
+    },
+    "native_gromacs_build": {
+      "binary_sha256": "91b8054727e10506b1becc19d5b43af086be8ddcec038ce076ec94421eb60b81",
+      "ldd": "\tlinux-vdso.so.1 (0x00007fff918ef000)\n\tlibgromacs.so.9 => /opt/candidate-build/bin/../lib/libgromacs.so.9 (0x00007f14c7b79000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f14c7959000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f14c7939000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f14c7757000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f14c7677000)\n\tlibmuparser.so.2 => /opt/candidate-build/bin/../lib/../lib/libmuparser.so.2 (0x00007f14c75fa000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f14c915c000)\n"
+    },
+    "original_gromacs_regression": "pass",
+    "real_gromacs_pymbar_reference": "pass",
+    "reference_integrity": "pass",
+    "reference_removed_before_candidate_build": "pass",
+    "source_policy": {
+      "added": [
+        "src/gromacs/gmxana/gmx_bar_internal.cpp"
+      ],
+      "changed": [
+        "src/programs/legacymodules.cpp"
+      ],
+      "donor_fragment_scan": "pass (64/96 lexical tokens)",
+      "module_bytes": 16289,
+      "module_sha256": "7ccb50a94a3ed32f991afbd0eb259a7937625eb04f174b5e2ebfbc9e35ea485a",
+      "registration": "declaration and registration only"
+    }
+  },
+  "reason": "scientific residual hard gate failed: ['extreme_positive_free_energy']",
+  "reference": "locked pristine GROMACS 2024.6 analyze -> locked pymbar BAR",
+  "reference_gromacs_version": "GROMACS version:     2024.6-dev",
+  "reference_stderr_tail": "Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.\nFailed to reach a solution to within tolerance with hybr: trying next method\nFailed to reach a solution to within tolerance with hybr: trying next method\n",
+  "regression": {
+    "analyze_help": {
+      "returncode": 0,
+      "tail": " <enum>             (none)\n           Fit function: none, exp, aexp, exp_exp, exp5, exp7, exp9\n -beginfit <real>           (0)\n           Time where to begin the exponential fit of the correlation function\n -endfit <real>             (-1)\n           Time where to end the exponential fit of the correlation function,\n           -1 is until the end\n                   :-) GROMACS - gmx analyze, 2024.6-dev (-:\n\nExecutable:   /opt/candidate-build/bin/gmx\nData prefix:  /testbed (source tree)\nWorking dir:  /tmp/candidate-home\nCommand line:\n  gmx analyze -h\n\n\nThanx for Using GROMACS - Have a Nice Day\n\n"
+    },
+    "analyze_roundtrip": {
+      "returncode": 0,
+      "tail": "      ---------   cumulants from those of\nset      average       deviation      sqrt(n-1)   a Gaussian distribition\n                                                      cum. 3   cum. 4\nSS1   2.916667e-01   9.260879e-01   6.548431e-01       0.166   -0.500\n\n                   :-) GROMACS - gmx analyze, 2024.6-dev (-:\n\nExecutable:   /opt/candidate-build/bin/gmx\nData prefix:  /testbed (source tree)\nWorking dir:  /tmp/candidate-home\nCommand line:\n  gmx analyze -f /tmp/candidate-home/regression.xvg -av /tmp/candidate-home/regression-output.xvg -xvg none\n\n\nThanx for Using GROMACS - Have a Nice Day\n\n"
+    },
+    "commands": {
+      "returncode": 0,
+      "tail": " function of PME ranks to optimize\n                         settings\n    vanhove              Compute Van Hove displacement and correlation\n                         functions\n    velacc               Calculate velocity autocorrelation functions\n    wham                 Perform weighted histogram analysis after umbrella\n                         sampling\n    wheel                Plot helical wheels\n    x2top                Generate a primitive topology from coordinates\n    xpm2ps               Convert XPM (XPixelMap) matrices to postscript or XPM\nFor help on a command, use 'gmx help <command>'.\n"
+    },
+    "native_help": {
+      "returncode": 0,
+      "tail": "                 :-) GROMACS - gmx bar-internal, 2024.6-dev (-:\n\nExecutable:   /opt/candidate-build/bin/gmx\nData prefix:  /testbed (source tree)\nWorking dir:  /tmp/candidate-home\nCommand line:\n  gmx bar-internal -h\n\nUsage: gmx bar-internal -f INPUT.bar -o OUTPUT.json\n\nThanx for Using GROMACS - Have a Nice Day\n\n"
+    },
+    "version": {
+      "returncode": 0,
+      "tail": "st -funroll-all-loops -msse2 -Wno-unknown-pragmas -Wall -Wno-unused -Wunused-value -Wunused-parameter -Wextra -Wno-sign-compare -Wpointer-arith -Wundef -Werror=stringop-truncation -Wno-missing-field-initializers -O3 -DNDEBUG\nC++ compiler:        /usr/bin/c++ GNU 12.2.0\nC++ compiler flags:  -Wno-array-bounds -fexcess-precision=fast -funroll-all-loops -msse2 -Wno-unknown-pragmas -Wall -Wextra -Wpointer-arith -Wmissing-declarations -Wundef -Wstringop-truncation -Wno-missing-field-initializers -Wno-cast-function-type-strict -O3 -DNDEBUG\nBLAS library:        Internal\nLAPACK library:      Internal\n\n"
+    }
+  },
+  "reward": 0.0,
+  "status": "hard_gate_failed",
+  "task": "ALGOBRIDGE-0017",
+  "total": 15
+}
