@@ -1,0 +1,421 @@
+{
+  "candidate_stderr": "",
+  "cases": [
+    {
+      "checks": {
+        "batch_order": true,
+        "cell_ids": true,
+        "connectivity_graph": true,
+        "copy_contract": true,
+        "distance_graph": true,
+        "metadata_keys": true,
+        "metadata_params": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 0.0,
+        "neighbor_distances": 0.0
+      },
+      "name": "two_batches_k1",
+      "passed": true,
+      "reference_selection_backend": "bounded_exact_euclidean"
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "cell_ids": true,
+        "connectivity_graph": true,
+        "copy_contract": true,
+        "distance_graph": true,
+        "metadata_keys": true,
+        "metadata_params": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 0.0,
+        "neighbor_distances": 0.0
+      },
+      "name": "three_imbalanced_batches",
+      "passed": true,
+      "reference_selection_backend": "locked_bbknn.get_graph[cKDTree]"
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "cell_ids": true,
+        "connectivity_graph": true,
+        "copy_contract": true,
+        "distance_graph": true,
+        "metadata_keys": true,
+        "metadata_params": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 0.0,
+        "neighbor_distances": 0.0
+      },
+      "name": "rare_batch_exact_quota",
+      "passed": true,
+      "reference_selection_backend": "locked_bbknn.get_graph[cKDTree]"
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "cell_ids": true,
+        "connectivity_graph": true,
+        "copy_contract": true,
+        "distance_graph": true,
+        "metadata_keys": true,
+        "metadata_params": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 8.881784197001252e-16,
+        "neighbor_distances": 8.881784197001252e-16
+      },
+      "name": "high_dimensional",
+      "passed": true,
+      "reference_selection_backend": "locked_bbknn.get_graph[cKDTree]"
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "cell_ids": true,
+        "connectivity_graph": true,
+        "copy_contract": true,
+        "distance_graph": true,
+        "metadata_keys": true,
+        "metadata_params": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 5.551115123125783e-16,
+        "neighbor_distances": 5.551115123125783e-16
+      },
+      "name": "csr_embedding",
+      "passed": true,
+      "reference_selection_backend": "locked_bbknn.get_graph[cKDTree]"
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "cell_ids": true,
+        "connectivity_graph": true,
+        "copy_contract": true,
+        "distance_graph": true,
+        "metadata_keys": true,
+        "metadata_params": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 0.0,
+        "neighbor_distances": 0.0
+      },
+      "name": "four_batches",
+      "passed": true,
+      "reference_selection_backend": "locked_bbknn.get_graph[cKDTree]"
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "cell_ids": true,
+        "connectivity_graph": true,
+        "copy_contract": true,
+        "distance_graph": true,
+        "metadata_keys": true,
+        "metadata_params": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 0.0,
+        "neighbor_distances": 0.0
+      },
+      "name": "minimum_batch_equals_k",
+      "passed": true,
+      "reference_selection_backend": "locked_bbknn.get_graph[cKDTree]"
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "cell_ids": true,
+        "connectivity_graph": true,
+        "copy_contract": true,
+        "distance_graph": true,
+        "metadata_keys": true,
+        "metadata_params": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 0.0,
+        "neighbor_distances": 0.0
+      },
+      "name": "cosine_two_batches",
+      "passed": true,
+      "reference_selection_backend": "bounded_exact_cosine"
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "cell_ids": true,
+        "connectivity_graph": true,
+        "copy_contract": true,
+        "distance_graph": true,
+        "metadata_keys": true,
+        "metadata_params": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 0.0,
+        "neighbor_distances": 0.0
+      },
+      "name": "cosine_three_batches",
+      "passed": true,
+      "reference_selection_backend": "bounded_exact_cosine"
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "cell_ids": true,
+        "connectivity_graph": false,
+        "copy_contract": true,
+        "distance_graph": true,
+        "metadata_keys": true,
+        "metadata_params": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.40275484323501587,
+        "distance_graph": 3.3306690738754696e-16,
+        "neighbor_distances": 3.3306690738754696e-16
+      },
+      "name": "cosine_csr",
+      "passed": false,
+      "reference_selection_backend": "bounded_exact_cosine"
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "cell_ids": true,
+        "connectivity_graph": true,
+        "copy_contract": true,
+        "distance_graph": true,
+        "metadata_keys": true,
+        "metadata_params": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 0.0,
+        "neighbor_distances": 0.0
+      },
+      "name": "duplicate_coordinates",
+      "passed": true,
+      "reference_selection_backend": "bounded_exact_euclidean"
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "cell_ids": true,
+        "connectivity_graph": true,
+        "copy_contract": true,
+        "distance_graph": true,
+        "metadata_keys": true,
+        "metadata_params": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 0.0,
+        "neighbor_distances": 0.0
+      },
+      "name": "boundary_tie_uses_cell_id",
+      "passed": true,
+      "reference_selection_backend": "bounded_exact_euclidean"
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "cell_ids": true,
+        "connectivity_graph": true,
+        "copy_contract": true,
+        "distance_graph": true,
+        "metadata_keys": true,
+        "metadata_params": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 0.0,
+        "neighbor_distances": 0.0
+      },
+      "name": "copy_and_custom_key",
+      "passed": true,
+      "reference_selection_backend": "locked_bbknn.get_graph[cKDTree]"
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "cell_ids": true,
+        "connectivity_graph": true,
+        "copy_contract": true,
+        "distance_graph": true,
+        "metadata_keys": true,
+        "metadata_params": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 0.0,
+        "neighbor_distances": 0.0
+      },
+      "name": "prepermuted_rows__permuted_input",
+      "passed": true,
+      "reference_selection_backend": "locked_bbknn.get_graph[cKDTree]"
+    },
+    {
+      "checks": {
+        "batch_order": true,
+        "cell_ids": true,
+        "connectivity_graph": true,
+        "copy_contract": true,
+        "distance_graph": true,
+        "metadata_keys": true,
+        "metadata_params": true,
+        "neighbor_distances": true,
+        "neighbor_ids": true
+      },
+      "max_abs_errors": {
+        "connectivities": 0.0,
+        "distance_graph": 4.440892098500626e-16,
+        "neighbor_distances": 4.440892098500626e-16
+      },
+      "name": "larger_quota",
+      "passed": true,
+      "reference_selection_backend": "locked_bbknn.get_graph[cKDTree]"
+    }
+  ],
+  "dense_sparse_invariant": {
+    "checks": {
+      "connectivity_graph": true,
+      "distance_graph": true,
+      "neighbor_distances": true,
+      "neighbor_ids": true
+    },
+    "passed": true
+  },
+  "fatal": null,
+  "hard_gates": {
+    "api_checks": {
+      "namespace_export": true,
+      "preprocessing_export": true,
+      "scanpy_module": true
+    },
+    "contract_checks": [
+      {
+        "name": "metric",
+        "rejected": true
+      },
+      {
+        "name": "quota_zero",
+        "rejected": true
+      },
+      {
+        "name": "quota_too_large",
+        "rejected": true
+      },
+      {
+        "name": "nonfinite",
+        "rejected": true
+      },
+      {
+        "name": "zero_cosine",
+        "rejected": true
+      },
+      {
+        "name": "nonstring_batch",
+        "rejected": true
+      },
+      {
+        "name": "duplicate_cell_id",
+        "rejected": true
+      }
+    ],
+    "isolation_checks": {
+      "bbknn_unavailable": true,
+      "candidate_tools_removed": true,
+      "pristine_host_removed": true,
+      "reference_donor_removed": true,
+      "reference_runner_removed": true,
+      "tests_unreadable": true,
+      "wheelhouse_removed": true
+    },
+    "passed": true,
+    "regression_returncode": 0,
+    "regression_stderr": "",
+    "regression_stdout": "...............ssss                                                      [100%]\n15 passed, 4 skipped, 3 deselected, 1 warning in 53.50s\n"
+  },
+  "hard_gates_passed": true,
+  "materialization": "materialized 3 changed Python files in /opt/candidate-runtime",
+  "overlay_manifest": [
+    "src/scanpy/neighbors/__init__.py",
+    "src/scanpy/neighbors/_batch_balanced_neighbors.py",
+    "src/scanpy/preprocessing/__init__.py"
+  ],
+  "passed_cases": 14,
+  "permutation_invariant": {
+    "checks": {
+      "connectivity_graph": true,
+      "distance_graph": true,
+      "neighbor_distances": true,
+      "neighbor_ids": true
+    },
+    "passed": true
+  },
+  "reference_provenance": {
+    "bbknn_matrix_sha256": "eebcc5ec28f172db5ca84f1888a8ffe9da0eaf97a57077e6aa0ed229b21fb19f",
+    "bbknn_source": "/opt/reference-donor/bbknn/matrix.py",
+    "numpy_version": "2.5.2",
+    "scanpy_version": "1.14.0.dev21+gfabadb941"
+  },
+  "reference_selection_backends": {
+    "bounded_exact_cosine": 3,
+    "bounded_exact_euclidean": 3,
+    "locked_bbknn.get_graph[cKDTree]": 9
+  },
+  "reference_stderr": "",
+  "reward": 0.9333333333333333,
+  "source_scan": {
+    "changed_files": [
+      "src/scanpy/neighbors/__init__.py",
+      "src/scanpy/neighbors/_batch_balanced_neighbors.py",
+      "src/scanpy/preprocessing/__init__.py"
+    ],
+    "findings": [],
+    "passed": true
+  },
+  "task": "ALGOBRIDGE-0001",
+  "total_cases": 15
+}

@@ -1,0 +1,27 @@
+{
+  "fatal": "RuntimeError: source isolation scan failed",
+  "reference_provenance": {
+    "bbknn_matrix_sha256": "eebcc5ec28f172db5ca84f1888a8ffe9da0eaf97a57077e6aa0ed229b21fb19f",
+    "bbknn_source": "/opt/reference-donor/bbknn/matrix.py",
+    "numpy_version": "2.5.2",
+    "scanpy_version": "1.14.0.dev21+gfabadb941"
+  },
+  "reference_selection_backends": {
+    "bounded_exact_cosine": 3,
+    "bounded_exact_euclidean": 3,
+    "locked_bbknn.get_graph[cKDTree]": 9
+  },
+  "reference_stderr": "",
+  "reward": 0.0,
+  "source_scan": {
+    "changed_files": [
+      "src/scanpy/neighbors/_bbknn.py",
+      "src/scanpy/preprocessing/__init__.py"
+    ],
+    "findings": [
+      "forbidden delegation in src/scanpy/neighbors/_bbknn.py: '/BBKNN '"
+    ],
+    "passed": false
+  },
+  "task": "ALGOBRIDGE-0001"
+}
