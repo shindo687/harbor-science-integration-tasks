@@ -1,0 +1,25 @@
+{
+  "hard_gates": {
+    "locked_reference": "pass",
+    "reference_removed_before_candidate": "pass",
+    "reference_self_check": "pass",
+    "source_policy": {
+      "added": [
+        "sklearn/ensemble/_second_order_gradient_boosting.py"
+      ],
+      "candidate_bytes": 25251,
+      "changed": [
+        "sklearn/ensemble/__init__.py"
+      ],
+      "donor_fragment_scan": "pass",
+      "module_sha256": "de3a4c70495c22dd71ce92423a3cea45410204f9dee4fb2387163467bf1a0d86",
+      "trusted_extensions": 68
+    }
+  },
+  "reason": "invalid-input rejection gate failed",
+  "reference": "locked scikit-learn arrays to XGBoost a3e3df59 exact CPU",
+  "reward": 0.0,
+  "status": "hard_gate_failed",
+  "task": "ALGOBRIDGE-0025",
+  "total": 15
+}
