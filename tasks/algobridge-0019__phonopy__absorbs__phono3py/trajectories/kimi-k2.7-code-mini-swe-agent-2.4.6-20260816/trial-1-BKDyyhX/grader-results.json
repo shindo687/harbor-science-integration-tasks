@@ -1,0 +1,20 @@
+{
+  "hard_gates": {
+    "locked_reference": "pass",
+    "reference_removed_before_candidate": "pass",
+    "source_policy": {
+      "added": [
+        "phonopy/harmonic/third_order.py"
+      ],
+      "donor_fragment_scan": "pass",
+      "module_bytes": 14140,
+      "module_sha256": "2a61cf2295efa6a2387c3fde73e4782e1f8b4d631853cff38c6a7a88ee2cc3ba"
+    }
+  },
+  "reason": "candidate runner failed: invalid JSON output: 3641,0.4755891433412164,0.45014492075901763,0.4151193455389321,0.4076929659734356,0.3675478249899163,0.35752061972290733,0.20171120483326557,0.1802571455325998,0.15548922841226148,0.13005550115685177,0.12293085102580821,0.12121181754987571,0.11414891185583849,0.10874730575183773,0.09957925348546501,0.0955761023078658,0.08676689131920794,0.08564570540798079,0.08097770728103257,0.07877480784499861,0.0737100521699876,0.07201434777574883,0.07019085348623964,0.06957868669505214,0.06723389446163294,0.0647903940775289,0.06320593993730007,0.06021018064721077,0.05830797845278865,0.056934384395378915,0.05495607602385373,0.05276123987768739,0.05207487279860978,0.04864544903853101,0.04717996257292109,0.04524584652023185,0.04405268750349434,0.043302415098296784,0.041523203773663156,0.03983693897176723,0.03852182810497578,0.037622923333071864,0.03676252706490272,0.03639139430984333,0.03350449847931166,0.03317209446909271,0.0316068800849959,0.029738966459023325,0.029368790194971423,0.028114613153657708,0.026712165493367006,0.024573094888808652,0.023688248077603117,0.022183410507489808,0.02071850714452401,0.018687018099642832,0.018142074989162333,0.01711657421690868,0.016271743140302997,0.014562151841606197,0.013952164598492,0.01323396200654116],\"condition_number\":108.10391994537069,\"n_parameters\":77,\"symmetry_operation_count\":1}},{\"name\":\"invalid_one_atom\",\"error\":\"ValueError\",\"message\":\"At least two atoms are required for FC3 fitting.\"},{\"name\":\"invalid_shape_mismatch\",\"error\":\"ValueError\",\"message\":\"displacements and forces must have the same shape.\"},{\"name\":\"invalid_nonfinite\",\"error\":\"LinAlgError\",\"message\":\"SVD did not converge in Linear Least Squares\"},{\"name\":\"invalid_symmetry_flag\",\"error\":\"TypeError\",\"message\":\"is_symmetry must be a boolean.\"},{\"name\":\"invalid_symprec\",\"error\":\"ValueError\",\"message\":\"symprec must be a finite positive number.\"}]} ** On entry to DLASCL parameter number  4 had an illegal value\n ** On entry to DLASCL parameter number  4 had an illegal value\n",
+  "reference": "locked phonopy 4bac506 to phono3py 2dc8200 produce_fc3(symfc 1.7.3)",
+  "reward": 0.0,
+  "status": "hard_gate_failed",
+  "task": "ALGOBRIDGE-0019",
+  "total": 15
+}

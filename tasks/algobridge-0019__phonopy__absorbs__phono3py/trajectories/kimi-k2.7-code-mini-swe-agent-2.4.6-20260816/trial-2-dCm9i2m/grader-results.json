@@ -1,0 +1,21 @@
+{
+  "hard_gates": {
+    "candidate_protocol": "pass",
+    "locked_reference": "pass",
+    "reference_removed_before_candidate": "pass",
+    "source_policy": {
+      "added": [
+        "phonopy/harmonic/third_order.py"
+      ],
+      "donor_fragment_scan": "pass",
+      "module_bytes": 8813,
+      "module_sha256": "49a61bf5a441136666e18eea9efe9148e38ca75676afa325e21fea798f20c88e"
+    }
+  },
+  "reason": "invalid-input contract failed: ['invalid_symmetry_flag']",
+  "reference": "locked phonopy 4bac506 to phono3py 2dc8200 produce_fc3(symfc 1.7.3)",
+  "reward": 0.0,
+  "status": "hard_gate_failed",
+  "task": "ALGOBRIDGE-0019",
+  "total": 15
+}
