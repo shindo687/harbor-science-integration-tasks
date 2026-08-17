@@ -1,0 +1,230 @@
+{
+  "candidate_identity": {
+    "reference_paths_readable": false,
+    "uid": 10001
+  },
+  "candidate_isolation": {
+    "protected_paths_unreadable": [
+      "/tests",
+      "/opt/dssp",
+      "/opt/reference-dssp-source",
+      "/opt/pristine-host",
+      "/opt/reference-runner",
+      "/opt/source-archives"
+    ],
+    "uid": 10001
+  },
+  "hidden": {
+    "cases": [
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.04899999999999993,
+          "donor_energy_max_abs": 0.04899999999999999
+        },
+        "name": "hidden_crambin_original",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.046999999999999986,
+          "donor_energy_max_abs": 0.047
+        },
+        "name": "hidden_zdd_original",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.049000000000000155,
+          "donor_energy_max_abs": 0.049000000000000155
+        },
+        "name": "hidden_ten_original",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.04899999999999993,
+          "donor_energy_max_abs": 0.04899999999999999
+        },
+        "name": "hidden_crambin_crop",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.046999999999999986,
+          "donor_energy_max_abs": 0.047
+        },
+        "name": "hidden_zdd_crop",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.049000000000000044,
+          "donor_energy_max_abs": 0.049000000000000044
+        },
+        "name": "hidden_ten_n_terminal",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.049000000000000155,
+          "donor_energy_max_abs": 0.049000000000000155
+        },
+        "name": "hidden_ten_c_terminal",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.04999999999999999,
+          "donor_energy_max_abs": 0.04999999999999999
+        },
+        "name": "hidden_ten_rotated",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.046999999999999986,
+          "donor_energy_max_abs": 0.047
+        },
+        "name": "hidden_zdd_rotated",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.04799999999999999,
+          "donor_energy_max_abs": 0.04899999999999999
+        },
+        "name": "hidden_crambin_small_jitter",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.04999999999999999,
+          "donor_energy_max_abs": 0.04999999999999999
+        },
+        "name": "hidden_ten_small_jitter",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.04899999999999993,
+          "donor_energy_max_abs": 0.04899999999999999
+        },
+        "name": "hidden_crambin_chain_split",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.049000000000000044,
+          "donor_energy_max_abs": 0.049000000000000044
+        },
+        "name": "hidden_ten_three_chains",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.049,
+          "donor_energy_max_abs": 0.049
+        },
+        "name": "hidden_two_chain_helical_beta",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.049000000000000044,
+          "donor_energy_max_abs": 0.049000000000000044
+        },
+        "name": "hidden_two_chain_mixed",
+        "passed": true,
+        "reasons": []
+      }
+    ],
+    "passed": 15,
+    "total": 15
+  },
+  "invalid_contract": {
+    "passed": 10,
+    "total": 10
+  },
+  "provenance": {
+    "archive_checks": 5,
+    "mkdssp_version": "4.4.11"
+  },
+  "public": {
+    "cases": [
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.04899999999999993,
+          "donor_energy_max_abs": 0.04899999999999999
+        },
+        "name": "public_crambin_mixed",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.046999999999999986,
+          "donor_energy_max_abs": 0.047
+        },
+        "name": "public_zdd_helical",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.049000000000000155,
+          "donor_energy_max_abs": 0.049000000000000155
+        },
+        "name": "public_ten_beta",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.04899999999999993,
+          "donor_energy_max_abs": 0.04899999999999999
+        },
+        "name": "public_crambin_rigid_transform",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "acceptor_energy_max_abs": 0.04900000000000001,
+          "donor_energy_max_abs": 0.04899999999999999
+        },
+        "name": "public_two_chain_mixed",
+        "passed": true,
+        "reasons": []
+      }
+    ],
+    "passed": 5,
+    "total": 5
+  },
+  "reference": "native mkdssp 4.4.11 subprocess (root-only)",
+  "reward": 1.0,
+  "source_policy": {
+    "added": [
+      "alphafold/common/secondary_structure.py"
+    ],
+    "donor_fragment_scan": "pass",
+    "forbidden_dependency_scan": "pass",
+    "module_bytes": 18893,
+    "module_sha256": "a926e044dfca3d4737f5d651d69067766ae1b041f6cdeae34932c3e1776df867"
+  },
+  "status": "graded",
+  "task": "STRUCTHARBOR-0003"
+}

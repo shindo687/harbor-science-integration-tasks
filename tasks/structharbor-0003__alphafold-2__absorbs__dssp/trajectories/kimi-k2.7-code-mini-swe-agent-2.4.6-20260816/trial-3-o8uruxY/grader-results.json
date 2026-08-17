@@ -1,0 +1,34 @@
+{
+  "candidate_isolation": {
+    "protected_paths_unreadable": [
+      "/tests",
+      "/opt/dssp",
+      "/opt/reference-dssp-source",
+      "/opt/pristine-host",
+      "/opt/reference-runner",
+      "/opt/source-archives"
+    ],
+    "uid": 10001
+  },
+  "invalid_contract": {
+    "passed": 9,
+    "total": 10
+  },
+  "provenance": {
+    "archive_checks": 5,
+    "mkdssp_version": "4.4.11"
+  },
+  "reason": "invalid-input contract gate failed",
+  "reward": 0.0,
+  "source_policy": {
+    "added": [
+      "alphafold/common/secondary_structure.py"
+    ],
+    "donor_fragment_scan": "pass",
+    "forbidden_dependency_scan": "pass",
+    "module_bytes": 14115,
+    "module_sha256": "b1516a42cd9ac3552d51d3ef20d54e674f0c845bd36f16d174e48ee067d78bb6"
+  },
+  "status": "hard_gate_failed",
+  "task": "STRUCTHARBOR-0003"
+}
