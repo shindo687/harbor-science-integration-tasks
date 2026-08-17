@@ -1,0 +1,29 @@
+{
+  "elapsed_seconds": 2.9769461154937744,
+  "fatal_error": "RuntimeError: candidate contains forbidden donor/verifier dependency",
+  "forbidden_findings": [
+    "forbidden donor/verifier reference in networkx/algorithms/community/spectral_clustering.py: \" scikit-learn'\""
+  ],
+  "hard_gates": {
+    "forbidden_dependency_scan": false,
+    "label_rename_invariant": true,
+    "locked_reference_pipeline": true
+  },
+  "hard_gates_passed": false,
+  "passed": 0,
+  "points": [],
+  "reference": {
+    "locked_donor_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+    "provenance": {
+      "networkx_file": "/opt/reference-host/networkx/__init__.py",
+      "networkx_version": "3.7rc0.dev0",
+      "numpy_version": "2.3.2",
+      "sklearn_file": "/opt/reference-venv/lib/python3.12/site-packages/sklearn/__init__.py",
+      "sklearn_version": "1.10.dev0"
+    },
+    "stderr_tail": ""
+  },
+  "reward": 0.0,
+  "task": "algobridge-0029__networkx__absorbs__scikit-learn",
+  "total": 15
+}
