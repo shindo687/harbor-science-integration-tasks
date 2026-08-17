@@ -1,0 +1,183 @@
+{
+  "cases": [
+    {
+      "detail": "not run: hard-gate failure",
+      "name": "dockq_identity",
+      "passed": false
+    },
+    {
+      "detail": "not run: hard-gate failure",
+      "name": "dockq_ligand_shift",
+      "passed": false
+    },
+    {
+      "detail": "not run: hard-gate failure",
+      "name": "dockq_rigid_distortion",
+      "passed": false
+    },
+    {
+      "detail": "not run: hard-gate failure",
+      "name": "dockq_sequence_chain_swap",
+      "passed": false
+    },
+    {
+      "detail": "not run: hard-gate failure",
+      "name": "dockq_explicit_mapping",
+      "passed": false
+    },
+    {
+      "detail": "not run: hard-gate failure",
+      "name": "ipsae_default_dimer",
+      "passed": false
+    },
+    {
+      "detail": "not run: hard-gate failure",
+      "name": "ipsae_asymmetric_pae",
+      "passed": false
+    },
+    {
+      "detail": "not run: hard-gate failure",
+      "name": "ipsae_nondefault_cutoffs",
+      "passed": false
+    },
+    {
+      "detail": "not run: hard-gate failure",
+      "name": "ipsae_trimer_all_pairs",
+      "passed": false
+    },
+    {
+      "detail": "not run: hard-gate failure",
+      "name": "ipsae_no_pae_below_cutoff",
+      "passed": false
+    },
+    {
+      "detail": "not run: hard-gate failure",
+      "name": "combined_cli",
+      "passed": false
+    },
+    {
+      "detail": "not run: hard-gate failure",
+      "name": "public_contract_and_flags",
+      "passed": false
+    },
+    {
+      "detail": "not run: hard-gate failure",
+      "name": "workflow_computed_multimodel",
+      "passed": false
+    },
+    {
+      "detail": "not run: hard-gate failure",
+      "name": "workflow_missing_and_disabled",
+      "passed": false
+    },
+    {
+      "detail": "not run: hard-gate failure",
+      "name": "workflow_directory_errors_and_applicability",
+      "passed": false
+    }
+  ],
+  "donor_commits": {
+    "dockq": "75db7ab4f6b824c70d120c5f620582e164ed5479",
+    "ipsae": "6174cf9e71cb1bd660cc805856a18c4871a6dec3"
+  },
+  "elapsed_seconds": 7.128939,
+  "hard_gate_passed": false,
+  "hard_gates": [
+    {
+      "detail": "passed",
+      "elapsed_seconds": 0.184839,
+      "name": "compile",
+      "passed": true
+    },
+    {
+      "detail": "AssertionError: predict_structure tail parameters mismatch: ['save_single_representations', 'save_pair_representations', 'save_recycles', 'calc_extra_ptm', 'use_probs_extra']",
+      "elapsed_seconds": 0.257477,
+      "name": "unprivileged_import_and_signatures",
+      "passed": false
+    }
+  ],
+  "locked_identity": {
+    "dockq_commit": "75db7ab4f6b824c70d120c5f620582e164ed5479",
+    "dockq_tree": "1d067a65cc2ce796a355fb8982ac5885ef996dab",
+    "host_commit": "277662d7f4b0e4356c8d3fc4aec7c5a074cc65ad",
+    "host_manifest_sha256": "3a9eee87b25fc8d0a0a89455141417e2729324641e6cd99d27875e9a71912e14",
+    "host_tree": "3c473f8ce514a9d6836ae9381df26f1d6d3907d1",
+    "ipsae_commit": "6174cf9e71cb1bd660cc805856a18c4871a6dec3",
+    "ipsae_tree": "6c7e6e1c69d0150d7fd02d94593bd23387e9ebaa",
+    "reference_manifest_sha256": "a9ea4ea255cef9fc1716135f8ddd52525a83dc25063bdd8ca0c699cbc661e84f"
+  },
+  "max_numeric_abs_error": 0.0,
+  "passed_cases": 0,
+  "reference_evidence": [
+    {
+      "case": "dockq_identity",
+      "donor": "DockQ"
+    },
+    {
+      "case": "dockq_ligand_shift",
+      "donor": "DockQ"
+    },
+    {
+      "case": "dockq_rigid_distortion",
+      "donor": "DockQ"
+    },
+    {
+      "case": "dockq_sequence_chain_swap",
+      "donor": "DockQ"
+    },
+    {
+      "case": "dockq_explicit_mapping",
+      "donor": "DockQ"
+    },
+    {
+      "case": "ipsae_default_dimer",
+      "donor": "IPSAE"
+    },
+    {
+      "case": "ipsae_asymmetric_pae",
+      "donor": "IPSAE"
+    },
+    {
+      "case": "ipsae_nondefault_cutoffs",
+      "donor": "IPSAE"
+    },
+    {
+      "case": "ipsae_trimer_all_pairs",
+      "donor": "IPSAE"
+    },
+    {
+      "case": "ipsae_no_pae_below_cutoff",
+      "donor": "IPSAE"
+    },
+    {
+      "case": "combined_cli",
+      "donor": "DockQ"
+    },
+    {
+      "case": "combined_cli",
+      "donor": "IPSAE"
+    },
+    {
+      "case": "workflow_computed_multimodel",
+      "donor": "both",
+      "runs": 2
+    },
+    {
+      "case": "workflow_directory_errors_and_applicability",
+      "donor": "both"
+    }
+  ],
+  "reference_policy": "locked originals run before physical donor deletion; candidate runs as uid 10001",
+  "reward": 0.0,
+  "runtime": {
+    "biopython": "1.85",
+    "numpy": "2.2.6",
+    "python": "3.12.11"
+  },
+  "schema_version": 1,
+  "tolerance": {
+    "absolute": 0.0005,
+    "relative": 0.0005
+  },
+  "total_cases": 15
+}
