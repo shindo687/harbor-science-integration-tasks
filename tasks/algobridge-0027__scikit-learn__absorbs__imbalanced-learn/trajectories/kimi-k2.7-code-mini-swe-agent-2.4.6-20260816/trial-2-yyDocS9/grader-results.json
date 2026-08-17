@@ -1,0 +1,307 @@
+{
+  "candidate": {
+    "fatal": null,
+    "isolation_checks": {
+      "pristine_host_removed": true,
+      "reference_donor_removed": true,
+      "reference_host_removed": true,
+      "reference_runner_unreadable": true,
+      "reference_venv_removed": true,
+      "tests_unreadable": true,
+      "wheelhouse_removed": true
+    },
+    "sklearn_file": "/opt/candidate-runtime/sklearn/__init__.py",
+    "sklearn_version": "1.10.dev0",
+    "smote_module": "/opt/candidate-runtime/sklearn/preprocessing/_smote.py",
+    "stderr_tail": ""
+  },
+  "candidate_isolation_probe": {
+    "candidate_tools_removed": true,
+    "pristine_host_removed": true,
+    "reference_donor_removed": true,
+    "reference_host_removed": true,
+    "reference_runner_unreadable": true,
+    "reference_venv_removed": true,
+    "tests_unreadable": true,
+    "wheelhouse_removed": true
+  },
+  "candidate_overlay": {
+    "manifest": [
+      "sklearn/preprocessing/__init__.py",
+      "sklearn/preprocessing/_smote.py"
+    ],
+    "materializer_output": "materialized 2 changed Python files in /opt/candidate-runtime"
+  },
+  "elapsed_seconds": 37.25763130187988,
+  "hard_gates": {
+    "candidate_clean_runtime": true,
+    "candidate_private_paths_inaccessible": true,
+    "candidate_trees_locked": true,
+    "forbidden_dependency_scan": true,
+    "host_regression": true,
+    "locked_reference_pipeline": true,
+    "reference_removed_before_candidate": true,
+    "trusted_host_overlay": true
+  },
+  "hard_gates_passed": true,
+  "host_regression": {
+    "returncode": 0,
+    "stderr_tail": "",
+    "stdout_head": ".........sssssssss..........ssssssssssssssssssssssssssssssssssssssssssss [  3%]\ns......................s.s.s.s.s...........s.s.s.s.s...........s.s.s.s.s [  6%]\n...........s.s.s.s.s...........s.s.s.s.s...........s.s.s.s.s............ [  9%]\n........................................................................ [ 12%]\n............................ssssssssssssssssssssssssssssssssssssssssssss [ 15%]\nssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss [ 18%]\nsssssssssssssssssssssssssssssssssssssssssssssssssssss................s.s [ 21%]\n.s.s.s.s.s.s.......................s.s.................................. [ 24%]\n...............................................................sssssssss [ 27%]\nssssss.................................................................. [ 30%]\n.......ssssssss......ss................................................. [ 33%]\n.......................................................................s [ 36%]\nss..........................................ss.......................... [ 40%]\n...s..................s...............................................s. [ 43%]\n...............sssssss...sssssss.........s...ssss......................s [ 46%]\n.s...ss............s......................s.sss.s.s.s.s.s.s.s.s.s.s..s.s [ 49%]\nsssssssssssssssss...ssssss...ssssssssssssssssssssssssssssss............. [ 52%]\n........................ssssssssssssssssssssssssssssssssssssssssssssssss [ 55%]\nssssssssssssssssssssssssssssssssssssssssss......ssssssssssssssssssssssss [ 58%]\nsssssssssssssssssssss................................................... [ 61%]\n........................................................................ [ 64%]\n........................................................................ [ 67%]\n........................................................................ [ 70%]\n........................................................................ [ 73%]\n........................................................................ [ 77%]\n........................................................................ [ 80%]\n........................................................................ [ 83%]\n........................................................................ [ 86%]\n.sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss [ 89%]\nssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss [ 92%]\nssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss [ 95%]\nssssssssssssssssssssssssssssssssssssssss...............................s [ 98%]\nsss.s.s.s.s.s.................s..                                        [100%]\n=============================== warnings summary ===============================\ntest_common.py::test_missing_value_handling[est0-maxabs_scale-True-False-omit_kwargs0]\ntest_common.py::test_missing_value_handling[est0-maxabs_scale-True-False-omit_kwargs0]\ntest_common.py::test_missing_value_handling[est3-scale-True-False-omit_kwargs3]\ntest_common.py::test_missing_value_handling[est3-scale-True-False-omit_kwargs3]\ntest_common.py::test_missing_value_handling[est6-quantile_transform-True-False-omit_kwargs6]\ntest_common.py::test_missing_value_handling[est6-quantile_transform-True-False-omit_kwargs6]\ntest_common.py::test_missing_value_handling[est8-robust_scale-True-False-omit_kwargs8]\ntest_common.py::test_missing_value_handling[est8-robust_scale-True-False-omit_kwargs8]\n  /usr/local/lib/python3.12/site-packages/scipy/sparse/_dia.py:76: SparseEfficiencyWarning: Constructing a DIA matrix with 115 diagonals is inefficient\n    A = self._coo_container(arg1, dtype=dtype, shape=shape).todia()\n\ntest_data.py::test_standard_scaler_sample_weight[array-Xw2-X2-sample_weight2]\ntest_data.py::test_standard_scaler_sample_weight[array-Xw2-X2-sample_weight2]\n  /opt/candidate-runtime/sklearn/utils/extmath.py:1211: RuntimeWarning: invalid value encountered in divide\n    updated_mean = (last_sum + new_sum) / updated_sample_count\n\ntest_data.py::test_standard_scaler_sample_weight[array-Xw2-X2-sample_weight2]\ntest_data.py::test_standard_scaler_sample_weight[array-Xw2-X2-sample_weight2]\n  /opt/candidate-runtime/sklearn/utils/extmath.py:1216: RuntimeWarning: invalid value encountered in divide\n    T = new_sum / new_sample_count\n\ntest_data.py::test_standard_scaler_sample_weight[array-Xw2-X2-sample_weight2]\ntest_data.py::test_standard_scaler_sample_weight[array-Xw2-X2-sample_weight2]\n  /opt/candidate-runtime/sklearn/utils/extmath.py:1240: RuntimeWarning: invalid value encountered in divide\n    new_unnormalized_variance -= correction**2 / new_sample_count\n\ntest_data.py::test_quantile_transform_and_inverse\ntest_data.py::test_one_to_one_features[QuantileTransformer]\n  /opt/candidate-runtime/sklearn/preprocessing/_data.py:2905: UserWarning: n_quantiles (1000) is greater than the total number of samples (150). n_quantiles is set to n_samples.\n    warnings.warn(\n\ntest_data.py::test_quantile_transform_and_inverse\n  /opt/candidate-runtime/sklearn/preprocessing/",
+    "stdout_tail": "nsform_n_bins_array[quantile-averaged_inverted_cdf-expected5-sample_weight5]\n  /opt/candidate-runtime/sklearn/preprocessing/_discretization.py:385: UserWarning: Bins whose width are too small (i.e., <= 1e-8) in feature 2 are removed. Consider decreasing the number of bins.\n    warnings.warn(\n\ntest_discretization.py::test_fit_transform_n_bins_array[quantile-averaged_inverted_cdf-expected5-sample_weight5]\n  /opt/candidate-runtime/sklearn/preprocessing/_discretization.py:385: UserWarning: Bins whose width are too small (i.e., <= 1e-8) in feature 3 are removed. Consider decreasing the number of bins.\n    warnings.warn(\n\ntest_discretization.py::test_redundant_bins[kmeans-expected_bin_edges1-averaged_inverted_cdf]\n  /opt/candidate-runtime/sklearn/base.py:1403: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (3). Possibly due to duplicate points in X.\n    return fit_method(estimator, *args, **kwargs)\n\ntest_discretization.py::test_kbinsdiscretizer_subsample_default\ntest_discretization.py::test_kbinsdiscretizer_subsample_default\n  /opt/candidate-runtime/sklearn/preprocessing/_discretization.py:385: UserWarning: Bins whose width are too small (i.e., <= 1e-8) in feature 0 are removed. Consider decreasing the number of bins.\n    warnings.warn(\n\ntest_encoders.py::test_one_hot_encoder_handle_unknown[warn]\ntest_encoders.py::test_one_hot_encoder_inverse[None-False-warn]\ntest_encoders.py::test_one_hot_encoder_inverse[None-True-warn]\n  /opt/candidate-runtime/sklearn/preprocessing/_encoders.py:241: UserWarning: Found unknown categories in columns [0, 1] during transform. These unknown categories will be encoded as the infrequent category.\n    warnings.warn(msg, UserWarning)\n\ntest_encoders.py::test_one_hot_encoder_handle_unknown_strings[warn]\ntest_encoders.py::test_one_hot_encoder_specified_categories[object-warn]\ntest_encoders.py::test_one_hot_encoder_specified_categories[numeric-warn]\ntest_encoders.py::test_one_hot_encoder_specified_categories[object-string-warn]\ntest_encoders.py::test_one_hot_encoder_specified_categories[object-string-none-warn]\ntest_encoders.py::test_one_hot_encoder_specified_categories[object-string-nan-warn]\ntest_encoders.py::test_one_hot_encoder_specified_categories[object-None-and-nan-warn]\n  /opt/candidate-runtime/sklearn/preprocessing/_encoders.py:241: UserWarning: Found unknown categories in columns [0] during transform. These unknown categories will be encoded as the infrequent category.\n    warnings.warn(msg, UserWarning)\n\ntest_encoders.py::test_one_hot_encoder_inverse[None-False-warn]\ntest_encoders.py::test_one_hot_encoder_inverse[None-True-warn]\n  /opt/candidate-runtime/sklearn/preprocessing/_encoders.py:241: UserWarning: Found unknown categories in columns [1] during transform. These unknown categories will be encoded as the infrequent category.\n    warnings.warn(msg, UserWarning)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n1548 passed, 789 skipped, 38 warnings in 28.82s\n"
+  },
+  "passed": 15,
+  "points": [
+    {
+      "X_max_abs_error": 0.0,
+      "exact_fields": {
+        "X_dtype": true,
+        "name": true,
+        "parent_indices": true,
+        "sampling_strategy": true,
+        "y": true,
+        "y_dtype": true
+      },
+      "lambda_max_abs_error": 0.0,
+      "name": "binary_auto",
+      "passed": true,
+      "weight_max_abs_error": 0.0
+    },
+    {
+      "X_max_abs_error": 0.0,
+      "exact_fields": {
+        "X_dtype": true,
+        "name": true,
+        "parent_indices": true,
+        "sampling_strategy": true,
+        "y": true,
+        "y_dtype": true
+      },
+      "lambda_max_abs_error": 0.0,
+      "name": "multiclass_auto",
+      "passed": true,
+      "weight_max_abs_error": 0.0
+    },
+    {
+      "X_max_abs_error": 0.0,
+      "exact_fields": {
+        "X_dtype": true,
+        "name": true,
+        "parent_indices": true,
+        "sampling_strategy": true,
+        "y": true,
+        "y_dtype": true
+      },
+      "lambda_max_abs_error": 0.0,
+      "name": "binary_dict",
+      "passed": true,
+      "weight_max_abs_error": 0.0
+    },
+    {
+      "X_max_abs_error": 0.0,
+      "exact_fields": {
+        "X_dtype": true,
+        "name": true,
+        "parent_indices": true,
+        "sampling_strategy": true,
+        "y": true,
+        "y_dtype": true
+      },
+      "lambda_max_abs_error": 0.0,
+      "name": "multiclass_dict",
+      "passed": true,
+      "weight_max_abs_error": 0.0
+    },
+    {
+      "X_max_abs_error": 0.0,
+      "exact_fields": {
+        "X_dtype": true,
+        "name": true,
+        "parent_indices": true,
+        "sampling_strategy": true,
+        "y": true,
+        "y_dtype": true
+      },
+      "lambda_max_abs_error": 0.0,
+      "name": "string_labels",
+      "passed": true,
+      "weight_max_abs_error": 0.0
+    },
+    {
+      "X_max_abs_error": 0.0,
+      "exact_fields": {
+        "X_dtype": true,
+        "name": true,
+        "parent_indices": true,
+        "sampling_strategy": true,
+        "y": true,
+        "y_dtype": true
+      },
+      "lambda_max_abs_error": 0.0,
+      "name": "duplicate_points",
+      "passed": true,
+      "weight_max_abs_error": 0.0
+    },
+    {
+      "X_max_abs_error": 0.0,
+      "exact_fields": {
+        "X_dtype": true,
+        "name": true,
+        "parent_indices": true,
+        "sampling_strategy": true,
+        "y": true,
+        "y_dtype": true
+      },
+      "lambda_max_abs_error": 0.0,
+      "name": "equidistant_ties",
+      "passed": true,
+      "weight_max_abs_error": 0.0
+    },
+    {
+      "X_max_abs_error": 0.0,
+      "exact_fields": {
+        "X_dtype": true,
+        "name": true,
+        "parent_indices": true,
+        "sampling_strategy": true,
+        "y": true,
+        "y_dtype": true
+      },
+      "lambda_max_abs_error": 0.0,
+      "name": "float32",
+      "passed": true,
+      "weight_max_abs_error": 0.0
+    },
+    {
+      "X_max_abs_error": 0.0,
+      "exact_fields": {
+        "X_dtype": true,
+        "name": true,
+        "parent_indices": true,
+        "sampling_strategy": true,
+        "y": true,
+        "y_dtype": true
+      },
+      "lambda_max_abs_error": 0.0,
+      "name": "sample_weight_lineage",
+      "passed": true,
+      "weight_max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "X_max_abs_error": 0.0,
+      "exact_fields": {
+        "X_dtype": true,
+        "name": true,
+        "parent_indices": true,
+        "sampling_strategy": true,
+        "y": true,
+        "y_dtype": true
+      },
+      "lambda_max_abs_error": 0.0,
+      "name": "binary_float_ratio",
+      "passed": true,
+      "weight_max_abs_error": 0.0
+    },
+    {
+      "X_max_abs_error": 0.0,
+      "exact_fields": {
+        "X_dtype": true,
+        "name": true,
+        "parent_indices": true,
+        "sampling_strategy": true,
+        "y": true,
+        "y_dtype": true
+      },
+      "lambda_max_abs_error": 0.0,
+      "name": "all_classes",
+      "passed": true,
+      "weight_max_abs_error": 0.0
+    },
+    {
+      "X_max_abs_error": 0.0,
+      "exact_fields": {
+        "X_dtype": true,
+        "name": true,
+        "parent_indices": true,
+        "sampling_strategy": true,
+        "y": true,
+        "y_dtype": true
+      },
+      "lambda_max_abs_error": 0.0,
+      "name": "high_dimensional",
+      "passed": true,
+      "weight_max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "failures": [],
+      "name": "segment_and_weight_invariants",
+      "passed": true
+    },
+    {
+      "failures": [],
+      "name": "counts_prefix_determinism_and_ties",
+      "passed": true
+    },
+    {
+      "contract_checks": [
+        {
+          "name": "nonpositive_k",
+          "rejected": true
+        },
+        {
+          "name": "too_few_minority",
+          "rejected": true
+        },
+        {
+          "name": "single_class",
+          "rejected": true
+        },
+        {
+          "name": "multiclass_float_strategy",
+          "rejected": true
+        },
+        {
+          "name": "dict_below_current_count",
+          "rejected": true
+        },
+        {
+          "name": "nonfinite_X",
+          "rejected": true
+        },
+        {
+          "name": "sparse_X",
+          "rejected": true
+        },
+        {
+          "name": "sklearn_clone",
+          "rejected": true
+        }
+      ],
+      "host_regression_passed": true,
+      "name": "api_contract_and_host_regression",
+      "passed": true
+    }
+  ],
+  "reference": {
+    "locked_donor_commit": "8504e95f0160f61d1b617ca66f779646d2ee609e",
+    "locked_host_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+    "provenance": {
+      "imblearn_file": "/opt/reference-donor/imblearn/__init__.py",
+      "imblearn_version": "0.15.dev0",
+      "numpy_version": "2.3.2",
+      "sklearn_file": "/opt/reference-venv/lib/python3.12/site-packages/sklearn/__init__.py",
+      "sklearn_version": "1.10.dev0"
+    },
+    "stderr_tail": ""
+  },
+  "reward": 1.0,
+  "source_scan": {
+    "changed_files": [
+      "sklearn/preprocessing/__init__.py",
+      "sklearn/preprocessing/_smote.py"
+    ],
+    "findings": []
+  },
+  "task": "algobridge-0027__scikit-learn__absorbs__imbalanced-learn",
+  "total": 15
+}

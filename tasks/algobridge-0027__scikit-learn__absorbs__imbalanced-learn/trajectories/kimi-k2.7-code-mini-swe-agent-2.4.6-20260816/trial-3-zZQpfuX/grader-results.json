@@ -1,0 +1,35 @@
+{
+  "elapsed_seconds": 2.4598402976989746,
+  "fatal_error": "RuntimeError: candidate contains forbidden donor/verifier dependency",
+  "hard_gates": {
+    "forbidden_dependency_scan": false,
+    "locked_reference_pipeline": true
+  },
+  "hard_gates_passed": false,
+  "passed": 0,
+  "points": [],
+  "reference": {
+    "locked_donor_commit": "8504e95f0160f61d1b617ca66f779646d2ee609e",
+    "locked_host_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+    "provenance": {
+      "imblearn_file": "/opt/reference-donor/imblearn/__init__.py",
+      "imblearn_version": "0.15.dev0",
+      "numpy_version": "2.3.2",
+      "sklearn_file": "/opt/reference-venv/lib/python3.12/site-packages/sklearn/__init__.py",
+      "sklearn_version": "1.10.dev0"
+    },
+    "stderr_tail": ""
+  },
+  "reward": 0.0,
+  "source_scan": {
+    "changed_files": [
+      "sklearn/preprocessing/__init__.py",
+      "sklearn/preprocessing/_smote.py"
+    ],
+    "findings": [
+      "forbidden donor/verifier reference in sklearn/preprocessing/_smote.py: '\\nimbalanced-learn.'"
+    ]
+  },
+  "task": "algobridge-0027__scikit-learn__absorbs__imbalanced-learn",
+  "total": 15
+}
