@@ -1,0 +1,755 @@
+{
+  "candidate_overlay_manifest": [
+    "sklearn/inspection/__init__.py",
+    "sklearn/inspection/_tree_shap.py",
+    "sklearn/inspection/tests/test_tree_shap.py"
+  ],
+  "candidate_stderr": "/opt/candidate-runtime/sklearn/utils/validation.py:2835: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names\n  warnings.warn(\n",
+  "elapsed_seconds": 17.473456144332886,
+  "hard_gates": {
+    "candidate_isolation": true,
+    "clean_room_source_scan": true,
+    "host_regression": true,
+    "locked_reference_pipeline": true,
+    "source_integrity": true
+  },
+  "locked_identity": {
+    "donor_commit": "df974a1966294b9c7acebb1373fd6dc5445d1d3d",
+    "donor_tree": "4ec180cdefa828142ec4e6da5c2b0c80697bf8e8",
+    "host_commit": "e27ccf58592fcfe8c7ca87f53dde840c436093b2",
+    "host_tree": "87223e64df8880951bc88ee6049a8bf453dccf88",
+    "reference_wheel": "shap-0.52.1.dev42-cp312-abi3-linux_x86_64.whl",
+    "reference_wheel_sha256": "0321cb5f92a235af58982a9d36c58634125764cc10d0298fff6742c8c4465165"
+  },
+  "points": [
+    {
+      "details": {
+        "candidate_local_accuracy_error": 8.881784197001252e-16,
+        "checks": {
+          "base_values": true,
+          "local_accuracy": true,
+          "predictions": true,
+          "unused_features_exact_zero": true,
+          "values": true
+        },
+        "max_abs_errors": {
+          "base_values": 0.0,
+          "predictions": 0.0,
+          "values": 0.0
+        },
+        "shapes": {
+          "base_values": {
+            "actual": [],
+            "expected": []
+          },
+          "predictions": {
+            "actual": [
+              9
+            ],
+            "expected": [
+              9
+            ]
+          },
+          "values": {
+            "actual": [
+              9,
+              7
+            ],
+            "expected": [
+              9,
+              7
+            ]
+          }
+        },
+        "unused_feature_max_abs": 0.0,
+        "unused_features": [
+          6
+        ]
+      },
+      "name": "weighted_tree_regression",
+      "passed": true
+    },
+    {
+      "details": {
+        "candidate_local_accuracy_error": 4.440892098500626e-16,
+        "checks": {
+          "base_values": true,
+          "local_accuracy": true,
+          "predictions": true,
+          "unused_features_exact_zero": true,
+          "values": true
+        },
+        "max_abs_errors": {
+          "base_values": 0.0,
+          "predictions": 0.0,
+          "values": 0.0
+        },
+        "shapes": {
+          "base_values": {
+            "actual": [],
+            "expected": []
+          },
+          "predictions": {
+            "actual": [
+              9
+            ],
+            "expected": [
+              9
+            ]
+          },
+          "values": {
+            "actual": [
+              9,
+              7
+            ],
+            "expected": [
+              9,
+              7
+            ]
+          }
+        },
+        "unused_feature_max_abs": 0.0,
+        "unused_features": [
+          6
+        ]
+      },
+      "name": "multioutput_tree_second",
+      "passed": true
+    },
+    {
+      "details": {
+        "candidate_local_accuracy_error": 4.440892098500626e-16,
+        "checks": {
+          "base_values": true,
+          "local_accuracy": true,
+          "predictions": true,
+          "unused_features_exact_zero": true,
+          "values": true
+        },
+        "max_abs_errors": {
+          "base_values": 0.0,
+          "predictions": 0.0,
+          "values": 0.0
+        },
+        "shapes": {
+          "base_values": {
+            "actual": [
+              2
+            ],
+            "expected": [
+              2
+            ]
+          },
+          "predictions": {
+            "actual": [
+              9,
+              2
+            ],
+            "expected": [
+              9,
+              2
+            ]
+          },
+          "values": {
+            "actual": [
+              9,
+              7,
+              2
+            ],
+            "expected": [
+              9,
+              7,
+              2
+            ]
+          }
+        },
+        "unused_feature_max_abs": 0.0,
+        "unused_features": [
+          4,
+          5,
+          6
+        ]
+      },
+      "name": "multioutput_tree_all",
+      "passed": true
+    },
+    {
+      "details": {
+        "candidate_local_accuracy_error": 1.7763568394002505e-15,
+        "checks": {
+          "base_values": true,
+          "local_accuracy": true,
+          "predictions": true,
+          "unused_features_exact_zero": true,
+          "values": true
+        },
+        "max_abs_errors": {
+          "base_values": 0.0,
+          "predictions": 0.0,
+          "values": 0.0
+        },
+        "shapes": {
+          "base_values": {
+            "actual": [],
+            "expected": []
+          },
+          "predictions": {
+            "actual": [
+              9
+            ],
+            "expected": [
+              9
+            ]
+          },
+          "values": {
+            "actual": [
+              9,
+              7
+            ],
+            "expected": [
+              9,
+              7
+            ]
+          }
+        },
+        "unused_feature_max_abs": 0.0,
+        "unused_features": [
+          6
+        ]
+      },
+      "name": "forest_regression_order",
+      "passed": true
+    },
+    {
+      "details": {
+        "candidate_local_accuracy_error": 6.661338147750939e-16,
+        "checks": {
+          "base_values": true,
+          "local_accuracy": true,
+          "predictions": true,
+          "unused_features_exact_zero": true,
+          "values": true
+        },
+        "max_abs_errors": {
+          "base_values": 0.0,
+          "predictions": 0.0,
+          "values": 0.0
+        },
+        "shapes": {
+          "base_values": {
+            "actual": [
+              2
+            ],
+            "expected": [
+              2
+            ]
+          },
+          "predictions": {
+            "actual": [
+              9,
+              2
+            ],
+            "expected": [
+              9,
+              2
+            ]
+          },
+          "values": {
+            "actual": [
+              9,
+              7,
+              2
+            ],
+            "expected": [
+              9,
+              7,
+              2
+            ]
+          }
+        },
+        "unused_feature_max_abs": 0.0,
+        "unused_features": [
+          6
+        ]
+      },
+      "name": "multioutput_forest",
+      "passed": true
+    },
+    {
+      "details": {
+        "candidate_local_accuracy_error": 1.3322676295501878e-15,
+        "checks": {
+          "base_values": true,
+          "local_accuracy": true,
+          "predictions": true,
+          "unused_features_exact_zero": true,
+          "values": true
+        },
+        "max_abs_errors": {
+          "base_values": 1.3877787807814457e-17,
+          "predictions": 0.0,
+          "values": 0.0
+        },
+        "shapes": {
+          "base_values": {
+            "actual": [],
+            "expected": []
+          },
+          "predictions": {
+            "actual": [
+              9
+            ],
+            "expected": [
+              9
+            ]
+          },
+          "values": {
+            "actual": [
+              9,
+              7
+            ],
+            "expected": [
+              9,
+              7
+            ]
+          }
+        },
+        "unused_feature_max_abs": 0.0,
+        "unused_features": [
+          6
+        ]
+      },
+      "name": "boosting_regression",
+      "passed": true
+    },
+    {
+      "details": {
+        "candidate_local_accuracy_error": 2.220446049250313e-16,
+        "checks": {
+          "base_values": true,
+          "local_accuracy": true,
+          "predictions": true,
+          "unused_features_exact_zero": true,
+          "values": true
+        },
+        "max_abs_errors": {
+          "base_values": 0.0,
+          "predictions": 0.0,
+          "values": 0.0
+        },
+        "shapes": {
+          "base_values": {
+            "actual": [],
+            "expected": []
+          },
+          "predictions": {
+            "actual": [
+              9
+            ],
+            "expected": [
+              9
+            ]
+          },
+          "values": {
+            "actual": [
+              9,
+              7
+            ],
+            "expected": [
+              9,
+              7
+            ]
+          }
+        },
+        "unused_feature_max_abs": 0.0,
+        "unused_features": [
+          3,
+          6
+        ]
+      },
+      "name": "binary_tree_string_selector",
+      "passed": true
+    },
+    {
+      "details": {
+        "candidate_local_accuracy_error": 2.220446049250313e-16,
+        "checks": {
+          "base_values": true,
+          "local_accuracy": true,
+          "predictions": true,
+          "unused_features_exact_zero": true,
+          "values": true
+        },
+        "max_abs_errors": {
+          "base_values": 0.0,
+          "predictions": 0.0,
+          "values": 0.0
+        },
+        "shapes": {
+          "base_values": {
+            "actual": [
+              3
+            ],
+            "expected": [
+              3
+            ]
+          },
+          "predictions": {
+            "actual": [
+              9,
+              3
+            ],
+            "expected": [
+              9,
+              3
+            ]
+          },
+          "values": {
+            "actual": [
+              9,
+              7,
+              3
+            ],
+            "expected": [
+              9,
+              7,
+              3
+            ]
+          }
+        },
+        "unused_feature_max_abs": 0.0,
+        "unused_features": [
+          4,
+          6
+        ]
+      },
+      "name": "multiclass_tree_all",
+      "passed": true
+    },
+    {
+      "details": {
+        "candidate_local_accuracy_error": 2.220446049250313e-16,
+        "checks": {
+          "base_values": true,
+          "local_accuracy": true,
+          "predictions": true,
+          "unused_features_exact_zero": true,
+          "values": true
+        },
+        "max_abs_errors": {
+          "base_values": 0.0,
+          "predictions": 0.0,
+          "values": 0.0
+        },
+        "shapes": {
+          "base_values": {
+            "actual": [],
+            "expected": []
+          },
+          "predictions": {
+            "actual": [
+              9
+            ],
+            "expected": [
+              9
+            ]
+          },
+          "values": {
+            "actual": [
+              9,
+              7
+            ],
+            "expected": [
+              9,
+              7
+            ]
+          }
+        },
+        "unused_feature_max_abs": 0.0,
+        "unused_features": [
+          6
+        ]
+      },
+      "name": "multiclass_forest_beta",
+      "passed": true
+    },
+    {
+      "details": {
+        "candidate_local_accuracy_error": 8.881784197001252e-16,
+        "checks": {
+          "base_values": true,
+          "local_accuracy": true,
+          "predictions": true,
+          "unused_features_exact_zero": true,
+          "values": true
+        },
+        "max_abs_errors": {
+          "base_values": 0.0,
+          "predictions": 0.0,
+          "values": 0.0
+        },
+        "shapes": {
+          "base_values": {
+            "actual": [],
+            "expected": []
+          },
+          "predictions": {
+            "actual": [
+              9
+            ],
+            "expected": [
+              9
+            ]
+          },
+          "values": {
+            "actual": [
+              9,
+              7
+            ],
+            "expected": [
+              9,
+              7
+            ]
+          }
+        },
+        "unused_feature_max_abs": 0.0,
+        "unused_features": [
+          6
+        ]
+      },
+      "name": "binary_gradient_boosting",
+      "passed": true
+    },
+    {
+      "details": {
+        "candidate_local_accuracy_error": 1.7763568394002505e-15,
+        "checks": {
+          "base_values": true,
+          "local_accuracy": true,
+          "predictions": true,
+          "unused_features_exact_zero": true,
+          "values": true
+        },
+        "max_abs_errors": {
+          "base_values": 0.0,
+          "predictions": 0.0,
+          "values": 0.0
+        },
+        "shapes": {
+          "base_values": {
+            "actual": [],
+            "expected": []
+          },
+          "predictions": {
+            "actual": [
+              9
+            ],
+            "expected": [
+              9
+            ]
+          },
+          "values": {
+            "actual": [
+              9,
+              7
+            ],
+            "expected": [
+              9,
+              7
+            ]
+          }
+        },
+        "unused_feature_max_abs": 0.0,
+        "unused_features": [
+          6
+        ]
+      },
+      "name": "learned_missing_branch",
+      "passed": true
+    },
+    {
+      "details": {
+        "candidate_local_accuracy_error": 2.6645352591003757e-15,
+        "checks": {
+          "base_values": true,
+          "local_accuracy": true,
+          "predictions": true,
+          "unused_features_exact_zero": true,
+          "values": true
+        },
+        "max_abs_errors": {
+          "base_values": 0.0,
+          "predictions": 0.0,
+          "values": 0.0
+        },
+        "shapes": {
+          "base_values": {
+            "actual": [],
+            "expected": []
+          },
+          "predictions": {
+            "actual": [
+              9
+            ],
+            "expected": [
+              9
+            ]
+          },
+          "values": {
+            "actual": [
+              9,
+              19
+            ],
+            "expected": [
+              9,
+              19
+            ]
+          }
+        },
+        "unused_feature_max_abs": 0.0,
+        "unused_features": [
+          18
+        ]
+      },
+      "name": "deep_repeated_thresholds",
+      "passed": true
+    },
+    {
+      "details": {
+        "candidate_local_accuracy_error": 8.881784197001252e-16,
+        "checks": {
+          "base_values": true,
+          "local_accuracy": true,
+          "predictions": true,
+          "unused_features_exact_zero": true,
+          "values": true
+        },
+        "max_abs_errors": {
+          "base_values": 0.0,
+          "predictions": 0.0,
+          "values": 0.0
+        },
+        "shapes": {
+          "base_values": {
+            "actual": [],
+            "expected": []
+          },
+          "predictions": {
+            "actual": [
+              9
+            ],
+            "expected": [
+              9
+            ]
+          },
+          "values": {
+            "actual": [
+              9,
+              7
+            ],
+            "expected": [
+              9,
+              7
+            ]
+          }
+        },
+        "unused_feature_max_abs": 0.0,
+        "unused_features": [
+          6
+        ]
+      },
+      "name": "dataframe_forest",
+      "passed": true
+    },
+    {
+      "details": {
+        "duplicate_tree_base_error": 5.551115123125783e-17,
+        "duplicate_tree_phi_error": 2.220446049250313e-16,
+        "duplicate_tree_prediction_error": 2.220446049250313e-16
+      },
+      "name": "scientific_invariants",
+      "passed": true
+    },
+    {
+      "details": {
+        "contract_checks": [
+          {
+            "name": "unfitted",
+            "rejected": true
+          },
+          {
+            "name": "unsupported_estimator",
+            "rejected": true
+          },
+          {
+            "name": "sparse_X",
+            "rejected": true
+          },
+          {
+            "name": "wrong_features",
+            "rejected": true
+          },
+          {
+            "name": "invalid_output",
+            "rejected": true
+          },
+          {
+            "name": "categorical_split",
+            "rejected": true
+          },
+          {
+            "name": "host_clone_regression",
+            "rejected": true
+          },
+          {
+            "name": "public_docstring",
+            "rejected": true
+          }
+        ],
+        "isolation_checks": {
+          "candidate_tools_removed": true,
+          "pristine_host_removed": true,
+          "reference_runner_removed": true,
+          "reference_source_removed": true,
+          "reference_venv_removed": true,
+          "tests_unreadable": true,
+          "wheelhouses_removed": true
+        },
+        "regression_returncode": 0,
+        "regression_stderr_tail": "",
+        "regression_stdout_tail": "........................................................................ [ 11%]\n........................................................................ [ 23%]\n........................................................................ [ 35%]\n........................................................................ [ 47%]\n........................................................................ [ 59%]\n........................................................................ [ 71%]\n............................s........................................... [ 83%]\n..........................................................s.s........... [ 95%]\n...............ssss......                                                [100%]\n=============================== warnings summary ===============================\ntree/tests/test_tree.py: 73 warnings\n  /opt/candidate-runtime/sklearn/tree/_classes.py:1284: RuntimeWarning: divide by zero encountered in log\n    return np.log(proba)\n\ntree/tests/test_tree.py: 16 warnings\n  /opt/candidate-runtime/sklearn/tree/_classes.py:1288: RuntimeWarning: divide by zero encountered in log\n    proba[k] = np.log(proba[k])\n\ntree/tests/test_tree.py::test_big_input\n  /opt/candidate-runtime/sklearn/utils/_array_api.py:1032: RuntimeWarning: overflow encountered in cast\n    array = numpy.asarray(array, order=order, dtype=dtype)\n\ntree/tests/test_tree.py::test_empty_leaf_infinite_threshold[None]\ntree/tests/test_tree.py::test_empty_leaf_infinite_threshold[csc_matrix]\ntree/tests/test_tree.py::test_empty_leaf_infinite_threshold[csc_array]\n  /opt/candidate-runtime/sklearn/tree/tests/test_tree.py:1886: RuntimeWarning: overflow encountered in cast\n    data = xpx.nan_to_num(data.astype(\"float32\"))\n\ntree/tests/test_tree.py::test_empty_leaf_infinite_threshold[None]\ntree/tests/test_tree.py::test_empty_leaf_infinite_threshold[None]\ntree/tests/test_tree.py::test_empty_leaf_infinite_threshold[csc_matrix]\ntree/tests/test_tree.py::test_empty_leaf_infinite_threshold[csc_array]\n  /usr/local/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:86: RuntimeWarning: invalid value encountered in reduce\n    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)\n\ntree/tests/test_tree.py::test_empty_leaf_infinite_threshold[None]\n  /usr/local/lib/python3.12/site-packages/numpy/_core/_methods.py:51: RuntimeWarning: overflow encountered in reduce\n    return umr_sum(a, axis, dtype, out, keepdims, initial, where)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n594 passed, 7 skipped, 98 warnings in 7.45s\n"
+      },
+      "name": "api_isolation_and_host_regression",
+      "passed": true
+    }
+  ],
+  "reference_provenance": {
+    "numpy_version": "2.3.2",
+    "shap_file": "/opt/reference-venv/lib/python3.12/site-packages/shap/__init__.py",
+    "shap_version": "0.52.1.dev42",
+    "sklearn_file": "/opt/reference-venv/lib/python3.12/site-packages/sklearn/__init__.py",
+    "sklearn_version": "1.10.dev0"
+  },
+  "reference_stderr": "",
+  "source_integrity_failures": [],
+  "source_scan": {
+    "changed_files": [
+      "sklearn/inspection/__init__.py",
+      "sklearn/inspection/_tree_shap.py",
+      "sklearn/inspection/tests/test_tree_shap.py"
+    ],
+    "findings": [],
+    "passed": true
+  },
+  "summary": {
+    "hard_gates_ok": true,
+    "passed": 15,
+    "reward": 1.0,
+    "total": 15
+  },
+  "task": "algobridge-0026__scikit-learn__absorbs__shap",
+  "tolerances": {
+    "atol": 1e-09,
+    "rtol": 1e-09
+  }
+}
