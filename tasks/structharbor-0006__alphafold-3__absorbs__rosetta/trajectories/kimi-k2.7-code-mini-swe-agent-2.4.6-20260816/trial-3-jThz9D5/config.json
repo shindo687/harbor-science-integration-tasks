@@ -1,0 +1,63 @@
+{
+    "task": {
+        "path": "/home/xjtan/new_bench_minimal/harbor-science-integration-tasks/tasks/structharbor-0006__alphafold-3__absorbs__rosetta"
+    },
+    "trial_name": "structharbor-0006__alphafold-3__jThz9D5",
+    "trials_dir": "/home/xjtan/new_bench_minimal/harbor-jobs-kimi-mini-swe-batch/kimi-k27-mini-swe-structharbor-0006-r1-20260817-134042",
+    "timeout_multiplier": 2.0,
+    "agent_setup_timeout_multiplier": 3.0,
+    "agent": {
+        "name": "mini-swe-agent",
+        "model_name": "openai/kimi-k2.7-code",
+        "extra_allowed_hosts": [
+            "api.epicllmrouter.top"
+        ],
+        "kwargs": {
+            "version": "2.4.6",
+            "max_tokens": 8192
+        }
+    },
+    "environment": {
+        "type": "docker",
+        "mounts": [
+            {
+                "type": "bind",
+                "source": "/home/xjtan/.local/bin/uv",
+                "target": "/opt/harbor-mini-swe-bootstrap/uv",
+                "read_only": true
+            },
+            {
+                "type": "bind",
+                "source": "/home/xjtan/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu",
+                "target": "/opt/harbor-mini-swe-bootstrap/python",
+                "read_only": true
+            },
+            {
+                "type": "bind",
+                "source": "/home/xjtan/new_bench_minimal/mini-swe-agent-2.4.6-wheelhouse-lite",
+                "target": "/opt/harbor-mini-swe-bootstrap/wheels",
+                "read_only": true
+            },
+            {
+                "type": "bind",
+                "source": "/lib/x86_64-linux-gnu/libstdc++.so.6",
+                "target": "/opt/harbor-mini-swe-bootstrap/lib/libstdc++.so.6",
+                "read_only": true
+            }
+        ],
+        "extra_allowed_hosts": [
+            "deb.debian.org",
+            "security.debian.org",
+            "mirrors.aliyun.com",
+            "astral.sh",
+            "releases.astral.sh",
+            "github.com",
+            "objects.githubusercontent.com",
+            "release-assets.githubusercontent.com",
+            "raw.githubusercontent.com",
+            "pypi.org",
+            "files.pythonhosted.org"
+        ]
+    },
+    "job_id": "cc7d5d50-9eb0-4032-9ab5-c7474463fb65"
+}
