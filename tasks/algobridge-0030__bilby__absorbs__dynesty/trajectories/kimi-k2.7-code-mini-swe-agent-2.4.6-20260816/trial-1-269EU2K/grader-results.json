@@ -1,0 +1,35 @@
+{
+  "elapsed_seconds": 16.048702001571655,
+  "fatal_error": "RuntimeError: candidate source scan failed",
+  "hard_gates": {
+    "clean_room_source_scan": false,
+    "locked_reference_pipeline": true,
+    "locked_source_integrity": true
+  },
+  "integrity_failures": [],
+  "points": [],
+  "reference_provenance": {
+    "bilby_file": "/opt/reference-host/bilby/__init__.py",
+    "bilby_version": "unknown",
+    "dynesty_file": "/opt/reference-donor/py/dynesty/__init__.py",
+    "dynesty_version": "3.0.0+locked.d8affbc"
+  },
+  "reference_stderr_tail": "/opt/reference-donor/py/dynesty/sampler.py:255: RuntimeWarning: All the initial likelihood values are the same. You likely have a plateau in the likelihood. Nested sampling may not be the best sampler in this case.\n  warnings.warn(\n/opt/reference-donor/py/dynesty/sampler.py:1098: UserWarning: We have reached the plateau in the likelihood we are stopping sampling\n  warnings.warn(\n/opt/reference-donor/py/dynesty/sampler.py:1098: UserWarning: We have reached the plateau in the likelihood we are stopping sampling\n  warnings.warn(\n",
+  "source_scan": {
+    "changed_files": [
+      "bilby/_version.py",
+      "bilby/core/sampler/internal_nested.py",
+      "pyproject.toml"
+    ],
+    "donor_fragments": 183421,
+    "findings": [
+      "donor token fragment (40) in bilby/core/sampler/internal_nested.py"
+    ]
+  },
+  "summary": {
+    "passed": 0,
+    "reward": 0.0,
+    "total": 15
+  },
+  "task": "algobridge-0030__bilby__absorbs__dynesty"
+}
