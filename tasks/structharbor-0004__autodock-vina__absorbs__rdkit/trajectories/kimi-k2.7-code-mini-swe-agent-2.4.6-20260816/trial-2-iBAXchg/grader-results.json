@@ -1,0 +1,397 @@
+{
+  "candidate_identity": {
+    "reference_paths_readable": false,
+    "uid": 10001
+  },
+  "candidate_isolation": {
+    "protected_paths_unreadable": [
+      "/tests",
+      "/opt/reference-rdkit",
+      "/opt/reference-rdkit-source",
+      "/opt/reference-wheels",
+      "/opt/pristine-host",
+      "/opt/reference-runner",
+      "/opt/source-archives"
+    ],
+    "uid": 10001
+  },
+  "hidden": {
+    "cases": [
+      {
+        "metrics": {
+          "angle_abs": 1.4210854715202004e-14,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 3.1086244689504383e-15,
+          "torsion_abs": 0.0,
+          "total_abs": 2.842170943040401e-14,
+          "van_der_waals_abs": 2.1316282072803006e-14
+        },
+        "name": "hidden_aspirin",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 7.105427357601002e-15,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 1.7763568394002505e-15,
+          "torsion_abs": 0.0,
+          "total_abs": 4.973799150320701e-14,
+          "van_der_waals_abs": 2.842170943040401e-14
+        },
+        "name": "hidden_caffeine",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 3.552713678800501e-15,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.6123218682874845,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 9.769962616701378e-15,
+          "torsion_abs": 0.0,
+          "total_abs": 0.6123218682874665,
+          "van_der_waals_abs": 1.0658141036401503e-14
+        },
+        "name": "hidden_phenol",
+        "passed": false,
+        "reasons": [
+          "electrostatic",
+          "total"
+        ]
+      },
+      {
+        "metrics": {
+          "angle_abs": 0.0,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 0.0,
+          "torsion_abs": 0.0,
+          "total_abs": 0.0,
+          "van_der_waals_abs": 3.019806626980426e-14
+        },
+        "name": "hidden_cyclohexane",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 0.0,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 0.0,
+          "torsion_abs": 0.0,
+          "total_abs": 0.0,
+          "van_der_waals_abs": 4.440892098500626e-15
+        },
+        "name": "hidden_acetone",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 7.105427357601002e-15,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 1.7763568394002505e-15,
+          "torsion_abs": 0.0,
+          "total_abs": 1.4210854715202004e-14,
+          "van_der_waals_abs": 2.6645352591003757e-14
+        },
+        "name": "hidden_ethyl_acetate",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 3.552713678800501e-15,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 3.552713678800501e-15,
+          "torsion_abs": 0.0,
+          "total_abs": 0.0,
+          "van_der_waals_abs": 1.0658141036401503e-14
+        },
+        "name": "hidden_pyridine",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 0.0,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 3.35601736822678,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 0.0,
+          "torsion_abs": 0.0,
+          "total_abs": 3.356017368226759,
+          "van_der_waals_abs": 1.2434497875801753e-14
+        },
+        "name": "hidden_morpholine",
+        "passed": false,
+        "reasons": [
+          "electrostatic",
+          "total"
+        ]
+      },
+      {
+        "metrics": {
+          "angle_abs": 0.0,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 0.0,
+          "torsion_abs": 0.0,
+          "total_abs": 0.0,
+          "van_der_waals_abs": 1.4432899320127035e-15
+        },
+        "name": "hidden_dimethyl_sulfoxide",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 1.4210854715202004e-14,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 8.881784197001252e-16,
+          "torsion_abs": 0.0,
+          "total_abs": 4.263256414560601e-14,
+          "van_der_waals_abs": 2.1316282072803006e-14
+        },
+        "name": "hidden_alanine_zwitterion",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 0.0,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 3.552713678800501e-15,
+          "torsion_abs": 0.0,
+          "total_abs": 0.0,
+          "van_der_waals_abs": 9.769962616701378e-15
+        },
+        "name": "hidden_isobutane",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 3.552713678800501e-15,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 8.881784197001252e-16,
+          "torsion_abs": 0.0,
+          "total_abs": 1.7763568394002505e-15,
+          "van_der_waals_abs": 7.632783294297951e-17
+        },
+        "name": "hidden_formamide",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 7.105427357601002e-15,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 0.0,
+          "torsion_abs": 0.0,
+          "total_abs": 1.0658141036401503e-14,
+          "van_der_waals_abs": 4.85722573273506e-17
+        },
+        "name": "hidden_acetonitrile",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 1.4210854715202004e-14,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.34824065183055763,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 8.881784197001252e-16,
+          "torsion_abs": 0.0,
+          "total_abs": 0.34824065183053676,
+          "van_der_waals_abs": 3.552713678800501e-14
+        },
+        "name": "hidden_styrene",
+        "passed": false,
+        "reasons": [
+          "electrostatic",
+          "total"
+        ]
+      },
+      {
+        "metrics": {
+          "angle_abs": 8.881784197001252e-16,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 4.6629367034256575e-15,
+          "torsion_abs": 0.0,
+          "total_abs": 4.263256414560601e-14,
+          "van_der_waals_abs": 3.197442310920451e-14
+        },
+        "name": "hidden_naphthalene",
+        "passed": true,
+        "reasons": []
+      }
+    ],
+    "passed": 12,
+    "total": 15
+  },
+  "invalid_contract": {
+    "passed": 12,
+    "total": 12
+  },
+  "metamorphic": {
+    "cases": [
+      {
+        "metrics": {
+          "angle_abs": 1.3500311979441904e-13,
+          "bond_abs": 7.105427357601002e-13,
+          "electrostatic_abs": 1.942890293094024e-15,
+          "out_of_plane_abs": 1.609823385706477e-14,
+          "stretch_bend_abs": 1.7053025658242404e-13,
+          "torsion_abs": 3.552713678800501e-15,
+          "total_abs": 6.536993168992922e-13,
+          "van_der_waals_abs": 3.907985046680551e-14
+        },
+        "name": "metamorphic_rigid_transform",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 0.0,
+          "bond_abs": 1.4210854715202004e-14,
+          "electrostatic_abs": 8.881784197001252e-16,
+          "out_of_plane_abs": 1.1102230246251565e-16,
+          "stretch_bend_abs": 6.661338147750939e-16,
+          "torsion_abs": 8.881784197001252e-16,
+          "total_abs": 1.4210854715202004e-14,
+          "van_der_waals_abs": 1.7763568394002505e-15
+        },
+        "name": "metamorphic_record_reordering",
+        "passed": true,
+        "reasons": []
+      }
+    ],
+    "passed": 2,
+    "total": 2
+  },
+  "provenance": {
+    "archive_and_wheel_checks": 5,
+    "rdkit_version": "2026.03.5"
+  },
+  "public": {
+    "cases": [
+      {
+        "metrics": {
+          "angle_abs": 5.329070518200751e-15,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 8.881784197001252e-16,
+          "torsion_abs": 0.0,
+          "total_abs": 3.552713678800501e-15,
+          "van_der_waals_abs": 8.881784197001252e-16
+        },
+        "name": "public_ethanol",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 7.105427357601002e-15,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 4.440892098500626e-15,
+          "torsion_abs": 0.0,
+          "total_abs": 0.0,
+          "van_der_waals_abs": 4.440892098500626e-15
+        },
+        "name": "public_acetamide",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 1.7763568394002505e-15,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 1.7763568394002505e-15,
+          "torsion_abs": 0.0,
+          "total_abs": 1.4210854715202004e-14,
+          "van_der_waals_abs": 1.4210854715202004e-14
+        },
+        "name": "public_benzene",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 1.4210854715202004e-14,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 0.0,
+          "torsion_abs": 0.0,
+          "total_abs": 5.684341886080802e-14,
+          "van_der_waals_abs": 2.1316282072803006e-14
+        },
+        "name": "public_butane",
+        "passed": true,
+        "reasons": []
+      },
+      {
+        "metrics": {
+          "angle_abs": 7.105427357601002e-15,
+          "bond_abs": 0.0,
+          "electrostatic_abs": 0.0,
+          "out_of_plane_abs": 0.0,
+          "stretch_bend_abs": 8.881784197001252e-16,
+          "torsion_abs": 0.0,
+          "total_abs": 7.105427357601002e-15,
+          "van_der_waals_abs": 1.2434497875801753e-14
+        },
+        "name": "public_glycine_zwitterion",
+        "passed": true,
+        "reasons": []
+      }
+    ],
+    "passed": 5,
+    "total": 5
+  },
+  "reference": "official RDKit 2026.03.5 MMFF94 force fields (root-only)",
+  "reward": 0.8,
+  "source_policy": {
+    "added": [
+      "build/python/vina/mmff94.py"
+    ],
+    "allowed_import_scan": "pass",
+    "donor_file_hash_scan": "pass",
+    "forbidden_dependency_scan": "pass",
+    "module_bytes": 11597,
+    "module_sha256": "341fde00f5b62613aa7ed7b87f1be697723e2725cb691850cea6541c49b44e8f"
+  },
+  "status": "graded",
+  "task": "STRUCTHARBOR-0004"
+}
